@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://blog.ruizhou.cf/sitemap.xml
+Sitemap: https://www.ruizhou.cf/sitemap.xml

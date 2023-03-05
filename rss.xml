@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 05 Mar 2023 06:28:37 GMT</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2023 06:28:37 GMT</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2023 16:48:05 GMT</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2023 16:48:05 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -24,6 +24,29 @@
     <category>YAML</category>
     <category>Git</category>
     <category>VS Code</category>
+    <item>
+      <title>SpaceX launches another crew to space station for NASA</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2303051929.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2303051929.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">SpaceX launches another crew to space station for NASA</source>
+      <description>SpaceX launched another set of astronauts to the International Space Station early Thursday, after a problem with a ground system delayed the launch earlier in the week. The com...</description>
+      <category>英文</category>
+      <pubDate>Sat, 04 Mar 2023 19:29:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>SpaceX launched another set of <code>astronauts</code> to the International Space Station early Thursday, after a problem with a <code>ground</code> system delayed the launch earlier in the week. The company’s <code>Falcon</code> 9 rocket <code>lifted</code> off at 12:34 a.m. from launch <code>pad</code> 39A at the Kennedy Space Center in Florida, carrying NASA astronauts Stephen Bowen and Warren Hoburg, United Arab Emirates astronaut Sultan Alneyadi, and Russian <code>cosmonaut</code> Andrey Fedyaev. They are expected to reach the <code>orbital</code> <code>outpost</code> early Friday to begin a six-month stay.</p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>crew：全体人员，全体剧组人员</p>
+<p>astronaut：宇航员</p>
+<p>ground system：地面系统</p>
+<p>falcon：猎鹰</p>
+<p>lift off：升空（lift：电梯）</p>
+<p>Kennedy Space Center：弗罗里达州的<code>肯尼迪</code>航天中心</p>
+<p>launch pad：发射台（pad：垫子；步行）</p>
+<p>cosmonaut：宇航员（cosmo：宇宙（星矢小宇宙）；naut：船员）</p>
+<p>outpost：前哨，前哨部队（post：邮政，哨所）</p>
+</div>
+]]></content:encoded>
+    </item>
     <item>
       <title>Meteorologist: West Coast snowfall is ‘once in a generation’</title>
       <link>https://blog.ruizhou.cf/english/everyday/2303050624.html</link>
@@ -161,54 +184,6 @@
 </ul>
 ]]></content:encoded>
       <enclosure url="https://blog.ruizhou.cf/2233.png" type="image/png"/>
-    </item>
-    <item>
-      <title>英文学习</title>
-      <link>https://blog.ruizhou.cf/english/</link>
-      <guid>https://blog.ruizhou.cf/english/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
-      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 语法 (gramma.md); 词汇 介绍 词汇时英文学习的基础，需要下功夫 高频词汇 (vocabulary/high-frequency-vocabulary.md); 词根词缀 (vocabulary/root.md); 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所...</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<p>英文学习日记</p>
-<h2> 语法</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>常用语法，属于技巧类型</p>
-</div>
-<ul>
-<li><a href="/english/gramma.html" target="blank">语法</a></li>
-</ul>
-<h2> 词汇</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>词汇时英文学习的基础，需要下功夫</p>
-</div>
-<ul>
-<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="blank">高频词汇</a></li>
-<li><a href="/english/vocabulary/root.html" target="blank">词根词缀</a></li>
-</ul>
-<h2> 每日英语</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
-</div>
-<ul>
-<li><a href="/english/everyday/" target="blank">点击前往</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>语法</title>
-      <link>https://blog.ruizhou.cf/english/grammar.html</link>
-      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
-      <description>简单语法 这是简单的几种语法</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 简单语法</h2>
-<p>这是简单的几种语法</p>
-]]></content:encoded>
     </item>
     <item>
       <title>技术</title>
@@ -501,49 +476,51 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
-      <link>https://blog.ruizhou.cf/english/everyday/2301311830.html</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/2301311830.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</source>
-      <description>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being deported f...</description>
-      <category>英文</category>
-      <pubDate>Tue, 31 Jan 2023 18:30:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being <code>deported</code> from the country because he was not <code>vaccinated</code> against COVID-19, Djokovic accomplished all he could have wanted in his return: He <code>resumed</code> his winning ways at Melbourne Park and made it back to the top of tennis. Only briefly challenged in the final on Sunday night, Djokovic was simply better at the most <code>crucial</code> moments and beat Stefanos Tsitsipas 6-3, 7-6 (4), 7-6 (5) for a record-extending 10th Australian Open championship and <code>record-tying</code> 22nd Grand <code>Slam</code> title overall.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>‘Buy Now, Pay Later’ Is the Victim of its Own Success</title>
-      <link>https://blog.ruizhou.cf/english/everyday/2301312022.html</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/2301312022.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">‘Buy Now, Pay Later’ Is the Victim of its Own Success</source>
-      <description>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after the Wall Street `giant reported its worst earnings miss in a decade. On a call that morning,...</description>
-      <category>英文</category>
-      <pubDate>Tue, 31 Jan 2023 20:22:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after <code>the Wall Street</code> <code>giant</code> reported its worst earnings miss in a decade. On a call that morning, analysts <code>peppered</code> David Solomon, the bank’s C.E.O., with questions about its consumer banking strategy. Goldman closed its $2.2 billion <code>acquisition</code> of GreenSky, a <code>pioneer</code> in the “buy now, pay later” lending <code>sector</code>. It <code>flew</code> under the <code>radar</code> until last quarter, the first in which Goldman broke out earnings for its “platform solutions” business unit, which includes GreenSky. The picture wasn’t pretty. <code>Revenues</code> were up, but the division lost $1.66 billion in 2022.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>高频词汇</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
-      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
+      <title>英文学习</title>
+      <link>https://blog.ruizhou.cf/english/</link>
+      <guid>https://blog.ruizhou.cf/english/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
+      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 语法 (gramma.md); 词汇 介绍 词汇时英文学习的基础，需要下功夫 高频词汇 (vocabulary/high-frequency-vocabulary.md); 词根词缀 (vocabulary/root.md); 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所...</description>
       <category>英文</category>
       <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 高频词汇</h2>
-<p>枚举很多常用的词汇，短语搭配等</p>
+      <content:encoded><![CDATA[<p>英文学习日记</p>
+<h2> 语法</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>常用语法，属于技巧类型</p>
+</div>
+<ul>
+<li><a href="/english/gramma.html" target="blank">语法</a></li>
+</ul>
+<h2> 词汇</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>词汇时英文学习的基础，需要下功夫</p>
+</div>
+<ul>
+<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="blank">高频词汇</a></li>
+<li><a href="/english/vocabulary/root.html" target="blank">词根词缀</a></li>
+</ul>
+<h2> 每日英语</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
+</div>
+<ul>
+<li><a href="/english/everyday/" target="blank">点击前往</a></li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
-      <title>词根词缀</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
-      <description>常用词根词缀 枚举很多常用的词根词缀</description>
+      <title>语法</title>
+      <link>https://blog.ruizhou.cf/english/grammar.html</link>
+      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
+      <description>简单语法 这是简单的几种语法</description>
       <category>英文</category>
       <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
-<p>枚举很多常用的词根词缀</p>
+      <content:encoded><![CDATA[<h2> 简单语法</h2>
+<p>这是简单的几种语法</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -3075,246 +3052,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 ]]></content:encoded>
     </item>
     <item>
-      <title>工具软件</title>
-      <link>https://blog.ruizhou.cf/software/tool/</link>
-      <guid>https://blog.ruizhou.cf/software/tool/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">工具软件</source>
-      <description>目录 PowerToys (power-toys.md): Windows 实用工具合集; PasteEx (https://github.com/huiyadanli/PasteEx): Paste As File 把剪贴板的内容直接粘贴为文件; typora (https://www.typora.io/): 一个页面很漂亮的 Markdown 编...</description>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 目录</h2>
-<ul>
-<li>
-<p><a href="/software/tool/power-toys.html" target="blank">PowerToys</a>: Windows 实用工具合集</p>
-</li>
-<li>
-<p><a href="https://github.com/huiyadanli/PasteEx" target="_blank" rel="noopener noreferrer">PasteEx</a>: Paste As File 把剪贴板的内容直接粘贴为文件</p>
-</li>
-<li>
-<p><a href="https://www.typora.io/" target="_blank" rel="noopener noreferrer">typora</a>: 一个页面很漂亮的 Markdown 编辑器</p>
-</li>
-<li>
-<p><a href="https://potplayer.daum.net/?lang=zh_CN" target="_blank" rel="noopener noreferrer">Potplayer</a>: 心目中最 NB 的视频播放器，没有之一</p>
-</li>
-<li>
-<p><a href="/software/tool/terminal/" target="blank">Terminal</a>: Windows 终端</p>
-</li>
-<li>
-<p><a href="/software/tool/powershell.html" target="blank">PowerShell</a>: Windows 的命令行外壳程序和脚本环境</p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>PowerToys</title>
-      <link>https://blog.ruizhou.cf/software/tool/power-toys.html</link>
-      <guid>https://blog.ruizhou.cf/software/tool/power-toys.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">PowerToys</source>
-      <description>安装 您可以 直接下载 exe (https://github.com/microsoft/PowerToys/releases) 进行安装。 系统要求 Win10 版本 &amp;gt; 1803，已安装 .NET Core 3.1 Desktop Runtime 或者使用 WinGet: 功能 Power toys 主要功能: 图片取色; 窗口布局管理; 更多文...</description>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 安装</h2>
-<p>您可以 <a href="https://github.com/microsoft/PowerToys/releases" target="_blank" rel="noopener noreferrer">直接下载 exe</a> 进行安装。</p>
-<div class="hint-container info">
-<p class="hint-container-title">系统要求</p>
-<p>Win10 版本 &gt; 1803，已安装 .NET Core 3.1 Desktop Runtime</p>
-</div>
-<p>或者使用 WinGet:</p>
-<div class="language-bash" data-ext="sh"></div><h2> 功能</h2>
-<p>Power toys 主要功能:</p>
-<ul>
-<li>图片取色</li>
-<li>窗口布局管理</li>
-<li>更多文件预览支持</li>
-<li>图片尺寸调整</li>
-<li>快捷键管理器</li>
-<li>强大的文件重命名</li>
-<li>快捷键指南</li>
-<li>PowerToys Run</li>
-</ul>
-<h2> Color Picker</h2>
-<p>Color Picker 是一个可以在 Win10 系统全场景下使用的颜色提取工具，通过按键 <code>Win + Shift + C</code> 启动。</p>
-<p>您可以用光标在当前桌面上任意色块提取颜色，系统会自动复制颜色的 HEX 或 RGB 值。</p>
-<figure><figcaption>取色器演示</figcaption></figure>
-<h3> FancyZones</h3>
-<p>FancyZones 是一个实用的窗口增强管理器，它能让您快速地将程序窗口按照设置好的布局来调整大小和位置排布，快捷键为 <code>Win + `</code>。</p>
-<p>FancyZones 实现了更高效地利用屏幕的面积，管理切换大量窗口而不杂乱，是大屏幕用户必备的效率工具。</p>
-<p>当首次启动时，FancyZones 会要求您为当前显示器选择一个默认的布局。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>请注意 FancyZones 布局是基于显示器的，所以如果您有多个显示器，您需要分别设置它们。</p>
-</div>
-<figure><figcaption>布局选择</figcaption></figure>
-<p>如果上述布局选择不能满足您的需求，您也可以点击 "Custom" 选项卡进行自定义。</p>
-<figure><figcaption>自定义布局</figcaption></figure>
-<div class="hint-container info">
-<p class="hint-container-title">相关信息</p>
-<p>更多详情，请见 <a href="https://github.com/microsoft/PowerToys/wiki/FancyZones-Overview" target="_blank" rel="noopener noreferrer">官方 Wiki</a></p>
-</div>
-<h2> 资源管理器插件</h2>
-<p>Preview Panel(预览窗格) 是一个轻量快速 Win10 的文件资源管理器插件，它能让您在无需打开文件的情况下，直接在文件资源管理器通过<strong>预览窗格</strong>预览文件内容，目前 <code>.svg</code> 与 <code>.md</code>。</p>
-<figure><figcaption>SVG 预览</figcaption></figure>
-<figure><figcaption>Markdown 预览</figcaption></figure>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>这两个文件的预览对开发者是十分有用的。</p>
-</div>
-<h2> 图片尺寸调整</h2>
-<p>Image Resizer 是一个右键菜单的快速图片尺寸大小调整工具，您只需右键点击图片文件，即可选择修改一张或批量修改多张图片的大小尺寸、旋转图片方向或者转换图片格式。</p>
-<figure><figcaption>图片尺寸调整</figcaption></figure>
-<p>软件预设了大/中/小/手机等不同的常用模版，单击确定即可一键完成图片尺寸的批量调整。您也可以点击 Settings 进入设置，按自己需求的尺寸大小、是否转换格式等来配置自己的常用“模版”。</p>
-<figure><figcaption>图片尺寸调整设置</figcaption></figure>
-<p>对于经常有多张图片的大小需要处理，而对专业性要求不高的用户来说，这款工具能替代专门的图像处理器软件。</p>
-<p>同时，用户不仅可以导出为其他格式，也可以设置默认编码器(在不能保存为原始格式时)。</p>
-<p>在导出时，也支持修改 PNG、JPEG 和 TIFF 的图片保存设置，与是否保留原来的最后修改日期。</p>
-<h2> 快捷键管理器</h2>
-<p>Keyboard Manager 是一款简单而又实用的键盘键位修改小工具。</p>
-<p>它的主要作用能帮您将键盘上的某个按键映射为另一个按键，甚至还能将一组快捷键映射为另一组。在一些特殊的情况下，它能帮您的大忙。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>Keyboard Manager 修改键位之后无需重启电脑即可立即生效。</p>
-</div>
-<h2> PowerRename</h2>
-<p>PowerRename 是一个实用的右键菜单“批量重命名工具”，可以支持搜索/替换以及正则表达式匹配，可以添加文件名前缀后缀等。</p>
-<p>为了避免出错，它在重命名之前可以让在界面上预览重命名后的结果，同时在重命名时，您可以很方便的选中全部您想要重命名的文件与文件夹，再排除指定的文件/文件夹。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">一些设置选项的解释</p>
-<ul>
-<li><strong>使用正则表达式</strong>: 默认搜索框中为文字匹配，启用后将认为搜索框中为正则表达式。</li>
-<li><strong>匹配所有出现的对象</strong>: 默认情况下只匹配项目中搜索文本的第一个实例，勾选后匹配所有。</li>
-<li><strong>枚举项</strong>: 勾选后，会在在操作中修改的文件名后追加一个数字后缀。例如: <code>mrhope.jpg</code> -&gt; <code>mrhope (1).jpg</code></li>
-</ul>
-</div>
-<h2> 快捷键指南</h2>
-<p>该工具负责提示您当前页面可用的 Windows 快捷键。(并不包含软件内的快捷键)。</p>
-<p>长按 Windows 键即可呼出此工具。</p>
-<figure><figcaption>快捷键指南</figcaption></figure>
-<h2> PowerToys Run</h2>
-<p>PowerToys Run 是一款快速启动器工具，按下 <code>Alt + Space</code> 即可随时呼出输入框。</p>
-<h3> PowerToys Run 功能</h3>
-<ul>
-<li>
-<p>搜索</p>
-<p>直接输入名字后，它能快速找到对应的软件、搜索文件/文件夹，并回车迅速打开它们。</p>
-<figure><figcaption>搜索</figcaption></figure>
-</li>
-<li>
-<p>运行软件切换</p>
-<p>PowerToys Run 也支持快速搜索当前正在运行的软件，并切换到它们的窗口去。</p>
-</li>
-<li>
-<p>终端</p>
-<p>输入 <code>&gt;</code> 加您需要执行的命令，即可快速调用终端执行。</p>
-<figure><figcaption>终端命令</figcaption></figure>
-</li>
-<li>
-<p>简单计算</p>
-<p>您可以直接输入简单的数学表达式，PowerToys Run 会直接返回结果。</p>
-<figure><figcaption>简单计算</figcaption></figure>
-</li>
-</ul>
-<h3> 快捷键</h3>
-<table>
-<thead>
-<tr>
-<th>捷径</th>
-<th>行动</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Alt + Space</code></td>
-<td>打开或隐藏 PowerToys Run</td>
-</tr>
-<tr>
-<td><code>Esc</code></td>
-<td>隐藏 PowerToys Run</td>
-</tr>
-<tr>
-<td><code>Ctrl + Shift + Enter</code></td>
-<td>(仅适用于应用程序)以管理员身份打开所选的应用程序</td>
-</tr>
-<tr>
-<td><code>Ctrl + Shift + E</code></td>
-<td>(仅适用于应用程序和文件)在文件资源管理器中打开包含文件夹</td>
-</tr>
-<tr>
-<td><code>Ctrl + C</code></td>
-<td>(仅适用于文件夹和文件)复制路径位置</td>
-</tr>
-<tr>
-<td><code>Tab</code></td>
-<td>浏览搜索结果和上下文菜单按钮</td>
-</tr>
-</tbody>
-</table>
-<h3> 过滤符</h3>
-<p>这些将迫使 PowerToys 只运行目标插件。</p>
-<table>
-<thead>
-<tr>
-<th>过滤符</th>
-<th>行动</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>=</code></td>
-<td>仅计算器。</td>
-</tr>
-<tr>
-<td><code>?</code></td>
-<td>仅文件搜索。</td>
-</tr>
-<tr>
-<td><code>.</code></td>
-<td>仅搜索安装应用</td>
-</tr>
-<tr>
-<td><code>//</code></td>
-<td>仅网址。</td>
-</tr>
-<tr>
-<td><code>&lt;</code></td>
-<td>仅运行进程。</td>
-</tr>
-<tr>
-<td><code>&gt;</code></td>
-<td>仅 Shell 命令。</td>
-</tr>
-</tbody>
-</table>
-<h2> 视频音频静音</h2>
-<p>使用相机时，您会在屏幕上的特定位置看到一个摄像头与麦克风开启状态的对话框，您可以通过单机或一下快捷键改变它们的启用状态。</p>
-<ul>
-<li><code>Win + N</code>: 同时切换音频和视频</li>
-<li><code>Win + Shift + O</code>: 切换视频</li>
-<li><code>Win + Shift + A</code>: 切换麦克风</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Windows PowerShell</title>
-      <link>https://blog.ruizhou.cf/software/tool/powershell.html</link>
-      <guid>https://blog.ruizhou.cf/software/tool/powershell.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">Windows PowerShell</source>
-      <description>Powershell (Windows Powershell)是 Microsoft 为 Windows 设计的新的命令行程序，这个 Windows 内置的命令行 shell 包括交互式提示和脚本环境，它们可以独立使用也可以交互使用。</description>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Powershell (Windows Powershell)是 Microsoft 为 Windows 设计的新的命令行程序，这个 Windows 内置的命令行 shell 包括交互式提示和脚本环境，它们可以独立使用也可以交互使用。</p>
-<!-- more -->
-<p>我们平时所见的大多数的脚本(bat,perl,bash,sh)，接受(输入)和返回(输出)的都是文本。Powershell 是在 .Net 公共语言运行时(CLR-Common Language Runtime)<a href="http://xn--0tr.Net" target="_blank" rel="noopener noreferrer">和.Net</a> Framework 的基础上构建的，所以 Powershell <a href="http://xn--onq73j9bw6a06gxu1ajw4e.Net" target="_blank" rel="noopener noreferrer">可以接受和返回.Net</a> 对象。也就是说，Powershell 是面向对象的脚本语言。</p>
-<p>举个例子，如果其它的脚本语言是 C 语言(低级)，那么 Powershell 就是 Java 或是 C#(高级)。面向对象的能力使 Powershell 相比其它脚本语言有更高的开发效率，脚本更容易维护，更容易实现模块化和复用。</p>
-<p>PowerShell 引入了 cmdlet 的概念(cmdlet 读作“command-let”,一看就是 cmd 的超集，事实也是如此，所有 cmd 命令都可以在 Powershell 中执行)，这是内置到 shell 中的一个简单的单一功能命令行工具。相比其它 shell，PowerShell 除了可以对计算机上文件系统的访问。还可以访问其他数据存储，如注册表和数字签名证书存储，就像访问文件系统一样容易。</p>
-<h2> 特点</h2>
-<p>Powershell 提供了丰富的内置命令，相比其它 shell 尤其独特的优势: 您不必抛弃自己惯用的工具、命令，在 Powershell 中可以使用所有的 cmd 命令。</p>
-<p>Powershell 不处理文本(不把文本当做文本处理，<a href="http://xn--cyqv87a.Net" target="_blank" rel="noopener noreferrer">当做.Net</a> 对象处理)，相反，它处理基于 .Net Framework 平台的对象。</p>
-<p>Powershell 附带了具有一致格式(动词-名词)的大量内置命令。</p>
-<p>所有的 Powershell 命令都使用同一命令分析程序，而不是每个工具(命令)使用不同的分析程序，可以同时学习大量的命令。</p>
-<h2> 官方教程</h2>
-<ul>
-<li><a href="https://docs.microsoft.com/zh-cn/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1" target="_blank" rel="noopener noreferrer">官方教程</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>VS Code</title>
       <link>https://blog.ruizhou.cf/software/vscode/</link>
       <guid>https://blog.ruizhou.cf/software/vscode/</guid>
@@ -4111,6 +3848,292 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 ]]></content:encoded>
     </item>
     <item>
+      <title>Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2301311830.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2301311830.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</source>
+      <description>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being deported f...</description>
+      <category>英文</category>
+      <pubDate>Tue, 31 Jan 2023 18:30:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being <code>deported</code> from the country because he was not <code>vaccinated</code> against COVID-19, Djokovic accomplished all he could have wanted in his return: He <code>resumed</code> his winning ways at Melbourne Park and made it back to the top of tennis. Only briefly challenged in the final on Sunday night, Djokovic was simply better at the most <code>crucial</code> moments and beat Stefanos Tsitsipas 6-3, 7-6 (4), 7-6 (5) for a record-extending 10th Australian Open championship and <code>record-tying</code> 22nd Grand <code>Slam</code> title overall.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>‘Buy Now, Pay Later’ Is the Victim of its Own Success</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2301312022.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2301312022.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">‘Buy Now, Pay Later’ Is the Victim of its Own Success</source>
+      <description>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after the Wall Street `giant reported its worst earnings miss in a decade. On a call that morning,...</description>
+      <category>英文</category>
+      <pubDate>Tue, 31 Jan 2023 20:22:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after <code>the Wall Street</code> <code>giant</code> reported its worst earnings miss in a decade. On a call that morning, analysts <code>peppered</code> David Solomon, the bank’s C.E.O., with questions about its consumer banking strategy. Goldman closed its $2.2 billion <code>acquisition</code> of GreenSky, a <code>pioneer</code> in the “buy now, pay later” lending <code>sector</code>. It <code>flew</code> under the <code>radar</code> until last quarter, the first in which Goldman broke out earnings for its “platform solutions” business unit, which includes GreenSky. The picture wasn’t pretty. <code>Revenues</code> were up, but the division lost $1.66 billion in 2022.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>工具软件</title>
+      <link>https://blog.ruizhou.cf/software/tool/</link>
+      <guid>https://blog.ruizhou.cf/software/tool/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">工具软件</source>
+      <description>目录 PowerToys (power-toys.md): Windows 实用工具合集; PasteEx (https://github.com/huiyadanli/PasteEx): Paste As File 把剪贴板的内容直接粘贴为文件; typora (https://www.typora.io/): 一个页面很漂亮的 Markdown 编...</description>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 目录</h2>
+<ul>
+<li>
+<p><a href="/software/tool/power-toys.html" target="blank">PowerToys</a>: Windows 实用工具合集</p>
+</li>
+<li>
+<p><a href="https://github.com/huiyadanli/PasteEx" target="_blank" rel="noopener noreferrer">PasteEx</a>: Paste As File 把剪贴板的内容直接粘贴为文件</p>
+</li>
+<li>
+<p><a href="https://www.typora.io/" target="_blank" rel="noopener noreferrer">typora</a>: 一个页面很漂亮的 Markdown 编辑器</p>
+</li>
+<li>
+<p><a href="https://potplayer.daum.net/?lang=zh_CN" target="_blank" rel="noopener noreferrer">Potplayer</a>: 心目中最 NB 的视频播放器，没有之一</p>
+</li>
+<li>
+<p><a href="/software/tool/terminal/" target="blank">Terminal</a>: Windows 终端</p>
+</li>
+<li>
+<p><a href="/software/tool/powershell.html" target="blank">PowerShell</a>: Windows 的命令行外壳程序和脚本环境</p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>PowerToys</title>
+      <link>https://blog.ruizhou.cf/software/tool/power-toys.html</link>
+      <guid>https://blog.ruizhou.cf/software/tool/power-toys.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">PowerToys</source>
+      <description>安装 您可以 直接下载 exe (https://github.com/microsoft/PowerToys/releases) 进行安装。 系统要求 Win10 版本 &amp;gt; 1803，已安装 .NET Core 3.1 Desktop Runtime 或者使用 WinGet: 功能 Power toys 主要功能: 图片取色; 窗口布局管理; 更多文...</description>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 安装</h2>
+<p>您可以 <a href="https://github.com/microsoft/PowerToys/releases" target="_blank" rel="noopener noreferrer">直接下载 exe</a> 进行安装。</p>
+<div class="hint-container info">
+<p class="hint-container-title">系统要求</p>
+<p>Win10 版本 &gt; 1803，已安装 .NET Core 3.1 Desktop Runtime</p>
+</div>
+<p>或者使用 WinGet:</p>
+<div class="language-bash" data-ext="sh"></div><h2> 功能</h2>
+<p>Power toys 主要功能:</p>
+<ul>
+<li>图片取色</li>
+<li>窗口布局管理</li>
+<li>更多文件预览支持</li>
+<li>图片尺寸调整</li>
+<li>快捷键管理器</li>
+<li>强大的文件重命名</li>
+<li>快捷键指南</li>
+<li>PowerToys Run</li>
+</ul>
+<h2> Color Picker</h2>
+<p>Color Picker 是一个可以在 Win10 系统全场景下使用的颜色提取工具，通过按键 <code>Win + Shift + C</code> 启动。</p>
+<p>您可以用光标在当前桌面上任意色块提取颜色，系统会自动复制颜色的 HEX 或 RGB 值。</p>
+<figure><figcaption>取色器演示</figcaption></figure>
+<h3> FancyZones</h3>
+<p>FancyZones 是一个实用的窗口增强管理器，它能让您快速地将程序窗口按照设置好的布局来调整大小和位置排布，快捷键为 <code>Win + `</code>。</p>
+<p>FancyZones 实现了更高效地利用屏幕的面积，管理切换大量窗口而不杂乱，是大屏幕用户必备的效率工具。</p>
+<p>当首次启动时，FancyZones 会要求您为当前显示器选择一个默认的布局。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>请注意 FancyZones 布局是基于显示器的，所以如果您有多个显示器，您需要分别设置它们。</p>
+</div>
+<figure><figcaption>布局选择</figcaption></figure>
+<p>如果上述布局选择不能满足您的需求，您也可以点击 "Custom" 选项卡进行自定义。</p>
+<figure><figcaption>自定义布局</figcaption></figure>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>更多详情，请见 <a href="https://github.com/microsoft/PowerToys/wiki/FancyZones-Overview" target="_blank" rel="noopener noreferrer">官方 Wiki</a></p>
+</div>
+<h2> 资源管理器插件</h2>
+<p>Preview Panel(预览窗格) 是一个轻量快速 Win10 的文件资源管理器插件，它能让您在无需打开文件的情况下，直接在文件资源管理器通过<strong>预览窗格</strong>预览文件内容，目前 <code>.svg</code> 与 <code>.md</code>。</p>
+<figure><figcaption>SVG 预览</figcaption></figure>
+<figure><figcaption>Markdown 预览</figcaption></figure>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>这两个文件的预览对开发者是十分有用的。</p>
+</div>
+<h2> 图片尺寸调整</h2>
+<p>Image Resizer 是一个右键菜单的快速图片尺寸大小调整工具，您只需右键点击图片文件，即可选择修改一张或批量修改多张图片的大小尺寸、旋转图片方向或者转换图片格式。</p>
+<figure><figcaption>图片尺寸调整</figcaption></figure>
+<p>软件预设了大/中/小/手机等不同的常用模版，单击确定即可一键完成图片尺寸的批量调整。您也可以点击 Settings 进入设置，按自己需求的尺寸大小、是否转换格式等来配置自己的常用“模版”。</p>
+<figure><figcaption>图片尺寸调整设置</figcaption></figure>
+<p>对于经常有多张图片的大小需要处理，而对专业性要求不高的用户来说，这款工具能替代专门的图像处理器软件。</p>
+<p>同时，用户不仅可以导出为其他格式，也可以设置默认编码器(在不能保存为原始格式时)。</p>
+<p>在导出时，也支持修改 PNG、JPEG 和 TIFF 的图片保存设置，与是否保留原来的最后修改日期。</p>
+<h2> 快捷键管理器</h2>
+<p>Keyboard Manager 是一款简单而又实用的键盘键位修改小工具。</p>
+<p>它的主要作用能帮您将键盘上的某个按键映射为另一个按键，甚至还能将一组快捷键映射为另一组。在一些特殊的情况下，它能帮您的大忙。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>Keyboard Manager 修改键位之后无需重启电脑即可立即生效。</p>
+</div>
+<h2> PowerRename</h2>
+<p>PowerRename 是一个实用的右键菜单“批量重命名工具”，可以支持搜索/替换以及正则表达式匹配，可以添加文件名前缀后缀等。</p>
+<p>为了避免出错，它在重命名之前可以让在界面上预览重命名后的结果，同时在重命名时，您可以很方便的选中全部您想要重命名的文件与文件夹，再排除指定的文件/文件夹。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">一些设置选项的解释</p>
+<ul>
+<li><strong>使用正则表达式</strong>: 默认搜索框中为文字匹配，启用后将认为搜索框中为正则表达式。</li>
+<li><strong>匹配所有出现的对象</strong>: 默认情况下只匹配项目中搜索文本的第一个实例，勾选后匹配所有。</li>
+<li><strong>枚举项</strong>: 勾选后，会在在操作中修改的文件名后追加一个数字后缀。例如: <code>mrhope.jpg</code> -&gt; <code>mrhope (1).jpg</code></li>
+</ul>
+</div>
+<h2> 快捷键指南</h2>
+<p>该工具负责提示您当前页面可用的 Windows 快捷键。(并不包含软件内的快捷键)。</p>
+<p>长按 Windows 键即可呼出此工具。</p>
+<figure><figcaption>快捷键指南</figcaption></figure>
+<h2> PowerToys Run</h2>
+<p>PowerToys Run 是一款快速启动器工具，按下 <code>Alt + Space</code> 即可随时呼出输入框。</p>
+<h3> PowerToys Run 功能</h3>
+<ul>
+<li>
+<p>搜索</p>
+<p>直接输入名字后，它能快速找到对应的软件、搜索文件/文件夹，并回车迅速打开它们。</p>
+<figure><figcaption>搜索</figcaption></figure>
+</li>
+<li>
+<p>运行软件切换</p>
+<p>PowerToys Run 也支持快速搜索当前正在运行的软件，并切换到它们的窗口去。</p>
+</li>
+<li>
+<p>终端</p>
+<p>输入 <code>&gt;</code> 加您需要执行的命令，即可快速调用终端执行。</p>
+<figure><figcaption>终端命令</figcaption></figure>
+</li>
+<li>
+<p>简单计算</p>
+<p>您可以直接输入简单的数学表达式，PowerToys Run 会直接返回结果。</p>
+<figure><figcaption>简单计算</figcaption></figure>
+</li>
+</ul>
+<h3> 快捷键</h3>
+<table>
+<thead>
+<tr>
+<th>捷径</th>
+<th>行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Alt + Space</code></td>
+<td>打开或隐藏 PowerToys Run</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>隐藏 PowerToys Run</td>
+</tr>
+<tr>
+<td><code>Ctrl + Shift + Enter</code></td>
+<td>(仅适用于应用程序)以管理员身份打开所选的应用程序</td>
+</tr>
+<tr>
+<td><code>Ctrl + Shift + E</code></td>
+<td>(仅适用于应用程序和文件)在文件资源管理器中打开包含文件夹</td>
+</tr>
+<tr>
+<td><code>Ctrl + C</code></td>
+<td>(仅适用于文件夹和文件)复制路径位置</td>
+</tr>
+<tr>
+<td><code>Tab</code></td>
+<td>浏览搜索结果和上下文菜单按钮</td>
+</tr>
+</tbody>
+</table>
+<h3> 过滤符</h3>
+<p>这些将迫使 PowerToys 只运行目标插件。</p>
+<table>
+<thead>
+<tr>
+<th>过滤符</th>
+<th>行动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>=</code></td>
+<td>仅计算器。</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>仅文件搜索。</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>仅搜索安装应用</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>仅网址。</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>仅运行进程。</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>仅 Shell 命令。</td>
+</tr>
+</tbody>
+</table>
+<h2> 视频音频静音</h2>
+<p>使用相机时，您会在屏幕上的特定位置看到一个摄像头与麦克风开启状态的对话框，您可以通过单机或一下快捷键改变它们的启用状态。</p>
+<ul>
+<li><code>Win + N</code>: 同时切换音频和视频</li>
+<li><code>Win + Shift + O</code>: 切换视频</li>
+<li><code>Win + Shift + A</code>: 切换麦克风</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Windows PowerShell</title>
+      <link>https://blog.ruizhou.cf/software/tool/powershell.html</link>
+      <guid>https://blog.ruizhou.cf/software/tool/powershell.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">Windows PowerShell</source>
+      <description>Powershell (Windows Powershell)是 Microsoft 为 Windows 设计的新的命令行程序，这个 Windows 内置的命令行 shell 包括交互式提示和脚本环境，它们可以独立使用也可以交互使用。</description>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Powershell (Windows Powershell)是 Microsoft 为 Windows 设计的新的命令行程序，这个 Windows 内置的命令行 shell 包括交互式提示和脚本环境，它们可以独立使用也可以交互使用。</p>
+<!-- more -->
+<p>我们平时所见的大多数的脚本(bat,perl,bash,sh)，接受(输入)和返回(输出)的都是文本。Powershell 是在 .Net 公共语言运行时(CLR-Common Language Runtime)<a href="http://xn--0tr.Net" target="_blank" rel="noopener noreferrer">和.Net</a> Framework 的基础上构建的，所以 Powershell <a href="http://xn--onq73j9bw6a06gxu1ajw4e.Net" target="_blank" rel="noopener noreferrer">可以接受和返回.Net</a> 对象。也就是说，Powershell 是面向对象的脚本语言。</p>
+<p>举个例子，如果其它的脚本语言是 C 语言(低级)，那么 Powershell 就是 Java 或是 C#(高级)。面向对象的能力使 Powershell 相比其它脚本语言有更高的开发效率，脚本更容易维护，更容易实现模块化和复用。</p>
+<p>PowerShell 引入了 cmdlet 的概念(cmdlet 读作“command-let”,一看就是 cmd 的超集，事实也是如此，所有 cmd 命令都可以在 Powershell 中执行)，这是内置到 shell 中的一个简单的单一功能命令行工具。相比其它 shell，PowerShell 除了可以对计算机上文件系统的访问。还可以访问其他数据存储，如注册表和数字签名证书存储，就像访问文件系统一样容易。</p>
+<h2> 特点</h2>
+<p>Powershell 提供了丰富的内置命令，相比其它 shell 尤其独特的优势: 您不必抛弃自己惯用的工具、命令，在 Powershell 中可以使用所有的 cmd 命令。</p>
+<p>Powershell 不处理文本(不把文本当做文本处理，<a href="http://xn--cyqv87a.Net" target="_blank" rel="noopener noreferrer">当做.Net</a> 对象处理)，相反，它处理基于 .Net Framework 平台的对象。</p>
+<p>Powershell 附带了具有一致格式(动词-名词)的大量内置命令。</p>
+<p>所有的 Powershell 命令都使用同一命令分析程序，而不是每个工具(命令)使用不同的分析程序，可以同时学习大量的命令。</p>
+<h2> 官方教程</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/zh-cn/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1" target="_blank" rel="noopener noreferrer">官方教程</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>高频词汇</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
+      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 高频词汇</h2>
+<p>枚举很多常用的词汇，短语搭配等</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>词根词缀</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
+      <description>常用词根词缀 枚举很多常用的词根词缀</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
+<p>枚举很多常用的词根词缀</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>几何</title>
       <link>https://blog.ruizhou.cf/software/comsol/geometry/</link>
       <guid>https://blog.ruizhou.cf/software/comsol/geometry/</guid>
@@ -4443,321 +4466,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 <p>有的求解器可以拆分成数十个线程并行计算，这种情况下适合使用服务器(核数多主频不高)。</p>
 <p>有关于这一情况的具体介绍，请查阅 <a href="http://cn.comsol.com/multiphysics/high-performance-computing" target="_blank" rel="noopener noreferrer">高性能计算(HPC)</a></p>
 </div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Windows Terminal</title>
-      <link>https://blog.ruizhou.cf/software/tool/terminal/</link>
-      <guid>https://blog.ruizhou.cf/software/tool/terminal/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">Windows Terminal</source>
-      <description>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</description>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</p>
-<!-- more -->
-<figure><figcaption>Windows Terminal</figcaption></figure>
-<h2> 特点</h2>
-<ul>
-<li>
-<p>多选项卡与窗格</p>
-<p>可以同时运行多个终端并自由布局与切换</p>
-</li>
-<li>
-<p>自定义方案和配置</p>
-<p>可在 Windows Terminal 中使用多种自定义命令，获得更加自然的体验。 如果不喜欢特定的键盘快捷方式，可以将其更改为您喜欢的方式。</p>
-</li>
-<li>
-<p>强大的可配置主题</p>
-<p>可以自由配置 Windows Terminal 的配色方案</p>
-<p>可以在 Windows Terminal 窗口中显示背景图像和 GIF</p>
-</li>
-<li>
-<p>扩展性，支持连接众多平台</p>
-<p>任何具有命令行接口的应用程序都可以在 Windows Terminal 中运行。 这包括从 PowerShell 和命令提示符到 Azure Cloud Shell 和任何 WSL 分发 (如 Ubuntu 或 Oh-My-Zsh) 的所有应用程序。</p>
-</li>
-<li>
-<p>Unicode 和 UTF-8 字符支持</p>
-<p>Windows Terminal 可以显示 Unicode 和 UTF-8 字符，如各种语言的表情符号和字符。</p>
-</li>
-<li>
-<p>GPU 加速文本呈现引擎</p>
-<p>Windows Terminal 使用 GPU 来呈现其文本，从而提供比默认 Windows 命令行体验更好的性能。</p>
-</li>
-<li>
-<p>开源</p>
-</li>
-</ul>
-<h2> 教程</h2>
-<ul>
-<li><a href="/software/tool/terminal/get-started.html" target="blank">快速上手</a></li>
-<li><a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a></li>
-</ul>
-<h2> 官方文档</h2>
-<ul>
-<li><a href="https://aka.ms/terminal-documentation" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>快速上手</title>
-      <link>https://blog.ruizhou.cf/software/tool/terminal/get-started.html</link>
-      <guid>https://blog.ruizhou.cf/software/tool/terminal/get-started.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">快速上手</source>
-      <description>安装 您可以通过 Microsoft Store (https://aka.ms/terminal) 进行安装，同样您可以访问 GitHub release (https://github.com/microsoft/terminal/releases/) 下载任意版本可执行文件。 从 GitHub 安装，终端将不会自动更新为新版本。 使用 打开终端时...</description>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 安装</h2>
-<p>您可以通过 <a href="https://aka.ms/terminal" target="_blank" rel="noopener noreferrer">Microsoft Store</a> 进行安装，同样您可以访问 <a href="https://github.com/microsoft/terminal/releases/" target="_blank" rel="noopener noreferrer">GitHub release</a> 下载任意版本可执行文件。</p>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>从 GitHub 安装，终端将不会自动更新为新版本。</p>
-</div>
-<h2> 使用</h2>
-<p>打开终端时，Windows Terminal 会在打开的选项卡中通过 PowerShell 作为默认配置文件启动。</p>
-<p>如果已安装 WSL(Windows Subsystem for Linux) 发行版或多个版本的 PowerShell，终端将自动为您创建配置文件。</p>
-<h3> 打开新选项卡</h3>
-<p>您可以使用 <code>Ctrl + Shift + T</code> 快捷键或选择 + (加号)按钮，打开默认配置文件的新选项卡。</p>
-<p>若要打开其他配置文件，请选择 + 按钮旁的 ˅(箭头)打开下拉菜单，从中选择要打开的配置文件。</p>
-<figure><figcaption>下拉菜单</figcaption></figure>
-<h3> 打开新窗格</h3>
-<p>可以使用窗格并行运行多个 shell。 若要打开窗格，可以使用 <code>Alt + Shift + D</code>。 此键绑定将打开焦点配置文件的重复窗格。</p>
-<h3> 配置</h3>
-<p>若要自定义 Windows Terminal 的设置，请在下拉菜单中选择“设置”。 这会在默认文本编辑器中打开 settings.json 文件。</p>
-<p>终端支持自定义影响整个应用程序的全局属性、影响每个配置文件的设置的配置文件属性以及允许您使用键盘与终端交互的键绑定。</p>
-<div class="hint-container info">
-<p class="hint-container-title">命令行参数</p>
-<p>可以使用命令行参数在特定配置中启动终端。 这些参数允许通过自定义配置文件设置打开具有特定选项卡和窗格的终端。</p>
-</div>
-<p>详情请见 <a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a>。</p>
-<h2> 命令行</h2>
-<p>可以使用 <code>wt.exe</code> 从命令行打开 Windows 终端的新实例。 还可以改为使用执行别名 <code>wt</code>。</p>
-<h3> 语法</h3>
-<p><code>wt</code> 命令行接受两种类型的值: “选项”和“命令” 。 “选项”是一系列标志和其他参数，可以将 <code>wt</code> 命令行的行为作为一个整体来控制。 “命令”提供应该实现的操作或操作列表(以分号分隔)。 如果未指定命令，则默认情况下会将命令指定为 <code>new-tab</code>。</p>
-<div class="language-bash" data-ext="sh"></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>若要显示列出可用命令行参数的帮助消息，请输入 <code>wt -h</code></p>
-</div>
-<h3> 选项和命令</h3>
-<p>下面是 wt 命令行支持的命令和选项的完整列表。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>--help</code>、<code>-h</code>、<code>-?</code>、<code>/?</code></td>
-<td>显示帮助消息。</td>
-</tr>
-<tr>
-<td><code>--maximized</code>、<code>-M</code></td>
-<td>以最大化形式启动终端。</td>
-</tr>
-<tr>
-<td><code>--fullscreen</code>、<code>-F</code></td>
-<td>以全屏形式启动终端。</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>参数</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>new-tab</code></td>
-<td><code>--profile, -p profile-name</code>、<code>--startingDirectory, -d starting-directory</code>、<code>commandline</code>、<code>--title</code></td>
-<td>创建新选项卡。</td>
-</tr>
-<tr>
-<td><code>split-pane</code></td>
-<td><code>-H, --horizontal</code>、<code>-V, --vertical</code>、<code>--profile, -p profile-name</code>、<code>--startingDirectory, -d starting-directory</code>、<code>commandline</code>、<code>--title</code></td>
-<td>拆分新窗格。</td>
-</tr>
-<tr>
-<td><code>focus-tab</code></td>
-<td><code>--target</code>, <code>-t</code> <code>tab-index</code></td>
-<td>聚焦于特定选项卡。</td>
-</tr>
-</tbody>
-</table>
-<h3> 参数</h3>
-<ul>
-<li>
-<p><code>-p</code> 标志用于指定应打开的 Windows 终端配置文件。</p>
-<details class="hint-container details"><summary>例子</summary>
-<p>打开 Ubuntu 20.04:</p>
-<div class="language-bash" data-ext="sh"></div></details>
-</li>
-<li>
-<p><code>-d</code> 标志用于指定起始目录</p>
-<details class="hint-container details"><summary>例子</summary>
-<p>设置起始目录为 <code>D:\</code>:</p>
-<div class="language-bash" data-ext="sh"></div></details>
-</li>
-</ul>
-<h2> 命令面板</h2>
-<p>通过命令面板，可以查看可以在 Windows Terminal 中运行的操作。</p>
-<p>您可以通过键入 <code>Ctrl + Shift + P</code> 来调用命令面板。您可以将 <code>commandPalette</code> 命令添加到设置文件中的 <code>actions</code> 中进行自定义。</p>
-<h3> 向命令添加图标</h3>
-<p>您可以通过在配置中添加 <code>icon</code> 为您的命令添加图标。图标可以是图像的路径，<a href="https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font" target="_blank" rel="noopener noreferrer">Segoe MDL2 Assets</a> 中的符号或任何字符，包括表情符号。</p>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 嵌套命令</h3>
-<p>嵌套命令使您可以将多个命令分组在命令面板中的一项下。下面的示例将字体大小调整命令归为一个名为“更改字体大小...”的命令选项板项。</p>
-<div class="language-json" data-ext="json"></div><h3> 可迭代的命令</h3>
-<p>可迭代的命令使您可以同时创建多个命令，这些命令是从设置中定义的其他对象生成的。当前，您可以为配置文件和配色方案创建可迭代的命令。在运行时，对于给定类型的每个对象，这些命令将扩展为一个命令。</p>
-<p>当前，您可以遍历以下属性:</p>
-<table>
-<thead>
-<tr>
-<th>iterateOn</th>
-<th>属性</th>
-<th>属性语法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>profiles</code></td>
-<td><code>name</code></td>
-<td><code>"name": "${profile.name}"</code></td>
-</tr>
-<tr>
-<td><code>profiles</code></td>
-<td><code>icon</code></td>
-<td><code>"icon": "${profile.icon}"</code></td>
-</tr>
-<tr>
-<td><code>schemes</code></td>
-<td><code>name</code></td>
-<td><code>"name": "${scheme.name}"</code></td>
-</tr>
-</tbody>
-</table>
-<h3> 隐藏命令</h3>
-<p>如果要将命令保留在键绑定列表中，但又不想让它出现在命令选项板中，则可以通过将 <code>name</code> 设置为 <code>null</code> 来隐藏它。</p>
-<details class="hint-container details"><summary>例子</summary>
-<p>在命令面板中隐藏“新建选项卡”操作:</p>
-<div class="language-json" data-ext="json"></div></details>
-<h2> 搜索</h2>
-<p>您可以使用 <code>Ctrl + F</code> 快捷键在终端中进行搜索。</p>
-<h2> 窗格</h2>
-<p>通过窗格，您可以在同一个选项卡中并行运行多个命令行应用程序。这可以最大程度地减少在选项卡之间切换的需求，以便您一次查看多个提示符。</p>
-<h3> 创建新窗格</h3>
-<ul>
-<li><code>Alt + Shift+ +</code> 创建默认配置文件的新垂直窗格，</li>
-<li><code>Alt + Shift+ -</code> 创建默认配置文件的新水平窗格，</li>
-</ul>
-<p>如果希望通过下拉菜单打开新窗格，可以按住 <code>Alt</code> 并单击所需的配置文件。 这会将活动窗口或窗格拆分为所选配置文件的新窗格。</p>
-<blockquote>
-<p>此拆分模式按具有最长边缘(可用于创建窗格)的方向进行拆分。</p>
-</blockquote>
-<h3> 在窗格间进行切换</h3>
-<p>按住 alt 键，则可以使用箭头键在窗格之间移动焦点。</p>
-<h3> 调整窗格大小</h3>
-<p>可以按住 <code>Alt + Shift</code> 并使用箭头键调整焦点窗格的大小，从而调整窗格的大小。</p>
-<h3> 关闭窗格</h3>
-<p>可以键入 <code>Ctrl + Shift + W</code> 来关闭焦点窗格。</p>
-<p>如果只有一个窗格，<code>Ctrl + Shift + W</code> 将关闭该选项卡。</p>
-<p>与往常一样，关闭最后一个选项卡将关闭该窗口。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>自定义设置</title>
-      <link>https://blog.ruizhou.cf/software/tool/terminal/settings.html</link>
-      <guid>https://blog.ruizhou.cf/software/tool/terminal/settings.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">自定义设置</source>
-      <description>配置文件代表着您可以在 Windows Terminal 中配置的不同的命令行环境。默认情况下，每个配置文件使用不同的命令行可执行程序，但是您可以根据自己的喜好，创建任意数量的使用同一可执行程序的配置文件。每个配置文件可以有自己的定制项以帮助您区分它们，并可以自由定制。 可以使用快捷键 Ctrl + Shift + * 来打开对应的配置文件，可使用 Ctrl + , 打开 settings.json 文件，来进行个性化调整和默认设置更改等设置。</description>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>配置文件代表着您可以在 Windows Terminal 中配置的不同的命令行环境。默认情况下，每个配置文件使用不同的命令行可执行程序，但是您可以根据自己的喜好，创建任意数量的使用同一可执行程序的配置文件。每个配置文件可以有自己的定制项以帮助您区分它们，并可以自由定制。</p>
-<p>可以使用快捷键 <code>Ctrl + Shift + *</code> 来打开对应的配置文件，可使用 <code>Ctrl + ,</code> 打开 settings.json 文件，来进行个性化调整和默认设置更改等设置。</p>
-<!-- more -->
-<div class="hint-container tip">
-<p class="hint-container-title">默认设置</p>
-<p>您可以通过按住 Alt 键并点击下拉菜单中的 Settings 按钮打开 defaults.json。该文件由 Terminal 自动生成，展示了 Windows Terminal 所有默认设置及其值。更改此文件是无效的。</p>
-</div>
-<p>settings.json 文件分为四个主要部分:</p>
-<ol>
-<li>全局设置对象，它位于 JSON 文件的顶部。全局设置将影响整个应用程序。</li>
-<li>配置文件设置，由 <code>profiles</code> 对象控制。负责控制每个配置文件。</li>
-<li>配色方案，由 <code>schemes</code> 数组控制。</li>
-<li>自定义操作，由 <code>actions</code> 数组控制</li>
-</ol>
-<h2> 全局设置</h2>
-<p>全局设置会将影响整个终端窗口。</p>
-<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-global-settings" target="_blank" rel="noopener noreferrer">全局设置</a>。</p>
-<figure><figcaption>全局设置</figcaption></figure>
-<h3> 默认配置文件</h3>
-<p>默认配置文件为 Windows PowerShell。您可以通过在 settings.json 文件中将 <code>defaultProfile</code> 设置为首选配置文件的名称或 GUID 来更改默认配置文件。</p>
-<div class="language-json" data-ext="json"></div><h2> 配置文件设置</h2>
-<p><code>profiles</code> 对象描述配置文件。它分为两个部分: <code>defaults</code> 和 <code>list</code>。</p>
-<ul>
-<li>
-<p><code>defaults</code> 对象中的配置文件会应用于列表中的所有项目。</p>
-</li>
-<li>
-<p><code>list</code> 包含代表配置文件的每个配置文件对象，这些是出现在 Windows Terminal 下拉菜单中的项目。应用于 <code>list</code> 中各个配置文件的设置会覆盖 <code>defaults</code> 部分中应用的设置。</p>
-</li>
-</ul>
-<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-profile-settings" target="_blank" rel="noopener noreferrer">配置文件设置</a>。</p>
-<figure><figcaption>配置文件设置</figcaption></figure>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<ul>
-<li>
-<p>您可以在 <code>defaults</code> 中设置 <code>fontFace</code> 控制终端的字体。</p>
-</li>
-<li>
-<p>您可以在 Powershell 配置文件中添加 <code>commandline</code> 为 <code>&lt;PowerShell 地址&gt; -nologo</code> 来去除 powershell 启动时的 logo 显示。(默认地址为: <code>C:/Program Files/PowerShell/7/pwsh.exe</code>)</p>
-</li>
-<li>
-<p>您可以通过设置 <code>backgroundImage</code> 自定义背景图片，通过 <code>backgroundImageOpacity</code> 自定义背景透明度，通过 <code>useAcrylic</code> 开启或关闭毛玻璃效果。</p>
-</li>
-</ul>
-</div>
-<h3> 新增配置文件</h3>
-<p>Windows Terminal 会自动为 PowerShell 和 WSL 分发版创建配置文件。</p>
-<p>您也可以手动添加新的配置文件: 只需生成一个新的 <code>guid</code>，提供一个 <code>name</code>，并为 <code>commandline</code> 属性提供可执行程序。</p>
-<div class="hint-container info">
-<p class="hint-container-title">WSL</p>
-<p>您可以通过 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-2004-lts/9n6svws3rx71#activetab=pivot:overviewtab" target="_blank" rel="noopener noreferrer">Microsoft 应用商店</a> 安装 Ubuntu。之后便可以在 terminal 上运行 Ubuntu WSL 环境。</p>
-</div>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>您不能从动态生成的配置文件中复制 <code>source</code> 属性，否则 Windows Terminal 会忽略此配置文件。您必须使用 <code>commandline</code> 替换 <code>source</code> 并提供可执行程序，以便复制一个动态生成的配置文件。</p>
-</div>
-<h2> 配色方案</h2>
-<p>您可以在 <code>schemes</code> 数组中配置自定义配色方案。它们是使用以下格式写入的:</p>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-color-schemes" target="_blank" rel="noopener noreferrer">配置文件设置</a>。</p>
-<h3> 自带的配色方案</h3>
-<p>Windows Terminal 在 defaults.json 文件中包含了一些配色方案。如果要在一个命令行配置文件中设置配色方案，请添加 <code>colorScheme</code> 属性，并将配色方案的 <code>name</code> 作为值。</p>
-<div class="language-json" data-ext="json"></div><p>查看各配色方案效果，请见 <a href="https://aka.ms/terminal-color-schemes#included-color-schemes" target="_blank" rel="noopener noreferrer">包含的配色方案</a>。</p>
-<h3> 自定义配色方案</h3>
-<p>下面提供几个主题色工具:</p>
-<ul>
-<li><a href="https://terminal.sexy/" target="_blank" rel="noopener noreferrer">terminal.sexy</a></li>
-<li><a href="https://windowsterminalthemes.dev/" target="_blank" rel="noopener noreferrer">Windows Terminal Themes</a></li>
-<li><a href="https://terminalsplash.com/" target="_blank" rel="noopener noreferrer">TerminalSplash</a>，</li>
-</ul>
-<h2> 自定义操作</h2>
-<p>您可以在 Windows 终端中创建自定义操作，以控制与终端的交互方式。这些操作将自动添加到命令面板。</p>
-<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-keybindings" target="_blank" rel="noopener noreferrer">自定义操作设置</a>。</p>
-<figure><figcaption>自定义操作</figcaption></figure>
-<p>自定义操作可以设置为以下格式:</p>
-<ul>
-<li>
-<p>无参数命令</p>
-<div class="language-json" data-ext="json"></div><details class="hint-container details"><summary>例子</summary>
-<div class="language-json" data-ext="json"></div></details>
-</li>
-<li>
-<p>有参数命令</p>
-<div class="language-json" data-ext="json"></div><details class="hint-container details"><summary>例子</summary>
-<div class="language-json" data-ext="json"></div></details>
-</li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -5229,6 +4937,321 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 <p>使用该设置 <code>npm.enableScriptExplorer</code>，您可以启用一个浏览器，该浏览器显示在工作空间中定义的脚本。</p>
 <p>在资源管理器中，您可以在编辑器中打开脚本，将其作为任务运行，然后使用节点调试器启动它(当脚本定义了诸如 <code>--inspect-brk</code> 的调试选项时)。单击时的默认操作是打开脚本。要单击运行脚本，请设置 <code>npm.scriptExplorerAction</code> 为 <strong>运行</strong>。使用 <code>npm.exclude</code> 设置可以排除 <code>package.json</code> 特定文件夹中包含的文件中的脚本。</p>
 <p>通过设置 <code>npm.enableRunFromFolder</code>，您可以启用从文件资源管理器的上下文菜单中为文件夹运行 npm 脚本的功能。选择文件夹后，该设置将启用命令 <strong>在文件夹中运行 npm 脚本...</strong>。该命令显示此文件夹中包含的 npm 脚本的快速选择列表，您可以选择要作为任务执行的脚本。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Windows Terminal</title>
+      <link>https://blog.ruizhou.cf/software/tool/terminal/</link>
+      <guid>https://blog.ruizhou.cf/software/tool/terminal/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">Windows Terminal</source>
+      <description>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</description>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</p>
+<!-- more -->
+<figure><figcaption>Windows Terminal</figcaption></figure>
+<h2> 特点</h2>
+<ul>
+<li>
+<p>多选项卡与窗格</p>
+<p>可以同时运行多个终端并自由布局与切换</p>
+</li>
+<li>
+<p>自定义方案和配置</p>
+<p>可在 Windows Terminal 中使用多种自定义命令，获得更加自然的体验。 如果不喜欢特定的键盘快捷方式，可以将其更改为您喜欢的方式。</p>
+</li>
+<li>
+<p>强大的可配置主题</p>
+<p>可以自由配置 Windows Terminal 的配色方案</p>
+<p>可以在 Windows Terminal 窗口中显示背景图像和 GIF</p>
+</li>
+<li>
+<p>扩展性，支持连接众多平台</p>
+<p>任何具有命令行接口的应用程序都可以在 Windows Terminal 中运行。 这包括从 PowerShell 和命令提示符到 Azure Cloud Shell 和任何 WSL 分发 (如 Ubuntu 或 Oh-My-Zsh) 的所有应用程序。</p>
+</li>
+<li>
+<p>Unicode 和 UTF-8 字符支持</p>
+<p>Windows Terminal 可以显示 Unicode 和 UTF-8 字符，如各种语言的表情符号和字符。</p>
+</li>
+<li>
+<p>GPU 加速文本呈现引擎</p>
+<p>Windows Terminal 使用 GPU 来呈现其文本，从而提供比默认 Windows 命令行体验更好的性能。</p>
+</li>
+<li>
+<p>开源</p>
+</li>
+</ul>
+<h2> 教程</h2>
+<ul>
+<li><a href="/software/tool/terminal/get-started.html" target="blank">快速上手</a></li>
+<li><a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a></li>
+</ul>
+<h2> 官方文档</h2>
+<ul>
+<li><a href="https://aka.ms/terminal-documentation" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>快速上手</title>
+      <link>https://blog.ruizhou.cf/software/tool/terminal/get-started.html</link>
+      <guid>https://blog.ruizhou.cf/software/tool/terminal/get-started.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">快速上手</source>
+      <description>安装 您可以通过 Microsoft Store (https://aka.ms/terminal) 进行安装，同样您可以访问 GitHub release (https://github.com/microsoft/terminal/releases/) 下载任意版本可执行文件。 从 GitHub 安装，终端将不会自动更新为新版本。 使用 打开终端时...</description>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 安装</h2>
+<p>您可以通过 <a href="https://aka.ms/terminal" target="_blank" rel="noopener noreferrer">Microsoft Store</a> 进行安装，同样您可以访问 <a href="https://github.com/microsoft/terminal/releases/" target="_blank" rel="noopener noreferrer">GitHub release</a> 下载任意版本可执行文件。</p>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>从 GitHub 安装，终端将不会自动更新为新版本。</p>
+</div>
+<h2> 使用</h2>
+<p>打开终端时，Windows Terminal 会在打开的选项卡中通过 PowerShell 作为默认配置文件启动。</p>
+<p>如果已安装 WSL(Windows Subsystem for Linux) 发行版或多个版本的 PowerShell，终端将自动为您创建配置文件。</p>
+<h3> 打开新选项卡</h3>
+<p>您可以使用 <code>Ctrl + Shift + T</code> 快捷键或选择 + (加号)按钮，打开默认配置文件的新选项卡。</p>
+<p>若要打开其他配置文件，请选择 + 按钮旁的 ˅(箭头)打开下拉菜单，从中选择要打开的配置文件。</p>
+<figure><figcaption>下拉菜单</figcaption></figure>
+<h3> 打开新窗格</h3>
+<p>可以使用窗格并行运行多个 shell。 若要打开窗格，可以使用 <code>Alt + Shift + D</code>。 此键绑定将打开焦点配置文件的重复窗格。</p>
+<h3> 配置</h3>
+<p>若要自定义 Windows Terminal 的设置，请在下拉菜单中选择“设置”。 这会在默认文本编辑器中打开 settings.json 文件。</p>
+<p>终端支持自定义影响整个应用程序的全局属性、影响每个配置文件的设置的配置文件属性以及允许您使用键盘与终端交互的键绑定。</p>
+<div class="hint-container info">
+<p class="hint-container-title">命令行参数</p>
+<p>可以使用命令行参数在特定配置中启动终端。 这些参数允许通过自定义配置文件设置打开具有特定选项卡和窗格的终端。</p>
+</div>
+<p>详情请见 <a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a>。</p>
+<h2> 命令行</h2>
+<p>可以使用 <code>wt.exe</code> 从命令行打开 Windows 终端的新实例。 还可以改为使用执行别名 <code>wt</code>。</p>
+<h3> 语法</h3>
+<p><code>wt</code> 命令行接受两种类型的值: “选项”和“命令” 。 “选项”是一系列标志和其他参数，可以将 <code>wt</code> 命令行的行为作为一个整体来控制。 “命令”提供应该实现的操作或操作列表(以分号分隔)。 如果未指定命令，则默认情况下会将命令指定为 <code>new-tab</code>。</p>
+<div class="language-bash" data-ext="sh"></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>若要显示列出可用命令行参数的帮助消息，请输入 <code>wt -h</code></p>
+</div>
+<h3> 选项和命令</h3>
+<p>下面是 wt 命令行支持的命令和选项的完整列表。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--help</code>、<code>-h</code>、<code>-?</code>、<code>/?</code></td>
+<td>显示帮助消息。</td>
+</tr>
+<tr>
+<td><code>--maximized</code>、<code>-M</code></td>
+<td>以最大化形式启动终端。</td>
+</tr>
+<tr>
+<td><code>--fullscreen</code>、<code>-F</code></td>
+<td>以全屏形式启动终端。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new-tab</code></td>
+<td><code>--profile, -p profile-name</code>、<code>--startingDirectory, -d starting-directory</code>、<code>commandline</code>、<code>--title</code></td>
+<td>创建新选项卡。</td>
+</tr>
+<tr>
+<td><code>split-pane</code></td>
+<td><code>-H, --horizontal</code>、<code>-V, --vertical</code>、<code>--profile, -p profile-name</code>、<code>--startingDirectory, -d starting-directory</code>、<code>commandline</code>、<code>--title</code></td>
+<td>拆分新窗格。</td>
+</tr>
+<tr>
+<td><code>focus-tab</code></td>
+<td><code>--target</code>, <code>-t</code> <code>tab-index</code></td>
+<td>聚焦于特定选项卡。</td>
+</tr>
+</tbody>
+</table>
+<h3> 参数</h3>
+<ul>
+<li>
+<p><code>-p</code> 标志用于指定应打开的 Windows 终端配置文件。</p>
+<details class="hint-container details"><summary>例子</summary>
+<p>打开 Ubuntu 20.04:</p>
+<div class="language-bash" data-ext="sh"></div></details>
+</li>
+<li>
+<p><code>-d</code> 标志用于指定起始目录</p>
+<details class="hint-container details"><summary>例子</summary>
+<p>设置起始目录为 <code>D:\</code>:</p>
+<div class="language-bash" data-ext="sh"></div></details>
+</li>
+</ul>
+<h2> 命令面板</h2>
+<p>通过命令面板，可以查看可以在 Windows Terminal 中运行的操作。</p>
+<p>您可以通过键入 <code>Ctrl + Shift + P</code> 来调用命令面板。您可以将 <code>commandPalette</code> 命令添加到设置文件中的 <code>actions</code> 中进行自定义。</p>
+<h3> 向命令添加图标</h3>
+<p>您可以通过在配置中添加 <code>icon</code> 为您的命令添加图标。图标可以是图像的路径，<a href="https://docs.microsoft.com/en-us/windows/uwp/design/style/segoe-ui-symbol-font" target="_blank" rel="noopener noreferrer">Segoe MDL2 Assets</a> 中的符号或任何字符，包括表情符号。</p>
+<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 嵌套命令</h3>
+<p>嵌套命令使您可以将多个命令分组在命令面板中的一项下。下面的示例将字体大小调整命令归为一个名为“更改字体大小...”的命令选项板项。</p>
+<div class="language-json" data-ext="json"></div><h3> 可迭代的命令</h3>
+<p>可迭代的命令使您可以同时创建多个命令，这些命令是从设置中定义的其他对象生成的。当前，您可以为配置文件和配色方案创建可迭代的命令。在运行时，对于给定类型的每个对象，这些命令将扩展为一个命令。</p>
+<p>当前，您可以遍历以下属性:</p>
+<table>
+<thead>
+<tr>
+<th>iterateOn</th>
+<th>属性</th>
+<th>属性语法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>profiles</code></td>
+<td><code>name</code></td>
+<td><code>"name": "${profile.name}"</code></td>
+</tr>
+<tr>
+<td><code>profiles</code></td>
+<td><code>icon</code></td>
+<td><code>"icon": "${profile.icon}"</code></td>
+</tr>
+<tr>
+<td><code>schemes</code></td>
+<td><code>name</code></td>
+<td><code>"name": "${scheme.name}"</code></td>
+</tr>
+</tbody>
+</table>
+<h3> 隐藏命令</h3>
+<p>如果要将命令保留在键绑定列表中，但又不想让它出现在命令选项板中，则可以通过将 <code>name</code> 设置为 <code>null</code> 来隐藏它。</p>
+<details class="hint-container details"><summary>例子</summary>
+<p>在命令面板中隐藏“新建选项卡”操作:</p>
+<div class="language-json" data-ext="json"></div></details>
+<h2> 搜索</h2>
+<p>您可以使用 <code>Ctrl + F</code> 快捷键在终端中进行搜索。</p>
+<h2> 窗格</h2>
+<p>通过窗格，您可以在同一个选项卡中并行运行多个命令行应用程序。这可以最大程度地减少在选项卡之间切换的需求，以便您一次查看多个提示符。</p>
+<h3> 创建新窗格</h3>
+<ul>
+<li><code>Alt + Shift+ +</code> 创建默认配置文件的新垂直窗格，</li>
+<li><code>Alt + Shift+ -</code> 创建默认配置文件的新水平窗格，</li>
+</ul>
+<p>如果希望通过下拉菜单打开新窗格，可以按住 <code>Alt</code> 并单击所需的配置文件。 这会将活动窗口或窗格拆分为所选配置文件的新窗格。</p>
+<blockquote>
+<p>此拆分模式按具有最长边缘(可用于创建窗格)的方向进行拆分。</p>
+</blockquote>
+<h3> 在窗格间进行切换</h3>
+<p>按住 alt 键，则可以使用箭头键在窗格之间移动焦点。</p>
+<h3> 调整窗格大小</h3>
+<p>可以按住 <code>Alt + Shift</code> 并使用箭头键调整焦点窗格的大小，从而调整窗格的大小。</p>
+<h3> 关闭窗格</h3>
+<p>可以键入 <code>Ctrl + Shift + W</code> 来关闭焦点窗格。</p>
+<p>如果只有一个窗格，<code>Ctrl + Shift + W</code> 将关闭该选项卡。</p>
+<p>与往常一样，关闭最后一个选项卡将关闭该窗口。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>自定义设置</title>
+      <link>https://blog.ruizhou.cf/software/tool/terminal/settings.html</link>
+      <guid>https://blog.ruizhou.cf/software/tool/terminal/settings.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">自定义设置</source>
+      <description>配置文件代表着您可以在 Windows Terminal 中配置的不同的命令行环境。默认情况下，每个配置文件使用不同的命令行可执行程序，但是您可以根据自己的喜好，创建任意数量的使用同一可执行程序的配置文件。每个配置文件可以有自己的定制项以帮助您区分它们，并可以自由定制。 可以使用快捷键 Ctrl + Shift + * 来打开对应的配置文件，可使用 Ctrl + , 打开 settings.json 文件，来进行个性化调整和默认设置更改等设置。</description>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>配置文件代表着您可以在 Windows Terminal 中配置的不同的命令行环境。默认情况下，每个配置文件使用不同的命令行可执行程序，但是您可以根据自己的喜好，创建任意数量的使用同一可执行程序的配置文件。每个配置文件可以有自己的定制项以帮助您区分它们，并可以自由定制。</p>
+<p>可以使用快捷键 <code>Ctrl + Shift + *</code> 来打开对应的配置文件，可使用 <code>Ctrl + ,</code> 打开 settings.json 文件，来进行个性化调整和默认设置更改等设置。</p>
+<!-- more -->
+<div class="hint-container tip">
+<p class="hint-container-title">默认设置</p>
+<p>您可以通过按住 Alt 键并点击下拉菜单中的 Settings 按钮打开 defaults.json。该文件由 Terminal 自动生成，展示了 Windows Terminal 所有默认设置及其值。更改此文件是无效的。</p>
+</div>
+<p>settings.json 文件分为四个主要部分:</p>
+<ol>
+<li>全局设置对象，它位于 JSON 文件的顶部。全局设置将影响整个应用程序。</li>
+<li>配置文件设置，由 <code>profiles</code> 对象控制。负责控制每个配置文件。</li>
+<li>配色方案，由 <code>schemes</code> 数组控制。</li>
+<li>自定义操作，由 <code>actions</code> 数组控制</li>
+</ol>
+<h2> 全局设置</h2>
+<p>全局设置会将影响整个终端窗口。</p>
+<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-global-settings" target="_blank" rel="noopener noreferrer">全局设置</a>。</p>
+<figure><figcaption>全局设置</figcaption></figure>
+<h3> 默认配置文件</h3>
+<p>默认配置文件为 Windows PowerShell。您可以通过在 settings.json 文件中将 <code>defaultProfile</code> 设置为首选配置文件的名称或 GUID 来更改默认配置文件。</p>
+<div class="language-json" data-ext="json"></div><h2> 配置文件设置</h2>
+<p><code>profiles</code> 对象描述配置文件。它分为两个部分: <code>defaults</code> 和 <code>list</code>。</p>
+<ul>
+<li>
+<p><code>defaults</code> 对象中的配置文件会应用于列表中的所有项目。</p>
+</li>
+<li>
+<p><code>list</code> 包含代表配置文件的每个配置文件对象，这些是出现在 Windows Terminal 下拉菜单中的项目。应用于 <code>list</code> 中各个配置文件的设置会覆盖 <code>defaults</code> 部分中应用的设置。</p>
+</li>
+</ul>
+<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-profile-settings" target="_blank" rel="noopener noreferrer">配置文件设置</a>。</p>
+<figure><figcaption>配置文件设置</figcaption></figure>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<ul>
+<li>
+<p>您可以在 <code>defaults</code> 中设置 <code>fontFace</code> 控制终端的字体。</p>
+</li>
+<li>
+<p>您可以在 Powershell 配置文件中添加 <code>commandline</code> 为 <code>&lt;PowerShell 地址&gt; -nologo</code> 来去除 powershell 启动时的 logo 显示。(默认地址为: <code>C:/Program Files/PowerShell/7/pwsh.exe</code>)</p>
+</li>
+<li>
+<p>您可以通过设置 <code>backgroundImage</code> 自定义背景图片，通过 <code>backgroundImageOpacity</code> 自定义背景透明度，通过 <code>useAcrylic</code> 开启或关闭毛玻璃效果。</p>
+</li>
+</ul>
+</div>
+<h3> 新增配置文件</h3>
+<p>Windows Terminal 会自动为 PowerShell 和 WSL 分发版创建配置文件。</p>
+<p>您也可以手动添加新的配置文件: 只需生成一个新的 <code>guid</code>，提供一个 <code>name</code>，并为 <code>commandline</code> 属性提供可执行程序。</p>
+<div class="hint-container info">
+<p class="hint-container-title">WSL</p>
+<p>您可以通过 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-2004-lts/9n6svws3rx71#activetab=pivot:overviewtab" target="_blank" rel="noopener noreferrer">Microsoft 应用商店</a> 安装 Ubuntu。之后便可以在 terminal 上运行 Ubuntu WSL 环境。</p>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>您不能从动态生成的配置文件中复制 <code>source</code> 属性，否则 Windows Terminal 会忽略此配置文件。您必须使用 <code>commandline</code> 替换 <code>source</code> 并提供可执行程序，以便复制一个动态生成的配置文件。</p>
+</div>
+<h2> 配色方案</h2>
+<p>您可以在 <code>schemes</code> 数组中配置自定义配色方案。它们是使用以下格式写入的:</p>
+<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-color-schemes" target="_blank" rel="noopener noreferrer">配置文件设置</a>。</p>
+<h3> 自带的配色方案</h3>
+<p>Windows Terminal 在 defaults.json 文件中包含了一些配色方案。如果要在一个命令行配置文件中设置配色方案，请添加 <code>colorScheme</code> 属性，并将配色方案的 <code>name</code> 作为值。</p>
+<div class="language-json" data-ext="json"></div><p>查看各配色方案效果，请见 <a href="https://aka.ms/terminal-color-schemes#included-color-schemes" target="_blank" rel="noopener noreferrer">包含的配色方案</a>。</p>
+<h3> 自定义配色方案</h3>
+<p>下面提供几个主题色工具:</p>
+<ul>
+<li><a href="https://terminal.sexy/" target="_blank" rel="noopener noreferrer">terminal.sexy</a></li>
+<li><a href="https://windowsterminalthemes.dev/" target="_blank" rel="noopener noreferrer">Windows Terminal Themes</a></li>
+<li><a href="https://terminalsplash.com/" target="_blank" rel="noopener noreferrer">TerminalSplash</a>，</li>
+</ul>
+<h2> 自定义操作</h2>
+<p>您可以在 Windows 终端中创建自定义操作，以控制与终端的交互方式。这些操作将自动添加到命令面板。</p>
+<p>关于详细的配置项，请见 <a href="https://aka.ms/terminal-keybindings" target="_blank" rel="noopener noreferrer">自定义操作设置</a>。</p>
+<figure><figcaption>自定义操作</figcaption></figure>
+<p>自定义操作可以设置为以下格式:</p>
+<ul>
+<li>
+<p>无参数命令</p>
+<div class="language-json" data-ext="json"></div><details class="hint-container details"><summary>例子</summary>
+<div class="language-json" data-ext="json"></div></details>
+</li>
+<li>
+<p>有参数命令</p>
+<div class="language-json" data-ext="json"></div><details class="hint-container details"><summary>例子</summary>
+<div class="language-json" data-ext="json"></div></details>
+</li>
+</ul>
 ]]></content:encoded>
     </item>
   </channel>

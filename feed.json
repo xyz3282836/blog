@@ -13,6 +13,24 @@
   ],
   "items": [
     {
+      "title": "Number of women seeking business loans tripled in last 5 years",
+      "url": "https://blog.ruizhou.cf/english/everyday/2303080624.html",
+      "id": "https://blog.ruizhou.cf/english/everyday/2303080624.html",
+      "summary": "The number of women seeking loans to build their own businesses tripled over the past five years, credit research firm TransUnion Cibil said in a report on Monday. The study add...",
+      "content_html": "<p>The number of women seeking loans to build their own businesses tripled over the past five years, <code>credit research firm</code> TransUnion Cibil said in a report on Monday. The study added that the number of women <code>borrowers</code> grew at a <code>compounded</code> annual growth rate (<code>CAGR</code>) of 15 per cent during this period. That of male borrowers was up 11 per cent. “Our most recent analysis shows rapid growth in <code>credit</code> <code>uptake</code> by women across India’s <code>rural</code> and <code>semi-urban</code> geography. The share of women borrowers has increased from 25 per cent in 2017 to 28 per cent in 2022,” TransUnion Cibil said in the report.</p>\n<div class=\"hint-container info\">\n<p class=\"hint-container-title\">tips</p>\n<p>compound：复合的，混合的</p>\n<p>firm：公司，商号</p>\n<p><code>compounded</code> annual growth rate (<code>CAGR</code>) ：复合年增长率</p>\n<p>borrow：借用（borrow sth from sb/sw）</p>\n<p>uptake：举起，拿起</p>\n<p>credit uptake：信用贷款</p>\n</div>\n",
+      "date_published": "2023-03-08T06:24:00.000Z",
+      "date_modified": "2023-03-08T01:56:50.000Z",
+      "authors": [
+        {
+          "name": "ruizhou",
+          "url": "https://blog.ruizhou.cf"
+        }
+      ],
+      "tags": [
+        "英文"
+      ]
+    },
+    {
       "title": "Salah and Liverpool make history with seven-goal rout of Manchester United",
       "url": "https://blog.ruizhou.cf/english/everyday/2303071929.html",
       "id": "https://blog.ruizhou.cf/english/everyday/2303071929.html",
@@ -318,24 +336,6 @@
       ]
     },
     {
-      "title": "技术",
-      "url": "https://blog.ruizhou.cf/tech/",
-      "id": "https://blog.ruizhou.cf/tech/",
-      "summary": "目录 golang (go/README.md); yaml (yaml/README.md);",
-      "content_html": "<h2> 目录</h2>\n<ul>\n<li><a href=\"/tech/go/\" target=\"blank\">golang</a></li>\n<li><a href=\"/tech/yaml/\" target=\"blank\">yaml</a></li>\n</ul>\n",
-      "date_published": "2023-03-01T19:53:15.000Z",
-      "date_modified": "2023-03-01T19:53:15.000Z",
-      "authors": [
-        {
-          "name": "ruizhou",
-          "url": "https://blog.ruizhou.cf"
-        }
-      ],
-      "tags": [
-        "技术"
-      ]
-    },
-    {
       "title": "软件教程",
       "url": "https://blog.ruizhou.cf/software/",
       "id": "https://blog.ruizhou.cf/software/",
@@ -440,6 +440,24 @@
       "tags": []
     },
     {
+      "title": "技术",
+      "url": "https://blog.ruizhou.cf/tech/",
+      "id": "https://blog.ruizhou.cf/tech/",
+      "summary": "目录 golang (go/README.md); yaml (yaml/README.md);",
+      "content_html": "<h2> 目录</h2>\n<ul>\n<li><a href=\"/tech/go/\" target=\"blank\">golang</a></li>\n<li><a href=\"/tech/yaml/\" target=\"blank\">yaml</a></li>\n</ul>\n",
+      "date_published": "2023-03-01T19:53:15.000Z",
+      "date_modified": "2023-03-01T19:53:15.000Z",
+      "authors": [
+        {
+          "name": "ruizhou",
+          "url": "https://blog.ruizhou.cf"
+        }
+      ],
+      "tags": [
+        "技术"
+      ]
+    },
+    {
       "title": "Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam",
       "url": "https://blog.ruizhou.cf/english/everyday/2301311830.html",
       "id": "https://blog.ruizhou.cf/english/everyday/2301311830.html",
@@ -526,42 +544,6 @@
       ],
       "tags": [
         "英文"
-      ]
-    },
-    {
-      "title": "golang 语言",
-      "url": "https://blog.ruizhou.cf/tech/go/",
-      "id": "https://blog.ruizhou.cf/tech/go/",
-      "summary": "提示 正在完善中...",
-      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>正在完善中...</p>\n</div>\n<!-- more -->",
-      "date_published": "2023-03-01T19:53:15.000Z",
-      "date_modified": "2023-03-04T12:06:07.000Z",
-      "authors": [
-        {
-          "name": "ruizhou",
-          "url": "https://blog.ruizhou.cf"
-        }
-      ],
-      "tags": [
-        "Go"
-      ]
-    },
-    {
-      "title": "YAML 教程",
-      "url": "https://blog.ruizhou.cf/tech/yaml/",
-      "id": "https://blog.ruizhou.cf/tech/yaml/",
-      "summary": "编程免不了要写配置文件，怎么写配置也是一门学问。 YAML 是专门用来写配置文件的语言，非常简洁和强大。 yaml 介绍 YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 YAML 的全称是 YAML Ain’t Markup Language。 它的基本语法规则如下。 大小写敏感; 使用缩进...",
-      "content_html": "<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>\n<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>\n<h2> yaml 介绍</h2>\n<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>\n<p>YAML 的全称是 YAML Ain’t Markup Language。</p>\n<p>它的基本语法规则如下。</p>\n<ul>\n<li>大小写敏感</li>\n<li>使用缩进表示层级关系</li>\n<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>\n<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>\n</ul>\n<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>\n<p>YAML 支持的数据结构有三种。</p>\n<ul>\n<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>\n<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>\n<li>纯量(scalars): 单个的、不可再分的值</li>\n</ul>\n<h2> 如何打开或编辑 yaml</h2>\n<p>推荐使用 VS Code，具体详见<a href=\"/software/vscode/simple.html\" target=\"blank\">VS Code 简单介绍</a>。</p>\n<h2> 数据结构介绍</h2>\n<h3> 对象</h3>\n<p>对象的一组键值对，使用冒号结构表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 数组</h3>\n<p>一组连词线开头的行，构成一个数组。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>数组也可以采用行内表示法。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 复合结构</h3>\n<p>对象和数组可以结合使用，形成复合结构。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 纯量</h3>\n<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>\n<ul>\n<li>字符串</li>\n<li>布尔值</li>\n<li>整数</li>\n<li>浮点数</li>\n<li>Null</li>\n<li>时间</li>\n<li>日期</li>\n</ul>\n<p>数值直接以字面量的形式表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p><code>null</code> 用 <code>~</code> 表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>时间采用 ISO8601 格式。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 字符串</h3>\n<p>字符串是最常见，也是最复杂的一种数据类型。</p>\n<p>字符串默认不使用引号表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h2> 引用</h2>\n<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>等同于下面的代码。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>\n<p>下面是另一个例子。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h2> 函数和正则表达式的转换</h2>\n<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>解析上面的 yml 文件的代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2023-03-01T19:53:15.000Z",
-      "date_modified": "2023-03-01T19:53:15.000Z",
-      "authors": [
-        {
-          "name": "ruizhou",
-          "url": "https://blog.ruizhou.cf"
-        }
-      ],
-      "tags": [
-        "YAML"
       ]
     },
     {
@@ -1345,6 +1327,42 @@
       ],
       "tags": [
         "VS Code"
+      ]
+    },
+    {
+      "title": "golang 语言",
+      "url": "https://blog.ruizhou.cf/tech/go/",
+      "id": "https://blog.ruizhou.cf/tech/go/",
+      "summary": "提示 正在完善中...",
+      "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>正在完善中...</p>\n</div>\n<!-- more -->",
+      "date_published": "2023-03-01T19:53:15.000Z",
+      "date_modified": "2023-03-04T12:06:07.000Z",
+      "authors": [
+        {
+          "name": "ruizhou",
+          "url": "https://blog.ruizhou.cf"
+        }
+      ],
+      "tags": [
+        "Go"
+      ]
+    },
+    {
+      "title": "YAML 教程",
+      "url": "https://blog.ruizhou.cf/tech/yaml/",
+      "id": "https://blog.ruizhou.cf/tech/yaml/",
+      "summary": "编程免不了要写配置文件，怎么写配置也是一门学问。 YAML 是专门用来写配置文件的语言，非常简洁和强大。 yaml 介绍 YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 YAML 的全称是 YAML Ain’t Markup Language。 它的基本语法规则如下。 大小写敏感; 使用缩进...",
+      "content_html": "<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>\n<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>\n<h2> yaml 介绍</h2>\n<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>\n<p>YAML 的全称是 YAML Ain’t Markup Language。</p>\n<p>它的基本语法规则如下。</p>\n<ul>\n<li>大小写敏感</li>\n<li>使用缩进表示层级关系</li>\n<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>\n<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>\n</ul>\n<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>\n<p>YAML 支持的数据结构有三种。</p>\n<ul>\n<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>\n<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>\n<li>纯量(scalars): 单个的、不可再分的值</li>\n</ul>\n<h2> 如何打开或编辑 yaml</h2>\n<p>推荐使用 VS Code，具体详见<a href=\"/software/vscode/simple.html\" target=\"blank\">VS Code 简单介绍</a>。</p>\n<h2> 数据结构介绍</h2>\n<h3> 对象</h3>\n<p>对象的一组键值对，使用冒号结构表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 数组</h3>\n<p>一组连词线开头的行，构成一个数组。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>数组也可以采用行内表示法。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 复合结构</h3>\n<p>对象和数组可以结合使用，形成复合结构。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><h3> 纯量</h3>\n<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>\n<ul>\n<li>字符串</li>\n<li>布尔值</li>\n<li>整数</li>\n<li>浮点数</li>\n<li>Null</li>\n<li>时间</li>\n<li>日期</li>\n</ul>\n<p>数值直接以字面量的形式表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p><code>null</code> 用 <code>~</code> 表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>时间采用 ISO8601 格式。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h3> 字符串</h3>\n<p>字符串是最常见，也是最复杂的一种数据类型。</p>\n<p>字符串默认不使用引号表示。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h2> 引用</h2>\n<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>等同于下面的代码。</p>\n<div class=\"language-yaml line-numbers-mode\" data-ext=\"yml\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>\n<p>下面是另一个例子。</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>转为 JavaScript 代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><h2> 函数和正则表达式的转换</h2>\n<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>\n<div class=\"language-yaml\" data-ext=\"yml\"></div><p>解析上面的 yml 文件的代码如下。</p>\n<div class=\"language-javascript\" data-ext=\"js\"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>\n<div class=\"language-javascript line-numbers-mode\" data-ext=\"js\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
+      "date_published": "2023-03-01T19:53:15.000Z",
+      "date_modified": "2023-03-01T19:53:15.000Z",
+      "authors": [
+        {
+          "name": "ruizhou",
+          "url": "https://blog.ruizhou.cf"
+        }
+      ],
+      "tags": [
+        "YAML"
       ]
     },
     {

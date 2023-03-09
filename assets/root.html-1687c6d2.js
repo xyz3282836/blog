@@ -1,0 +1,1 @@
+import{_ as t,W as o,X as a,Y as e,a0 as r}from"./framework-043bad06.js";const s={},c=e("h2",{id:"常用词根词缀",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#常用词根词缀","aria-hidden":"true"},"#"),r(" 常用词根词缀")],-1),n=e("p",null,"枚举很多常用的词根词缀",-1),_=[c,n];function d(i,l){return o(),a("div",null,_)}const f=t(s,[["render",d],["__file","root.html.vue"]]);export{f as default};

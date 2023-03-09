@@ -1,0 +1,1 @@
+import{_ as a,W as t,X as r,Y as e,a0 as s}from"./framework-043bad06.js";const c={},o=e("h2",{id:"简单语法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#简单语法","aria-hidden":"true"},"#"),s(" 简单语法")],-1),n=e("p",null,"这是简单的几种语法",-1),_=[o,n];function d(i,l){return t(),r("div",null,_)}const m=a(c,[["render",d],["__file","grammar.html.vue"]]);export{m as default};

@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 08 Mar 2023 15:55:11 GMT</pubDate>
-    <lastBuildDate>Wed, 08 Mar 2023 15:55:11 GMT</lastBuildDate>
+    <pubDate>Thu, 09 Mar 2023 02:09:29 GMT</pubDate>
+    <lastBuildDate>Thu, 09 Mar 2023 02:09:29 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -21,9 +21,25 @@
     <category>服务器</category>
     <category>软件</category>
     <category>Go</category>
+    <category>YAML</category>
     <category>Git</category>
     <category>VS Code</category>
-    <category>YAML</category>
+    <item>
+      <title>Apple Debuts Yellow iPhone 14 to Boost Interest Until New Model</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2303090624.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2303090624.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">Apple Debuts Yellow iPhone 14 to Boost Interest Until New Model</source>
+      <description>Apple Inc. is returning to a frequent trick it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color. The company announced a...</description>
+      <category>英文</category>
+      <pubDate>Thu, 09 Mar 2023 06:24:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Apple Inc. is returning to a <code>frequent trick</code> it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color.  The company announced a yellow version of the iPhone 14 and 14 Plus on Tuesday, adding to the existing midnight blue, purple, red and <code>starlight</code> options. The new model — which doesn’t add any additional enhancements — becomes available for preorder on March 10 and will go on sale in retail stores on March 14, the company said.</p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>debut：初次登台开卖</p>
+<p>frequent trick：经常性的花活</p>
+</div>
+]]></content:encoded>
+    </item>
     <item>
       <title>Rising childcare costs widen gender pay gap</title>
       <link>https://blog.ruizhou.cf/english/everyday/2303081929.html</link>
@@ -294,6 +310,69 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>英文学习</title>
+      <link>https://blog.ruizhou.cf/english/</link>
+      <guid>https://blog.ruizhou.cf/english/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
+      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 语法 (gramma.md); 词汇 介绍 词汇时英文学习的基础，需要下功夫 高频词汇 (vocabulary/high-frequency-vocabulary.md); 词根词缀 (vocabulary/root.md); 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所...</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<p>英文学习日记</p>
+<h2> 语法</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>常用语法，属于技巧类型</p>
+</div>
+<ul>
+<li><a href="/english/gramma.html" target="blank">语法</a></li>
+</ul>
+<h2> 词汇</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>词汇时英文学习的基础，需要下功夫</p>
+</div>
+<ul>
+<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="blank">高频词汇</a></li>
+<li><a href="/english/vocabulary/root.html" target="blank">词根词缀</a></li>
+</ul>
+<h2> 每日英语</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
+</div>
+<ul>
+<li><a href="/english/everyday/" target="blank">点击前往</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>语法</title>
+      <link>https://blog.ruizhou.cf/english/grammar.html</link>
+      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
+      <description>简单语法 这是简单的几种语法</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 简单语法</h2>
+<p>这是简单的几种语法</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>技术</title>
+      <link>https://blog.ruizhou.cf/tech/</link>
+      <guid>https://blog.ruizhou.cf/tech/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">技术</source>
+      <description>目录 golang (go/README.md); yaml (yaml/README.md);</description>
+      <category>技术</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 目录</h2>
+<ul>
+<li><a href="/tech/go/" target="blank">golang</a></li>
+<li><a href="/tech/yaml/" target="blank">yaml</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>ruizhou 介绍</title>
       <link>https://blog.ruizhou.cf/about/me.html</link>
       <guid>https://blog.ruizhou.cf/about/me.html</guid>
@@ -310,21 +389,6 @@
 </ul>
 ]]></content:encoded>
       <enclosure url="https://blog.ruizhou.cf/2233.png" type="image/png"/>
-    </item>
-    <item>
-      <title>技术</title>
-      <link>https://blog.ruizhou.cf/tech/</link>
-      <guid>https://blog.ruizhou.cf/tech/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">技术</source>
-      <description>目录 golang (go/README.md); yaml (yaml/README.md);</description>
-      <category>技术</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 目录</h2>
-<ul>
-<li><a href="/tech/go/" target="blank">golang</a></li>
-<li><a href="/tech/yaml/" target="blank">yaml</a></li>
-</ul>
-]]></content:encoded>
     </item>
     <item>
       <title>软件教程</title>
@@ -602,6 +666,64 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>高频词汇</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
+      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 高频词汇</h2>
+<p>枚举很多常用的词汇，短语搭配等</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>词根词缀</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
+      <description>常用词根词缀 枚举很多常用的词根词缀</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
+<p>枚举很多常用的词根词缀</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2301311830.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2301311830.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</source>
+      <description>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being deported f...</description>
+      <category>英文</category>
+      <pubDate>Tue, 31 Jan 2023 18:30:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being <code>deported</code> from the country because he was not <code>vaccinated</code> against COVID-19, Djokovic accomplished all he could have wanted in his return: He <code>resumed</code> his winning ways at Melbourne Park and made it back to the top of tennis. Only briefly challenged in the final on Sunday night, Djokovic was simply better at the most <code>crucial</code> moments and beat Stefanos Tsitsipas 6-3, 7-6 (4), 7-6 (5) for a record-extending 10th Australian Open championship and <code>record-tying</code> 22nd Grand <code>Slam</code> title overall.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>‘Buy Now, Pay Later’ Is the Victim of its Own Success</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2301312022.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2301312022.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">‘Buy Now, Pay Later’ Is the Victim of its Own Success</source>
+      <description>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after the Wall Street `giant reported its worst earnings miss in a decade. On a call that morning,...</description>
+      <category>英文</category>
+      <pubDate>Tue, 31 Jan 2023 20:22:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after <code>the Wall Street</code> <code>giant</code> reported its worst earnings miss in a decade. On a call that morning, analysts <code>peppered</code> David Solomon, the bank’s C.E.O., with questions about its consumer banking strategy. Goldman closed its $2.2 billion <code>acquisition</code> of GreenSky, a <code>pioneer</code> in the “buy now, pay later” lending <code>sector</code>. It <code>flew</code> under the <code>radar</code> until last quarter, the first in which Goldman broke out earnings for its “platform solutions” business unit, which includes GreenSky. The picture wasn’t pretty. <code>Revenues</code> were up, but the division lost $1.66 billion in 2022.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>每日英文</title>
+      <link>https://blog.ruizhou.cf/english/everyday/</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">每日英文</source>
+      <category>英文</category>
+      <pubDate>Tue, 07 Mar 2023 19:29:00 GMT</pubDate>
+      <content:encoded><![CDATA[<!-- markdownlint-disable MD033 -->
+<div class="catalog-display-container">
+  </div>
+<!-- markdownlint-enable MD033 -->]]></content:encoded>
+    </item>
+    <item>
       <title>golang 语言</title>
       <link>https://blog.ruizhou.cf/tech/go/</link>
       <guid>https://blog.ruizhou.cf/tech/go/</guid>
@@ -614,6 +736,102 @@
 <p>正在完善中...</p>
 </div>
 <!-- more -->]]></content:encoded>
+    </item>
+    <item>
+      <title>YAML 教程</title>
+      <link>https://blog.ruizhou.cf/tech/yaml/</link>
+      <guid>https://blog.ruizhou.cf/tech/yaml/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">YAML 教程</source>
+      <description>编程免不了要写配置文件，怎么写配置也是一门学问。 YAML 是专门用来写配置文件的语言，非常简洁和强大。 yaml 介绍 YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 YAML 的全称是 YAML Ain’t Markup Language。 它的基本语法规则如下。 大小写敏感; 使用缩进...</description>
+      <category>YAML</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
+<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
+<h2> yaml 介绍</h2>
+<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
+<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
+<p>它的基本语法规则如下。</p>
+<ul>
+<li>大小写敏感</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+</ul>
+<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>
+<p>YAML 支持的数据结构有三种。</p>
+<ul>
+<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>
+<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>
+<li>纯量(scalars): 单个的、不可再分的值</li>
+</ul>
+<h2> 如何打开或编辑 yaml</h2>
+<p>推荐使用 VS Code，具体详见<a href="/software/vscode/simple.html" target="blank">VS Code 简单介绍</a>。</p>
+<h2> 数据结构介绍</h2>
+<h3> 对象</h3>
+<p>对象的一组键值对，使用冒号结构表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 数组</h3>
+<p>一组连词线开头的行，构成一个数组。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数组也可以采用行内表示法。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 复合结构</h3>
+<p>对象和数组可以结合使用，形成复合结构。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>转为 JavaScript 如下。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 纯量</h3>
+<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>
+<ul>
+<li>字符串</li>
+<li>布尔值</li>
+<li>整数</li>
+<li>浮点数</li>
+<li>Null</li>
+<li>时间</li>
+<li>日期</li>
+</ul>
+<p>数值直接以字面量的形式表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>null</code> 用 <code>~</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>时间采用 ISO8601 格式。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 字符串</h3>
+<p>字符串是最常见，也是最复杂的一种数据类型。</p>
+<p>字符串默认不使用引号表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 引用</h2>
+<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>等同于下面的代码。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>
+<p>下面是另一个例子。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 函数和正则表达式的转换</h2>
+<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>
+<div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>COMSOL</title>
@@ -4405,150 +4623,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 ]]></content:encoded>
     </item>
     <item>
-      <title>YAML 教程</title>
-      <link>https://blog.ruizhou.cf/tech/yaml/</link>
-      <guid>https://blog.ruizhou.cf/tech/yaml/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">YAML 教程</source>
-      <description>编程免不了要写配置文件，怎么写配置也是一门学问。 YAML 是专门用来写配置文件的语言，非常简洁和强大。 yaml 介绍 YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。 YAML 的全称是 YAML Ain’t Markup Language。 它的基本语法规则如下。 大小写敏感; 使用缩进...</description>
-      <category>YAML</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
-<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
-<h2> yaml 介绍</h2>
-<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
-<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
-<p>它的基本语法规则如下。</p>
-<ul>
-<li>大小写敏感</li>
-<li>使用缩进表示层级关系</li>
-<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
-<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
-</ul>
-<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>
-<p>YAML 支持的数据结构有三种。</p>
-<ul>
-<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>
-<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>
-<li>纯量(scalars): 单个的、不可再分的值</li>
-</ul>
-<h2> 如何打开或编辑 yaml</h2>
-<p>推荐使用 VS Code，具体详见<a href="/software/vscode/simple.html" target="blank">VS Code 简单介绍</a>。</p>
-<h2> 数据结构介绍</h2>
-<h3> 对象</h3>
-<p>对象的一组键值对，使用冒号结构表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 数组</h3>
-<p>一组连词线开头的行，构成一个数组。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>数组也可以采用行内表示法。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 复合结构</h3>
-<p>对象和数组可以结合使用，形成复合结构。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>转为 JavaScript 如下。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 纯量</h3>
-<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>
-<ul>
-<li>字符串</li>
-<li>布尔值</li>
-<li>整数</li>
-<li>浮点数</li>
-<li>Null</li>
-<li>时间</li>
-<li>日期</li>
-</ul>
-<p>数值直接以字面量的形式表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p><code>null</code> 用 <code>~</code> 表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>时间采用 ISO8601 格式。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 字符串</h3>
-<p>字符串是最常见，也是最复杂的一种数据类型。</p>
-<p>字符串默认不使用引号表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><h2> 引用</h2>
-<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>等同于下面的代码。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>
-<p>下面是另一个例子。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><h2> 函数和正则表达式的转换</h2>
-<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>
-<div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>英文学习</title>
-      <link>https://blog.ruizhou.cf/english/</link>
-      <guid>https://blog.ruizhou.cf/english/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
-      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 语法 (gramma.md); 词汇 介绍 词汇时英文学习的基础，需要下功夫 高频词汇 (vocabulary/high-frequency-vocabulary.md); 词根词缀 (vocabulary/root.md); 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所...</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<p>英文学习日记</p>
-<h2> 语法</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>常用语法，属于技巧类型</p>
-</div>
-<ul>
-<li><a href="/english/gramma.html" target="blank">语法</a></li>
-</ul>
-<h2> 词汇</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>词汇时英文学习的基础，需要下功夫</p>
-</div>
-<ul>
-<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="blank">高频词汇</a></li>
-<li><a href="/english/vocabulary/root.html" target="blank">词根词缀</a></li>
-</ul>
-<h2> 每日英语</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
-</div>
-<ul>
-<li><a href="/english/everyday/" target="blank">点击前往</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>语法</title>
-      <link>https://blog.ruizhou.cf/english/grammar.html</link>
-      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
-      <description>简单语法 这是简单的几种语法</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 简单语法</h2>
-<p>这是简单的几种语法</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Windows Terminal</title>
       <link>https://blog.ruizhou.cf/software/tool/terminal/</link>
       <guid>https://blog.ruizhou.cf/software/tool/terminal/</guid>
@@ -5332,64 +5406,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 <p>使用该设置 <code>npm.enableScriptExplorer</code>，您可以启用一个浏览器，该浏览器显示在工作空间中定义的脚本。</p>
 <p>在资源管理器中，您可以在编辑器中打开脚本，将其作为任务运行，然后使用节点调试器启动它(当脚本定义了诸如 <code>--inspect-brk</code> 的调试选项时)。单击时的默认操作是打开脚本。要单击运行脚本，请设置 <code>npm.scriptExplorerAction</code> 为 <strong>运行</strong>。使用 <code>npm.exclude</code> 设置可以排除 <code>package.json</code> 特定文件夹中包含的文件中的脚本。</p>
 <p>通过设置 <code>npm.enableRunFromFolder</code>，您可以启用从文件资源管理器的上下文菜单中为文件夹运行 npm 脚本的功能。选择文件夹后，该设置将启用命令 <strong>在文件夹中运行 npm 脚本...</strong>。该命令显示此文件夹中包含的 npm 脚本的快速选择列表，您可以选择要作为任务执行的脚本。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
-      <link>https://blog.ruizhou.cf/english/everyday/2301311830.html</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/2301311830.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</source>
-      <description>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being deported f...</description>
-      <category>英文</category>
-      <pubDate>Tue, 31 Jan 2023 18:30:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Novak Djokovic found this trip to Australia far less complicated, and far more successful, than that of a year ago. Unable to enter his best event in 2022 after being <code>deported</code> from the country because he was not <code>vaccinated</code> against COVID-19, Djokovic accomplished all he could have wanted in his return: He <code>resumed</code> his winning ways at Melbourne Park and made it back to the top of tennis. Only briefly challenged in the final on Sunday night, Djokovic was simply better at the most <code>crucial</code> moments and beat Stefanos Tsitsipas 6-3, 7-6 (4), 7-6 (5) for a record-extending 10th Australian Open championship and <code>record-tying</code> 22nd Grand <code>Slam</code> title overall.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>‘Buy Now, Pay Later’ Is the Victim of its Own Success</title>
-      <link>https://blog.ruizhou.cf/english/everyday/2301312022.html</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/2301312022.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">‘Buy Now, Pay Later’ Is the Victim of its Own Success</source>
-      <description>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after the Wall Street `giant reported its worst earnings miss in a decade. On a call that morning,...</description>
-      <category>英文</category>
-      <pubDate>Tue, 31 Jan 2023 20:22:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Last Tuesday was a rough day for Goldman Sachs. The share price fell 6 percent after <code>the Wall Street</code> <code>giant</code> reported its worst earnings miss in a decade. On a call that morning, analysts <code>peppered</code> David Solomon, the bank’s C.E.O., with questions about its consumer banking strategy. Goldman closed its $2.2 billion <code>acquisition</code> of GreenSky, a <code>pioneer</code> in the “buy now, pay later” lending <code>sector</code>. It <code>flew</code> under the <code>radar</code> until last quarter, the first in which Goldman broke out earnings for its “platform solutions” business unit, which includes GreenSky. The picture wasn’t pretty. <code>Revenues</code> were up, but the division lost $1.66 billion in 2022.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>每日英文</title>
-      <link>https://blog.ruizhou.cf/english/everyday/</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">每日英文</source>
-      <category>英文</category>
-      <pubDate>Tue, 07 Mar 2023 19:29:00 GMT</pubDate>
-      <content:encoded><![CDATA[<!-- markdownlint-disable MD033 -->
-<div class="catalog-display-container">
-  </div>
-<!-- markdownlint-enable MD033 -->]]></content:encoded>
-    </item>
-    <item>
-      <title>高频词汇</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
-      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 高频词汇</h2>
-<p>枚举很多常用的词汇，短语搭配等</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>词根词缀</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
-      <description>常用词根词缀 枚举很多常用的词根词缀</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
-<p>枚举很多常用的词根词缀</p>
 ]]></content:encoded>
     </item>
   </channel>

@@ -9,7 +9,7 @@
   </author>
   <logo>https://blog.ruizhou.cf/hero.png</logo>
   <rights>MIT 协议</rights>
-  <updated>2023-03-11T17:18:27.939Z</updated>
+  <updated>2023-03-12T04:49:11.204Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
@@ -17,8 +17,8 @@
   <category term="技术"/>
   <category term="服务器"/>
   <category term="软件"/>
-  <category term="Go"/>
   <category term="YAML"/>
+  <category term="Go"/>
   <category term="Git"/>
   <category term="VS Code"/>
   <contributor>
@@ -37,6 +37,33 @@
   <contributor>
     <name>沈启民</name>
   </contributor>
+  <entry>
+    <title type="text">YouTube CEO Susan Wojcicki steps down after nine years</title>
+    <id>https://blog.ruizhou.cf/english/everyday/2303120602.html</id>
+    <link href="https://blog.ruizhou.cf/english/everyday/2303120602.html"/>
+    <updated>2023-03-12T04:48:11.000Z</updated>
+    <summary type="html"><![CDATA[<p>The CEO of YouTube, Susan Wojcicki, will be <code>stepping down</code> after nine years at the <code>helm</code> of the world’s largest online video platform, she said in a blog post on Thursday. YouTube’s chief product officer, Neal Mohan, will be the new head of YouTube, she said. Wojcicki, 54, was previously a senior <code>vice-president</code> for ad products at Google and became CEO of YouTube in 2014. “Today, after nearly 25 years here, I’ve decided to step back from my role as the head of YouTube and start a new chapter focused on my family, health and personal projects I’m <code>passionate</code> about,” said Wojcicki.</p>]]></summary>
+    <content type="html"><![CDATA[<p>The CEO of YouTube, Susan Wojcicki, will be <code>stepping down</code> after nine years at the <code>helm</code> of the world’s largest online video platform, she said in a blog post on Thursday. YouTube’s chief product officer, Neal Mohan, will be the new head of YouTube, she said. Wojcicki, 54, was previously a senior <code>vice-president</code> for ad products at Google and became CEO of YouTube in 2014. “Today, after nearly 25 years here, I’ve decided to step back from my role as the head of YouTube and start a new chapter focused on my family, health and personal projects I’m <code>passionate</code> about,” said Wojcicki.</p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>step down：卸任</p>
+<p>helm：领导地位</p>
+<p>passionate：充满激情</p>
+<p>vice-presedent：副总裁（vice- 副的）</p>
+</div>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="英文"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-12T06:01:00.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
   <entry>
     <title type="text">Holiday rebound propels Chinese stocks to near bull market</title>
     <id>https://blog.ruizhou.cf/english/everyday/2302010657.html</id>
@@ -1425,6 +1452,52 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
+    <title type="text">高频词汇</title>
+    <id>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</id>
+    <link href="https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html"/>
+    <updated>2023-03-01T19:53:15.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 高频词汇</h2>
+<p>枚举很多常用的词汇，短语搭配等</p>
+]]></summary>
+    <content type="html"><![CDATA[<h2> 高频词汇</h2>
+<p>枚举很多常用的词汇，短语搭配等</p>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="英文"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
+    <title type="text">词根词缀</title>
+    <id>https://blog.ruizhou.cf/english/vocabulary/root.html</id>
+    <link href="https://blog.ruizhou.cf/english/vocabulary/root.html"/>
+    <updated>2023-03-01T19:53:15.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 常用词根词缀</h2>
+<p>枚举很多常用的词根词缀</p>
+]]></summary>
+    <content type="html"><![CDATA[<h2> 常用词根词缀</h2>
+<p>枚举很多常用的词根词缀</p>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="英文"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
     <title type="text">Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
     <id>https://blog.ruizhou.cf/english/everyday/2301311830.html</id>
     <link href="https://blog.ruizhou.cf/english/everyday/2301311830.html"/>
@@ -1487,79 +1560,6 @@
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
     <published>2023-03-07T19:29:00.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">高频词汇</title>
-    <id>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</id>
-    <link href="https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<h2> 高频词汇</h2>
-<p>枚举很多常用的词汇，短语搭配等</p>
-]]></summary>
-    <content type="html"><![CDATA[<h2> 高频词汇</h2>
-<p>枚举很多常用的词汇，短语搭配等</p>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="英文"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">词根词缀</title>
-    <id>https://blog.ruizhou.cf/english/vocabulary/root.html</id>
-    <link href="https://blog.ruizhou.cf/english/vocabulary/root.html"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<h2> 常用词根词缀</h2>
-<p>枚举很多常用的词根词缀</p>
-]]></summary>
-    <content type="html"><![CDATA[<h2> 常用词根词缀</h2>
-<p>枚举很多常用的词根词缀</p>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="英文"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">golang 语言</title>
-    <id>https://blog.ruizhou.cf/tech/go/</id>
-    <link href="https://blog.ruizhou.cf/tech/go/"/>
-    <updated>2023-03-04T12:06:07.000Z</updated>
-    <summary type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>正在完善中...</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>正在完善中...</p>
-</div>
-<!-- more -->]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="Go"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
@@ -1671,6 +1671,33 @@
       <uri>https://blog.ruizhou.cf</uri>
     </author>
     <category term="YAML"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
+    <title type="text">golang 语言</title>
+    <id>https://blog.ruizhou.cf/tech/go/</id>
+    <link href="https://blog.ruizhou.cf/tech/go/"/>
+    <updated>2023-03-04T12:06:07.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>正在完善中...</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>正在完善中...</p>
+</div>
+<!-- more -->]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="Go"/>
     <contributor>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
@@ -6739,68 +6766,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
     <published>2020-06-02T00:00:00.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">Windows Terminal</title>
-    <id>https://blog.ruizhou.cf/software/tool/terminal/</id>
-    <link href="https://blog.ruizhou.cf/software/tool/terminal/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<p>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</p>
-<!-- more -->
-<figure><figcaption>Windows Terminal</figcaption></figure>
-<h2> 特点</h2>
-<ul>
-<li>
-<p>多选项卡与窗格</p>
-<p>可以同时运行多个终端并自由布局与切换</p>
-</li>
-<li>
-<p>自定义方案和配置</p>
-<p>可在 Windows Terminal 中使用多种自定义命令，获得更加自然的体验。 如果不喜欢特定的键盘快捷方式，可以将其更改为您喜欢的方式。</p>
-</li>
-<li>
-<p>强大的可配置主题</p>
-<p>可以自由配置 Windows Terminal 的配色方案</p>
-<p>可以在 Windows Terminal 窗口中显示背景图像和 GIF</p>
-</li>
-<li>
-<p>扩展性，支持连接众多平台</p>
-<p>任何具有命令行接口的应用程序都可以在 Windows Terminal 中运行。 这包括从 PowerShell 和命令提示符到 Azure Cloud Shell 和任何 WSL 分发 (如 Ubuntu 或 Oh-My-Zsh) 的所有应用程序。</p>
-</li>
-<li>
-<p>Unicode 和 UTF-8 字符支持</p>
-<p>Windows Terminal 可以显示 Unicode 和 UTF-8 字符，如各种语言的表情符号和字符。</p>
-</li>
-<li>
-<p>GPU 加速文本呈现引擎</p>
-<p>Windows Terminal 使用 GPU 来呈现其文本，从而提供比默认 Windows 命令行体验更好的性能。</p>
-</li>
-<li>
-<p>开源</p>
-</li>
-</ul>
-<h2> 教程</h2>
-<ul>
-<li><a href="/software/tool/terminal/get-started.html" target="blank">快速上手</a></li>
-<li><a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a></li>
-</ul>
-<h2> 官方文档</h2>
-<ul>
-<li><a href="https://aka.ms/terminal-documentation" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2021-01-27T00:00:00.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
 </feed>

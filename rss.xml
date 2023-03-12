@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 11 Mar 2023 17:18:27 GMT</pubDate>
-    <lastBuildDate>Sat, 11 Mar 2023 17:18:27 GMT</lastBuildDate>
+    <pubDate>Sun, 12 Mar 2023 04:49:11 GMT</pubDate>
+    <lastBuildDate>Sun, 12 Mar 2023 04:49:11 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -20,10 +20,28 @@
     <category>技术</category>
     <category>服务器</category>
     <category>软件</category>
-    <category>Go</category>
     <category>YAML</category>
+    <category>Go</category>
     <category>Git</category>
     <category>VS Code</category>
+    <item>
+      <title>YouTube CEO Susan Wojcicki steps down after nine years</title>
+      <link>https://blog.ruizhou.cf/english/everyday/2303120602.html</link>
+      <guid>https://blog.ruizhou.cf/english/everyday/2303120602.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">YouTube CEO Susan Wojcicki steps down after nine years</source>
+      <description>The CEO of YouTube, Susan Wojcicki, will be stepping down after nine years at the helm of the world’s largest online video platform, she said in a blog post on Thursday. YouTube...</description>
+      <category>英文</category>
+      <pubDate>Sun, 12 Mar 2023 06:01:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>The CEO of YouTube, Susan Wojcicki, will be <code>stepping down</code> after nine years at the <code>helm</code> of the world’s largest online video platform, she said in a blog post on Thursday. YouTube’s chief product officer, Neal Mohan, will be the new head of YouTube, she said. Wojcicki, 54, was previously a senior <code>vice-president</code> for ad products at Google and became CEO of YouTube in 2014. “Today, after nearly 25 years here, I’ve decided to step back from my role as the head of YouTube and start a new chapter focused on my family, health and personal projects I’m <code>passionate</code> about,” said Wojcicki.</p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>step down：卸任</p>
+<p>helm：领导地位</p>
+<p>passionate：充满激情</p>
+<p>vice-presedent：副总裁（vice- 副的）</p>
+</div>
+]]></content:encoded>
+    </item>
     <item>
       <title>Holiday rebound propels Chinese stocks to near bull market</title>
       <link>https://blog.ruizhou.cf/english/everyday/2302010657.html</link>
@@ -967,6 +985,30 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>高频词汇</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
+      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 高频词汇</h2>
+<p>枚举很多常用的词汇，短语搭配等</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>词根词缀</title>
+      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
+      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
+      <description>常用词根词缀 枚举很多常用的词根词缀</description>
+      <category>英文</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
+<p>枚举很多常用的词根词缀</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Djokovic beats Tsitsipas for 10th Australian Open, 22nd Slam</title>
       <link>https://blog.ruizhou.cf/english/everyday/2301311830.html</link>
       <guid>https://blog.ruizhou.cf/english/everyday/2301311830.html</guid>
@@ -999,44 +1041,6 @@
 <div class="catalog-display-container">
   </div>
 <!-- markdownlint-enable MD033 -->]]></content:encoded>
-    </item>
-    <item>
-      <title>高频词汇</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">高频词汇</source>
-      <description>高频词汇 枚举很多常用的词汇，短语搭配等</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 高频词汇</h2>
-<p>枚举很多常用的词汇，短语搭配等</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>词根词缀</title>
-      <link>https://blog.ruizhou.cf/english/vocabulary/root.html</link>
-      <guid>https://blog.ruizhou.cf/english/vocabulary/root.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">词根词缀</source>
-      <description>常用词根词缀 枚举很多常用的词根词缀</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 常用词根词缀</h2>
-<p>枚举很多常用的词根词缀</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>golang 语言</title>
-      <link>https://blog.ruizhou.cf/tech/go/</link>
-      <guid>https://blog.ruizhou.cf/tech/go/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">golang 语言</source>
-      <description>提示 正在完善中...</description>
-      <category>Go</category>
-      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>正在完善中...</p>
-</div>
-<!-- more -->]]></content:encoded>
     </item>
     <item>
       <title>YAML 教程</title>
@@ -1133,6 +1137,20 @@
 <div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
 <div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>golang 语言</title>
+      <link>https://blog.ruizhou.cf/tech/go/</link>
+      <guid>https://blog.ruizhou.cf/tech/go/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">golang 语言</source>
+      <description>提示 正在完善中...</description>
+      <category>Go</category>
+      <pubDate>Wed, 01 Mar 2023 19:53:15 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>正在完善中...</p>
+</div>
+<!-- more -->]]></content:encoded>
     </item>
     <item>
       <title>COMSOL</title>
@@ -4921,58 +4939,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
 <p>有的求解器可以拆分成数十个线程并行计算，这种情况下适合使用服务器(核数多主频不高)。</p>
 <p>有关于这一情况的具体介绍，请查阅 <a href="http://cn.comsol.com/multiphysics/high-performance-computing" target="_blank" rel="noopener noreferrer">高性能计算(HPC)</a></p>
 </div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Windows Terminal</title>
-      <link>https://blog.ruizhou.cf/software/tool/terminal/</link>
-      <guid>https://blog.ruizhou.cf/software/tool/terminal/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">Windows Terminal</source>
-      <description>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</description>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Windows Terminal 是一个面向命令行工具和 shell(如命令提示符、PowerShell 和适用于 Linux 的 Windows 子系统 (WSL))用户的新式终端应用程序。</p>
-<!-- more -->
-<figure><figcaption>Windows Terminal</figcaption></figure>
-<h2> 特点</h2>
-<ul>
-<li>
-<p>多选项卡与窗格</p>
-<p>可以同时运行多个终端并自由布局与切换</p>
-</li>
-<li>
-<p>自定义方案和配置</p>
-<p>可在 Windows Terminal 中使用多种自定义命令，获得更加自然的体验。 如果不喜欢特定的键盘快捷方式，可以将其更改为您喜欢的方式。</p>
-</li>
-<li>
-<p>强大的可配置主题</p>
-<p>可以自由配置 Windows Terminal 的配色方案</p>
-<p>可以在 Windows Terminal 窗口中显示背景图像和 GIF</p>
-</li>
-<li>
-<p>扩展性，支持连接众多平台</p>
-<p>任何具有命令行接口的应用程序都可以在 Windows Terminal 中运行。 这包括从 PowerShell 和命令提示符到 Azure Cloud Shell 和任何 WSL 分发 (如 Ubuntu 或 Oh-My-Zsh) 的所有应用程序。</p>
-</li>
-<li>
-<p>Unicode 和 UTF-8 字符支持</p>
-<p>Windows Terminal 可以显示 Unicode 和 UTF-8 字符，如各种语言的表情符号和字符。</p>
-</li>
-<li>
-<p>GPU 加速文本呈现引擎</p>
-<p>Windows Terminal 使用 GPU 来呈现其文本，从而提供比默认 Windows 命令行体验更好的性能。</p>
-</li>
-<li>
-<p>开源</p>
-</li>
-</ul>
-<h2> 教程</h2>
-<ul>
-<li><a href="/software/tool/terminal/get-started.html" target="blank">快速上手</a></li>
-<li><a href="/software/tool/terminal/settings.html" target="blank">自定义设置</a></li>
-</ul>
-<h2> 官方文档</h2>
-<ul>
-<li><a href="https://aka.ms/terminal-documentation" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-</ul>
 ]]></content:encoded>
     </item>
   </channel>

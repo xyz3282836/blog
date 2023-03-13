@@ -9,18 +9,18 @@
   </author>
   <logo>https://blog.ruizhou.cf/hero.png</logo>
   <rights>MIT 协议</rights>
-  <updated>2023-03-12T13:55:30.061Z</updated>
+  <updated>2023-03-13T01:57:45.172Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
   <category term="英文"/>
-  <category term="技术"/>
   <category term="服务器"/>
   <category term="软件"/>
-  <category term="Go"/>
-  <category term="YAML"/>
+  <category term="技术"/>
   <category term="Git"/>
   <category term="VS Code"/>
+  <category term="Go"/>
+  <category term="YAML"/>
   <contributor>
     <name>ruizhou</name>
     <uri>https://blog.ruizhou.cf</uri>
@@ -37,6 +37,33 @@
   <contributor>
     <name>沈启民</name>
   </contributor>
+  <entry>
+    <title type="text">Winner of $2.04 billion lottery buys $25.5 million house in the Hollywood Hills</title>
+    <id>https://blog.ruizhou.cf/english/everyday/2303130602.html</id>
+    <link href="https://blog.ruizhou.cf/english/everyday/2303130602.html"/>
+    <updated>2023-03-13T01:57:45.200Z</updated>
+    <summary type="html"><![CDATA[<p>Countless people ask themselves what they would do if they hit the <code>jackpot</code>, and the California man who took home the world’s largest ever lottery prize has now shown his answer to that age-old question. Edwin Castro, winner of the historic $2.04 billion Powerball jackpot in November, recently spent $25.5 million buying a five-bedroom, six-bathroom <code>mansion</code> in Los Angeles’s <code>glitzy</code> Hollywood Hills, the real <code>estate</code> publication Dirt and the city’s Times newspaper first reported.</p>]]></summary>
+    <content type="html"><![CDATA[<p>Countless people ask themselves what they would do if they hit the <code>jackpot</code>, and the California man who took home the world’s largest ever lottery prize has now shown his answer to that age-old question. Edwin Castro, winner of the historic $2.04 billion Powerball jackpot in November, recently spent $25.5 million buying a five-bedroom, six-bathroom <code>mansion</code> in Los Angeles’s <code>glitzy</code> Hollywood Hills, the real <code>estate</code> publication Dirt and the city’s Times newspaper first reported.</p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>jackpot：头奖，累积奖金（jack 插座，千斤顶；vt. 举起，提高；pot 奖杯 🏆，盆；vt. 装入盆中，射击 🔫）</p>
+<p>mansion：公寓，公馆</p>
+<p>glitzy：耀眼的</p>
+<p>estate：不动产，阶层（源自 status，表示地位；e- 只是为了发音，如 especial=sepcial）</p>
+</div>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="英文"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-13T06:01:00.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
   <entry>
     <title type="text">Why Are California’s Trees Dying?</title>
     <id>https://blog.ruizhou.cf/english/everyday/2303121901.html</id>
@@ -128,7 +155,7 @@
     <updated>2023-03-11T13:48:33.000Z</updated>
     <summary type="html"><![CDATA[<p>Elon Musk “doesn’t seem like” the right person to own Twitter, the social media platform’s co-founder has said, adding that improvements to morale and content policies at the business have been reversed under its new proprietor. In an interview with the Guardian, Biz Stone said positive changes he had helped oversee in recent years had been unwound by the Tesla chief executive. Stone said running social media companies is “not really a win-win situation … it’s always tough”, because “50% of the people are gonna be happy, 50% of people are gonna be upset with you”.</p>]]></summary>
     <content type="html"><![CDATA[<p>Elon Musk “doesn’t seem like” the right person to own Twitter, the social media platform’s co-founder has said, adding that improvements to morale and content policies at the business have been reversed under its new proprietor. In an interview with the Guardian, Biz Stone said positive changes he had helped oversee in recent years had been unwound by the Tesla chief executive. Stone said running social media companies is “not really a win-win situation … it’s always tough”, because “50% of the people are gonna be happy, 50% of people are gonna be upset with you”.</p>
-<p>推特这一社交网络平台的联合创始人放言，埃隆·马斯克“不像是”可以执掌推特的正确人选，他还称在马斯克的掌权下，这家公司提升士气和内容管理原则均遭到了颠覆。在一次与《卫报》的采访中，Biz Stone说近年来他所见证的一些积极转变被这个特斯拉CEO恢复旧貌。Stone认为，运营社交媒体类的公司“并不能真正带来双赢……因为过程往往十分艰难”，因为一半的人会很开心，但另一半的人会觉得你很烦。”</p>
+<p>推特这一社交网络平台的联合创始人放言，埃隆·马斯克“不像是”可以执掌推特的正确人选，他还称在马斯克的掌权下，这家公司提升士气和内容管理原则均遭到了颠覆。在一次与《卫报》的采访中，Biz Stone 说近年来他所见证的一些积极转变被这个特斯拉 CEO 恢复旧貌。Stone 认为，运营社交媒体类的公司“并不能真正带来双赢……因为过程往往十分艰难”，因为一半的人会很开心，但另一半的人会觉得你很烦。”</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>bull market 牛市</p>
@@ -155,7 +182,7 @@
     <updated>2023-03-11T16:47:37.000Z</updated>
     <summary type="html"><![CDATA[<p>Struggling online publisher BuzzFeed will start using <code>artificial intelligence</code> (AI) to help write its quizzes after laying off dozens of employees. The media company, known for its light-hearted articles and “listicles”, will work with OpenAI, the creator of ChatGPT, on the initiative. The chatbot, which provides human-like written responses to prompts, has attracted praise from tech executives, academics and politicians amid hopes it could simplify and transform tasks across a range of industries.</p>]]></summary>
     <content type="html"><![CDATA[<p>Struggling online publisher BuzzFeed will start using <code>artificial intelligence</code> (AI) to help write its quizzes after laying off dozens of employees. The media company, known for its light-hearted articles and “listicles”, will work with OpenAI, the creator of ChatGPT, on the initiative. The chatbot, which provides human-like written responses to prompts, has attracted praise from tech executives, academics and politicians amid hopes it could simplify and transform tasks across a range of industries.</p>
-<p>在解雇数十名员工后，处境艰难的线上媒体BuzzFeed将会开始使用人工智能（AI），帮助其创作“小测试”。这家媒体公司以其风格轻松的文章和“小清单”（listicles）著称，它将与创造了ChatGPT的OpenAI公司合作，达成这一目标。只要稍加提示，这一聊天机器人就可以提供和人类相似的书面答案，而且它已经赢得了科技公司管理人员、学术界和政界的赞赏，他们希望它可以简化、改变一些行业。</p>
+<p>在解雇数十名员工后，处境艰难的线上媒体 BuzzFeed 将会开始使用人工智能（AI），帮助其创作“小测试”。这家媒体公司以其风格轻松的文章和“小清单”（listicles）著称，它将与创造了 ChatGPT 的 OpenAI 公司合作，达成这一目标。只要稍加提示，这一聊天机器人就可以提供和人类相似的书面答案，而且它已经赢得了科技公司管理人员、学术界和政界的赞赏，他们希望它可以简化、改变一些行业。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>quiz n. 小测验，知识竞赛</p>
@@ -209,7 +236,7 @@
     <updated>2023-03-11T13:48:33.000Z</updated>
     <summary type="html"><![CDATA[<p>Workers in the U.S. are spending more time in the office again, with occupancy rates surpassing 50% for the first time since the start of the Covid-19 pandemic. Average office use last week was 50.4% of early 2020 levels in 10 major U.S. cities, according to Kastle Systems, which tracks security swipes into buildings every business day. It is the first time office occupancy has topped 50%, according to Kastle, since March 2020, when Covid-19 forced most workplaces to temporarily shut down. All 10 of the major cities it tracks surpassed 40% for the first time, Kastle said.</p>]]></summary>
     <content type="html"><![CDATA[<p>Workers in the U.S. are spending more time in the office again, with occupancy rates surpassing 50% for the first time since the start of the Covid-19 pandemic. Average office use last week was 50.4% of early 2020 levels in 10 major U.S. cities, according to Kastle Systems, which tracks security swipes into buildings every business day. It is the first time office occupancy has topped 50%, according to Kastle, since March 2020, when Covid-19 forced most workplaces to temporarily shut down. All 10 of the major cities it tracks surpassed 40% for the first time, Kastle said.</p>
-<p>美国员工又一次延长了在办公室的时间，如今办公室的使用率在疫情爆发后首次超过了50%。 在美国十大主要城市，上周办公室平均使用率达到2020年早期的50.4%，Kastel Systems通过追踪每个工作日进入办公楼的安全磁卡刷卡记录得出这一结论。Kastel称，这是2020年3月以来，疫情让大部分办公场所临时关闭后，办公室使用率首次超过50%，这也是首次全部10个主要城市返岗率均超过40%。</p>
+<p>美国员工又一次延长了在办公室的时间，如今办公室的使用率在疫情爆发后首次超过了 50%。 在美国十大主要城市，上周办公室平均使用率达到 2020 年早期的 50.4%，Kastel Systems 通过追踪每个工作日进入办公楼的安全磁卡刷卡记录得出这一结论。Kastel 称，这是 2020 年 3 月以来，疫情让大部分办公场所临时关闭后，办公室使用率首次超过 50%，这也是首次全部 10 个主要城市返岗率均超过 40%。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>return-to-office 返岗</p>
@@ -234,9 +261,9 @@
     <id>https://blog.ruizhou.cf/english/everyday/2302032022.html</id>
     <link href="https://blog.ruizhou.cf/english/everyday/2302032022.html"/>
     <updated>2023-03-11T13:48:33.000Z</updated>
-    <summary type="html"><![CDATA[<p>When 35-year-old Chinese pianist Wang Yujia finished her last note on Tuesday, she received a standing ovation from the audience. Conductor Yannick Nézet-Séguin, commonly known as Yannick, of the Philadelphia Symphony Orchestra even "knelt down" after her four-hour performance at the Carnegie Music Hall. The repertoire she played covered all five of Rachmaninoff's piano works - four piano concertos and the Paganini Theme Rhapsody.  She was acclaimed as a superstar for her "once-in-a-lifetime" performance.</p>]]></summary>
-    <content type="html"><![CDATA[<p>When 35-year-old Chinese pianist Wang Yujia finished her last note on Tuesday, she received a standing ovation from the audience. Conductor Yannick Nézet-Séguin, commonly known as Yannick, of the Philadelphia Symphony Orchestra even "knelt down" after her four-hour performance at the Carnegie Music Hall. The repertoire she played covered all five of Rachmaninoff's piano works - four piano concertos and the Paganini Theme Rhapsody.  She was acclaimed as a superstar for her "once-in-a-lifetime" performance.</p>
-<p>周二，当35岁的中国钢琴家王羽佳弹奏出最后一个音符时，她获得了观众的起立鼓掌。她在卡内基音乐厅进行了4个小时的表演后，指挥家Yannick Nézet-Séguin，也就是执棒费城交响乐团的“杨尼克”甚至向她单膝下跪。王羽佳的此次演奏曲目包括了拉赫玛尼诺夫全部五套钢琴曲——四套钢琴协奏曲和《帕格尼尼主题狂想曲》。因为此次“千载难逢”的表演，她被盛赞为“超级巨星”。</p>
+    <summary type="html"><![CDATA[<p>When 35-year-old Chinese pianist Wang Yujia finished her last note on Tuesday, she received a standing ovation from the audience. Conductor Yannick Nézet-Séguin, commonly known as Yannick, of the Philadelphia Symphony Orchestra even "knelt down" after her four-hour performance at the Carnegie Music Hall. The repertoire she played covered all five of Rachmaninoff's piano works - four piano concertos and the Paganini Theme Rhapsody. She was acclaimed as a superstar for her "once-in-a-lifetime" performance.</p>]]></summary>
+    <content type="html"><![CDATA[<p>When 35-year-old Chinese pianist Wang Yujia finished her last note on Tuesday, she received a standing ovation from the audience. Conductor Yannick Nézet-Séguin, commonly known as Yannick, of the Philadelphia Symphony Orchestra even "knelt down" after her four-hour performance at the Carnegie Music Hall. The repertoire she played covered all five of Rachmaninoff's piano works - four piano concertos and the Paganini Theme Rhapsody. She was acclaimed as a superstar for her "once-in-a-lifetime" performance.</p>
+<p>周二，当 35 岁的中国钢琴家王羽佳弹奏出最后一个音符时，她获得了观众的起立鼓掌。她在卡内基音乐厅进行了 4 个小时的表演后，指挥家 Yannick Nézet-Séguin，也就是执棒费城交响乐团的“杨尼克”甚至向她单膝下跪。王羽佳的此次演奏曲目包括了拉赫玛尼诺夫全部五套钢琴曲——四套钢琴协奏曲和《帕格尼尼主题狂想曲》。因为此次“千载难逢”的表演，她被盛赞为“超级巨星”。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>hail v. 称颂，欢迎</p>
@@ -263,7 +290,7 @@
     <updated>2023-03-11T13:48:33.000Z</updated>
     <summary type="html"><![CDATA[<p>In November, OpenAI wowed the world when it released an experimental online chatbot called ChatGPT that could answer questions, write poetry and riff on almost any topic tossed its way. Now, the tiny San Francisco start-up has announced that it will soon offer a commercial version of the chatbot, ChatGPT Plus, for $20 a month. Subscribers will receive round-the-clock access to the chatbot, faster responses and access to new features, OpenAI said.</p>]]></summary>
     <content type="html"><![CDATA[<p>In November, OpenAI wowed the world when it released an experimental online chatbot called ChatGPT that could answer questions, write poetry and riff on almost any topic tossed its way. Now, the tiny San Francisco start-up has announced that it will soon offer a commercial version of the chatbot, ChatGPT Plus, for $20 a month. Subscribers will receive round-the-clock access to the chatbot, faster responses and access to new features, OpenAI said.</p>
-<p>11月，OpenAI公司发布了一个叫作ChatGPT的测试版线上聊天机器人，让全世界为之惊叹，它可以回答问题、写诗，几乎可以即兴接住抛给它的一切话题。 如今，这家旧金山的小型初创公司宣布，它将迅速发布一个商业版本的聊天机器人，ChatGPT Plus，收费每月20美元。OpenAI公司称，订阅者将可以无限时地访问这一聊天机器人，获得更快的回答，还可以体验它的新功能。</p>
+<p>11 月，OpenAI 公司发布了一个叫作 ChatGPT 的测试版线上聊天机器人，让全世界为之惊叹，它可以回答问题、写诗，几乎可以即兴接住抛给它的一切话题。 如今，这家旧金山的小型初创公司宣布，它将迅速发布一个商业版本的聊天机器人，ChatGPT Plus，收费每月 20 美元。OpenAI 公司称，订阅者将可以无限时地访问这一聊天机器人，获得更快的回答，还可以体验它的新功能。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>toss v. 扔，抛</p>
@@ -288,9 +315,9 @@
     <id>https://blog.ruizhou.cf/english/everyday/2302042022.html</id>
     <link href="https://blog.ruizhou.cf/english/everyday/2302042022.html"/>
     <updated>2023-03-11T13:48:33.000Z</updated>
-    <summary type="html"><![CDATA[<p>With an average age of 83, these actresses could be forgiven for thinking about retirement. But Jane Fonda, 85, Lily Tomlin, 83, Rita Moreno, 91, and Sally Field, 76, have no intention of stepping back and are starring together in a new film, 80 For Brady. “I think, as you get older, you get better at almost everything. I love my work more than ever,” said Fonda. Moreno added: “It’s really about a frame of mind. And not believing all that bullshit - about getting old.”  The quartet have a combined age of 335 and between them have five Oscars, 13 Emmys, three Grammys and three Tony awards.</p>]]></summary>
-    <content type="html"><![CDATA[<p>With an average age of 83, these actresses could be forgiven for thinking about retirement. But Jane Fonda, 85, Lily Tomlin, 83, Rita Moreno, 91, and Sally Field, 76, have no intention of stepping back and are starring together in a new film, 80 For Brady. “I think, as you get older, you get better at almost everything. I love my work more than ever,” said Fonda. Moreno added: “It’s really about a frame of mind. And not believing all that bullshit - about getting old.”  The quartet have a combined age of 335 and between them have five Oscars, 13 Emmys, three Grammys and three Tony awards.</p>
-<p>这些女演员平均年龄高达83岁，如果她们想要退休也情有可原。但85岁的简·方达，83岁的莉莉·汤姆林，91岁的丽塔·莫雷诺和76岁的莎莉·菲尔德完全没有后退的想法，她们共同出演了一部新电影——《追星奶奶团》（80 for Brady）。“我认为，当你变老时，你在方方面面都会更加精通。我比任何时候都更爱工作。”简·方达这样说道。莫雷诺补充道：“这的确和心态相关，而且不能相信那些关于暮年的鬼话。” 这个四人组的年龄相加达到了335岁，她们一共获得了5个奥斯卡，13个艾美奖，3个格莱美奖和3个托尼奖。</p>
+    <summary type="html"><![CDATA[<p>With an average age of 83, these actresses could be forgiven for thinking about retirement. But Jane Fonda, 85, Lily Tomlin, 83, Rita Moreno, 91, and Sally Field, 76, have no intention of stepping back and are starring together in a new film, 80 For Brady. “I think, as you get older, you get better at almost everything. I love my work more than ever,” said Fonda. Moreno added: “It’s really about a frame of mind. And not believing all that bullshit - about getting old.” The quartet have a combined age of 335 and between them have five Oscars, 13 Emmys, three Grammys and three Tony awards.</p>]]></summary>
+    <content type="html"><![CDATA[<p>With an average age of 83, these actresses could be forgiven for thinking about retirement. But Jane Fonda, 85, Lily Tomlin, 83, Rita Moreno, 91, and Sally Field, 76, have no intention of stepping back and are starring together in a new film, 80 For Brady. “I think, as you get older, you get better at almost everything. I love my work more than ever,” said Fonda. Moreno added: “It’s really about a frame of mind. And not believing all that bullshit - about getting old.” The quartet have a combined age of 335 and between them have five Oscars, 13 Emmys, three Grammys and three Tony awards.</p>
+<p>这些女演员平均年龄高达 83 岁，如果她们想要退休也情有可原。但 85 岁的简·方达，83 岁的莉莉·汤姆林，91 岁的丽塔·莫雷诺和 76 岁的莎莉·菲尔德完全没有后退的想法，她们共同出演了一部新电影——《追星奶奶团》（80 for Brady）。“我认为，当你变老时，你在方方面面都会更加精通。我比任何时候都更爱工作。”简·方达这样说道。莫雷诺补充道：“这的确和心态相关，而且不能相信那些关于暮年的鬼话。” 这个四人组的年龄相加达到了 335 岁，她们一共获得了 5 个奥斯卡，13 个艾美奖，3 个格莱美奖和 3 个托尼奖。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>intention n. 意图</p>
@@ -317,7 +344,7 @@
     <updated>2023-03-11T13:48:33.000Z</updated>
     <summary type="html"><![CDATA[<p>Looking at one particular mural in China's world-famous Dunhuang Mogao Grottoes, a major repository of ancient China's Buddhist art, visitors may notice a building fully decorated with lanterns surrounded by figures wearing gorgeous costumes who dance and light more lanterns around the building. According to experts, this scene is theorized to depict the lively atmosphere of a Tang Dynasty (618-907) palace banquet during the Lantern Festival. The Lantern Festival, also known as the Shangyuan Festival, is a traditional Chinese festival celebrated on the 15th day of the first month of the Chinese calendar, which means it also comes with a full moon.</p>]]></summary>
     <content type="html"><![CDATA[<p>Looking at one particular mural in China's world-famous Dunhuang Mogao Grottoes, a major repository of ancient China's Buddhist art, visitors may notice a building fully decorated with lanterns surrounded by figures wearing gorgeous costumes who dance and light more lanterns around the building. According to experts, this scene is theorized to depict the lively atmosphere of a Tang Dynasty (618-907) palace banquet during the Lantern Festival. The Lantern Festival, also known as the Shangyuan Festival, is a traditional Chinese festival celebrated on the 15th day of the first month of the Chinese calendar, which means it also comes with a full moon.</p>
-<p>世界闻名的中国敦煌莫高窟是一座中国传统佛教艺术的宝库，在这里我们可以见到一幅特殊的壁画，看画的人或许会注意到一栋被灯笼装饰的房子，旁边围满了穿着华美服装的人，他们跳着舞，还点起房子周围的更多灯笼。专家称，这一场景理论上描绘了唐代（618—907年）元宵节宴会上的活跃气氛。 元宵节又称上元节，是一个在农历正月十五庆祝的节日，这也意味着元宵节往往伴随着一轮圆月。</p>
+<p>世界闻名的中国敦煌莫高窟是一座中国传统佛教艺术的宝库，在这里我们可以见到一幅特殊的壁画，看画的人或许会注意到一栋被灯笼装饰的房子，旁边围满了穿着华美服装的人，他们跳着舞，还点起房子周围的更多灯笼。专家称，这一场景理论上描绘了唐代（618—907 年）元宵节宴会上的活跃气氛。 元宵节又称上元节，是一个在农历正月十五庆祝的节日，这也意味着元宵节往往伴随着一轮圆月。</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>mural n. 壁画</p>
@@ -408,10 +435,10 @@
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>blow up：炸毁（blow 打击，风吹，殴打；a strom was blowing up 狂风大作）</p>
-<p>flagship：旗舰（flag 标记，旗帜；ship 船，-ship 表示某种关系，状态，技能，如leadership 领导力）</p>
-<p>blaste：一阵风，爆炸 💥，枯萎 🥀；vt. 炸，使枯萎（词源童blow）</p>
+<p>flagship：旗舰（flag 标记，旗帜；ship 船，-ship 表示某种关系，状态，技能，如 leadership 领导力）</p>
+<p>blaste：一阵风，爆炸 💥，枯萎 🥀；vt. 炸，使枯萎（词源童 blow）</p>
 <p>blast off：发射</p>
-<p>ignition：点火发射（和launch，blast off属于同意替换）</p>
+<p>ignition：点火发射（和 launch，blast off 属于同意替换）</p>
 <p>embarrass：使困惑，使陷入麻烦</p>
 <p>debut：首次登场</p>
 <p>take off：发射，起飞</p>
@@ -506,7 +533,7 @@
 <p>graft：嫁接，移植；贪污</p>
 <p>anti：反对者</p>
 <p>investigation：审查（invest 投资，ate 根据踪迹调查，调查）</p>
-<p>former：从前的，前xxx</p>
+<p>former：从前的，前 xxx</p>
 <p>senior：年长的，资深的</p>
 <p>defend：防护（de 去掉，fend 打击，去掉打击-&gt;打退-&gt;保卫）</p>
 <p>he defending champion 卫冕冠军</p>
@@ -530,8 +557,8 @@
     <id>https://blog.ruizhou.cf/english/everyday/2303090624.html</id>
     <link href="https://blog.ruizhou.cf/english/everyday/2303090624.html"/>
     <updated>2023-03-09T02:08:32.000Z</updated>
-    <summary type="html"><![CDATA[<p>Apple Inc. is returning to a <code>frequent trick</code> it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color.  The company announced a yellow version of the iPhone 14 and 14 Plus on Tuesday, adding to the existing midnight blue, purple, red and <code>starlight</code> options. The new model — which doesn’t add any additional enhancements — becomes available for preorder on March 10 and will go on sale in retail stores on March 14, the company said.</p>]]></summary>
-    <content type="html"><![CDATA[<p>Apple Inc. is returning to a <code>frequent trick</code> it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color.  The company announced a yellow version of the iPhone 14 and 14 Plus on Tuesday, adding to the existing midnight blue, purple, red and <code>starlight</code> options. The new model — which doesn’t add any additional enhancements — becomes available for preorder on March 10 and will go on sale in retail stores on March 14, the company said.</p>
+    <summary type="html"><![CDATA[<p>Apple Inc. is returning to a <code>frequent trick</code> it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color. The company announced a yellow version of the iPhone 14 and 14 Plus on Tuesday, adding to the existing midnight blue, purple, red and <code>starlight</code> options. The new model — which doesn’t add any additional enhancements — becomes available for preorder on March 10 and will go on sale in retail stores on March 14, the company said.</p>]]></summary>
+    <content type="html"><![CDATA[<p>Apple Inc. is returning to a <code>frequent trick</code> it uses to keep buyers interested in its current iPhone line until the new model arrives: adding a new color. The company announced a yellow version of the iPhone 14 and 14 Plus on Tuesday, adding to the existing midnight blue, purple, red and <code>starlight</code> options. The new model — which doesn’t add any additional enhancements — becomes available for preorder on March 10 and will go on sale in retail stores on March 14, the company said.</p>
 <div class="hint-container info">
 <p class="hint-container-title">tips</p>
 <p>debut：初次登台开卖</p>
@@ -1084,35 +1111,6 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
-    <title type="text">技术</title>
-    <id>https://blog.ruizhou.cf/tech/</id>
-    <link href="https://blog.ruizhou.cf/tech/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<h2> 目录</h2>
-<ul>
-<li><a href="/tech/go/" target="blank">golang</a></li>
-<li><a href="/tech/yaml/" target="blank">yaml</a></li>
-</ul>
-]]></summary>
-    <content type="html"><![CDATA[<h2> 目录</h2>
-<ul>
-<li><a href="/tech/go/" target="blank">golang</a></li>
-<li><a href="/tech/yaml/" target="blank">yaml</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="技术"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
     <title type="text">软件教程</title>
     <id>https://blog.ruizhou.cf/software/</id>
     <link href="https://blog.ruizhou.cf/software/"/>
@@ -1482,6 +1480,35 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
+    <title type="text">技术</title>
+    <id>https://blog.ruizhou.cf/tech/</id>
+    <link href="https://blog.ruizhou.cf/tech/"/>
+    <updated>2023-03-01T19:53:15.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 目录</h2>
+<ul>
+<li><a href="/tech/go/" target="blank">golang</a></li>
+<li><a href="/tech/yaml/" target="blank">yaml</a></li>
+</ul>
+]]></summary>
+    <content type="html"><![CDATA[<h2> 目录</h2>
+<ul>
+<li><a href="/tech/go/" target="blank">golang</a></li>
+<li><a href="/tech/yaml/" target="blank">yaml</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="技术"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
     <title type="text">高频词汇</title>
     <id>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</id>
     <link href="https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html"/>
@@ -1575,11 +1602,13 @@
     <summary type="html"><![CDATA[<!-- markdownlint-disable MD033 -->
 <div class="catalog-display-container">
   </div>
-<!-- markdownlint-enable MD033 -->]]></summary>
+<!-- markdownlint-enable MD033 -->
+]]></summary>
     <content type="html"><![CDATA[<!-- markdownlint-disable MD033 -->
 <div class="catalog-display-container">
   </div>
-<!-- markdownlint-enable MD033 -->]]></content>
+<!-- markdownlint-enable MD033 -->
+]]></content>
     <author>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
@@ -1590,149 +1619,6 @@
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
     <published>2023-03-07T19:29:00.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">golang 语言</title>
-    <id>https://blog.ruizhou.cf/tech/go/</id>
-    <link href="https://blog.ruizhou.cf/tech/go/"/>
-    <updated>2023-03-04T12:06:07.000Z</updated>
-    <summary type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>正在完善中...</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>正在完善中...</p>
-</div>
-<!-- more -->]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="Go"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">YAML 教程</title>
-    <id>https://blog.ruizhou.cf/tech/yaml/</id>
-    <link href="https://blog.ruizhou.cf/tech/yaml/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
-<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
-<h2> yaml 介绍</h2>
-<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
-<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
-<p>它的基本语法规则如下。</p>
-<ul>
-<li>大小写敏感</li>
-<li>使用缩进表示层级关系</li>
-<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
-<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
-<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
-<h2> yaml 介绍</h2>
-<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
-<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
-<p>它的基本语法规则如下。</p>
-<ul>
-<li>大小写敏感</li>
-<li>使用缩进表示层级关系</li>
-<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
-<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
-</ul>
-<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>
-<p>YAML 支持的数据结构有三种。</p>
-<ul>
-<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>
-<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>
-<li>纯量(scalars): 单个的、不可再分的值</li>
-</ul>
-<h2> 如何打开或编辑 yaml</h2>
-<p>推荐使用 VS Code，具体详见<a href="/software/vscode/simple.html" target="blank">VS Code 简单介绍</a>。</p>
-<h2> 数据结构介绍</h2>
-<h3> 对象</h3>
-<p>对象的一组键值对，使用冒号结构表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 数组</h3>
-<p>一组连词线开头的行，构成一个数组。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>数组也可以采用行内表示法。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 复合结构</h3>
-<p>对象和数组可以结合使用，形成复合结构。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>转为 JavaScript 如下。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 纯量</h3>
-<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>
-<ul>
-<li>字符串</li>
-<li>布尔值</li>
-<li>整数</li>
-<li>浮点数</li>
-<li>Null</li>
-<li>时间</li>
-<li>日期</li>
-</ul>
-<p>数值直接以字面量的形式表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p><code>null</code> 用 <code>~</code> 表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>时间采用 ISO8601 格式。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><h3> 字符串</h3>
-<p>字符串是最常见，也是最复杂的一种数据类型。</p>
-<p>字符串默认不使用引号表示。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><h2> 引用</h2>
-<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>等同于下面的代码。</p>
-<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>
-<p>下面是另一个例子。</p>
-<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><h2> 函数和正则表达式的转换</h2>
-<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>
-<div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
-<div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="YAML"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
@@ -6359,6 +6245,150 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
+    <title type="text">golang 语言</title>
+    <id>https://blog.ruizhou.cf/tech/go/</id>
+    <link href="https://blog.ruizhou.cf/tech/go/"/>
+    <updated>2023-03-04T12:06:07.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>正在完善中...</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>正在完善中...</p>
+</div>
+<!-- more -->
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="Go"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
+    <title type="text">YAML 教程</title>
+    <id>https://blog.ruizhou.cf/tech/yaml/</id>
+    <link href="https://blog.ruizhou.cf/tech/yaml/"/>
+    <updated>2023-03-01T19:53:15.000Z</updated>
+    <summary type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
+<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
+<h2> yaml 介绍</h2>
+<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
+<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
+<p>它的基本语法规则如下。</p>
+<ul>
+<li>大小写敏感</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
+<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
+<h2> yaml 介绍</h2>
+<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
+<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
+<p>它的基本语法规则如下。</p>
+<ul>
+<li>大小写敏感</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+</ul>
+<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>
+<p>YAML 支持的数据结构有三种。</p>
+<ul>
+<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>
+<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>
+<li>纯量(scalars): 单个的、不可再分的值</li>
+</ul>
+<h2> 如何打开或编辑 yaml</h2>
+<p>推荐使用 VS Code，具体详见<a href="/software/vscode/simple.html" target="blank">VS Code 简单介绍</a>。</p>
+<h2> 数据结构介绍</h2>
+<h3> 对象</h3>
+<p>对象的一组键值对，使用冒号结构表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 数组</h3>
+<p>一组连词线开头的行，构成一个数组。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数组也可以采用行内表示法。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 复合结构</h3>
+<p>对象和数组可以结合使用，形成复合结构。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>转为 JavaScript 如下。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 纯量</h3>
+<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>
+<ul>
+<li>字符串</li>
+<li>布尔值</li>
+<li>整数</li>
+<li>浮点数</li>
+<li>Null</li>
+<li>时间</li>
+<li>日期</li>
+</ul>
+<p>数值直接以字面量的形式表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>null</code> 用 <code>~</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>时间采用 ISO8601 格式。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 字符串</h3>
+<p>字符串是最常见，也是最复杂的一种数据类型。</p>
+<p>字符串默认不使用引号表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 引用</h2>
+<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>等同于下面的代码。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>
+<p>下面是另一个例子。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 函数和正则表达式的转换</h2>
+<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>
+<div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="YAML"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
     <title type="text">几何</title>
     <id>https://blog.ruizhou.cf/software/comsol/geometry/</id>
     <link href="https://blog.ruizhou.cf/software/comsol/geometry/"/>
@@ -6590,107 +6620,6 @@ MySQL 会将该命令的配置保存到数据目录下的 <code>mysqld-auto.cnf<
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
     <published>2020-05-29T00:00:00.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">网格</title>
-    <id>https://blog.ruizhou.cf/software/comsol/mesh/</id>
-    <link href="https://blog.ruizhou.cf/software/comsol/mesh/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<h2> 网格基础</h2>
-<ul>
-<li><a href="/software/comsol/mesh/intro.html" target="blank">网格划分和细化介绍</a></li>
-</ul>
-<h3> 内容</h3>
-<h4> 剖分方法</h4>
-<ul>
-<li>物理场控制</li>
-<li>用户控制</li>
-</ul>
-<h4> 剖分程度</h4>
-<p>从极粗化到极细化一共九个级别。</p>
-<h4> 其他</h4>
-<p>可以进行定制。</p>
-<h3> 基础</h3>
-<p>教程视频:</p>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/video/building-the-mesh-for-a-model-geometry-in-comsol-multiphysics" target="_blank" rel="noopener noreferrer">在 COMSOL Multiphysics<sup>®</sup> 中为几何模型构建网格</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/video/meshing-in-comsol-multiphysics-tutorial-cn" target="_blank" rel="noopener noreferrer">在 COMSOL Multiphysics<sup>®</sup> 中剖分网格</a></p>
-</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<h2> 网格基础</h2>
-<ul>
-<li><a href="/software/comsol/mesh/intro.html" target="blank">网格划分和细化介绍</a></li>
-</ul>
-<h3> 内容</h3>
-<h4> 剖分方法</h4>
-<ul>
-<li>物理场控制</li>
-<li>用户控制</li>
-</ul>
-<h4> 剖分程度</h4>
-<p>从极粗化到极细化一共九个级别。</p>
-<h4> 其他</h4>
-<p>可以进行定制。</p>
-<h3> 基础</h3>
-<p>教程视频:</p>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/video/building-the-mesh-for-a-model-geometry-in-comsol-multiphysics" target="_blank" rel="noopener noreferrer">在 COMSOL Multiphysics<sup>®</sup> 中为几何模型构建网格</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/video/meshing-in-comsol-multiphysics-tutorial-cn" target="_blank" rel="noopener noreferrer">在 COMSOL Multiphysics<sup>®</sup> 中剖分网格</a></p>
-</li>
-</ul>
-<p>博客:</p>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/blogs/improved-capabilities-for-meshing-with-tetrahedral-elements/" target="_blank" rel="noopener noreferrer">网格剖分原理介绍</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/blogs/how-to-inspect-your-mesh-in-comsol-multiphysics/" target="_blank" rel="noopener noreferrer">如何检查 COMSOL Multiphysics<sup>®</sup> 中的网格</a></p>
-</li>
-</ul>
-<p>案例:</p>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/model/using-meshing-sequences-13869" target="_blank" rel="noopener noreferrer">使用网格划分序列</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/blogs/efficiently-mesh-your-model-geometry-with-meshing-sequences/" target="_blank" rel="noopener noreferrer">借助网格剖分序列提升几何模型的网格剖分效率</a></p>
-</li>
-</ul>
-<h4> 进阶</h4>
-<p>视频教程:</p>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/video/meshing-techniques-in-comsol-multiphysics-webinar-cn" target="_blank" rel="noopener noreferrer">COMSOL® 网格剖分技巧</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/video/meshing-tips-comsol-multiphysics" target="_blank" rel="noopener noreferrer">COMSOL® 网格剖分技巧</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/video/automated-meshing-infinite-element-domains" target="_blank" rel="noopener noreferrer">对无限元域自动划分网格</a></p>
-</li>
-</ul>
-<p>其他文档:</p>
-<ul>
-<li><a href="https://wenku.baidu.com/view/8d2eebe4eff9aef8941e06fe.html" target="_blank" rel="noopener noreferrer">COMSOL Multiphysics 网格剖分 变形几何</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="软件"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2020-06-02T00:00:00.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
 </feed>

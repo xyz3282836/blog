@@ -9,18 +9,53 @@
   </author>
   <logo>https://blog.ruizhou.cf/hero.png</logo>
   <rights>MIT 协议</rights>
-  <updated>2023-03-13T16:19:50.152Z</updated>
+  <updated>2023-03-14T01:45:44.836Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
   <category term="英文"/>
+  <category term="技术"/>
   <category term="服务器"/>
   <category term="软件"/>
-  <category term="技术"/>
+  <category term="Go"/>
+  <category term="YAML"/>
   <contributor>
     <name>ruizhou</name>
     <uri>https://blog.ruizhou.cf</uri>
   </contributor>
+  <entry>
+    <title type="text">‘Everything’ wins best picture, is everywhere at Oscars</title>
+    <id>https://blog.ruizhou.cf/english/everyday/2303140602.html</id>
+    <link href="https://blog.ruizhou.cf/english/everyday/2303140602.html"/>
+    <updated>2023-03-14T01:44:31.000Z</updated>
+    <summary type="html"><![CDATA[<p>The <code>metaphysical</code> multiverse <code>comedy</code> “Everything Everywhere All at Once” wrapped its hot dog fingers around Hollywood’s top prize Sunday, winning best picture at the 95th Academy Awards, along with awards for Michelle Yeoh, Ke Huy Quan and Jamie Lee Curtis. Though worlds away from [^Oscar bait], Daniel Kwan and Daniel Scheinert’s <code>anarchic</code> ballet of everything <code>bagels</code>, googly-eyed rocks and one <code>messy</code> tax audit emerged as an <code>improbable</code> Academy Awards heavyweight. The <code>indie</code> hit, A24’s second best picture winner following “Moonlight,” won seven Oscars in all.</p>]]></summary>
+    <content type="html"><![CDATA[<p>The <code>metaphysical</code> multiverse <code>comedy</code> “Everything Everywhere All at Once” wrapped its hot dog fingers around Hollywood’s top prize Sunday, winning best picture at the 95th Academy Awards, along with awards for Michelle Yeoh, Ke Huy Quan and Jamie Lee Curtis. Though worlds away from [^Oscar bait], Daniel Kwan and Daniel Scheinert’s <code>anarchic</code> ballet of everything <code>bagels</code>, googly-eyed rocks and one <code>messy</code> tax audit emerged as an <code>improbable</code> Academy Awards heavyweight. The <code>indie</code> hit, A24’s second best picture winner following “Moonlight,” won seven Oscars in all.</p>
+<p>[^Oscar bait]: <strong>Oscar bait</strong> is a term used in the film community for movies that appear to have been produced for the sole purpose of earning nominations for <a href="https://en.wikipedia.org/wiki/Academy_Awards" target="_blank" rel="noopener noreferrer">Academy Awards</a> or "Oscars", as they are commonly known.[<a href="https://en.wikipedia.org/wiki/Oscar_bait#cite_note-Slated_defense_article-1" target="_blank" rel="noopener noreferrer">1]</a> They are usually released just in advance of <a href="https://en.wikipedia.org/wiki/Oscar_season" target="_blank" rel="noopener noreferrer">Oscar season</a>, late in the calendar year, so as to meet the minimum eligibility requirements for the awards and be fresh in the minds of Oscar voters. The prestige or acclaim the studio may receive from the nomination or award is often secondary to the increased box office receipts such a film may garner; some films may even be depending on it to turn a profit.</p>
+<p>抽象的多元宇宙喜剧《瞬息全宇宙》周日用它的“热狗手指”夺得了好莱坞的最高奖项，第 95 届奥斯卡奖的最佳影片，同时杨紫琼、关继威和杰米·李·柯蒂斯还获得了表演奖项。 虽然与专为奥斯卡而拍的作品相去甚远，但关家永和丹尼尔·施纳特的无厘头“芭蕾”中的一切——从贝果、豆豆眼石头到一场混乱的税务审计——都组成了一部奇异的奥斯卡重磅作品。这部火爆的独立电影是制作公司 A24 继《月光男孩》之后的第二部奥斯卡最佳影片，总共赢得了七项奥斯卡奖。</p>
+<p><a href="/english/everyday/2303010624.html" target="blank">Screen Actors Guild awards 2023: Everything Everywhere All at Once breaks record for wins</a></p>
+<div class="hint-container info">
+<p class="hint-container-title">tips</p>
+<p>metaphysical：抽象的</p>
+<p>comedy：喜剧</p>
+<p>anarchic：无政府主义的，无规律的，无厘头</p>
+<p>bagel：百吉圈（硬面包）</p>
+<p>messy：散乱的（mess 混乱）</p>
+<p>improbable：不大可能的，奇异的（probable 可能的；prob- 测试，证明）</p>
+<p>indie：独立制片人</p>
+</div>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="英文"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-14T06:01:00.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
   <entry>
     <title type="text">‘Needle in a haystack’: Search over after radioactive capsule found in WA outback</title>
     <id>https://blog.ruizhou.cf/english/everyday/2302060657.html</id>
@@ -2387,6 +2422,35 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
+    <title type="text">技术</title>
+    <id>https://blog.ruizhou.cf/tech/</id>
+    <link href="https://blog.ruizhou.cf/tech/"/>
+    <updated>2023-03-01T19:53:15.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 目录</h2>
+<ul>
+<li><a href="/tech/go/" target="blank">golang</a></li>
+<li><a href="/tech/yaml/" target="blank">yaml</a></li>
+</ul>
+]]></summary>
+    <content type="html"><![CDATA[<h2> 目录</h2>
+<ul>
+<li><a href="/tech/go/" target="blank">golang</a></li>
+<li><a href="/tech/yaml/" target="blank">yaml</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </author>
+    <category term="技术"/>
+    <contributor>
+      <name>ruizhou</name>
+      <uri>https://blog.ruizhou.cf</uri>
+    </contributor>
+    <published>2023-03-01T19:53:15.000Z</published>
+    <rights>Copyright by ruizhou</rights>
+  </entry>
+  <entry>
     <title type="text">软件教程</title>
     <id>https://blog.ruizhou.cf/software/</id>
     <link href="https://blog.ruizhou.cf/software/"/>
@@ -2756,35 +2820,6 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
-    <title type="text">技术</title>
-    <id>https://blog.ruizhou.cf/tech/</id>
-    <link href="https://blog.ruizhou.cf/tech/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<h2> 目录</h2>
-<ul>
-<li><a href="/tech/go/" target="blank">golang</a></li>
-<li><a href="/tech/yaml/" target="blank">yaml</a></li>
-</ul>
-]]></summary>
-    <content type="html"><![CDATA[<h2> 目录</h2>
-<ul>
-<li><a href="/tech/go/" target="blank">golang</a></li>
-<li><a href="/tech/yaml/" target="blank">yaml</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="技术"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2023-03-01T19:53:15.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
     <title type="text">高频词汇</title>
     <id>https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html</id>
     <link href="https://blog.ruizhou.cf/english/vocabulary/high-frequency-vocabulary.html"/>
@@ -2878,187 +2913,147 @@
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
-    <title type="text">COMSOL</title>
-    <id>https://blog.ruizhou.cf/software/comsol/</id>
-    <link href="https://blog.ruizhou.cf/software/comsol/"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<p>这里是一些 Comsol 的学习资料整理与学习心得。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>这里是一些 Comsol 的学习资料整理与学习心得。</p>
-<!-- more -->
-<div class="hint-container tip">
-<p class="hint-container-title">写在前面</p>
-<p>本教程只适用于从未接触过仿真的人员，内容比较基础。</p>
-<p>我本人主要活跃在计算机相关领域，本科专业是物理学，并没有学过系统的工程原理、数值分析、模型建构以及相关的误差分析。COMSOL 是我本科制作毕设的软件，在毕设前，我也使用 COMSOL 构建了几个模型，完成了一些装置的模拟与优化。</p>
-<p>本篇教程，是根据我对 COMSOL 以及有限元仿真的理解书写的，一定会有一些疏漏与理解错误之处，还望大家指出。另外我主要研究过的方向是传热与流体流动，在本教程的举例中，也大多以这两方面为主。对其他的方向与模块，我是不熟悉的。</p>
-</div>
-<ul>
-<li>
-<p><a href="/software/comsol/install.html" target="blank">软件下载与安装</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/intro.html" target="blank">有限元分析软件介绍</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/get-started.html" target="blank">快速上手 COMSOL</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/geometry/" target="blank">几何</a></p>
-<ul>
-<li>
-<p><a href="/software/comsol/geometry/view.html" target="blank">浏览几何</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/geometry/build.html" target="blank">构建几何</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/software/comsol/select.html" target="blank">选择</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/material.html" target="blank">材料</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/physic-field.html" target="blank">物理场</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/mesh/" target="blank">网格</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/study.html" target="blank">研究</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/result.html" target="blank">结果</a></p>
-</li>
-<li>
-<p><a href="/software/comsol/app.html" target="blank">APP</a></p>
-</li>
-</ul>
-<h2> 文档</h2>
-<ul>
-<li>
-<p><a href="https://mrhope.site/file/comsol/IntroductionToCOMSOLMultiphysics.zh_CN.pdf" target="_blank" rel="noopener noreferrer">COMSOL 新手指南</a></p>
-</li>
-<li>
-<p><a href="https://mrhope.site/file/comsol/App%E5%BC%80%E5%8F%91%E5%99%A8%E7%AE%80%E4%BB%8B.pdf" target="_blank" rel="noopener noreferrer">COMSOL App 开发器简介</a></p>
-</li>
-<li>
-<p><a href="https://mrhope.site/file/comsol/ApplicationProgrammingGuide.zh_CN.pdf" target="_blank" rel="noopener noreferrer">COMSOL Multiphysics 应用程序编程指南</a></p>
-</li>
-<li>
-<p><a href="http://cn.comsol.com/multiphysics/" target="_blank" rel="noopener noreferrer">COMSOL 多物理场仿真百科</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/videos" target="_blank" rel="noopener noreferrer">COMSOL 视频中心</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/video-training" target="_blank" rel="noopener noreferrer">COMSOL 在线课程回放</a> (应该是在疫情期间限时开放)</p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/papers-presentations" target="_blank" rel="noopener noreferrer">基于 COMSOL 的论文</a></p>
-</li>
-</ul>
-<h2> 其他杂项</h2>
-<ul>
-<li>
-<p><a href="https://cn.comsol.com/blogs/how-to-make-boundary-conditions-conditional-in-your-simulation/" target="_blank" rel="noopener noreferrer">如何设置特殊边界条件</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/blogs/how-to-customize-the-comsol-desktop-and-use-keyboard-shortcuts/" target="_blank" rel="noopener noreferrer">如何定制 COMSOL Desktop<sup>®</sup> 和使用键盘快捷键</a></p>
-</li>
-<li>
-<p><a href="https://cn.comsol.com/blogs/how-to-use-the-find-and-auto-completion-tools-for-faster-model-setup/" target="_blank" rel="noopener noreferrer">使用查找工具和自动完成工具加快建模过程</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </author>
-    <category term="软件"/>
-    <contributor>
-      <name>ruizhou</name>
-      <uri>https://blog.ruizhou.cf</uri>
-    </contributor>
-    <published>2020-05-29T00:00:00.000Z</published>
-    <rights>Copyright by ruizhou</rights>
-  </entry>
-  <entry>
-    <title type="text">APP</title>
-    <id>https://blog.ruizhou.cf/software/comsol/app.html</id>
-    <link href="https://blog.ruizhou.cf/software/comsol/app.html"/>
-    <updated>2023-03-01T19:53:15.000Z</updated>
+    <title type="text">golang 语言</title>
+    <id>https://blog.ruizhou.cf/tech/go/</id>
+    <link href="https://blog.ruizhou.cf/tech/go/"/>
+    <updated>2023-03-13T01:57:12.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>制作中...</p>
+<p>正在完善中...</p>
 </div>
-<h2> 官方文档</h2>
-<h3> APP 博客</h3>
-<ul>
-<li><a href="https://cn.comsol.com/blogs/part-1-tips-to-improve-simulation-app-design-and-structure/" target="_blank" rel="noopener noreferrer">第一部分: 提升仿真 App 设计与结构的技巧</a></li>
-</ul>]]></summary>
+]]></summary>
     <content type="html"><![CDATA[<div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>制作中...</p>
+<p>正在完善中...</p>
 </div>
-<h2> 官方文档</h2>
-<h3> APP 博客</h3>
-<ul>
-<li><a href="https://cn.comsol.com/blogs/part-1-tips-to-improve-simulation-app-design-and-structure/" target="_blank" rel="noopener noreferrer">第一部分: 提升仿真 App 设计与结构的技巧</a></li>
-</ul>
-<h3> APP 视频</h3>
-<ul>
-<li><a href="https://cn.comsol.com/video/using-comsol-compiler-to-create-standalone-applications" target="_blank" rel="noopener noreferrer">使用 COMSOL Compiler™ 创建独立运行的仿真 App</a></li>
-</ul>
+<!-- more -->
 ]]></content>
     <author>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
     </author>
-    <category term="软件"/>
+    <category term="Go"/>
     <contributor>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
-    <published>2020-06-01T00:00:00.000Z</published>
+    <published>2023-03-01T19:53:15.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
   <entry>
-    <title type="text">创建新模型</title>
-    <id>https://blog.ruizhou.cf/software/comsol/create.html</id>
-    <link href="https://blog.ruizhou.cf/software/comsol/create.html"/>
+    <title type="text">YAML 教程</title>
+    <id>https://blog.ruizhou.cf/tech/yaml/</id>
+    <link href="https://blog.ruizhou.cf/tech/yaml/"/>
     <updated>2023-03-01T19:53:15.000Z</updated>
-    <summary type="html"><![CDATA[<p>您可以遵循模型向导的指示来建立模型，也可以使用空模型开始建模操作。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>您可以遵循模型向导的指示来建立模型，也可以使用空模型开始建模操作。</p>
-<!-- more -->
-<h2> 遵循模型向导创建模型</h2>
-<p>“模型向导”将引导您设置空间维度、物理场及研究类型，步骤如下:</p>
-<ol>
-<li>首先，为模型组件选择空间维度: 三维、二维轴对称、二维、一维轴对称或零维。</li>
-<li>现在，添加一个或多个物理场接口。这些接口根据不同的物理分支进行分类，以便您轻松查找所需的接口。</li>
-<li>选择表示将用于计算的求解器或求解器集的“研究”类型。</li>
-<li>最后，单击完成。此时桌面会显示根据“模型向导”中的选择进行配置的模型树。</li>
-</ol>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>对于初学者，Mr.Hope 建议使用模型向导。</p>
-</div>
-<h2> 创建空模型</h2>
-<p>空模型选项将打开不含任何组件或研究的 COMSOL Desktop 界面。可以右键单击模型树，添加特定空间维度的组件、物理场接口或研究。</p>
-<p>该选项对于熟悉 COMSOL 的人是很有用的。</p>
-]]></content>
+    <summary type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
+<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
+<h2> yaml 介绍</h2>
+<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
+<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
+<p>它的基本语法规则如下。</p>
+<ul>
+<li>大小写敏感</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>编程免不了要写配置文件，怎么写配置也是一门学问。</p>
+<p>YAML 是专门用来写配置文件的语言，非常简洁和强大。</p>
+<h2> yaml 介绍</h2>
+<p>YAML 语言(发音 /ˈjæməl/ )的设计目标，就是方便人类读写。它实质上是一种通用的数据串行化格式。</p>
+<p>YAML 的全称是 YAML Ain’t Markup Language。</p>
+<p>它的基本语法规则如下。</p>
+<ul>
+<li>大小写敏感</li>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许使用 Tab 键，只允许使用空格。</li>
+<li>缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</li>
+</ul>
+<p><code>#</code> 表示注释，从这个字符一直到行尾，都会被解析器忽略。</p>
+<p>YAML 支持的数据结构有三种。</p>
+<ul>
+<li>对象: 键值对的集合，又称为映射(mapping)/ 哈希(hashes) / 字典(dictionary)</li>
+<li>数组: 一组按次序排列的值，又称为序列(sequence) / 列表(list)</li>
+<li>纯量(scalars): 单个的、不可再分的值</li>
+</ul>
+<h2> 如何打开或编辑 yaml</h2>
+<p>推荐使用 VS Code，具体详见<a href="/software/vscode/simple.html" target="blank">VS Code 简单介绍</a>。</p>
+<h2> 数据结构介绍</h2>
+<h3> 对象</h3>
+<p>对象的一组键值对，使用冒号结构表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>Yaml 也允许另一种写法，将所有键值对写成一个行内对象。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 数组</h3>
+<p>一组连词线开头的行，构成一个数组。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>数组也可以采用行内表示法。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 复合结构</h3>
+<p>对象和数组可以结合使用，形成复合结构。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>转为 JavaScript 如下。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 纯量</h3>
+<p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量。</p>
+<ul>
+<li>字符串</li>
+<li>布尔值</li>
+<li>整数</li>
+<li>浮点数</li>
+<li>Null</li>
+<li>时间</li>
+<li>日期</li>
+</ul>
+<p>数值直接以字面量的形式表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>布尔值用 <code>true</code> 和 <code>false</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>null</code> 用 <code>~</code> 表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>时间采用 ISO8601 格式。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>日期采用复合 iso8601 格式的年、月、日表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>YAML 允许使用两个感叹号，强制转换数据类型。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><h3> 字符串</h3>
+<p>字符串是最常见，也是最复杂的一种数据类型。</p>
+<p>字符串默认不使用引号表示。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>多行字符串可以使用 <code>|</code> 保留换行符，也可以使用 <code>&gt;</code> 折叠换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p><code>+</code> 表示保留文字块末尾的换行，<code>-</code> 表示删除字符串末尾的换行。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 引用</h2>
+<p>锚点 <code>&amp;</code> 和别名 <code>*</code>，可以用来引用。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>等同于下面的代码。</p>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>&amp;</code> 用来建立锚点(defaults)，<code>&lt;&lt;</code> 表示合并到当前数据，<code>*</code> 用来引用锚点。</p>
+<p>下面是另一个例子。</p>
+<div class="language-yaml" data-ext="yml"></div><p>转为 JavaScript 代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><h2> 函数和正则表达式的转换</h2>
+<p>这是 JS-YAML 库特有的功能，可以把函数和正则表达式转为字符串。(官方 yaml 标准里不包含这个部分)</p>
+<div class="language-yaml" data-ext="yml"></div><p>解析上面的 yml 文件的代码如下。</p>
+<div class="language-javascript" data-ext="js"></div><p>从 JavaScript 对象还原到 yaml 文件的代码如下。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <author>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
     </author>
-    <category term="软件"/>
+    <category term="YAML"/>
     <contributor>
       <name>ruizhou</name>
       <uri>https://blog.ruizhou.cf</uri>
     </contributor>
-    <published>2020-06-01T00:00:00.000Z</published>
+    <published>2023-03-01T19:53:15.000Z</published>
     <rights>Copyright by ruizhou</rights>
   </entry>
 </feed>

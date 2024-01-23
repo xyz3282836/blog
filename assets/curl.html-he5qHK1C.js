@@ -1,2 +1,0 @@
-import{_ as a}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c,a as e,b as s}from"./app-sdOhtspb.js";const o={},n=e("p",null,"指定ip host用法",-1),r=e("div",{class:"language-bash","data-ext":"sh"},[e("pre",{class:"language-bash"},[e("code",null,[e("span",{class:"token function"},"curl"),s(),e("span",{class:"token parameter variable"},"--resolv"),s(` www.ruizhou.cf:443:104.128.93.139 https://www.ruizhou.cf
-`)])])],-1),l=[n,r];function _(u,i){return t(),c("div",null,l)}const p=a(o,[["render",_],["__file","curl.html.vue"]]);export{p as default};

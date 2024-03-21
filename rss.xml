@@ -6,14 +6,31 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 28 Feb 2024 11:03:32 GMT</pubDate>
-    <lastBuildDate>Wed, 28 Feb 2024 11:03:32 GMT</lastBuildDate>
+    <pubDate>Thu, 21 Mar 2024 07:00:06 GMT</pubDate>
+    <lastBuildDate>Thu, 21 Mar 2024 07:00:06 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
+    <category>linux</category>
     <category>英文</category>
     <category>编译</category>
     <category>js</category>
+    <item>
+      <title>常用命令</title>
+      <link>https://blog.ruizhou.cf/tech/linux/normal.html</link>
+      <guid>https://blog.ruizhou.cf/tech/linux/normal.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">常用命令</source>
+      <description>-c 显示完整命令行 -p 指定进程ID pgrep 查找匹配条件的进程 -d &amp;apos;,&amp;apos; 指定输出分隔符 -f 进程名称</description>
+      <category>linux</category>
+      <pubDate>Thu, 07 Mar 2024 13:20:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="language-bash" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="token function">top</span> <span class="token parameter variable">-c</span> <span class="token parameter variable">-p</span> <span class="token variable"><span class="token variable">$(</span>pgrep <span class="token parameter variable">-d</span> <span class="token string">','</span> <span class="token parameter variable">-f</span> nginx<span class="token variable">)</span></span>
+</code></pre></div><p>-c 显示完整命令行</p>
+<p>-p 指定进程ID</p>
+<p>pgrep 查找匹配条件的进程</p>
+<p>-d ',' 指定输出分隔符</p>
+<p>-f 进程名称</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>No joke: Feds are banning humorous electronic messages on highways</title>
       <link>https://blog.ruizhou.cf/english/everyday/2024/01/2401201901.html</link>
@@ -1940,17 +1957,6 @@ JZ target
       <category>英文</category>
       <pubDate>Wed, 01 Mar 2023 11:29:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>Thirteen Masai <code>giraffes</code> were darted and loaded onto trucks following a rescue effort in Kenya, after long being threatened by <code>poachers</code> and conflict with local <code>communities</code>. Native to East Africa, Masai giraffes are considered <code>endangered</code> by the International Union for Conservation of Nature, with their population declining by 52% in recent decades due to <code>poaching</code> and <code>habitat</code> loss. <code>Veterinary</code> doctors and capture officers at the state-run Kenya Wildlife Service have moved them from the Moi Ndabi area in the Naivasha basin to <code>conservancies</code>, including to the Loldia farm, some 75 miles northwest of the capital Nairobi, where they will be monitored.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>For Young Chinese Seeking Jobs, Less Pay Means More Life Balance</title>
-      <link>https://blog.ruizhou.cf/english/everyday/2023/2303020624.html</link>
-      <guid>https://blog.ruizhou.cf/english/everyday/2023/2303020624.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">For Young Chinese Seeking Jobs, Less Pay Means More Life Balance</source>
-      <description>The average starting salary for graduates in 2022 was the highest in 10 years; 6.1% of fresh graduates were paid a monthly salary of over 10,000 yuan ($1,437); but more graduate...</description>
-      <category>英文</category>
-      <pubDate>Wed, 01 Mar 2023 22:24:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>The average starting salary for graduates in 2022 was the highest in 10 years; 6.1% of fresh graduates were paid a monthly salary of over 10,000 yuan ($1,437); but more graduates are willing to <code>sacrifice</code> their salary for a better work-life balance. These were some of the findings of a <code>survey</code> that surfaced on social media this week, just ahead of the new <code>recruitment</code> season as new graduates across China prepare to start their <code>careers</code>. According to China’s <code>Ministry</code> of Education, around 11.6 million students will graduate this year — a record high.</p>
 ]]></content:encoded>
     </item>
   </channel>

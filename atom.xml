@@ -5,14 +5,14 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2024-07-31T02:24:25.435Z</updated>
+  <updated>2024-07-31T02:38:11.556Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
   <category term="money"/>
   <category term="engineering"/>
-  <category term="linux"/>
   <category term="harmony"/>
+  <category term="linux"/>
   <category term="web"/>
   <category term="英文"/>
   <category term="go"/>
@@ -118,6 +118,20 @@
     <published>2024-04-06T02:45:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">鸿蒙</title>
+    <id>https://blog.ruizhou.cf/tech/other/harmony.html</id>
+    <link href="https://blog.ruizhou.cf/tech/other/harmony.html"/>
+    <updated>2024-07-17T12:34:05.000Z</updated>
+    <summary type="html"><![CDATA[<h2>diff</h2>
+<figure><figcaption>diff</figcaption></figure>
+]]></summary>
+    <content type="html"><![CDATA[<h2>diff</h2>
+<figure><figcaption>diff</figcaption></figure>
+]]></content>
+    <category term="harmony"/>
+    <published>2024-06-25T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">base</title>
     <id>https://blog.ruizhou.cf/tech/linux/base.html</id>
     <link href="https://blog.ruizhou.cf/tech/linux/base.html"/>
@@ -176,20 +190,6 @@
 ]]></content>
     <category term="linux"/>
     <published>2024-06-18T04:44:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">鸿蒙</title>
-    <id>https://blog.ruizhou.cf/tech/other/harmony.html</id>
-    <link href="https://blog.ruizhou.cf/tech/other/harmony.html"/>
-    <updated>2024-07-17T12:34:05.000Z</updated>
-    <summary type="html"><![CDATA[<h2>diff</h2>
-<figure><figcaption>diff</figcaption></figure>
-]]></summary>
-    <content type="html"><![CDATA[<h2>diff</h2>
-<figure><figcaption>diff</figcaption></figure>
-]]></content>
-    <category term="harmony"/>
-    <published>2024-06-25T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">cors</title>

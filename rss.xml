@@ -6,15 +6,15 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 31 Jul 2024 02:24:25 GMT</pubDate>
-    <lastBuildDate>Wed, 31 Jul 2024 02:24:25 GMT</lastBuildDate>
+    <pubDate>Wed, 31 Jul 2024 02:38:11 GMT</pubDate>
+    <lastBuildDate>Wed, 31 Jul 2024 02:38:11 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
     <category>money</category>
     <category>engineering</category>
-    <category>linux</category>
     <category>harmony</category>
+    <category>linux</category>
     <category>web</category>
     <category>英文</category>
     <category>go</category>
@@ -72,6 +72,18 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>鸿蒙</title>
+      <link>https://blog.ruizhou.cf/tech/other/harmony.html</link>
+      <guid>https://blog.ruizhou.cf/tech/other/harmony.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">鸿蒙</source>
+      <description>diff diffdiff</description>
+      <category>harmony</category>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>diff</h2>
+<figure><figcaption>diff</figcaption></figure>
+]]></content:encoded>
+    </item>
+    <item>
       <title>base</title>
       <link>https://blog.ruizhou.cf/tech/linux/base.html</link>
       <guid>https://blog.ruizhou.cf/tech/linux/base.html</guid>
@@ -110,18 +122,6 @@
 <p>perf</p>
 <p>valgrind</p>
 <p>bcc-tools</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>鸿蒙</title>
-      <link>https://blog.ruizhou.cf/tech/other/harmony.html</link>
-      <guid>https://blog.ruizhou.cf/tech/other/harmony.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">鸿蒙</source>
-      <description>diff diffdiff</description>
-      <category>harmony</category>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>diff</h2>
-<figure><figcaption>diff</figcaption></figure>
 ]]></content:encoded>
     </item>
     <item>

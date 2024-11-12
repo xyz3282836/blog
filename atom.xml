@@ -5,10 +5,11 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2024-11-01T02:43:38.422Z</updated>
+  <updated>2024-11-12T11:23:48.827Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
+  <category term="技术"/>
   <category term="发布会"/>
   <category term="小米"/>
   <category term="docker"/>
@@ -16,24 +17,138 @@
   <category term="go"/>
   <category term="money"/>
   <category term="engineering"/>
+  <category term="linux"/>
   <category term="harmony"/>
   <category term="web"/>
-  <category term="linux"/>
   <category term="英文"/>
   <category term="Linux"/>
   <category term="基础"/>
   <category term="Android"/>
   <category term="前端"/>
   <category term="后端"/>
-  <category term="GitHub"/>
-  <category term="Node.js"/>
   <category term="小程序"/>
+  <category term="Node.js"/>
   <category term="教程"/>
   <category term="Vue"/>
   <category term="JavaScript"/>
+  <category term="GitHub"/>
   <contributor>
     <name>陈慧玲</name>
   </contributor>
+  <entry>
+    <title type="text">pooldequeue--double-ended queue</title>
+    <id>https://blog.ruizhou.cf/tech/source/stdlib/pooldequeue.html</id>
+    <link href="https://blog.ruizhou.cf/tech/source/stdlib/pooldequeue.html"/>
+    <updated>2024-11-12T11:21:21.000Z</updated>
+    <summary type="html"><![CDATA[<h2>pooldequeue</h2>
+<p>设计比较巧妙，单协程生产，多协程消费</p>
+<p>主要结构体定义如下，其中vals长度必须为2的N次幂</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">type</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> poolDequeue</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> struct</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// headTail packs together a 32-bit head index and a 32-bit</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// tail index. Both are indexes into vals modulo len(vals)-1.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// tail = index of oldest data in queue</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// head = index of next slot to fill</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// Slots in the range [tail, head) are owned by consumers.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// A consumer continues to own a slot outside this range until</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// it nils the slot, at which point ownership passes to the</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// producer.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// The head index is stored in the most-significant bits so</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// that we can atomically add to it and the overflow is</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// harmless.</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	headTail</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> uint64</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// vals is a ring buffer of interface{} values stored in this</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// dequeue. The size of this must be a power of 2.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// vals[i].typ is nil if the slot is empty and non-nil</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// otherwise. A slot is still in use until *both* the tail</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// index has moved beyond it and typ has been set to nil. This</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// is set to nil atomically by the consumer and read</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// atomically by the producer.</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> []</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">eface</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2>pooldequeue</h2>
+<p>设计比较巧妙，单协程生产，多协程消费</p>
+<p>主要结构体定义如下，其中vals长度必须为2的N次幂</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">type</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B"> poolDequeue</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> struct</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// headTail packs together a 32-bit head index and a 32-bit</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// tail index. Both are indexes into vals modulo len(vals)-1.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// tail = index of oldest data in queue</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// head = index of next slot to fill</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// Slots in the range [tail, head) are owned by consumers.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// A consumer continues to own a slot outside this range until</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// it nils the slot, at which point ownership passes to the</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// producer.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// The head index is stored in the most-significant bits so</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// that we can atomically add to it and the overflow is</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// harmless.</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	headTail</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> uint64</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// vals is a ring buffer of interface{} values stored in this</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// dequeue. The size of this must be a power of 2.</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	//</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// vals[i].typ is nil if the slot is empty and non-nil</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// otherwise. A slot is still in use until *both* the tail</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// index has moved beyond it and typ has been set to nil. This</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// is set to nil atomically by the consumer and read</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// atomically by the producer.</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> []</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">eface</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>headTail是一个uint64，可以unpack成为head和tail，起始值一样，当head增长的时候，和tail就会形成差值，差值为0就是队列为空，也就是tail追上了head的增长进度的时候，比如起始状态，</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> tail</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> ==</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// Queue is empty.</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">	return</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> nil</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">false</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当差值为val的len长度时，表示队列满了</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">+</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">uint32</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">len</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)))</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">&amp;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">&lt;&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">dequeueBits</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	fmt</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">Printf</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"pushHead head:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">%d</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> %b</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tail:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">%d</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> %b</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vals:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">%v</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> and Queue is full and "</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// Queue is full.</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">	return</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> false</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>vals为存放目标数据的固定数组，其中最核心的就是存放数据在数组中的索引，这个索引分为两个：</p>
+<p>一个为head新增索引</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">slot</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD"> &amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">[</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">head</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">uint32</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">len</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)]</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>新增的时候为</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">atomic</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">AddUint64</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">headTail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">&lt;&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">dequeueBits</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这里主要是直接给高位head添加1，实际增加<code>1&lt;&lt;dequeueBits</code></p>
+<p>一个为tail删除索引</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">slot</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD"> &amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">[</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">uint32</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">len</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)]</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>tail的增长目的就是pop目标数据了，新增的时候为</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ptrs2</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pack</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">+</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> atomic</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">CompareAndSwapUint64</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">headTail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ptrs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ptrs2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">	// Success.</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	slot</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD"> &amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">[</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">tail</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">uint32</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">len</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">d</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vals</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)]</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">	break</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>由于tail为地位，可以直接加1</p>
+<p>两个索引本质是数据队列的头和尾的索引，tail落后于head的增长，所以也就可以实现从head开始增加的地方pop目标数据，巧妙的实现了头增加尾部减少的目标</p>
+<p>另外，索引是可以循环的</p>
+<div class="language-go line-numbers-mode" data-highlighter="shiki" data-ext="go" data-title="go" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">func</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> Test_Pool</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">t</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD"> *</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">testing</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#C18401;--shiki-dark:#E5C07B">T</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  var</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> headTail</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> uint64</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">	vallen</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> &lt;&lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 7</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">	for</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 400</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">++</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">		head</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">_</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> unpack</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">headTail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">		index</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> :=</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> head</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2"> &amp;</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> uint32</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">vallen</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">-</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">		fmt</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">Printf</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"index:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">%d</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> %b</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">\n</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">index</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">index</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">		atomic</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">AddUint64</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#C678DD">&amp;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">headTail</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">&lt;&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">dequeueBits</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">	}</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从0-&gt;vallen-1，再回到0，0-&gt;vallen-1不停循环</p>
+<p>这个队列的大小是 2 的幂次方，这样可以用 <code>&amp;</code> 来取模，而不用 <code>%</code>，这样可以提高性能。</p>
+<p>测试代码：https://github.com/xyz3282836/gostd</p>
+<h2>reference</h2>
+<p>https://mp.weixin.qq.com/s/fj87oGZPkFKQiGZxhrYRVQ</p>
+]]></content>
+    <category term="技术"/>
+    <published>2023-07-22T14:40:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">科技发布会</title>
     <id>https://blog.ruizhou.cf/launch-event/</id>
@@ -78,7 +193,7 @@
     <title type="text">prometheus+granfan</title>
     <id>https://blog.ruizhou.cf/tech/docker/prometheus-granfan.html</id>
     <link href="https://blog.ruizhou.cf/tech/docker/prometheus-granfan.html"/>
-    <updated>2024-11-01T02:41:13.000Z</updated>
+    <updated>2024-11-12T11:21:21.000Z</updated>
     <summary type="html"><![CDATA[<h3>prometheus.yml</h3>
 <div class="language-yaml line-numbers-mode" data-highlighter="shiki" data-ext="yaml" data-title="yaml" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># my global config</span></span>
 <span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">global</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
@@ -183,7 +298,10 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>run shell</h3>
 <div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># cd compose.yml目录下，执行构建和启动</span></span>
 <span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> compose</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> up</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -d</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>granfan</p>
+<p>data source</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>http://host.docker.internal:9090</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content>
     <category term="docker"/>
     <published>2024-10-29T10:08:00.000Z</published>
   </entry>
@@ -644,6 +762,66 @@
     <published>2024-04-06T02:45:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">base</title>
+    <id>https://blog.ruizhou.cf/tech/linux/base.html</id>
+    <link href="https://blog.ruizhou.cf/tech/linux/base.html"/>
+    <updated>2024-07-17T12:34:05.000Z</updated>
+    <summary type="html"><![CDATA[<h2>系统监控和诊断工具</h2>
+<p>sysstat</p>
+<p>iotop</p>
+<p>pop-system-tools</p>
+<h2>网络</h2>
+<p>net-tools</p>
+<p>freedp</p>
+<p>tcpdump</p>
+<p>telnet</p>
+<p>nmap</p>
+<p>mtr</p>
+<p>map-ncat</p>
+<h2>文件系统与磁盘</h2>
+<p>lsof</p>
+<p>xfsdump</p>
+<p>strace</p>
+<p>Boom-boot</p>
+<p>smartmontools</p>
+<h2>系统管理</h2>
+<p>yum-utils</p>]]></summary>
+    <content type="html"><![CDATA[<h2>系统监控和诊断工具</h2>
+<p>sysstat</p>
+<p>iotop</p>
+<p>pop-system-tools</p>
+<h2>网络</h2>
+<p>net-tools</p>
+<p>freedp</p>
+<p>tcpdump</p>
+<p>telnet</p>
+<p>nmap</p>
+<p>mtr</p>
+<p>map-ncat</p>
+<h2>文件系统与磁盘</h2>
+<p>lsof</p>
+<p>xfsdump</p>
+<p>strace</p>
+<p>Boom-boot</p>
+<p>smartmontools</p>
+<h2>系统管理</h2>
+<p>yum-utils</p>
+<p>tmux</p>
+<p>psmisc</p>
+<p>rsync</p>
+<h2>系统日志</h2>
+<p>rsyslog</p>
+<p>sos</p>
+<h2>调试分析</h2>
+<p>strace</p>
+<p>perf</p>
+<p>valgrind</p>
+<p>bcc-tools</p>
+]]></content>
+    <category term="linux"/>
+    <published>2024-06-18T04:44:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">鸿蒙</title>
     <id>https://blog.ruizhou.cf/tech/other/harmony.html</id>
     <link href="https://blog.ruizhou.cf/tech/other/harmony.html"/>
@@ -803,66 +981,6 @@
     <published>2024-04-07T10:06:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">base</title>
-    <id>https://blog.ruizhou.cf/tech/linux/base.html</id>
-    <link href="https://blog.ruizhou.cf/tech/linux/base.html"/>
-    <updated>2024-07-17T12:34:05.000Z</updated>
-    <summary type="html"><![CDATA[<h2>系统监控和诊断工具</h2>
-<p>sysstat</p>
-<p>iotop</p>
-<p>pop-system-tools</p>
-<h2>网络</h2>
-<p>net-tools</p>
-<p>freedp</p>
-<p>tcpdump</p>
-<p>telnet</p>
-<p>nmap</p>
-<p>mtr</p>
-<p>map-ncat</p>
-<h2>文件系统与磁盘</h2>
-<p>lsof</p>
-<p>xfsdump</p>
-<p>strace</p>
-<p>Boom-boot</p>
-<p>smartmontools</p>
-<h2>系统管理</h2>
-<p>yum-utils</p>]]></summary>
-    <content type="html"><![CDATA[<h2>系统监控和诊断工具</h2>
-<p>sysstat</p>
-<p>iotop</p>
-<p>pop-system-tools</p>
-<h2>网络</h2>
-<p>net-tools</p>
-<p>freedp</p>
-<p>tcpdump</p>
-<p>telnet</p>
-<p>nmap</p>
-<p>mtr</p>
-<p>map-ncat</p>
-<h2>文件系统与磁盘</h2>
-<p>lsof</p>
-<p>xfsdump</p>
-<p>strace</p>
-<p>Boom-boot</p>
-<p>smartmontools</p>
-<h2>系统管理</h2>
-<p>yum-utils</p>
-<p>tmux</p>
-<p>psmisc</p>
-<p>rsync</p>
-<h2>系统日志</h2>
-<p>rsyslog</p>
-<p>sos</p>
-<h2>调试分析</h2>
-<p>strace</p>
-<p>perf</p>
-<p>valgrind</p>
-<p>bcc-tools</p>
-]]></content>
-    <category term="linux"/>
-    <published>2024-06-18T04:44:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text"></title>
     <id>https://blog.ruizhou.cf/english/everyday/2024/03/2404182054.html</id>
     <link href="https://blog.ruizhou.cf/english/everyday/2024/03/2404182054.html"/>
@@ -889,7 +1007,7 @@
     <title type="text">go语言测试</title>
     <id>https://blog.ruizhou.cf/tech/go/test.html</id>
     <link href="https://blog.ruizhou.cf/tech/go/test.html"/>
-    <updated>2024-04-04T15:27:22.000Z</updated>
+    <updated>2024-11-12T11:21:21.000Z</updated>
     <summary type="html"><![CDATA[<h2>普通测试</h2>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">go</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> test</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -run</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Testxxx</span></span>
 <span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">匹配</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> Testxxx</span></span></code></pre>
@@ -901,7 +1019,7 @@
 <h2>性能测试</h2>
 <p><code>-run</code>一般执行普通测试，性能测试需要<code>-bench</code>开启</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">go</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> test</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -bench</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>必须<code>Benchmark</code>开头，负责出错</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>必须<code>Benchmark</code>开头，否则出错</p>
 <p>例子：</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>go test -bench=BenchmarkGenerate$ -benchmem -benchtime=50x -count=3</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>-benchmem 展示内存分配信息</p>
@@ -2816,503 +2934,291 @@
     <published>2019-09-20T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">GitHub</title>
-    <id>https://blog.ruizhou.cf/code/github/</id>
-    <link href="https://blog.ruizhou.cf/code/github/"/>
-    <updated>2024-07-24T03:08:09.000Z</updated>
-    <summary type="html"><![CDATA[<h2>快速上手</h2>
-]]></summary>
-    <content type="html"><![CDATA[<h2>快速上手</h2>
-]]></content>
-    <category term="GitHub"/>
-    <published>2019-11-20T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">自动部署</title>
-    <id>https://blog.ruizhou.cf/code/github/deploy.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/deploy.html"/>
+    <title type="text">小程序</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/"/>
     <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>本文介绍如何利用 Git 和 GitHub Action，自动部署代码到服务器。</p>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
 ]]></summary>
-    <content type="html"><![CDATA[<p>本文介绍如何利用 Git 和 GitHub Action，自动部署代码到服务器。</p>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
 <!-- more -->
+<h2>小程序基础简介</h2>
+<p>在微信小程序中主要有四种文件结构: <code>wxml</code>、<code>wxss</code>、<code>js</code> 和 <code>json</code>。其中 <code>wxml</code> 对应带有 vue.js 特征的 html5，<code>wxss</code> 对应 css3，<code>js</code> 对应 ES6 标准的的 javaScript。</p>
+<p>对于 QQ 小程序，其文件结构为 <code>QML</code>、<code>qss</code>、<code>js</code> 和 <code>json</code>。</p>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>由于 Centos 仍然是用 GitV1，本教程使用 Ubuntu 20.04 进行教学。</p>
+<p>QQ 小程序本质还是换汤不换药的，且 QQ 开发者工具兼容 <code>wxml</code> 与 <code>wss</code>)</p>
 </div>
-<h2>服务器</h2>
-<p>为了能供自动部署到服务器，我们需要让服务器的网站目录成为一个 Git 仓库，这样我们可以在 GitHub Actions 中，通过向服务器对应 GitHub 仓库推送网站内容，使服务器网站获得自动更新。下面是服务器侧的部署配置</p>
-<h3>添加账户</h3>
-<p>为了安全，首先需要使用命令创建 Git 用户，为了安全请务必设置密码。</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> adduser</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> git</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>之后，查看部署目录所在组，git 用户添加到组中。</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">usermod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -G</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">目录所在</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">组&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">git</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>然后将部署目录的权限设置为 <code>775</code>，即允许同组访问。这样 git 就有权限访问部署目录。</p>
-<h3>添加权限</h3>
-<p>创建 <code>~/.ssh/</code> 文件夹，生成 <code>authorized_keys</code> 文件，并设置其权限为 <code>600</code>。</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">touch</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/authorized_keys</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">chmod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 600</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/authorized_keys</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>之后将需要赋予权限的用户公钥依次粘贴至该文件，这样相关用户即可以使用对应私钥，向服务器相关仓库推送代码。</p>
-<h3>创建仓库</h3>
-<p>回到 <code>/home/git/</code>，创建所需的文件夹:</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkdir</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">仓库</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">名&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>进入文件夹，使用</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> init</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --separate-git-dir=.</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">部署位</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">置&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这会将 git 库保持在 <code>/home/git/&lt;仓库名&gt;</code> 下，同时将工作区设置到部署文件夹中。</p>
-<p>接下来执行:</p>
-<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> receive.denyCurrentBranch</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ignore</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --add</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> safe.directory</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">部署文件</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">夹&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container note">
-<p class="hint-container-title">注</p>
-<p>Git 默认拒绝外部对当前分支的推送操作，因为这可能会覆盖或变更工作区文件。所以我们需要显式通知 Git 不要拒绝当前分支的推送操作。</p>
-<p>另外在新版本 Git 中，考虑到安全因素，Git 会在检出时检测项目文件夹是否属于其他组成员，如果检测到会默认拒绝相关操作以防止其他用于获取到本不应该获取到的代码信息。因为部署文件夹的所有者通常不会是 git，所以我们需要标记对应的部署文件夹“安全”。</p>
-</div>
-<h2>GitHub Actions</h2>
-<p>在 GitHub 一侧，我们需要通过 GitHub Action，在新代码推送时自动构建网站，并部署到 GitHub 的 gh-pages 分支。之后，GitHub Action 将该分支的变动推送服务器的对应仓库，完成网站的自动部署。</p>
-<p>之后只需要使用 GitHub Action 通过 Git 推送到 <code>git@&lt;domain&gt;:&lt;部署目录&gt; gh-pages</code> 即可。</p>
-<div class="language-yml line-numbers-mode" data-highlighter="shiki" data-ext="yml" data-title="yml" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 自动部署的名称</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">GitHub pages deploy</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 自动部署的条件</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  push</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    branches</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">master</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">jobs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  # 构建网站并部署到 GitHub Pages</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  deploy-gh-pages</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 运行环境</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    runs-on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">ubuntu-latest</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 步骤</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    steps</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 第一步: 下载源码</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Checkout</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # action 配置详见 https://github.com/actions/checkout</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/checkout@v4</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果本项目包含了子模块 (git submodules)，需要将此项设置为 true</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # submodules: true</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 这是获取历史 commit 的深度，默认为 1，即只拉取最后一个 commit</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 这样可以加快拉取速度</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          #</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果项目使用 VuePress，为了正确通过 Git 历史提交记录生成页面的最后更新时间</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要设置为 0 以拉取完整的 git 历史提交</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # fetch-depth: 0</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果子模块包含私有仓库，需要设置 ssh key 或 token 以保证拥有拉取相应仓库的权限</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 您可以将 ssh-key 设置为 github 绑定公钥对应的私钥</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 也可以新建一个具有相关仓库访问权限的 github token</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # token:</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 缓存 node_modules 以避免重复安装</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/cache@v3</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        id</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node-modules</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要缓存的路径</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node_modules/</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 缓存的 key</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          key</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 恢复 key</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          restore-keys</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">            ${{ runner.os }}-node-modules-</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 安装依赖</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Install Deps</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 只有没有命中缓存才会执行</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">steps.node-modules.outputs.cache-hit != 'true'</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 严格按照 yarn.lock 安装依赖</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">yarn install --frozen-lockfile</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 构建项目</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Build</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 项目的构建命令</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">yarn run build</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 第四步，部署</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Deploy</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # action 配置详见 https://github.com/JamesIves/github-pages-deploy-action</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">JamesIves/github-pages-deploy-action@v4</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 部署到的分支</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          branch</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">gh-pages</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要部署的文件夹</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          folder</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">dist</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  # 部署到服务器</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  deploy-server</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    runs-on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">ubuntu-latest</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 确保在部署到 GitHub Pages 之后执行</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    needs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">deploy-gh-pages</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    steps</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 检出网站代码</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Checkout</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/checkout@v4</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 检出 gh-pages 分支</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          ref</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">gh-pages</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 获取全部的历史提交</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          fetch-depth</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">0</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 配置环境</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Configuration environment</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 写入私钥、配置 Git 用户名，写入服务器地址</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 您需要自行将服务器的私钥写入 secrets 的 SSH_PRIVATE_KEY</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          mkdir -p ~/.ssh/</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          echo "${{ secrets.SSH_PRIVATE_KEY }}" &gt; ~/.ssh/id_rsa</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          chmod 600 ~/.ssh/id_rsa</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          ssh-keyscan &lt;your domain&gt; &gt;&gt; ~/.ssh/known_hosts</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git config --global user.name 'Your Name'</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git config --global user.email 'You email'</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 部署到服务器</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Deploy</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 使用 Git 将网站代码强制推送到远程的网站目录</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 并使用 SSH 连接服务器进入网站目录手动切换到最新提交</span></span>
-<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git push -f git@&lt;your domain&gt;:&lt;deploy dir&gt; gh-pages</span></span>
-<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          ssh git@&lt;your domain&gt; "cd &lt;deploy dir&gt; &amp;&amp; git reset --hard HEAD"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="GitHub"/>
-    <published>2021-01-18T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">GitHub 简介</title>
-    <id>https://blog.ruizhou.cf/code/github/intro.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/intro.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2><s>Gayhub</s> GitHub 是世界上最大的 <s>同性交友</s> 代码托管网站</h2>
-<p>😋 当然在上面交友也是极好的(这是重点，圈起来要考的😎)。</p>
-<h2>基本概念</h2>
-<h3>Repository</h3>
-<p>仓库。一个仓库即是一个项目。仓库是 GitHub 上的主要内容。每当您新建一个项目并想要在 GitHub。</p>
-<h3>Star</h3>
-<p>收藏。在每一个仓库主页的上方可以看到 star 按钮。其上的数值为收藏该项目的人数。点击星星即可将当前仓库收藏到您的账号上。您可以收藏一些您比较喜欢，或者项目对您来说有很大价值的项目。同时，点击数字可以看到哪些人收藏了这个项目。</p>]]></summary>
-    <content type="html"><![CDATA[<h2><s>Gayhub</s> GitHub 是世界上最大的 <s>同性交友</s> 代码托管网站</h2>
-<p>😋 当然在上面交友也是极好的(这是重点，圈起来要考的😎)。</p>
-<h2>基本概念</h2>
-<h3>Repository</h3>
-<p>仓库。一个仓库即是一个项目。仓库是 GitHub 上的主要内容。每当您新建一个项目并想要在 GitHub。</p>
-<h3>Star</h3>
-<p>收藏。在每一个仓库主页的上方可以看到 star 按钮。其上的数值为收藏该项目的人数。点击星星即可将当前仓库收藏到您的账号上。您可以收藏一些您比较喜欢，或者项目对您来说有很大价值的项目。同时，点击数字可以看到哪些人收藏了这个项目。</p>
-<h3>Fork</h3>
-<p>复刻。在每一个仓库主页的上方可以看到 Fork 按钮。点击该按钮的作用是将当前项目复刻一份到自己的仓库中，这样，您就可以在此仓库仓库上查看当前、历史的版本，切换分支、或者是随心所欲的进行修改。原项目的新的推送、对历史版本的修改、甚至原作者删除了他的 repo，都不会对您 fork 的项目产生任何影响。</p>
-<h3>Issue</h3>
-<p>议题。你可将这里理解为 Bug 汇报区与新功能提交区。</p>
-<p>如果您在使用该项目的过程中遇到了问题，可以在相应项目的 Issue 板块按照项目的要求提出 Issue。在 Issue 中可以汇报一个 bug，或者是提出一个 Feature Request (功能请求)。项目的拥有者可以针对您汇报的情况对您做出回复。</p>
-<p>同时，项目拥有者还可以:</p>
-<ul>
-<li>为此 issue 增加 label (标签)，以帮助项目成员或是项目的其他使用者更好的理解这个 issue 的分类</li>
-<li>将此 issue assign (分派) 给特定的项目成员解决。</li>
-<li>将此 issue 加入特定的 project (项目) 以安排处理日期与进度。</li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>为了 GitHub 的友好交流环境，请在汇报 bug 时永远带上 bug 的一个简易的复现流程，可以直接建立一个简单的 reproduction repo 并把链接放置在您提出的 issue 中。</p>
-</div>
-<h3>Pull Request</h3>
-<p>发起推送请求，简称 <strong>PR</strong>。如果是您自己的项目，您可以从一个分支向另一个分支发起推送请求。如果您想对别人的(您无权进行推送)项目进行代码的推送请求的化，需要先 fork 这个仓库。在自己 fork 的项目上进行修改，然后提交到自己的项目上，之后，建立一个从自己仓库到对方仓库的 PR。如果对方觉得您的新改动很不错，在经过测试或者 review 后就会接受它，这样原有项目就可拥有这些新的代码了.</p>
-<h3>Discussion</h3>
-<p>GitHub 的讨论区，和 Issue 区主要用于 Bug 和 Feature Request 的追踪不同，通常情况下，你可以在讨论区开帖子询问使用中遇到的问题，以便其他人进行答复。你也可以在 Discussion 区提供项目的看法与建议，比如对某个功能进行改进的方式以及相关理由。你也可以展示你自己使用项目的一些新的或是与项目相关的一些内容。</p>
-<h3>Watch</h3>
-<p>关注，在每一个仓库主页的上方可以看到 Watch 按钮。如果您关注了某个项目,那么这个项目有了变化的时候,您就会得到通知.在您点击关注后，您还可以点击下拉列表进一步设置关注级别。您可以选择接受 Release (新发布) 通知，也可以选择 Watching 来监听所有的通知。当您选择 Ignore 的话，即使有人在这个仓库中 mention (提到) 了您，您也不会得到通知。</p>
-<h3>Review</h3>
-<p>审查。当项目收到 PR 时，项目的拥有成员可以对这份 PR 的代码改动进行审查，在 Review 的过程中，可以对代码的特定行或特定几行通过 comment(评论) 的方式来提出自己对代码改动的意见。</p>
-<h2>主页</h2>
-<figure><figcaption>主页</figcaption></figure>
-<p><a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a></p>
-<p>主页，在您登陆后，屏幕的左侧会展示您和您加入团队的项目，以及您的团队详情。中部会显示您关注的项目、人的动态，右侧会根据算法展示一些您可能会感兴趣的 repo。</p>
-<h2>个人主页</h2>
-<figure><figcaption>个人主页</figcaption></figure>
-<p><strong>地址:</strong> <code>https://github.com/&lt;您的用户名&gt;</code></p>
-<p>个人主页会有几个主要面板:</p>
-<h3>Overview</h3>
-<p>个人概览，您可以在上方 pin(固定) 最多六个您想要展示给他人的仓库。</p>
-<p>下方就是您过去一年里向 GitHub 的提交数量分布图，以及您在 GitHub 上的活动比例。</p>
-<p>最下方是近几年您在 GitHub 上的活动记录。</p>
-<h3>Repositories</h3>
-<figure><figcaption>个人仓库</figcaption></figure>
-<p>仓库列表，该面板会按照最后更新时间的倒序，展示该用户拥有的所有 repo，同时也会在面板上展示项目的 Description (描述)、Star 数、Fork 数、语言、协议、标签，以及过去一年内项目的 commit 分布数量。这些都能够帮助浏览者在不进入具体仓库页面的情况下大致了解每一个仓库的内容、欢迎程度与维护情况。</p>
-<h3>Projects</h3>
-<p>个人拥有的项目，在管理自己与团队跨仓库的活动日程时很有用。可以设置涉及到的仓库，提出任务、代办、时间表等。</p>
-<h3>Packages</h3>
-<p>个人在 GitHub 上拥有的包。目前较少人在 GitHub 上发布相关的包。</p>
-<h3>Stars</h3>
-<p>和仓库列表完全相同，只不过展示该用户收藏的 repo。</p>
-<h3>Followers / Following</h3>
-<p>关注您的人 / 关注的人。在个人主页的左侧就有 follow 按钮，follow 一个人意味着这个人在 GitHub 的的活动会出现在 GitHub 主页的 Activity List 上。</p>
-<h2>仓库主页</h2>
-<figure><figcaption>仓库主页</figcaption></figure>
-<p>仓库主页主要显示项目的信息。从左到右的面板依次是: Code(代码)，Issues (问题)、Pull Requests (提交请求)、Discussions (讨论)、Actions (自动流程)、 Projects (项目)、 Wiki (项目介绍)、 Security (项目安全)、 Insights (项目数据统计) 与 Settings (项目设置)。</p>
-<blockquote>
-<p>仓库可以选择关闭 Issues、Discussions、Wiki 之类的面板。</p>
-</blockquote>
-<p>在下方会展示代码文件以及项目说明 README.md 文件。</p>
-]]></content>
-    <category term="GitHub"/>
-    <published>2019-11-20T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">GitHub Pages</title>
-    <id>https://blog.ruizhou.cf/code/github/pages.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/pages.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>GitHub Pages 是静态站点托管服务，可直接从 GitHub 上的存储库中获取 HTML，CSS 和 JavaScript 文件，还可以选择在构建过程中运行这些文件并发布网站。</p>
-<p>您可以将站点托管在 GitHub 的 <code>github.io</code> 域名或您自己的自定义域名上。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>GitHub Pages 是静态站点托管服务，可直接从 GitHub 上的存储库中获取 HTML，CSS 和 JavaScript 文件，还可以选择在构建过程中运行这些文件并发布网站。</p>
-<p>您可以将站点托管在 GitHub 的 <code>github.io</code> 域名或您自己的自定义域名上。</p>
-<!-- more -->
-<h2>简介</h2>
-<p>GitHub Pages 站点共有三种类型: 项目，用户和组织。</p>
-<p>项目站点连接到 GitHub 上托管的特定项目，而用户和组织站点已连接到特定的 GitHub 帐户。</p>
-<ul>
-<li>要发布用户站点，您必须创建一个名为的用户帐户拥有的存储库 <code>&lt;username&gt;.github.io</code>。</li>
-<li>要发布组织站点，您必须创建一个名为的组织所拥有的存储库 <code>&lt;organization&gt;.github.io</code>。</li>
-</ul>
-<p>除非您使用自定义域名，否则用户站点和组织站点均位于 <code>http(s)://&lt;username&gt;.github.io</code> 或 <code>http(s)://&lt;organization&gt;.github.io</code>。</p>
-<p>项目站点的源文件与其项目存储在同一存储库中。除非您使用自定义域，否则项目站点可在 <code>http(s)://&lt;username&gt;.github.io/&lt;repository&gt;</code> 或 <code>http(s)://&lt;organization&gt;.github.io/&lt;repository&gt;</code> 访问。</p>
-<p>虽然您只能在 GitHub 上为每个帐户创建一个用户或组织站点。但无论是组织还是用户帐户拥有的项目站点都是无限的。</p>
-<h2>发布源文件到 GitHub Pages</h2>
-<div class="hint-container caution">
-<p class="hint-container-title">警告</p>
-<p>GitHub Pages 站点 默认在互联网上公开，即使站点的仓库是私有的。</p>
-</div>
-<p>如果您的存储库中存在默认发布源，则 GitHub Pages 将自动从该源发布网站。用户和组织站点的默认发布源是存储库的默认分支的根目录。项目站点的默认发布源是 gh-pages 分支的根目录。</p>
-<p>您需要跳转到 Settings (设置) 选项卡，下来找到 GitHub Pages 的配置部分。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>您只能在根目录 (<code>/</code>) 和 文档目录 (<code>/docs</code>) 之间进行选择，而不能将仓库内的任意文件夹作为发布源。</p>
-</div>
-<h3>静态站点</h3>
-<p>GitHub Pages 发布您推送到存储库的所有静态文件，这意味它不支持服务器端语言，例如 PHP，Ruby 或 Python。也就是您只能通过 GitHub Pages 发布 “无后端” 的纯静态站点。</p>
-<h3>限制</h3>
+<p>小程序开发与网页开发极其相似。所以必须有适当的网页开发基础。零基础的人可能很难直接上手小程序开发。</p>
+<h2>教程目录</h2>
 <ul>
 <li>
-<p>GitHub Pages 网站不得超过 1 GB。</p>
+<p><a href="/code/mini-app/guide/file-structure.html" target="_blank">文件结构</a></p>
 </li>
 <li>
-<p>GitHub Pages 站点的带宽限制为每月 100GB。</p>
+<p><a href="/code/mini-app/guide/env.html" target="_blank">运行环境</a></p>
 </li>
 <li>
-<p>GitHub Pages 站点限制为每小时最多构建 10 次。</p>
-</li>
-</ul>
-<h3>子模块</h3>
-<p>如果 GitHub Pages 站点的仓库包含子模块，则在构建站点时会自动拉取其内容。</p>
-<p>只能使用指向公共仓库的子模块，因为 GitHub Pages 服务器无法访问私有仓库。</p>
-<p>对子模块 (包括嵌套子模块) 使用 <code>https://</code> 只读 URL。 您可以在 .gitmodules 文件中进行此更改。</p>
-<h2>取消发布</h2>
-<h3>取消发布项目站点</h3>
-<ol>
-<li>在 GitHub 上，导航到仓库的主页面。</li>
-<li>如果仓库中存在 gh-pages 分支，请删除 gh-pages 分支。</li>
-<li>在仓库名称下，单击 Settings (设置) 。</li>
-<li>在“ GitHub Pages”下，使用 Source (源) 下拉菜单并选择 None (无) 。</li>
-</ol>
-<h3>取消发布用户或组织站点</h3>
-<ol>
-<li>在 GitHub 上，导航到仓库的主页面。</li>
-<li>删除用作发布源的分支，或删除整个仓库。</li>
-</ol>
-<h2>自定义域名</h2>
-<p>您可以在对应仓库的 Settings (设置) 选项卡设置自定义域名，同时您需要将自定义域名的 CNAME 记录指向 <code>&lt;用户名&gt;.github.io</code>。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>自定义域名的控制是由发布源文件夹下的 CNAME 文件控制的，您可以直接创建这个文件写入链接。</p>
-<p>同时，GitHub Pages 要求这个文件一直存在，否则自定义域名会失效。</p>
-</div>
-]]></content>
-    <category term="GitHub"/>
-    <published>2021-02-20T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Pull Request</title>
-    <id>https://blog.ruizhou.cf/code/github/pr.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/pr.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>简介</h2>
-<p>对于一个用户的公开仓库，在默认情况下虽然其他用户可以拉取该库的代码，但是他们并不能够直接向这个库进行推送。</p>
-<p>GitHub 是一个代码社区，这意味着鼓励大家互相提交与贡献代码。所以这就是 Fork 和 Pull Request 出现的意义。没有人会给一个陌生人添加访问自己仓库的权限，所以我们需要一种方式，能够让大家向仓库所有者发起贡献代码的请求。这就是 pull request 的由来。</p>
-<h2>提交自己贡献的代码</h2>
-<p>对于代码贡献者来说，他需要用一种方法将自己贡献的代码推送到远程库上，以便发起请求，最好的办法就是 fork 原仓库。</p>]]></summary>
-    <content type="html"><![CDATA[<h2>简介</h2>
-<p>对于一个用户的公开仓库，在默认情况下虽然其他用户可以拉取该库的代码，但是他们并不能够直接向这个库进行推送。</p>
-<p>GitHub 是一个代码社区，这意味着鼓励大家互相提交与贡献代码。所以这就是 Fork 和 Pull Request 出现的意义。没有人会给一个陌生人添加访问自己仓库的权限，所以我们需要一种方式，能够让大家向仓库所有者发起贡献代码的请求。这就是 pull request 的由来。</p>
-<h2>提交自己贡献的代码</h2>
-<p>对于代码贡献者来说，他需要用一种方法将自己贡献的代码推送到远程库上，以便发起请求，最好的办法就是 fork 原仓库。</p>
-<figure><figcaption>Fork 仓库</figcaption></figure>
-<div class="hint-container info">
-<p class="hint-container-title">相关信息</p>
-<p>相关介绍，请见 <a href="/code/github/intro.html#fork" target="_blank">GitHub 简介 → fork</a></p>
-</div>
-<p>这样，贡献者在自己的账号上获得一个和原仓库完全相同的副本。</p>
-<p>既然副本已经创建在自己的账号上，贡献者自然可以:</p>
-<ol>
-<li>克隆这个项目到本地</li>
-<li>在这个项目上贡献自己的代码</li>
-<li>将贡献的代码推送到这个副本上</li>
-</ol>
-<h2>发送请求</h2>
-<p>pull request 是请求仓库所有者拉取指定仓库分支代码的请求。</p>
-<p>在贡献自己的代码并推送到自己的 fork 仓库后，贡献者即可到原仓库去选择自己仓库的对应分支发送这个拉取请求。仓库所有者随时可以批准这个更改，使其自动添加到自己的库中，或是拒绝这个请求。</p>
-<figure><figcaption>Pull request</figcaption></figure>
-<blockquote>
-<p>这个仓库我已经删了所以显示 <code>unknown repository</code>，原为 <code>Mister-Hope:master</code></p>
-</blockquote>
-<p>这个页面允许所有人在主要对话线上交换自己的意见。</p>
-<p>在 Pull request 里，一旦请求被创建，仓库所有者应该可以直观地看到哪些文件发生了怎样的改变。</p>
-<figure><figcaption>文件改动</figcaption></figure>
-<p>同时，他们也可以对贡献者的代码进行审查，对特定行或片段标注，并陈述自己的意见，同时将这个意见根据程度标注为“探讨”、“改进”或者“必须更改”，以便贡献者进行交流讨论与完善修改。</p>
-<figure><figcaption>代码审查</figcaption></figure>
-<p>同时，对于一个大型库来说，仓库所有者应该可以看到贡献的代码是否通过了所有测试。</p>
-<figure><figcaption>测试通过情况</figcaption></figure>
-<p>如果审查者认为没有问题，他可能就会通过这个拉取请求，拉取对应的代码到自己的仓库上。这样您就完成了对这个仓库的贡献。</p>
-<h2>同步原仓库</h2>
-<p>需要注意的是，fork 创建的是一个时刻副本，也就是自己 fork 产生的仓库，会保持 fork 时的状态，原仓库的任何变动都不会自动同步到 fork 的仓库上。</p>
-<p>有些时候，在自己 fork 原仓库、自己编写代码并提交的这段时间里，原仓库已经进行了很多提交。这时，我们就需要同步原仓库的更新到自己的副本上，以确保自己贡献的代码并未和新增代码发生冲突、可以正常工作。</p>
-<p>这个时候只需反向拉取，在自己的仓库创建原仓库特定分支到自己仓库特定分支的 Pull request，并批准这个 pull request。这样即可很方便的将原仓库特定分支的更新同步到自己的副本上。</p>
-<p>您当然可以在本地添加原仓库的远程库，将最新的更改直接 fetch 到本地，在本地测试通过并完成合并后，由本地推送至自己的 fork 仓库。</p>
-]]></content>
-    <category term="GitHub"/>
-    <published>2021-02-18T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">语义化提交</title>
-    <id>https://blog.ruizhou.cf/code/github/semantic.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/semantic.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>Semantic</h2>
-<p>对于一个大型项目，几千个 commit 是很常见的，这些 commit 部分是项目维护者提交的 commit，部分是一些热心的开发者通过 PR 贡献的。</p>
-<p>无论是对于项目维护者，还是想要贡献代码的热心开发者来说，一个简洁明了的 commit 描述都是必不可少的。也就是说我们需要用尽可能简短的备注信息，备注每一个 commit 的作用，以便大家查看。所以我们需要一种规范的，语义化的备注格式，很快由知名项目牵头，全球接收并统一了一种语义化的备注格式，这就是 semantic 规范的来源。</p>
-<h2>优势</h2>
-<p>当一个仓库所有的 commit 信息都是用标准的 semantic 格式时，用户可以很方便的理解每一个 commit 的作用。</p>]]></summary>
-    <content type="html"><![CDATA[<h2>Semantic</h2>
-<p>对于一个大型项目，几千个 commit 是很常见的，这些 commit 部分是项目维护者提交的 commit，部分是一些热心的开发者通过 PR 贡献的。</p>
-<p>无论是对于项目维护者，还是想要贡献代码的热心开发者来说，一个简洁明了的 commit 描述都是必不可少的。也就是说我们需要用尽可能简短的备注信息，备注每一个 commit 的作用，以便大家查看。所以我们需要一种规范的，语义化的备注格式，很快由知名项目牵头，全球接收并统一了一种语义化的备注格式，这就是 semantic 规范的来源。</p>
-<h2>优势</h2>
-<p>当一个仓库所有的 commit 信息都是用标准的 semantic 格式时，用户可以很方便的理解每一个 commit 的作用。</p>
-<p>同时，semantic 支持直接将某个提交或 PR 与特定 issue 链接，并自动关闭或引用这些 issue。</p>
-<p>通过一些第三方工具，大家可以基于这些备注信息进行过滤查找，更新日志生成等操作。</p>
-<h2>格式</h2>
-<div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" data-title="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</span></span>
-<span class="line"><span>&lt;body&gt;</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>&lt;footer&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>header</h3>
-<p>第一行被称为 <code>header</code>，它必须只有一行，包括三个字段: <code>&lt;type&gt;</code>(必需)、<code>&lt;scope&gt;</code>(可选)和 <code>&lt;subject&gt;</code>(必需)</p>
-<h3>type</h3>
-<p>commit 的类型。</p>
-<p>规范中规定了如下类型:</p>
-<ul>
-<li><code>feat</code>: feature, 新增功能</li>
-<li><code>fix</code> : bug fix, 修复 bug</li>
-<li><code>docs</code>: documentation, 仅仅修改了文档，如 <code>README.md</code></li>
-<li><code>style</code>: style, 仅仅是对格式进行修改，如逗号、缩进、空格等，不改变代码逻辑</li>
-<li><code>refactor</code>: refactor, 代码重构，一般更改了源文件或测试文件，但没有新增功能或修复 bug</li>
-<li><code>perf</code>: performance, 优化相关，如提升性能、用户体验等</li>
-<li><code>test</code>: test, 测试用例，包括单元测试，集成测试</li>
-<li><code>chore</code>: chore, 对于库的其他内容的改变，一般不涉及到源文件或测试文件，比如更改 CI 设置，提升仓库以来等</li>
-<li><code>revert</code>: 版本回滚</li>
-</ul>
-<h3>scope</h3>
-<p>用于说明 commit 影响的范围，比如: <code>views</code> , <code>component</code>, <code>utils</code>, <code>test</code>。这个是由项目的内容与结构决定的。</p>
-<h3>subject</h3>
-<p>commit 目的的简短描述，最好小于 50 字符，一般不超过 65 个字符，最长不超过 80 字符。</p>
-<p>当 subject 限制的字符数无法详细说明此 commit 的变动时，将 commit 的具体变动放置在 body 中</p>
-<h3>body</h3>
-<p>对本次 commit 修改内容的具体描述，可以分为多行。<code>body</code> 是可选的，而且 <code>body</code> 可以有多行。</p>
-<h3>footer</h3>
-<p>可选的，前面有一空行。可以添加一些备注，一般放置 <code>BREAKING CHANGE</code>(一些破坏性的变动) 或修复的 bug(涉及的 issue)的链接。</p>
-<h2>Semantic commit 与 Changelog 生成</h2>
-<p>不同语言环境都有很多种工具来帮助您创建一个 semantic commit 或者自动生成 changelog。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">案例</p>
-<p>Node.js 环境下可以使用:</p>
+<p><a href="/code/mini-app/guide/config/" target="_blank">小程序配置</a></p>
 <ul>
 <li>
-<p><a href="https://github.com/commitizen/cz-conventional-changelog" target="_blank" rel="noopener noreferrer"><code>cz-conventional-changelog</code></a> 提供 <code>git cz</code> 命令辅助创建 semantic commit。</p>
+<p><a href="/code/mini-app/guide/config/app-config.html" target="_blank">全局配置</a></p>
 </li>
 <li>
-<p><a href="https://github.com/conventional-changelog/conventional-changelog" target="_blank" rel="noopener noreferrer"><code>conventional-changelog-cli</code></a> 来快速生成更新日志，如 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 的更改日志</a></p>
+<p><a href="/code/mini-app/guide/config/page-config.html" target="_blank">页面配置</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/sitemap-config.html" target="_blank">sitemap 配置</a></p>
 </li>
 </ul>
-</div>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/" target="_blank">小程序框架</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/frame/intro.html" target="_blank">框架介绍</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/scene.html" target="_blank">场景值</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/env.html" target="_blank">运行环境</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/mechanism.html" target="_blank">运行机制</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/update.html" target="_blank">更新机制</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/" target="_blank">逻辑层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/service/lifetime.html" target="_blank">生命周期</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/route.html" target="_blank">路由</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/register.html" target="_blank">注册</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/app.html" target="_blank">App()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/page.html" target="_blank">Page()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/run.html" target="_blank">运行</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/module.html" target="_blank">模块化</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/api/" target="_blank">API</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/" target="_blank">视图层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/view/wxml.html" target="_blank">WXML</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxss.html" target="_blank">WXSS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/event.html" target="_blank">事件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/component.html" target="_blank">基础组件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/animation.html" target="_blank">动画</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs-event.html" target="_blank">WXS 事件</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/model.html" target="_blank">建议双向绑定</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">获取界面上的节点信息</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">相应显示区域变化</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/rendering-cache.html" target="_blank">初始渲染缓存</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/" target="_blank">小程序能力</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/ability/network.html" target="_blank">网络请求</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/storage.html" target="_blank">存储</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/file-system.html" target="_blank">文件系统</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/debug.html" target="_blank">调试</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>开发者工具</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/tools/interface.html" target="_blank">工具界面简介</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/debug.html" target="_blank">调试</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/npm.html" target="_blank">npm</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/audit.html" target="_blank">体验评分</a></p>
+</li>
+</ul>
+<h2>官方教程</h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a" target="_blank" rel="noopener noreferrer">点击前往</a></li>
+</ul>
+<h2>案例</h2>
+<ul>
+<li><a href="https://github.com/Hope-Studio/wxminiappdemo" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
+</ul>
+<h2>Mr.Hope 框架说明</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/framework/" target="_blank">小程序框架使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/tag-list.html" target="_blank">tag 值参数表</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/page.html" target="_blank">setPage 库使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/simple-debug.html" target="_blank">界面简单开发学习指南</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/qr-code.html" target="_blank">分享相关</a></p>
+</li>
+</ul>
+<h2>学习视频</h2>
+<ul>
+<li>
+<p><a href="https://www.bilibili.com/video/av22790583/" target="_blank" rel="noopener noreferrer">零基础开发小程序</a>(比较新的视频，强调总体思想)</p>
+</li>
+<li>
+<p><a href="https://www.bilibili.com/video/av11938917" target="_blank" rel="noopener noreferrer">小程序-从入门到入土</a>(比较老的视频，针对每个组件或者 API 进行了针对的讲解与示范，但部分内容已经与最新官方文档不符)</p>
+</li>
+</ul>
+<h2>示例代码</h2>
+<ul>
+<li>
+<p><a href="https://github.com/wechat-miniprogram/miniprogram-demo" target="_blank" rel="noopener noreferrer">小程序实例源码</a></p>
+<figure><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/demo.ef5c5bef.jpg" alt="小程序示例二维码" tabindex="0" loading="lazy"><figcaption>小程序示例二维码</figcaption></figure>
+</li>
+</ul>
+<h2>官方文档</h2>
+<ul>
+<li><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">QQ 小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">微信小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/community/develop/question" target="_blank" rel="noopener noreferrer">微信小程序社区</a>
+<ul>
+<li><a href="https://developers.weixin.qq.com/community/develop/list/2?id=" target="_blank" rel="noopener noreferrer">官方公告</a></li>
+</ul>
+</li>
+</ul>
+<h3>QQ 开发者工具</h3>
+<p>现在很多功能还处于缺失状态，bug 到没之前那么多了。</p>
+<ul>
+<li>
+<p><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">查看详情</a></p>
+</li>
+<li>
+<p><a href="https://q.qq.com/wiki/tools/devtool/" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+</ul>
+<h2>微信开发者工具</h2>
+<p>微信开发者工具用来开发与调试微信小程序和微信相关网页的官方工具。小程序使用该开发工具进行开发。</p>
+<ul>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/" target="_blank">开发者工具教程</a></p>
+</li>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" target="_blank" rel="noopener noreferrer">官方使用指南</a></p>
+</li>
+</ul>
 ]]></content>
-    <category term="GitHub"/>
-    <published>2021-01-18T00:00:00.000Z</published>
+    <category term="小程序"/>
+    <published>2019-11-25T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">加速 GitHub 克隆</title>
-    <id>https://blog.ruizhou.cf/code/github/speedup.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/speedup.html"/>
+    <title type="text">小程序分享</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/qr-code.html</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/qr-code.html"/>
     <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>由于 GFW 的存在，GitHub 的访问速度在大部分国内地区都很慢，甚至不稳定。如果需要克隆体积比较大的项目，可能需要很长时间，也很大概率会在中途因为网络波动、终端问题导致克隆失败。</p>
-<p>本文介绍如何使用 Gitee 加快 GitHub 项目克隆。</p>
-<h2>Gitee</h2>
-<p>Gitee 又称码云，是一个国内的代码托管商，国内访问 Gitee 的速度是十分 Amazing 的。</p>
-<h3>注册</h3>
-<p>Gitee 账户可以很方便的通过 GitHub 账户 + 绑定手机号注册。</p>
-<h3>添加公钥</h3>
-<p>完成注册后，您需要上传本地公钥，以保证可以从 Gitee 上拉取或克隆，其步骤与 GitHub 大致相同。</p>]]></summary>
-    <content type="html"><![CDATA[<p>由于 GFW 的存在，GitHub 的访问速度在大部分国内地区都很慢，甚至不稳定。如果需要克隆体积比较大的项目，可能需要很长时间，也很大概率会在中途因为网络波动、终端问题导致克隆失败。</p>
-<p>本文介绍如何使用 Gitee 加快 GitHub 项目克隆。</p>
-<h2>Gitee</h2>
-<p>Gitee 又称码云，是一个国内的代码托管商，国内访问 Gitee 的速度是十分 Amazing 的。</p>
-<h3>注册</h3>
-<p>Gitee 账户可以很方便的通过 GitHub 账户 + 绑定手机号注册。</p>
-<h3>添加公钥</h3>
-<p>完成注册后，您需要上传本地公钥，以保证可以从 Gitee 上拉取或克隆，其步骤与 GitHub 大致相同。</p>
-<h3>导入 GitHub 仓库</h3>
-<p>码云的企业专线访问 GitHub 的速度很快，而码云在新建仓库的时候提供了导入选项，这就给我们的加速提供了方式。</p>
-<p>我们只需要在码云上新建仓库，选择导入，然后输入自己想要克隆的 GitHub 仓库地址，交给码云完成导入即可。</p>
-<p>稍等片刻后，码云即会将 GitHub 的仓库同步到自己的服务器上，此时我们只需要克隆码云上的这个仓库地址，就可以高速克隆这个项目。</p>
-<h3>远程库地址修改</h3>
-<p>在克隆完毕后，本地的 origin 远程库会默认为 Gitee 的仓库，此时我们需要使用 <code>git remote rename origin gitee</code> 命令，将码云的远程仓库重命名为 <code>gitee</code>，并使用 <code>git remote add origin &lt;github url&gt;</code> 命令重新添加 GitHub 的远程仓库为 origin。</p>
-<p>这样我们稍后在做出本地提交后，即可直接推送到 GitHub 仓库。</p>
-<h3>同步仓库</h3>
-<p>如果以导入的形式创建码云仓库。则可以随时点击仓库页面上的同步图标，让码云随时拉取最新的 gitee 代码，以便在本地通过 <code>git fetch gitee</code>，通过码云服务器高速拉取最新代码。</p>
-]]></content>
-    <category term="GitHub"/>
-    <published>2021-02-18T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">GitHub Token</title>
-    <id>https://blog.ruizhou.cf/code/github/token.html</id>
-    <link href="https://blog.ruizhou.cf/code/github/token.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>Personal Access Token (PAT)，又称个人访问令牌，是一种代替密码进行 GitHub 身份认证的方式。</p>
-<p>通常情况下，你可能需要在 GitHub Workflow 中使用 PAT，以便在 GitHub Actions 中使用需要授权的 GitHub API。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Personal Access Token (PAT)，又称个人访问令牌，是一种代替密码进行 GitHub 身份认证的方式。</p>
-<p>通常情况下，你可能需要在 GitHub Workflow 中使用 PAT，以便在 GitHub Actions 中使用需要授权的 GitHub API。</p>
-<!-- more -->
-<h2>创建个人访问令牌</h2>
-<ol>
-<li>
-<p>访问 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener noreferrer">新建 Token 页面</a> (当然您需要先登陆 GitHub)</p>
-<blockquote>
-<p>或者可以点击头像 → Settings → Developer settings → Personal access tokens → Generate new Token</p>
-</blockquote>
-</li>
-<li>
-<p>输入一个备注，选择您需要授权 Token 访问的内容，之后点击页面底部的 "Generate Token"</p>
-</li>
-<li>
-<p>妥善保存该 Token (因为您无法再次查看它)</p>
-</li>
-</ol>
-<p>详见 <a href="https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token" target="_blank" rel="noopener noreferrer">创建个人访问令牌</a></p>
-]]></content>
-    <category term="GitHub"/>
-    <published>2021-01-18T00:00:00.000Z</published>
+    <summary type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>]]></summary>
+    <content type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>
+<p>请求方式为:</p>
+<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>更多详情可以见文档。<code>AppSecret</code> 由于权限很大不在此文档中直接放置。</p>
+<h3>无限制二维码生成</h3>
+<ul>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
+</ul>
+<p>在获取 <code>access_token</code> 之后就可以获取小程序二维码了。</p>
+<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">POST https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>请注意，在 Postman 软件中，首先要注意使用 <code>post</code> 方法。Body 使用 <code>raw</code>，格式选择 <code>Text</code>，需要将 <code>pretty</code> 化的 JSON 输入即可正常获取二维码。获取完二维码之后，需要在 <code>response</code> 中点击返回图片右上角的 <code>save as</code>，保存为 <code>jpg</code> 格式的文件即可保存二维码。</p>
+<h2>小程序链接</h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Center_messages.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
+</ul>
+<p>具体格式如下:</p>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"不支持小程序时打开的网页"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-appid</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序的appid"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序路径"</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &gt;文本内容&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="小程序"/>
+    <published>2020-10-09T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">Node.js</title>
@@ -3888,293 +3794,6 @@
     <published>2020-12-27T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">小程序</title>
-    <id>https://blog.ruizhou.cf/code/mini-app/</id>
-    <link href="https://blog.ruizhou.cf/code/mini-app/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
-</div>
-<!-- more -->
-<h2>小程序基础简介</h2>
-<p>在微信小程序中主要有四种文件结构: <code>wxml</code>、<code>wxss</code>、<code>js</code> 和 <code>json</code>。其中 <code>wxml</code> 对应带有 vue.js 特征的 html5，<code>wxss</code> 对应 css3，<code>js</code> 对应 ES6 标准的的 javaScript。</p>
-<p>对于 QQ 小程序，其文件结构为 <code>QML</code>、<code>qss</code>、<code>js</code> 和 <code>json</code>。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>QQ 小程序本质还是换汤不换药的，且 QQ 开发者工具兼容 <code>wxml</code> 与 <code>wss</code>)</p>
-</div>
-<p>小程序开发与网页开发极其相似。所以必须有适当的网页开发基础。零基础的人可能很难直接上手小程序开发。</p>
-<h2>教程目录</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/file-structure.html" target="_blank">文件结构</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/env.html" target="_blank">运行环境</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/" target="_blank">小程序配置</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/config/app-config.html" target="_blank">全局配置</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/page-config.html" target="_blank">页面配置</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/sitemap-config.html" target="_blank">sitemap 配置</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/" target="_blank">小程序框架</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/frame/intro.html" target="_blank">框架介绍</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/scene.html" target="_blank">场景值</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/env.html" target="_blank">运行环境</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/mechanism.html" target="_blank">运行机制</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/update.html" target="_blank">更新机制</a> </p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/" target="_blank">逻辑层</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/service/lifetime.html" target="_blank">生命周期</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/route.html" target="_blank">路由</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/register.html" target="_blank">注册</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/app.html" target="_blank">App()</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/page.html" target="_blank">Page()</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/run.html" target="_blank">运行</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/module.html" target="_blank">模块化</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/api/" target="_blank">API</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/" target="_blank">视图层</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/view/wxml.html" target="_blank">WXML</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxss.html" target="_blank">WXSS</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/event.html" target="_blank">事件</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/component.html" target="_blank">基础组件</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/animation.html" target="_blank">动画</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs-event.html" target="_blank">WXS 事件</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/model.html" target="_blank">建议双向绑定</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">获取界面上的节点信息</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">相应显示区域变化</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/rendering-cache.html" target="_blank">初始渲染缓存</a> </p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/" target="_blank">小程序能力</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/ability/network.html" target="_blank">网络请求</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/storage.html" target="_blank">存储</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/file-system.html" target="_blank">文件系统</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/debug.html" target="_blank">调试</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2>开发者工具</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/tools/interface.html" target="_blank">工具界面简介</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/debug.html" target="_blank">调试</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/npm.html" target="_blank">npm</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/audit.html" target="_blank">体验评分</a></p>
-</li>
-</ul>
-<h2>官方教程</h2>
-<ul>
-<li><a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a" target="_blank" rel="noopener noreferrer">点击前往</a></li>
-</ul>
-<h2>案例</h2>
-<ul>
-<li><a href="https://github.com/Hope-Studio/wxminiappdemo" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
-</ul>
-<h2>Mr.Hope 框架说明</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/framework/" target="_blank">小程序框架使用说明</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/tag-list.html" target="_blank">tag 值参数表</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/page.html" target="_blank">setPage 库使用说明</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/simple-debug.html" target="_blank">界面简单开发学习指南</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/qr-code.html" target="_blank">分享相关</a></p>
-</li>
-</ul>
-<h2>学习视频</h2>
-<ul>
-<li>
-<p><a href="https://www.bilibili.com/video/av22790583/" target="_blank" rel="noopener noreferrer">零基础开发小程序</a>(比较新的视频，强调总体思想)</p>
-</li>
-<li>
-<p><a href="https://www.bilibili.com/video/av11938917" target="_blank" rel="noopener noreferrer">小程序-从入门到入土</a>(比较老的视频，针对每个组件或者 API 进行了针对的讲解与示范，但部分内容已经与最新官方文档不符)</p>
-</li>
-</ul>
-<h2>示例代码</h2>
-<ul>
-<li>
-<p><a href="https://github.com/wechat-miniprogram/miniprogram-demo" target="_blank" rel="noopener noreferrer">小程序实例源码</a></p>
-<figure><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/demo.ef5c5bef.jpg" alt="小程序示例二维码" tabindex="0" loading="lazy"><figcaption>小程序示例二维码</figcaption></figure>
-</li>
-</ul>
-<h2>官方文档</h2>
-<ul>
-<li><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">QQ 小程序</a></li>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">微信小程序</a></li>
-<li><a href="https://developers.weixin.qq.com/community/develop/question" target="_blank" rel="noopener noreferrer">微信小程序社区</a>
-<ul>
-<li><a href="https://developers.weixin.qq.com/community/develop/list/2?id=" target="_blank" rel="noopener noreferrer">官方公告</a></li>
-</ul>
-</li>
-</ul>
-<h3>QQ 开发者工具</h3>
-<p>现在很多功能还处于缺失状态，bug 到没之前那么多了。</p>
-<ul>
-<li>
-<p><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">查看详情</a></p>
-</li>
-<li>
-<p><a href="https://q.qq.com/wiki/tools/devtool/" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-</li>
-</ul>
-<h2>微信开发者工具</h2>
-<p>微信开发者工具用来开发与调试微信小程序和微信相关网页的官方工具。小程序使用该开发工具进行开发。</p>
-<ul>
-<li>
-<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/" target="_blank">开发者工具教程</a></p>
-</li>
-<li>
-<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" target="_blank" rel="noopener noreferrer">官方使用指南</a></p>
-</li>
-</ul>
-]]></content>
-    <category term="小程序"/>
-    <published>2019-11-25T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">小程序分享</title>
-    <id>https://blog.ruizhou.cf/code/mini-app/qr-code.html</id>
-    <link href="https://blog.ruizhou.cf/code/mini-app/qr-code.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>二维码生成</h2>
-<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
-<p>我们使用 Postman 软件进行二维码的获取。</p>
-<h3>调用凭据获取</h3>
-<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>]]></summary>
-    <content type="html"><![CDATA[<h2>二维码生成</h2>
-<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
-<p>我们使用 Postman 软件进行二维码的获取。</p>
-<h3>调用凭据获取</h3>
-<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>
-<p>请求方式为:</p>
-<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>更多详情可以见文档。<code>AppSecret</code> 由于权限很大不在此文档中直接放置。</p>
-<h3>无限制二维码生成</h3>
-<ul>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
-</ul>
-<p>在获取 <code>access_token</code> 之后就可以获取小程序二维码了。</p>
-<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">POST https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>请注意，在 Postman 软件中，首先要注意使用 <code>post</code> 方法。Body 使用 <code>raw</code>，格式选择 <code>Text</code>，需要将 <code>pretty</code> 化的 JSON 输入即可正常获取二维码。获取完二维码之后，需要在 <code>response</code> 中点击返回图片右上角的 <code>save as</code>，保存为 <code>jpg</code> 格式的文件即可保存二维码。</p>
-<h2>小程序链接</h2>
-<ul>
-<li><a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Center_messages.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
-</ul>
-<p>具体格式如下:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"不支持小程序时打开的网页"</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-appid</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序的appid"</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序路径"</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &gt;文本内容&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="小程序"/>
-    <published>2020-10-09T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">代码学习教程</title>
     <id>https://blog.ruizhou.cf/code/language/</id>
     <link href="https://blog.ruizhou.cf/code/language/"/>
@@ -4387,6 +4006,31 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <category term="教程"/>
     <published>2020-05-04T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">React</title>
+    <id>https://blog.ruizhou.cf/code/react/</id>
+    <link href="https://blog.ruizhou.cf/code/react/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>创建 TS 模板:</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>React 文档</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content>
+    <category term="前端"/>
+    <published>2020-05-08T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">Vue.js</title>
@@ -4658,6 +4302,505 @@ Vue 在标签名属性用 v-bind:prop=&amp;quot;Javascript表达式&amp;quot; �
     <published>2019-09-01T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">GitHub</title>
+    <id>https://blog.ruizhou.cf/code/github/</id>
+    <link href="https://blog.ruizhou.cf/code/github/"/>
+    <updated>2024-07-24T03:08:09.000Z</updated>
+    <summary type="html"><![CDATA[<h2>快速上手</h2>
+]]></summary>
+    <content type="html"><![CDATA[<h2>快速上手</h2>
+]]></content>
+    <category term="GitHub"/>
+    <published>2019-11-20T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">自动部署</title>
+    <id>https://blog.ruizhou.cf/code/github/deploy.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/deploy.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>本文介绍如何利用 Git 和 GitHub Action，自动部署代码到服务器。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>本文介绍如何利用 Git 和 GitHub Action，自动部署代码到服务器。</p>
+<!-- more -->
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>由于 Centos 仍然是用 GitV1，本教程使用 Ubuntu 20.04 进行教学。</p>
+</div>
+<h2>服务器</h2>
+<p>为了能供自动部署到服务器，我们需要让服务器的网站目录成为一个 Git 仓库，这样我们可以在 GitHub Actions 中，通过向服务器对应 GitHub 仓库推送网站内容，使服务器网站获得自动更新。下面是服务器侧的部署配置</p>
+<h3>添加账户</h3>
+<p>为了安全，首先需要使用命令创建 Git 用户，为了安全请务必设置密码。</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> adduser</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> git</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>之后，查看部署目录所在组，git 用户添加到组中。</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">usermod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -G</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">目录所在</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">组&gt; </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">git</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>然后将部署目录的权限设置为 <code>775</code>，即允许同组访问。这样 git 就有权限访问部署目录。</p>
+<h3>添加权限</h3>
+<p>创建 <code>~/.ssh/</code> 文件夹，生成 <code>authorized_keys</code> 文件，并设置其权限为 <code>600</code>。</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkdir</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">touch</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/authorized_keys</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">chmod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 600</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.ssh/authorized_keys</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>之后将需要赋予权限的用户公钥依次粘贴至该文件，这样相关用户即可以使用对应私钥，向服务器相关仓库推送代码。</p>
+<h3>创建仓库</h3>
+<p>回到 <code>/home/git/</code>，创建所需的文件夹:</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkdir</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">仓库</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">名&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>进入文件夹，使用</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> init</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --separate-git-dir=.</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">部署位</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">置&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这会将 git 库保持在 <code>/home/git/&lt;仓库名&gt;</code> 下，同时将工作区设置到部署文件夹中。</p>
+<p>接下来执行:</p>
+<div class="language-sh line-numbers-mode" data-highlighter="shiki" data-ext="sh" data-title="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> receive.denyCurrentBranch</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ignore</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --add</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> safe.directory</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &lt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">部署文件</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">夹&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>Git 默认拒绝外部对当前分支的推送操作，因为这可能会覆盖或变更工作区文件。所以我们需要显式通知 Git 不要拒绝当前分支的推送操作。</p>
+<p>另外在新版本 Git 中，考虑到安全因素，Git 会在检出时检测项目文件夹是否属于其他组成员，如果检测到会默认拒绝相关操作以防止其他用于获取到本不应该获取到的代码信息。因为部署文件夹的所有者通常不会是 git，所以我们需要标记对应的部署文件夹“安全”。</p>
+</div>
+<h2>GitHub Actions</h2>
+<p>在 GitHub 一侧，我们需要通过 GitHub Action，在新代码推送时自动构建网站，并部署到 GitHub 的 gh-pages 分支。之后，GitHub Action 将该分支的变动推送服务器的对应仓库，完成网站的自动部署。</p>
+<p>之后只需要使用 GitHub Action 通过 Git 推送到 <code>git@&lt;domain&gt;:&lt;部署目录&gt; gh-pages</code> 即可。</p>
+<div class="language-yml line-numbers-mode" data-highlighter="shiki" data-ext="yml" data-title="yml" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 自动部署的名称</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">GitHub pages deploy</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 自动部署的条件</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  push</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    branches</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">master</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">jobs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  # 构建网站并部署到 GitHub Pages</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  deploy-gh-pages</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 运行环境</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    runs-on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">ubuntu-latest</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 步骤</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    steps</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 第一步: 下载源码</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Checkout</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # action 配置详见 https://github.com/actions/checkout</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/checkout@v4</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果本项目包含了子模块 (git submodules)，需要将此项设置为 true</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # submodules: true</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 这是获取历史 commit 的深度，默认为 1，即只拉取最后一个 commit</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 这样可以加快拉取速度</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          #</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果项目使用 VuePress，为了正确通过 Git 历史提交记录生成页面的最后更新时间</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要设置为 0 以拉取完整的 git 历史提交</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # fetch-depth: 0</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 如果子模块包含私有仓库，需要设置 ssh key 或 token 以保证拥有拉取相应仓库的权限</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 您可以将 ssh-key 设置为 github 绑定公钥对应的私钥</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 也可以新建一个具有相关仓库访问权限的 github token</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # token:</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 缓存 node_modules 以避免重复安装</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/cache@v3</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        id</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node-modules</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要缓存的路径</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node_modules/</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 缓存的 key</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          key</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 恢复 key</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          restore-keys</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">            ${{ runner.os }}-node-modules-</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 安装依赖</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Install Deps</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 只有没有命中缓存才会执行</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">steps.node-modules.outputs.cache-hit != 'true'</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 严格按照 yarn.lock 安装依赖</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">yarn install --frozen-lockfile</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 构建项目</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Build</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 项目的构建命令</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">yarn run build</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 第四步，部署</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Deploy</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # action 配置详见 https://github.com/JamesIves/github-pages-deploy-action</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">JamesIves/github-pages-deploy-action@v4</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 部署到的分支</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          branch</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">gh-pages</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 需要部署的文件夹</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          folder</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">dist</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  # 部署到服务器</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  deploy-server</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    runs-on</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">ubuntu-latest</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">    # 确保在部署到 GitHub Pages 之后执行</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    needs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">deploy-gh-pages</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">    steps</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 检出网站代码</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Checkout</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        uses</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">actions/checkout@v4</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        with</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 检出 gh-pages 分支</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          ref</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">gh-pages</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">          # 获取全部的历史提交</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">          fetch-depth</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">0</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 配置环境</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Configuration environment</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 写入私钥、配置 Git 用户名，写入服务器地址</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 您需要自行将服务器的私钥写入 secrets 的 SSH_PRIVATE_KEY</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          mkdir -p ~/.ssh/</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          echo "${{ secrets.SSH_PRIVATE_KEY }}" &gt; ~/.ssh/id_rsa</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          chmod 600 ~/.ssh/id_rsa</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          ssh-keyscan &lt;your domain&gt; &gt;&gt; ~/.ssh/known_hosts</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git config --global user.name 'Your Name'</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git config --global user.email 'You email'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">      # 部署到服务器</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      - </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">name</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">Deploy</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 使用 Git 将网站代码强制推送到远程的网站目录</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">        # 并使用 SSH 连接服务器进入网站目录手动切换到最新提交</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        run</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">|</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          git push -f git@&lt;your domain&gt;:&lt;deploy dir&gt; gh-pages</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">          ssh git@&lt;your domain&gt; "cd &lt;deploy dir&gt; &amp;&amp; git reset --hard HEAD"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="GitHub"/>
+    <published>2021-01-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">GitHub 简介</title>
+    <id>https://blog.ruizhou.cf/code/github/intro.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/intro.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2><s>Gayhub</s> GitHub 是世界上最大的 <s>同性交友</s> 代码托管网站</h2>
+<p>😋 当然在上面交友也是极好的(这是重点，圈起来要考的😎)。</p>
+<h2>基本概念</h2>
+<h3>Repository</h3>
+<p>仓库。一个仓库即是一个项目。仓库是 GitHub 上的主要内容。每当您新建一个项目并想要在 GitHub。</p>
+<h3>Star</h3>
+<p>收藏。在每一个仓库主页的上方可以看到 star 按钮。其上的数值为收藏该项目的人数。点击星星即可将当前仓库收藏到您的账号上。您可以收藏一些您比较喜欢，或者项目对您来说有很大价值的项目。同时，点击数字可以看到哪些人收藏了这个项目。</p>]]></summary>
+    <content type="html"><![CDATA[<h2><s>Gayhub</s> GitHub 是世界上最大的 <s>同性交友</s> 代码托管网站</h2>
+<p>😋 当然在上面交友也是极好的(这是重点，圈起来要考的😎)。</p>
+<h2>基本概念</h2>
+<h3>Repository</h3>
+<p>仓库。一个仓库即是一个项目。仓库是 GitHub 上的主要内容。每当您新建一个项目并想要在 GitHub。</p>
+<h3>Star</h3>
+<p>收藏。在每一个仓库主页的上方可以看到 star 按钮。其上的数值为收藏该项目的人数。点击星星即可将当前仓库收藏到您的账号上。您可以收藏一些您比较喜欢，或者项目对您来说有很大价值的项目。同时，点击数字可以看到哪些人收藏了这个项目。</p>
+<h3>Fork</h3>
+<p>复刻。在每一个仓库主页的上方可以看到 Fork 按钮。点击该按钮的作用是将当前项目复刻一份到自己的仓库中，这样，您就可以在此仓库仓库上查看当前、历史的版本，切换分支、或者是随心所欲的进行修改。原项目的新的推送、对历史版本的修改、甚至原作者删除了他的 repo，都不会对您 fork 的项目产生任何影响。</p>
+<h3>Issue</h3>
+<p>议题。你可将这里理解为 Bug 汇报区与新功能提交区。</p>
+<p>如果您在使用该项目的过程中遇到了问题，可以在相应项目的 Issue 板块按照项目的要求提出 Issue。在 Issue 中可以汇报一个 bug，或者是提出一个 Feature Request (功能请求)。项目的拥有者可以针对您汇报的情况对您做出回复。</p>
+<p>同时，项目拥有者还可以:</p>
+<ul>
+<li>为此 issue 增加 label (标签)，以帮助项目成员或是项目的其他使用者更好的理解这个 issue 的分类</li>
+<li>将此 issue assign (分派) 给特定的项目成员解决。</li>
+<li>将此 issue 加入特定的 project (项目) 以安排处理日期与进度。</li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>为了 GitHub 的友好交流环境，请在汇报 bug 时永远带上 bug 的一个简易的复现流程，可以直接建立一个简单的 reproduction repo 并把链接放置在您提出的 issue 中。</p>
+</div>
+<h3>Pull Request</h3>
+<p>发起推送请求，简称 <strong>PR</strong>。如果是您自己的项目，您可以从一个分支向另一个分支发起推送请求。如果您想对别人的(您无权进行推送)项目进行代码的推送请求的化，需要先 fork 这个仓库。在自己 fork 的项目上进行修改，然后提交到自己的项目上，之后，建立一个从自己仓库到对方仓库的 PR。如果对方觉得您的新改动很不错，在经过测试或者 review 后就会接受它，这样原有项目就可拥有这些新的代码了.</p>
+<h3>Discussion</h3>
+<p>GitHub 的讨论区，和 Issue 区主要用于 Bug 和 Feature Request 的追踪不同，通常情况下，你可以在讨论区开帖子询问使用中遇到的问题，以便其他人进行答复。你也可以在 Discussion 区提供项目的看法与建议，比如对某个功能进行改进的方式以及相关理由。你也可以展示你自己使用项目的一些新的或是与项目相关的一些内容。</p>
+<h3>Watch</h3>
+<p>关注，在每一个仓库主页的上方可以看到 Watch 按钮。如果您关注了某个项目,那么这个项目有了变化的时候,您就会得到通知.在您点击关注后，您还可以点击下拉列表进一步设置关注级别。您可以选择接受 Release (新发布) 通知，也可以选择 Watching 来监听所有的通知。当您选择 Ignore 的话，即使有人在这个仓库中 mention (提到) 了您，您也不会得到通知。</p>
+<h3>Review</h3>
+<p>审查。当项目收到 PR 时，项目的拥有成员可以对这份 PR 的代码改动进行审查，在 Review 的过程中，可以对代码的特定行或特定几行通过 comment(评论) 的方式来提出自己对代码改动的意见。</p>
+<h2>主页</h2>
+<figure><figcaption>主页</figcaption></figure>
+<p><a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a></p>
+<p>主页，在您登陆后，屏幕的左侧会展示您和您加入团队的项目，以及您的团队详情。中部会显示您关注的项目、人的动态，右侧会根据算法展示一些您可能会感兴趣的 repo。</p>
+<h2>个人主页</h2>
+<figure><figcaption>个人主页</figcaption></figure>
+<p><strong>地址:</strong> <code>https://github.com/&lt;您的用户名&gt;</code></p>
+<p>个人主页会有几个主要面板:</p>
+<h3>Overview</h3>
+<p>个人概览，您可以在上方 pin(固定) 最多六个您想要展示给他人的仓库。</p>
+<p>下方就是您过去一年里向 GitHub 的提交数量分布图，以及您在 GitHub 上的活动比例。</p>
+<p>最下方是近几年您在 GitHub 上的活动记录。</p>
+<h3>Repositories</h3>
+<figure><figcaption>个人仓库</figcaption></figure>
+<p>仓库列表，该面板会按照最后更新时间的倒序，展示该用户拥有的所有 repo，同时也会在面板上展示项目的 Description (描述)、Star 数、Fork 数、语言、协议、标签，以及过去一年内项目的 commit 分布数量。这些都能够帮助浏览者在不进入具体仓库页面的情况下大致了解每一个仓库的内容、欢迎程度与维护情况。</p>
+<h3>Projects</h3>
+<p>个人拥有的项目，在管理自己与团队跨仓库的活动日程时很有用。可以设置涉及到的仓库，提出任务、代办、时间表等。</p>
+<h3>Packages</h3>
+<p>个人在 GitHub 上拥有的包。目前较少人在 GitHub 上发布相关的包。</p>
+<h3>Stars</h3>
+<p>和仓库列表完全相同，只不过展示该用户收藏的 repo。</p>
+<h3>Followers / Following</h3>
+<p>关注您的人 / 关注的人。在个人主页的左侧就有 follow 按钮，follow 一个人意味着这个人在 GitHub 的的活动会出现在 GitHub 主页的 Activity List 上。</p>
+<h2>仓库主页</h2>
+<figure><figcaption>仓库主页</figcaption></figure>
+<p>仓库主页主要显示项目的信息。从左到右的面板依次是: Code(代码)，Issues (问题)、Pull Requests (提交请求)、Discussions (讨论)、Actions (自动流程)、 Projects (项目)、 Wiki (项目介绍)、 Security (项目安全)、 Insights (项目数据统计) 与 Settings (项目设置)。</p>
+<blockquote>
+<p>仓库可以选择关闭 Issues、Discussions、Wiki 之类的面板。</p>
+</blockquote>
+<p>在下方会展示代码文件以及项目说明 README.md 文件。</p>
+]]></content>
+    <category term="GitHub"/>
+    <published>2019-11-20T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">GitHub Pages</title>
+    <id>https://blog.ruizhou.cf/code/github/pages.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/pages.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>GitHub Pages 是静态站点托管服务，可直接从 GitHub 上的存储库中获取 HTML，CSS 和 JavaScript 文件，还可以选择在构建过程中运行这些文件并发布网站。</p>
+<p>您可以将站点托管在 GitHub 的 <code>github.io</code> 域名或您自己的自定义域名上。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>GitHub Pages 是静态站点托管服务，可直接从 GitHub 上的存储库中获取 HTML，CSS 和 JavaScript 文件，还可以选择在构建过程中运行这些文件并发布网站。</p>
+<p>您可以将站点托管在 GitHub 的 <code>github.io</code> 域名或您自己的自定义域名上。</p>
+<!-- more -->
+<h2>简介</h2>
+<p>GitHub Pages 站点共有三种类型: 项目，用户和组织。</p>
+<p>项目站点连接到 GitHub 上托管的特定项目，而用户和组织站点已连接到特定的 GitHub 帐户。</p>
+<ul>
+<li>要发布用户站点，您必须创建一个名为的用户帐户拥有的存储库 <code>&lt;username&gt;.github.io</code>。</li>
+<li>要发布组织站点，您必须创建一个名为的组织所拥有的存储库 <code>&lt;organization&gt;.github.io</code>。</li>
+</ul>
+<p>除非您使用自定义域名，否则用户站点和组织站点均位于 <code>http(s)://&lt;username&gt;.github.io</code> 或 <code>http(s)://&lt;organization&gt;.github.io</code>。</p>
+<p>项目站点的源文件与其项目存储在同一存储库中。除非您使用自定义域，否则项目站点可在 <code>http(s)://&lt;username&gt;.github.io/&lt;repository&gt;</code> 或 <code>http(s)://&lt;organization&gt;.github.io/&lt;repository&gt;</code> 访问。</p>
+<p>虽然您只能在 GitHub 上为每个帐户创建一个用户或组织站点。但无论是组织还是用户帐户拥有的项目站点都是无限的。</p>
+<h2>发布源文件到 GitHub Pages</h2>
+<div class="hint-container caution">
+<p class="hint-container-title">警告</p>
+<p>GitHub Pages 站点 默认在互联网上公开，即使站点的仓库是私有的。</p>
+</div>
+<p>如果您的存储库中存在默认发布源，则 GitHub Pages 将自动从该源发布网站。用户和组织站点的默认发布源是存储库的默认分支的根目录。项目站点的默认发布源是 gh-pages 分支的根目录。</p>
+<p>您需要跳转到 Settings (设置) 选项卡，下来找到 GitHub Pages 的配置部分。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>您只能在根目录 (<code>/</code>) 和 文档目录 (<code>/docs</code>) 之间进行选择，而不能将仓库内的任意文件夹作为发布源。</p>
+</div>
+<h3>静态站点</h3>
+<p>GitHub Pages 发布您推送到存储库的所有静态文件，这意味它不支持服务器端语言，例如 PHP，Ruby 或 Python。也就是您只能通过 GitHub Pages 发布 “无后端” 的纯静态站点。</p>
+<h3>限制</h3>
+<ul>
+<li>
+<p>GitHub Pages 网站不得超过 1 GB。</p>
+</li>
+<li>
+<p>GitHub Pages 站点的带宽限制为每月 100GB。</p>
+</li>
+<li>
+<p>GitHub Pages 站点限制为每小时最多构建 10 次。</p>
+</li>
+</ul>
+<h3>子模块</h3>
+<p>如果 GitHub Pages 站点的仓库包含子模块，则在构建站点时会自动拉取其内容。</p>
+<p>只能使用指向公共仓库的子模块，因为 GitHub Pages 服务器无法访问私有仓库。</p>
+<p>对子模块 (包括嵌套子模块) 使用 <code>https://</code> 只读 URL。 您可以在 .gitmodules 文件中进行此更改。</p>
+<h2>取消发布</h2>
+<h3>取消发布项目站点</h3>
+<ol>
+<li>在 GitHub 上，导航到仓库的主页面。</li>
+<li>如果仓库中存在 gh-pages 分支，请删除 gh-pages 分支。</li>
+<li>在仓库名称下，单击 Settings (设置) 。</li>
+<li>在“ GitHub Pages”下，使用 Source (源) 下拉菜单并选择 None (无) 。</li>
+</ol>
+<h3>取消发布用户或组织站点</h3>
+<ol>
+<li>在 GitHub 上，导航到仓库的主页面。</li>
+<li>删除用作发布源的分支，或删除整个仓库。</li>
+</ol>
+<h2>自定义域名</h2>
+<p>您可以在对应仓库的 Settings (设置) 选项卡设置自定义域名，同时您需要将自定义域名的 CNAME 记录指向 <code>&lt;用户名&gt;.github.io</code>。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>自定义域名的控制是由发布源文件夹下的 CNAME 文件控制的，您可以直接创建这个文件写入链接。</p>
+<p>同时，GitHub Pages 要求这个文件一直存在，否则自定义域名会失效。</p>
+</div>
+]]></content>
+    <category term="GitHub"/>
+    <published>2021-02-20T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Pull Request</title>
+    <id>https://blog.ruizhou.cf/code/github/pr.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/pr.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>简介</h2>
+<p>对于一个用户的公开仓库，在默认情况下虽然其他用户可以拉取该库的代码，但是他们并不能够直接向这个库进行推送。</p>
+<p>GitHub 是一个代码社区，这意味着鼓励大家互相提交与贡献代码。所以这就是 Fork 和 Pull Request 出现的意义。没有人会给一个陌生人添加访问自己仓库的权限，所以我们需要一种方式，能够让大家向仓库所有者发起贡献代码的请求。这就是 pull request 的由来。</p>
+<h2>提交自己贡献的代码</h2>
+<p>对于代码贡献者来说，他需要用一种方法将自己贡献的代码推送到远程库上，以便发起请求，最好的办法就是 fork 原仓库。</p>]]></summary>
+    <content type="html"><![CDATA[<h2>简介</h2>
+<p>对于一个用户的公开仓库，在默认情况下虽然其他用户可以拉取该库的代码，但是他们并不能够直接向这个库进行推送。</p>
+<p>GitHub 是一个代码社区，这意味着鼓励大家互相提交与贡献代码。所以这就是 Fork 和 Pull Request 出现的意义。没有人会给一个陌生人添加访问自己仓库的权限，所以我们需要一种方式，能够让大家向仓库所有者发起贡献代码的请求。这就是 pull request 的由来。</p>
+<h2>提交自己贡献的代码</h2>
+<p>对于代码贡献者来说，他需要用一种方法将自己贡献的代码推送到远程库上，以便发起请求，最好的办法就是 fork 原仓库。</p>
+<figure><figcaption>Fork 仓库</figcaption></figure>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>相关介绍，请见 <a href="/code/github/intro.html#fork" target="_blank">GitHub 简介 → fork</a></p>
+</div>
+<p>这样，贡献者在自己的账号上获得一个和原仓库完全相同的副本。</p>
+<p>既然副本已经创建在自己的账号上，贡献者自然可以:</p>
+<ol>
+<li>克隆这个项目到本地</li>
+<li>在这个项目上贡献自己的代码</li>
+<li>将贡献的代码推送到这个副本上</li>
+</ol>
+<h2>发送请求</h2>
+<p>pull request 是请求仓库所有者拉取指定仓库分支代码的请求。</p>
+<p>在贡献自己的代码并推送到自己的 fork 仓库后，贡献者即可到原仓库去选择自己仓库的对应分支发送这个拉取请求。仓库所有者随时可以批准这个更改，使其自动添加到自己的库中，或是拒绝这个请求。</p>
+<figure><figcaption>Pull request</figcaption></figure>
+<blockquote>
+<p>这个仓库我已经删了所以显示 <code>unknown repository</code>，原为 <code>Mister-Hope:master</code></p>
+</blockquote>
+<p>这个页面允许所有人在主要对话线上交换自己的意见。</p>
+<p>在 Pull request 里，一旦请求被创建，仓库所有者应该可以直观地看到哪些文件发生了怎样的改变。</p>
+<figure><figcaption>文件改动</figcaption></figure>
+<p>同时，他们也可以对贡献者的代码进行审查，对特定行或片段标注，并陈述自己的意见，同时将这个意见根据程度标注为“探讨”、“改进”或者“必须更改”，以便贡献者进行交流讨论与完善修改。</p>
+<figure><figcaption>代码审查</figcaption></figure>
+<p>同时，对于一个大型库来说，仓库所有者应该可以看到贡献的代码是否通过了所有测试。</p>
+<figure><figcaption>测试通过情况</figcaption></figure>
+<p>如果审查者认为没有问题，他可能就会通过这个拉取请求，拉取对应的代码到自己的仓库上。这样您就完成了对这个仓库的贡献。</p>
+<h2>同步原仓库</h2>
+<p>需要注意的是，fork 创建的是一个时刻副本，也就是自己 fork 产生的仓库，会保持 fork 时的状态，原仓库的任何变动都不会自动同步到 fork 的仓库上。</p>
+<p>有些时候，在自己 fork 原仓库、自己编写代码并提交的这段时间里，原仓库已经进行了很多提交。这时，我们就需要同步原仓库的更新到自己的副本上，以确保自己贡献的代码并未和新增代码发生冲突、可以正常工作。</p>
+<p>这个时候只需反向拉取，在自己的仓库创建原仓库特定分支到自己仓库特定分支的 Pull request，并批准这个 pull request。这样即可很方便的将原仓库特定分支的更新同步到自己的副本上。</p>
+<p>您当然可以在本地添加原仓库的远程库，将最新的更改直接 fetch 到本地，在本地测试通过并完成合并后，由本地推送至自己的 fork 仓库。</p>
+]]></content>
+    <category term="GitHub"/>
+    <published>2021-02-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">语义化提交</title>
+    <id>https://blog.ruizhou.cf/code/github/semantic.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/semantic.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>Semantic</h2>
+<p>对于一个大型项目，几千个 commit 是很常见的，这些 commit 部分是项目维护者提交的 commit，部分是一些热心的开发者通过 PR 贡献的。</p>
+<p>无论是对于项目维护者，还是想要贡献代码的热心开发者来说，一个简洁明了的 commit 描述都是必不可少的。也就是说我们需要用尽可能简短的备注信息，备注每一个 commit 的作用，以便大家查看。所以我们需要一种规范的，语义化的备注格式，很快由知名项目牵头，全球接收并统一了一种语义化的备注格式，这就是 semantic 规范的来源。</p>
+<h2>优势</h2>
+<p>当一个仓库所有的 commit 信息都是用标准的 semantic 格式时，用户可以很方便的理解每一个 commit 的作用。</p>]]></summary>
+    <content type="html"><![CDATA[<h2>Semantic</h2>
+<p>对于一个大型项目，几千个 commit 是很常见的，这些 commit 部分是项目维护者提交的 commit，部分是一些热心的开发者通过 PR 贡献的。</p>
+<p>无论是对于项目维护者，还是想要贡献代码的热心开发者来说，一个简洁明了的 commit 描述都是必不可少的。也就是说我们需要用尽可能简短的备注信息，备注每一个 commit 的作用，以便大家查看。所以我们需要一种规范的，语义化的备注格式，很快由知名项目牵头，全球接收并统一了一种语义化的备注格式，这就是 semantic 规范的来源。</p>
+<h2>优势</h2>
+<p>当一个仓库所有的 commit 信息都是用标准的 semantic 格式时，用户可以很方便的理解每一个 commit 的作用。</p>
+<p>同时，semantic 支持直接将某个提交或 PR 与特定 issue 链接，并自动关闭或引用这些 issue。</p>
+<p>通过一些第三方工具，大家可以基于这些备注信息进行过滤查找，更新日志生成等操作。</p>
+<h2>格式</h2>
+<div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" data-title="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</span></span>
+<span class="line"><span>&lt;body&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&lt;footer&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>header</h3>
+<p>第一行被称为 <code>header</code>，它必须只有一行，包括三个字段: <code>&lt;type&gt;</code>(必需)、<code>&lt;scope&gt;</code>(可选)和 <code>&lt;subject&gt;</code>(必需)</p>
+<h3>type</h3>
+<p>commit 的类型。</p>
+<p>规范中规定了如下类型:</p>
+<ul>
+<li><code>feat</code>: feature, 新增功能</li>
+<li><code>fix</code> : bug fix, 修复 bug</li>
+<li><code>docs</code>: documentation, 仅仅修改了文档，如 <code>README.md</code></li>
+<li><code>style</code>: style, 仅仅是对格式进行修改，如逗号、缩进、空格等，不改变代码逻辑</li>
+<li><code>refactor</code>: refactor, 代码重构，一般更改了源文件或测试文件，但没有新增功能或修复 bug</li>
+<li><code>perf</code>: performance, 优化相关，如提升性能、用户体验等</li>
+<li><code>test</code>: test, 测试用例，包括单元测试，集成测试</li>
+<li><code>chore</code>: chore, 对于库的其他内容的改变，一般不涉及到源文件或测试文件，比如更改 CI 设置，提升仓库以来等</li>
+<li><code>revert</code>: 版本回滚</li>
+</ul>
+<h3>scope</h3>
+<p>用于说明 commit 影响的范围，比如: <code>views</code> , <code>component</code>, <code>utils</code>, <code>test</code>。这个是由项目的内容与结构决定的。</p>
+<h3>subject</h3>
+<p>commit 目的的简短描述，最好小于 50 字符，一般不超过 65 个字符，最长不超过 80 字符。</p>
+<p>当 subject 限制的字符数无法详细说明此 commit 的变动时，将 commit 的具体变动放置在 body 中</p>
+<h3>body</h3>
+<p>对本次 commit 修改内容的具体描述，可以分为多行。<code>body</code> 是可选的，而且 <code>body</code> 可以有多行。</p>
+<h3>footer</h3>
+<p>可选的，前面有一空行。可以添加一些备注，一般放置 <code>BREAKING CHANGE</code>(一些破坏性的变动) 或修复的 bug(涉及的 issue)的链接。</p>
+<h2>Semantic commit 与 Changelog 生成</h2>
+<p>不同语言环境都有很多种工具来帮助您创建一个 semantic commit 或者自动生成 changelog。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">案例</p>
+<p>Node.js 环境下可以使用:</p>
+<ul>
+<li>
+<p><a href="https://github.com/commitizen/cz-conventional-changelog" target="_blank" rel="noopener noreferrer"><code>cz-conventional-changelog</code></a> 提供 <code>git cz</code> 命令辅助创建 semantic commit。</p>
+</li>
+<li>
+<p><a href="https://github.com/conventional-changelog/conventional-changelog" target="_blank" rel="noopener noreferrer"><code>conventional-changelog-cli</code></a> 来快速生成更新日志，如 <a href="https://github.com/Mister-Hope/vuepress-theme-hope/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 的更改日志</a></p>
+</li>
+</ul>
+</div>
+]]></content>
+    <category term="GitHub"/>
+    <published>2021-01-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">加速 GitHub 克隆</title>
+    <id>https://blog.ruizhou.cf/code/github/speedup.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/speedup.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>由于 GFW 的存在，GitHub 的访问速度在大部分国内地区都很慢，甚至不稳定。如果需要克隆体积比较大的项目，可能需要很长时间，也很大概率会在中途因为网络波动、终端问题导致克隆失败。</p>
+<p>本文介绍如何使用 Gitee 加快 GitHub 项目克隆。</p>
+<h2>Gitee</h2>
+<p>Gitee 又称码云，是一个国内的代码托管商，国内访问 Gitee 的速度是十分 Amazing 的。</p>
+<h3>注册</h3>
+<p>Gitee 账户可以很方便的通过 GitHub 账户 + 绑定手机号注册。</p>
+<h3>添加公钥</h3>
+<p>完成注册后，您需要上传本地公钥，以保证可以从 Gitee 上拉取或克隆，其步骤与 GitHub 大致相同。</p>]]></summary>
+    <content type="html"><![CDATA[<p>由于 GFW 的存在，GitHub 的访问速度在大部分国内地区都很慢，甚至不稳定。如果需要克隆体积比较大的项目，可能需要很长时间，也很大概率会在中途因为网络波动、终端问题导致克隆失败。</p>
+<p>本文介绍如何使用 Gitee 加快 GitHub 项目克隆。</p>
+<h2>Gitee</h2>
+<p>Gitee 又称码云，是一个国内的代码托管商，国内访问 Gitee 的速度是十分 Amazing 的。</p>
+<h3>注册</h3>
+<p>Gitee 账户可以很方便的通过 GitHub 账户 + 绑定手机号注册。</p>
+<h3>添加公钥</h3>
+<p>完成注册后，您需要上传本地公钥，以保证可以从 Gitee 上拉取或克隆，其步骤与 GitHub 大致相同。</p>
+<h3>导入 GitHub 仓库</h3>
+<p>码云的企业专线访问 GitHub 的速度很快，而码云在新建仓库的时候提供了导入选项，这就给我们的加速提供了方式。</p>
+<p>我们只需要在码云上新建仓库，选择导入，然后输入自己想要克隆的 GitHub 仓库地址，交给码云完成导入即可。</p>
+<p>稍等片刻后，码云即会将 GitHub 的仓库同步到自己的服务器上，此时我们只需要克隆码云上的这个仓库地址，就可以高速克隆这个项目。</p>
+<h3>远程库地址修改</h3>
+<p>在克隆完毕后，本地的 origin 远程库会默认为 Gitee 的仓库，此时我们需要使用 <code>git remote rename origin gitee</code> 命令，将码云的远程仓库重命名为 <code>gitee</code>，并使用 <code>git remote add origin &lt;github url&gt;</code> 命令重新添加 GitHub 的远程仓库为 origin。</p>
+<p>这样我们稍后在做出本地提交后，即可直接推送到 GitHub 仓库。</p>
+<h3>同步仓库</h3>
+<p>如果以导入的形式创建码云仓库。则可以随时点击仓库页面上的同步图标，让码云随时拉取最新的 gitee 代码，以便在本地通过 <code>git fetch gitee</code>，通过码云服务器高速拉取最新代码。</p>
+]]></content>
+    <category term="GitHub"/>
+    <published>2021-02-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">GitHub Token</title>
+    <id>https://blog.ruizhou.cf/code/github/token.html</id>
+    <link href="https://blog.ruizhou.cf/code/github/token.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>Personal Access Token (PAT)，又称个人访问令牌，是一种代替密码进行 GitHub 身份认证的方式。</p>
+<p>通常情况下，你可能需要在 GitHub Workflow 中使用 PAT，以便在 GitHub Actions 中使用需要授权的 GitHub API。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Personal Access Token (PAT)，又称个人访问令牌，是一种代替密码进行 GitHub 身份认证的方式。</p>
+<p>通常情况下，你可能需要在 GitHub Workflow 中使用 PAT，以便在 GitHub Actions 中使用需要授权的 GitHub API。</p>
+<!-- more -->
+<h2>创建个人访问令牌</h2>
+<ol>
+<li>
+<p>访问 <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener noreferrer">新建 Token 页面</a> (当然您需要先登陆 GitHub)</p>
+<blockquote>
+<p>或者可以点击头像 → Settings → Developer settings → Personal access tokens → Generate new Token</p>
+</blockquote>
+</li>
+<li>
+<p>输入一个备注，选择您需要授权 Token 访问的内容，之后点击页面底部的 "Generate Token"</p>
+</li>
+<li>
+<p>妥善保存该 Token (因为您无法再次查看它)</p>
+</li>
+</ol>
+<p>详见 <a href="https://docs.github.com/cn/github/authenticating-to-github/creating-a-personal-access-token" target="_blank" rel="noopener noreferrer">创建个人访问令牌</a></p>
+]]></content>
+    <category term="GitHub"/>
+    <published>2021-01-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">Windows 简介</title>
     <id>https://blog.ruizhou.cf/code/windows/</id>
     <link href="https://blog.ruizhou.cf/code/windows/"/>
@@ -4796,148 +4939,5 @@ Vue 在标签名属性用 v-bind:prop=&amp;quot;Javascript表达式&amp;quot; �
 </div>
 ]]></content>
     <published>2019-09-07T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">常用快捷键</title>
-    <id>https://blog.ruizhou.cf/code/windows/shortcut-key.html</id>
-    <link href="https://blog.ruizhou.cf/code/windows/shortcut-key.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>熟练掌握各种 Windows 快捷键，能够更加高效的使用 Windows。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>熟练掌握各种 Windows 快捷键，能够更加高效的使用 Windows。</p>
-<!-- more -->
-<h2>最常用且最有用的</h2>
-<ul>
-<li><code>F2</code>: 重命名文件；</li>
-<li><code>F5</code>: 刷新；</li>
-<li><code>PrtSc</code>: 将当前屏幕截图拷贝到剪贴板；</li>
-<li><code>Windows</code> + <code>Shift</code> + <code>S</code>: 打开截图工具；</li>
-<li><code>Alt</code> + <code>Tab</code> 切换当前程序(加 Shift 反向)；</li>
-<li><code>Alt</code> + <code>F4</code>: 关闭当前应用程序；</li>
-<li><code>Ctrl</code> + <code>Tab</code>: 在选项卡上向后移动(加 Shift 反向)；</li>
-<li><code>Ctrl</code> + <code>F4</code> 或 <code>Ctrl</code> + <code>W</code>: 关闭当前选项卡；</li>
-<li><code>Ctrl</code> + <code>A</code>: 全选；</li>
-<li><code>Ctrl</code> + <code>X</code>: 剪切；</li>
-<li><code>Ctrl</code> + <code>C</code>: 复制；</li>
-<li><code>Ctrl</code> + <code>V</code>: 粘贴；</li>
-<li><code>Ctrl</code> + <code>F</code>: 查找；</li>
-<li><code>Ctrl</code> + <code>H</code>: 替换。</li>
-<li><code>Ctrl</code> + <code>Shift</code> + <code>N</code>: 新建文件夹或窗口</li>
-</ul>
-<h2>通用键</h2>
-<ul>
-<li><code>F1</code>: 显示帮助；</li>
-<li><code>F2</code>: 重命名文件；</li>
-<li><code>F5</code>: 刷新；</li>
-<li><code>F11</code>: 全屏；</li>
-<li><code>Shift</code> + <code>F10</code>: 打开当前活动项目的快捷菜单(相当于鼠标右键)；</li>
-<li><code>Alt</code> 激活当前程序的菜单栏 (再按下对应字母直接选择)；</li>
-<li><code>Backspace</code>: 退格——删除前一个字符、文件视图下——返回上一级；</li>
-<li><code>Enter</code>: 执行或进入；</li>
-<li><code>Win</code> 或 <code>Ctrl</code> + <code>Esc</code>: 打开开始菜单；</li>
-<li><code>Delete</code>: 删除被选中的项目，如果是文件，将被放入回收站；</li>
-<li><code>PrtSc</code>: 将当前屏幕截图拷贝到剪贴板；</li>
-</ul>
-<h2>程序窗口</h2>
-<ul>
-<li><code>Win</code> + <code>Tab</code>: 最近任务和多桌面视图；</li>
-<li><code>Alt</code> + <code>Tab</code> 切换当前程序(加 Shift 反向)；</li>
-<li><code>Alt</code> + <code>F4</code>: 关闭当前应用程序；</li>
-<li><code>Ctrl</code> + <code>Tab</code>: 在选项卡上向后移动(加 Shift 反向)；</li>
-<li><code>Ctrl</code> + <code>F4</code> 或 <code>Ctrl</code> + <code>W</code>: 关闭当前选项卡；</li>
-<li><code>Alt</code> + <code>加下划线的字母</code> 执行与该字母匹配的命令(或选择选项)；</li>
-<li><code>Win</code> + <code>↑</code>: 显示最小化的窗口 → 最大化窗口；</li>
-<li><code>Win</code> + <code>←</code>: 将窗口最大化到屏幕的左侧；</li>
-<li><code>Win</code> + <code>→</code>: 将窗口最大化到屏幕的右侧；</li>
-<li><code>Win</code> + <code>↓</code>: 缩小窗口 → 最小化窗口；</li>
-<li><code>Win</code> + <code>Home</code>: 最小化除活动窗口之外的所有窗口；</li>
-<li><code>Alt</code> + <code>Space</code>: 打开程序最左上角的菜单；</li>
-<li><code>Win</code> + <code>Shift</code> + <code>↑</code>: 将窗口拉伸到屏幕的顶部和底部；</li>
-<li><code>Win</code> + <code>Shift</code> + <code>←</code> 或 <code>Win</code> + <code>Shift</code> + <code>→</code>: 将窗口从一个监视器移动到另一个监视器；</li>
-</ul>
-<h2>文件浏览</h2>
-<ul>
-<li><code>F2</code>: 重命名文件；</li>
-<li><code>Shift</code> + <code>Delete</code>: 删除被选中的项目，如果是文件，将被直接删除而不是放入回收站；</li>
-<li><code>Ctrl</code> + <code>X</code>: 剪切；</li>
-<li><code>Ctrl</code> + <code>C</code>: 复制；</li>
-<li><code>Ctrl</code> + <code>V</code>: 粘贴；</li>
-<li><code>Ctrl</code> + <code>Shift</code> + <code>N</code>: 新建文件夹或窗口</li>
-</ul>
-<h2>编辑模式</h2>
-<ul>
-<li><code>Ctrl</code> + <code>O</code>: 打开文件；</li>
-<li><code>Ctrl</code> + <code>S</code>: 保存；</li>
-<li><code>Ctrl</code> + <code>方向键</code>: 滚动屏幕；</li>
-<li><code>Ctrl</code> + <code>A</code>: 全选；</li>
-<li><code>Ctrl</code> + <code>X</code>: 剪切；</li>
-<li><code>Ctrl</code> + <code>C</code>: 复制；</li>
-<li><code>Ctrl</code> + <code>V</code>: 粘贴；</li>
-<li><code>Ctrl</code> + <code>Z</code>: 撤销；</li>
-<li><code>Ctrl</code> + <code>Y</code>: 重做；</li>
-<li><code>Ctrl</code> + <code>F</code>: 查找；</li>
-<li><code>Ctrl</code> + <code>H</code>: 替换。</li>
-<li><code>Ctrl</code> + <code>E</code>: 搜索/助理；</li>
-<li><code>Ctrl</code> + <code>Tab</code>: 在选项卡上向后移动(加 Shift 反向)；</li>
-<li><code>Ctrl</code> + <code>F4</code> 或 <code>Ctrl</code> + <code>W</code>: 关闭当前选项卡；</li>
-<li><code>Ctrl</code> + <code>P</code>: 打印；</li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>单击鼠标左键选择光标位置，按住 <code>Shift</code> 再次在另一处单击鼠标左键，即可选中两光标间的所有文字。鼠标左键单击拖动选中内容即可移动选中内容在文档中的位置。</p>
-</div>
-<h2>系统</h2>
-<ul>
-<li><code>Ctrl</code> + <code>Shift</code> + <code>Esc</code>: 打开任务管理器;</li>
-<li><code>Ctrl</code> + <code>Alt</code> + <code>Delete</code>: 进入安全选项；</li>
-<li><code>Win</code> + <code>D</code>: 显示桌面；</li>
-<li><code>Win</code> + <code>E</code>: 打开资源管理器；</li>
-<li><code>Win</code> + <code>L</code>: 锁定计算机或切换用户；</li>
-<li><code>Win</code> + <code>M</code>: 最小化所有窗口(和显示桌面不同，自行感受)；</li>
-<li><code>Win</code> + <code>Shift</code> + <code>M</code>: 将最小化的窗口还原到桌面；</li>
-<li><code>Win</code> + <code>R</code>: 打开“运行”对话框；</li>
-<li><code>Win</code> + <code>A</code>: 打开通知中心；</li>
-<li><code>Win</code> + <code>I</code>: 打开系统设置；</li>
-<li><code>Win</code> + <code>X</code>: 打开 Windows 主选项菜单；</li>
-<li><code>Win</code> + <code>P</code>: 选择投影模式；</li>
-<li><code>Win</code> + <code>数字</code>: 启动任务栏上快捷启动项数字位置处的程序；</li>
-<li><code>Win</code> + <code>B</code> 选中桌面右下方工具栏；</li>
-<li><code>Win</code> + <code>Break</code>: 打开“系统属性”对话框</li>
-<li><code>Win</code> + <code>T</code>: 循环切换任务栏上的程序；</li>
-<li><code>Shift</code> + <code>Win</code> + <code>数字</code>: 打开任务栏上快捷启动项数字位置处程序的新实例；</li>
-<li><code>Alt</code> + <code>Win</code> + <code>数字</code>: 显示任务栏上快捷启动项数字位置处程序的跳转列表；</li>
-<li><code>Alt</code> + <code>Esc</code>: 保留程序的显示状态切换当前程序(最小化状态将被保留)(加 Shift 反向)；</li>
-</ul>
-<h2>输入法</h2>
-<ul>
-<li><code>Ctrl</code> + <code>Space</code>: 切换中英文输入法；</li>
-<li><code>Win</code> + <code>Space</code>: 切换输入法；</li>
-</ul>
-<h2>屏幕截图</h2>
-<ul>
-<li><code>PrtSc</code>: 将当前屏幕截图拷贝到剪贴板；</li>
-<li><code>Win</code> + <code>PrtSc</code>: 将当前屏幕截图保存在图片文件夹中；</li>
-<li><code>Alt</code> + <code>PrtSc</code>: 将当前活动程序窗口以图像方式拷贝到剪贴板；</li>
-<li><code>Windows</code> + <code>Shift</code> + <code>S</code>: 打开截图工具；</li>
-</ul>
-]]></content>
-    <category term="基础"/>
-    <published>2019-09-07T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Windows 版本</title>
-    <id>https://blog.ruizhou.cf/code/windows/version.html</id>
-    <link href="https://blog.ruizhou.cf/code/windows/version.html"/>
-    <updated>2024-07-24T03:08:09.000Z</updated>
-    <summary type="html"><![CDATA[<h2>简介</h2>
-<p>Microsoft Windows 操作系统是美国微软公司研发的一套操作系统，它问世于 1985 年，起初仅仅是 Microsoft-DOS 模拟环境，后续的系统版本由于微软不断的更新升级，不但易用，也当前应用最广泛的操作系统。</p>
-<p>Windows 采用了图形化模式 GUI，比起从前的 DOS 需要输入指令使用的方式，更为人性化。随着计算机硬件和软件的不断升级，微软的 Windows也在不断升级，从架构的16位、32位再到64位,系统版本从最初的 Windows1.0到大家熟知的 Windows95、 Windows98、 Windows2000、 Windows XP、 Windows Vista、 Windows7、Windows8、Windows8.1、Windows10、Windows11 和 Windows Server 服务器企业级操作系统，不断持续更新.</p>]]></summary>
-    <content type="html"><![CDATA[<h2>简介</h2>
-<p>Microsoft Windows 操作系统是美国微软公司研发的一套操作系统，它问世于 1985 年，起初仅仅是 Microsoft-DOS 模拟环境，后续的系统版本由于微软不断的更新升级，不但易用，也当前应用最广泛的操作系统。</p>
-<p>Windows 采用了图形化模式 GUI，比起从前的 DOS 需要输入指令使用的方式，更为人性化。随着计算机硬件和软件的不断升级，微软的 Windows也在不断升级，从架构的16位、32位再到64位,系统版本从最初的 Windows1.0到大家熟知的 Windows95、 Windows98、 Windows2000、 Windows XP、 Windows Vista、 Windows7、Windows8、Windows8.1、Windows10、Windows11 和 Windows Server 服务器企业级操作系统，不断持续更新.</p>
-<p>目前，最新的消费者版本是 Windows 11。</p>
-]]></content>
-    <category term="基础"/>
-    <published>2024-01-26T00:00:00.000Z</published>
   </entry>
 </feed>

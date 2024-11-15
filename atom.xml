@@ -5,7 +5,7 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2024-11-15T01:07:46.707Z</updated>
+  <updated>2024-11-15T13:51:06.219Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
@@ -41,7 +41,7 @@
     <title type="text">pooldequeue--double-ended queue</title>
     <id>https://blog.ruizhou.cf/tech/source/stdlib/pooldequeue.html</id>
     <link href="https://blog.ruizhou.cf/tech/source/stdlib/pooldequeue.html"/>
-    <updated>2024-11-15T01:06:06.000Z</updated>
+    <updated>2024-11-15T13:49:24.000Z</updated>
     <summary type="html"><![CDATA[<h2>pooldequeue</h2>
 <p>设计比较巧妙，单协程生产，多协程消费</p>
 <p>主要结构体定义如下，其中vals长度必须为2的N次幂</p>
@@ -149,7 +149,7 @@
 <p><a href="https://mp.weixin.qq.com/s/fj87oGZPkFKQiGZxhrYRVQ" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/s/fj87oGZPkFKQiGZxhrYRVQ</a></p>
 ]]></content>
     <category term="技术"/>
-    <published>2023-07-22T14:40:00.000Z</published>
+    <published>2024-11-13T14:40:00.000Z</published>
   </entry>
   <entry>
     <title type="text">科技发布会</title>
@@ -1772,6 +1772,69 @@
     <published>2022-01-07T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">英文学习</title>
+    <id>https://blog.ruizhou.cf/english/</id>
+    <link href="https://blog.ruizhou.cf/english/"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<p>英文学习日记</p>
+<h2>语法</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>常用语法，属于技巧类型</p>
+</div>
+<ul>
+<li><a href="/english/grammar.html" target="_blank">语法</a></li>
+</ul>
+<h2>词汇</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>词汇时英文学习的基础，需要下功夫</p>
+</div>]]></summary>
+    <content type="html"><![CDATA[<p>英文学习日记</p>
+<h2>语法</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>常用语法，属于技巧类型</p>
+</div>
+<ul>
+<li><a href="/english/grammar.html" target="_blank">语法</a></li>
+</ul>
+<h2>词汇</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>词汇时英文学习的基础，需要下功夫</p>
+</div>
+<ul>
+<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="_blank">高频词汇</a></li>
+<li><a href="/english/vocabulary/root.html" target="_blank">词根词缀</a></li>
+</ul>
+<h2>每日英语</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
+</div>
+<ul>
+<li><a href="/english/everyday/" target="_blank">点击前往</a></li>
+</ul>
+]]></content>
+    <category term="英文"/>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">语法</title>
+    <id>https://blog.ruizhou.cf/english/grammar.html</id>
+    <link href="https://blog.ruizhou.cf/english/grammar.html"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<h2>简单语法</h2>
+<p>这是简单的几种语法</p>
+]]></summary>
+    <content type="html"><![CDATA[<h2>简单语法</h2>
+<p>这是简单的几种语法</p>
+]]></content>
+    <category term="英文"/>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">硬件</title>
     <id>https://blog.ruizhou.cf/computer/</id>
     <link href="https://blog.ruizhou.cf/computer/"/>
@@ -2405,69 +2468,6 @@
 ]]></content>
     <category term="基础"/>
     <published>2019-11-23T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">英文学习</title>
-    <id>https://blog.ruizhou.cf/english/</id>
-    <link href="https://blog.ruizhou.cf/english/"/>
-    <updated>2024-01-28T08:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<p>英文学习日记</p>
-<h2>语法</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>常用语法，属于技巧类型</p>
-</div>
-<ul>
-<li><a href="/english/grammar.html" target="_blank">语法</a></li>
-</ul>
-<h2>词汇</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>词汇时英文学习的基础，需要下功夫</p>
-</div>]]></summary>
-    <content type="html"><![CDATA[<p>英文学习日记</p>
-<h2>语法</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>常用语法，属于技巧类型</p>
-</div>
-<ul>
-<li><a href="/english/grammar.html" target="_blank">语法</a></li>
-</ul>
-<h2>词汇</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>词汇时英文学习的基础，需要下功夫</p>
-</div>
-<ul>
-<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="_blank">高频词汇</a></li>
-<li><a href="/english/vocabulary/root.html" target="_blank">词根词缀</a></li>
-</ul>
-<h2>每日英语</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
-</div>
-<ul>
-<li><a href="/english/everyday/" target="_blank">点击前往</a></li>
-</ul>
-]]></content>
-    <category term="英文"/>
-    <published>2024-01-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">语法</title>
-    <id>https://blog.ruizhou.cf/english/grammar.html</id>
-    <link href="https://blog.ruizhou.cf/english/grammar.html"/>
-    <updated>2024-01-28T08:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<h2>简单语法</h2>
-<p>这是简单的几种语法</p>
-]]></summary>
-    <content type="html"><![CDATA[<h2>简单语法</h2>
-<p>这是简单的几种语法</p>
-]]></content>
-    <category term="英文"/>
-    <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">软件教程</title>

@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 15 Nov 2024 01:07:46 GMT</pubDate>
-    <lastBuildDate>Fri, 15 Nov 2024 01:07:46 GMT</lastBuildDate>
+    <pubDate>Fri, 15 Nov 2024 13:51:06 GMT</pubDate>
+    <lastBuildDate>Fri, 15 Nov 2024 13:51:06 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -43,7 +43,7 @@
       <source url="https://blog.ruizhou.cf/rss.xml">pooldequeue--double-ended queue</source>
       <description>pooldequeue 设计比较巧妙，单协程生产，多协程消费 主要结构体定义如下，其中vals长度必须为2的N次幂 headTail是一个uint64，可以unpack成为head和tail，起始值一样，当head增长的时候，和tail就会形成差值，差值为0就是队列为空，也就是tail追上了head的增长进度的时候，比如起始状态， 当差值为val的le...</description>
       <category>技术</category>
-      <pubDate>Sat, 22 Jul 2023 14:40:00 GMT</pubDate>
+      <pubDate>Wed, 13 Nov 2024 14:40:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2>pooldequeue</h2>
 <p>设计比较巧妙，单协程生产，多协程消费</p>
 <p>主要结构体定义如下，其中vals长度必须为2的N次幂</p>
@@ -1530,6 +1530,54 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>英文学习</title>
+      <link>https://blog.ruizhou.cf/english/</link>
+      <guid>https://blog.ruizhou.cf/english/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
+      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 词汇 介绍 词汇时英文学习的基础，需要下功夫 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</description>
+      <category>英文</category>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>英文学习日记</p>
+<h2>语法</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>常用语法，属于技巧类型</p>
+</div>
+<ul>
+<li><a href="/english/grammar.html" target="_blank">语法</a></li>
+</ul>
+<h2>词汇</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>词汇时英文学习的基础，需要下功夫</p>
+</div>
+<ul>
+<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="_blank">高频词汇</a></li>
+<li><a href="/english/vocabulary/root.html" target="_blank">词根词缀</a></li>
+</ul>
+<h2>每日英语</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
+</div>
+<ul>
+<li><a href="/english/everyday/" target="_blank">点击前往</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>语法</title>
+      <link>https://blog.ruizhou.cf/english/grammar.html</link>
+      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
+      <description>简单语法 这是简单的几种语法</description>
+      <category>英文</category>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>简单语法</h2>
+<p>这是简单的几种语法</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>硬件</title>
       <link>https://blog.ruizhou.cf/computer/</link>
       <guid>https://blog.ruizhou.cf/computer/</guid>
@@ -1884,54 +1932,6 @@
 </ol>
 <h2>断开链接</h2>
 <p><code>Ctrl + D</code> 或 输入 <code>logout</code>.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>英文学习</title>
-      <link>https://blog.ruizhou.cf/english/</link>
-      <guid>https://blog.ruizhou.cf/english/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">英文学习</source>
-      <description>英文学习日记 语法 介绍 常用语法，属于技巧类型 词汇 介绍 词汇时英文学习的基础，需要下功夫 每日英语 介绍 每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</description>
-      <category>英文</category>
-      <pubDate>Sat, 27 Jan 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>英文学习日记</p>
-<h2>语法</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>常用语法，属于技巧类型</p>
-</div>
-<ul>
-<li><a href="/english/grammar.html" target="_blank">语法</a></li>
-</ul>
-<h2>词汇</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>词汇时英文学习的基础，需要下功夫</p>
-</div>
-<ul>
-<li><a href="/english/vocabulary/high-frequency-vocabulary.html" target="_blank">高频词汇</a></li>
-<li><a href="/english/vocabulary/root.html" target="_blank">词根词缀</a></li>
-</ul>
-<h2>每日英语</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p>每天阅读日常期刊英文读物，是非常必要的，可以验证和复习所学所得</p>
-</div>
-<ul>
-<li><a href="/english/everyday/" target="_blank">点击前往</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>语法</title>
-      <link>https://blog.ruizhou.cf/english/grammar.html</link>
-      <guid>https://blog.ruizhou.cf/english/grammar.html</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">语法</source>
-      <description>简单语法 这是简单的几种语法</description>
-      <category>英文</category>
-      <pubDate>Sat, 27 Jan 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>简单语法</h2>
-<p>这是简单的几种语法</p>
 ]]></content:encoded>
     </item>
     <item>

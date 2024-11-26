@@ -5,7 +5,7 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2024-11-26T12:22:52.604Z</updated>
+  <updated>2024-11-26T12:33:01.820Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
@@ -22,17 +22,18 @@
   <category term="harmony"/>
   <category term="web"/>
   <category term="英文"/>
-  <category term="硬件"/>
   <category term="ai"/>
+  <category term="硬件"/>
   <category term="Linux"/>
   <category term="基础"/>
   <category term="服务器"/>
   <category term="软件"/>
   <category term="Android"/>
-  <category term="GitHub"/>
   <category term="前端"/>
   <category term="后端"/>
+  <category term="GitHub"/>
   <category term="教程"/>
+  <category term="小程序"/>
   <category term="Node.js"/>
   <contributor>
     <name>陈慧玲</name>
@@ -41,14 +42,12 @@
     <title type="text">华为2024-11-26新品发布会</title>
     <id>https://blog.ruizhou.cf/launch-event/huawei20241126.html</id>
     <link href="https://blog.ruizhou.cf/launch-event/huawei20241126.html"/>
-    <updated>2024-11-26T12:20:46.000Z</updated>
+    <updated>2024-11-26T12:31:14.000Z</updated>
     <summary type="html"><![CDATA[<h2>发布会产品</h2>
 <figure><figcaption>huawei11-26</figcaption></figure>
-<figure><figcaption>xiaomi10-29</figcaption></figure>
 ]]></summary>
     <content type="html"><![CDATA[<h2>发布会产品</h2>
 <figure><figcaption>huawei11-26</figcaption></figure>
-<figure><figcaption>xiaomi10-29</figcaption></figure>
 ]]></content>
     <category term="华为"/>
     <published>2024-11-26T11:00:00.000Z</published>
@@ -1818,28 +1817,30 @@
     <published>2024-01-27T22:01:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">ruizhou 介绍</title>
-    <id>https://blog.ruizhou.cf/about/me.html</id>
-    <link href="https://blog.ruizhou.cf/about/me.html"/>
+    <title type="text">AI</title>
+    <id>https://blog.ruizhou.cf/ai/</id>
+    <link href="https://blog.ruizhou.cf/ai/"/>
     <updated>2024-01-28T08:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<h2>ruizhou 介绍</h2>
-<figure><img src="/2233.png" alt="ruizhou" tabindex="0" loading="lazy"><figcaption>ruizhou</figcaption></figure>
-<h2>基本信息</h2>
+    <summary type="html"><![CDATA[<p>AI 领域</p>
+<h2>Stable Diffusion</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p><strong>Stable Diffusion</strong> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="noopener noreferrer">deep learning</a>, <a href="https://en.wikipedia.org/wiki/Text-to-image_model" target="_blank" rel="noopener noreferrer">text-to-image model</a> released in 2022. It is primarily used to generate detailed images conditioned on text descriptions, though it can also be applied to other tasks such as <a href="https://en.wikipedia.org/wiki/Inpainting" target="_blank" rel="noopener noreferrer">inpainting</a>, outpainting, and generating image-to-image translations guided by a <a href="https://en.wikipedia.org/wiki/Prompt_engineering" target="_blank" rel="noopener noreferrer">text prompt</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-:0-3" target="_blank" rel="noopener noreferrer">3</a> It was developed by the start-up Stability AI in collaboration with a number of academic researchers and non-profit organizations.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-launch-4" target="_blank" rel="noopener noreferrer">4</a></p>
+<p>Stable Diffusion is a <a href="https://en.wikipedia.org/wiki/Latent_variable_model" target="_blank" rel="noopener noreferrer">latent</a> <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener noreferrer">diffusion model</a>, a kind of deep generative <a href="https://en.wikipedia.org/wiki/Neural_network" target="_blank" rel="noopener noreferrer">neural network</a>. Its code and model weights have been released <a href="https://en.wikipedia.org/wiki/Source-available_software" target="_blank" rel="noopener noreferrer">publicly</a>,<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-github-5" target="_blank" rel="noopener noreferrer">5</a> and it can run on most consumer hardware equipped with a modest <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank" rel="noopener noreferrer">GPU</a> with at least 8 GB <a href="https://en.wikipedia.org/wiki/Video_random_access_memory" target="_blank" rel="noopener noreferrer">VRAM</a>. This marked a departure from previous proprietary text-to-image models such as <a href="https://en.wikipedia.org/wiki/DALL-E" target="_blank" rel="noopener noreferrer">DALL-E</a> and <a href="https://en.wikipedia.org/wiki/Midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a> which were accessible only via <a href="https://en.wikipedia.org/wiki/Cloud_service" target="_blank" rel="noopener noreferrer">cloud services</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-pcworld-6" target="_blank" rel="noopener noreferrer">6</a><a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-verge-7" target="_blank" rel="noopener noreferrer">7</a></p>
+</div>]]></summary>
+    <content type="html"><![CDATA[<p>AI 领域</p>
+<h2>Stable Diffusion</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">介绍</p>
+<p><strong>Stable Diffusion</strong> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="noopener noreferrer">deep learning</a>, <a href="https://en.wikipedia.org/wiki/Text-to-image_model" target="_blank" rel="noopener noreferrer">text-to-image model</a> released in 2022. It is primarily used to generate detailed images conditioned on text descriptions, though it can also be applied to other tasks such as <a href="https://en.wikipedia.org/wiki/Inpainting" target="_blank" rel="noopener noreferrer">inpainting</a>, outpainting, and generating image-to-image translations guided by a <a href="https://en.wikipedia.org/wiki/Prompt_engineering" target="_blank" rel="noopener noreferrer">text prompt</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-:0-3" target="_blank" rel="noopener noreferrer">3</a> It was developed by the start-up Stability AI in collaboration with a number of academic researchers and non-profit organizations.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-launch-4" target="_blank" rel="noopener noreferrer">4</a></p>
+<p>Stable Diffusion is a <a href="https://en.wikipedia.org/wiki/Latent_variable_model" target="_blank" rel="noopener noreferrer">latent</a> <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener noreferrer">diffusion model</a>, a kind of deep generative <a href="https://en.wikipedia.org/wiki/Neural_network" target="_blank" rel="noopener noreferrer">neural network</a>. Its code and model weights have been released <a href="https://en.wikipedia.org/wiki/Source-available_software" target="_blank" rel="noopener noreferrer">publicly</a>,<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-github-5" target="_blank" rel="noopener noreferrer">5</a> and it can run on most consumer hardware equipped with a modest <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank" rel="noopener noreferrer">GPU</a> with at least 8 GB <a href="https://en.wikipedia.org/wiki/Video_random_access_memory" target="_blank" rel="noopener noreferrer">VRAM</a>. This marked a departure from previous proprietary text-to-image models such as <a href="https://en.wikipedia.org/wiki/DALL-E" target="_blank" rel="noopener noreferrer">DALL-E</a> and <a href="https://en.wikipedia.org/wiki/Midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a> which were accessible only via <a href="https://en.wikipedia.org/wiki/Cloud_service" target="_blank" rel="noopener noreferrer">cloud services</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-pcworld-6" target="_blank" rel="noopener noreferrer">6</a><a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-verge-7" target="_blank" rel="noopener noreferrer">7</a></p>
+</div>
 <ul>
-<li>blog</li>
-<li>英文学校</li>
-<li>技术学习</li>
-</ul>
-]]></summary>
-    <content type="html"><![CDATA[<h2>ruizhou 介绍</h2>
-<figure><img src="/2233.png" alt="ruizhou" tabindex="0" loading="lazy"><figcaption>ruizhou</figcaption></figure>
-<h2>基本信息</h2>
-<ul>
-<li>blog</li>
-<li>英文学校</li>
-<li>技术学习</li>
+<li><a href="/ai/stable-diffusion/base.html" target="_blank">基础</a></li>
+<li><a href="/ai/stable-diffusion/doc.html" target="_blank">文档</a></li>
 </ul>
 ]]></content>
+    <category term="ai"/>
     <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -2214,6 +2215,31 @@
     <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">ruizhou 介绍</title>
+    <id>https://blog.ruizhou.cf/about/me.html</id>
+    <link href="https://blog.ruizhou.cf/about/me.html"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<h2>ruizhou 介绍</h2>
+<figure><img src="/2233.png" alt="ruizhou" tabindex="0" loading="lazy"><figcaption>ruizhou</figcaption></figure>
+<h2>基本信息</h2>
+<ul>
+<li>blog</li>
+<li>英文学校</li>
+<li>技术学习</li>
+</ul>
+]]></summary>
+    <content type="html"><![CDATA[<h2>ruizhou 介绍</h2>
+<figure><img src="/2233.png" alt="ruizhou" tabindex="0" loading="lazy"><figcaption>ruizhou</figcaption></figure>
+<h2>基本信息</h2>
+<ul>
+<li>blog</li>
+<li>英文学校</li>
+<li>技术学习</li>
+</ul>
+]]></content>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">代码笔记</title>
     <id>https://blog.ruizhou.cf/code/</id>
     <link href="https://blog.ruizhou.cf/code/"/>
@@ -2378,33 +2404,6 @@
 <p>这是简单的几种语法</p>
 ]]></content>
     <category term="英文"/>
-    <published>2024-01-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">AI</title>
-    <id>https://blog.ruizhou.cf/ai/</id>
-    <link href="https://blog.ruizhou.cf/ai/"/>
-    <updated>2024-01-28T08:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<p>AI 领域</p>
-<h2>Stable Diffusion</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p><strong>Stable Diffusion</strong> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="noopener noreferrer">deep learning</a>, <a href="https://en.wikipedia.org/wiki/Text-to-image_model" target="_blank" rel="noopener noreferrer">text-to-image model</a> released in 2022. It is primarily used to generate detailed images conditioned on text descriptions, though it can also be applied to other tasks such as <a href="https://en.wikipedia.org/wiki/Inpainting" target="_blank" rel="noopener noreferrer">inpainting</a>, outpainting, and generating image-to-image translations guided by a <a href="https://en.wikipedia.org/wiki/Prompt_engineering" target="_blank" rel="noopener noreferrer">text prompt</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-:0-3" target="_blank" rel="noopener noreferrer">3</a> It was developed by the start-up Stability AI in collaboration with a number of academic researchers and non-profit organizations.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-launch-4" target="_blank" rel="noopener noreferrer">4</a></p>
-<p>Stable Diffusion is a <a href="https://en.wikipedia.org/wiki/Latent_variable_model" target="_blank" rel="noopener noreferrer">latent</a> <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener noreferrer">diffusion model</a>, a kind of deep generative <a href="https://en.wikipedia.org/wiki/Neural_network" target="_blank" rel="noopener noreferrer">neural network</a>. Its code and model weights have been released <a href="https://en.wikipedia.org/wiki/Source-available_software" target="_blank" rel="noopener noreferrer">publicly</a>,<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-github-5" target="_blank" rel="noopener noreferrer">5</a> and it can run on most consumer hardware equipped with a modest <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank" rel="noopener noreferrer">GPU</a> with at least 8 GB <a href="https://en.wikipedia.org/wiki/Video_random_access_memory" target="_blank" rel="noopener noreferrer">VRAM</a>. This marked a departure from previous proprietary text-to-image models such as <a href="https://en.wikipedia.org/wiki/DALL-E" target="_blank" rel="noopener noreferrer">DALL-E</a> and <a href="https://en.wikipedia.org/wiki/Midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a> which were accessible only via <a href="https://en.wikipedia.org/wiki/Cloud_service" target="_blank" rel="noopener noreferrer">cloud services</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-pcworld-6" target="_blank" rel="noopener noreferrer">6</a><a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-verge-7" target="_blank" rel="noopener noreferrer">7</a></p>
-</div>]]></summary>
-    <content type="html"><![CDATA[<p>AI 领域</p>
-<h2>Stable Diffusion</h2>
-<div class="hint-container tip">
-<p class="hint-container-title">介绍</p>
-<p><strong>Stable Diffusion</strong> is a <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="noopener noreferrer">deep learning</a>, <a href="https://en.wikipedia.org/wiki/Text-to-image_model" target="_blank" rel="noopener noreferrer">text-to-image model</a> released in 2022. It is primarily used to generate detailed images conditioned on text descriptions, though it can also be applied to other tasks such as <a href="https://en.wikipedia.org/wiki/Inpainting" target="_blank" rel="noopener noreferrer">inpainting</a>, outpainting, and generating image-to-image translations guided by a <a href="https://en.wikipedia.org/wiki/Prompt_engineering" target="_blank" rel="noopener noreferrer">text prompt</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-:0-3" target="_blank" rel="noopener noreferrer">3</a> It was developed by the start-up Stability AI in collaboration with a number of academic researchers and non-profit organizations.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-launch-4" target="_blank" rel="noopener noreferrer">4</a></p>
-<p>Stable Diffusion is a <a href="https://en.wikipedia.org/wiki/Latent_variable_model" target="_blank" rel="noopener noreferrer">latent</a> <a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener noreferrer">diffusion model</a>, a kind of deep generative <a href="https://en.wikipedia.org/wiki/Neural_network" target="_blank" rel="noopener noreferrer">neural network</a>. Its code and model weights have been released <a href="https://en.wikipedia.org/wiki/Source-available_software" target="_blank" rel="noopener noreferrer">publicly</a>,<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-stable-diffusion-github-5" target="_blank" rel="noopener noreferrer">5</a> and it can run on most consumer hardware equipped with a modest <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank" rel="noopener noreferrer">GPU</a> with at least 8 GB <a href="https://en.wikipedia.org/wiki/Video_random_access_memory" target="_blank" rel="noopener noreferrer">VRAM</a>. This marked a departure from previous proprietary text-to-image models such as <a href="https://en.wikipedia.org/wiki/DALL-E" target="_blank" rel="noopener noreferrer">DALL-E</a> and <a href="https://en.wikipedia.org/wiki/Midjourney" target="_blank" rel="noopener noreferrer">Midjourney</a> which were accessible only via <a href="https://en.wikipedia.org/wiki/Cloud_service" target="_blank" rel="noopener noreferrer">cloud services</a>.<a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-pcworld-6" target="_blank" rel="noopener noreferrer">6</a><a href="https://en.wikipedia.org/wiki/Stable_Diffusion#cite_note-verge-7" target="_blank" rel="noopener noreferrer">7</a></p>
-</div>
-<ul>
-<li><a href="/ai/stable-diffusion/base.html" target="_blank">基础</a></li>
-<li><a href="/ai/stable-diffusion/doc.html" target="_blank">文档</a></li>
-</ul>
-]]></content>
-    <category term="ai"/>
     <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -2670,26 +2669,6 @@
 ]]></content>
     <category term="基础"/>
     <published>2019-11-23T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">技术</title>
-    <id>https://blog.ruizhou.cf/tech/</id>
-    <link href="https://blog.ruizhou.cf/tech/"/>
-    <updated>2024-01-28T08:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<h2>目录</h2>
-<ul>
-<li><a href="/tech/go/" target="_blank">golang</a></li>
-<li><a href="/tech/yaml/" target="_blank">yaml</a></li>
-</ul>
-]]></summary>
-    <content type="html"><![CDATA[<h2>目录</h2>
-<ul>
-<li><a href="/tech/go/" target="_blank">golang</a></li>
-<li><a href="/tech/yaml/" target="_blank">yaml</a></li>
-</ul>
-]]></content>
-    <category term="技术"/>
-    <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">软件教程</title>
@@ -3177,6 +3156,144 @@
     <published>2024-01-27T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">技术</title>
+    <id>https://blog.ruizhou.cf/tech/</id>
+    <link href="https://blog.ruizhou.cf/tech/"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<h2>目录</h2>
+<ul>
+<li><a href="/tech/go/" target="_blank">golang</a></li>
+<li><a href="/tech/yaml/" target="_blank">yaml</a></li>
+</ul>
+]]></summary>
+    <content type="html"><![CDATA[<h2>目录</h2>
+<ul>
+<li><a href="/tech/go/" target="_blank">golang</a></li>
+<li><a href="/tech/yaml/" target="_blank">yaml</a></li>
+</ul>
+]]></content>
+    <category term="技术"/>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">基础</title>
+    <id>https://blog.ruizhou.cf/ai/stable-diffusion/base.html</id>
+    <link href="https://blog.ruizhou.cf/ai/stable-diffusion/base.html"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<h2>资料</h2>
+<p>https://space.bilibili.com/1640056/video</p>
+<p>https://space.bilibili.com/250989068/video</p>
+<p>https://space.bilibili.com/435304165/video</p>
+<h2>后缀</h2>
+<ol>
+<li>ckpt</li>
+<li>pt</li>
+<li>pth</li>
+<li>safetensors</li>
+<li>webui 特殊模型保存方法：PNG、WEBP 图片格式</li>
+</ol>
+<h3>大模型</h3>
+<p>常见格式为 <strong>ckpt</strong>，一个字，大。</p>]]></summary>
+    <content type="html"><![CDATA[<h2>资料</h2>
+<p>https://space.bilibili.com/1640056/video</p>
+<p>https://space.bilibili.com/250989068/video</p>
+<p>https://space.bilibili.com/435304165/video</p>
+<h2>后缀</h2>
+<ol>
+<li>ckpt</li>
+<li>pt</li>
+<li>pth</li>
+<li>safetensors</li>
+<li>webui 特殊模型保存方法：PNG、WEBP 图片格式</li>
+</ol>
+<h3>大模型</h3>
+<p>常见格式为 <strong>ckpt</strong>，一个字，大。</p>
+<p>大小在 GB 级别，常见有 2G、4G、7G 模型。</p>
+<p>在 models/stable-diffsuion/</p>
+<h3>小模型</h3>
+<h4>embedding 模型</h4>
+<p>常见格式为 <strong>pt</strong>、png 图片、webp 图片。大小一般在 KB 级别。</p>
+<p>在 embeddings/</p>
+<p>可训练：画风 √ 人物 √ | 推荐训练：<strong>人物</strong></p>
+<p>配置要求：显存 6GB 以上。</p>
+<p>训练速度：中等 | 训练难度：中等</p>
+<p>综合评价：☆☆☆</p>
+<p>评价：比较基础的一种，局限性较大，但是可以用</p>
+<h4>hypernetwork</h4>
+<p>常见格式为 <strong>pt</strong>。大小一般在几十兆到几百兆不等。由于这种模型可以自定义的参数非常之多，一些离谱的 Hypernetwork 模型可以达到 GB 级别。</p>
+<p>在 hypernetworks/</p>
+<p>可训练：画风 √ 人物 √ | 推荐训练：<strong>画风</strong></p>
+<p>配置要求：显存 6GB 以上。</p>
+<p>训练速度：中等 | 训练难度：难</p>
+<p>综合评价：☆☆</p>
+<p>评价：非常强大的一种模型，但是想训练好很难，不推荐训练。</p>
+<h4>LoRA</h4>
+<p>常见格式为 <strong>pt</strong>、<strong>ckpt</strong>。大小一般在 8mb~144mb 不等。</p>
+<p>在 models/lora/</p>
+<p>可训练：画风? 人物 √ 概念 √ | 推荐训练：<strong>人物</strong></p>
+<p>配置要求：显存 8GB 以上。</p>
+<p>训练速度：快 | 训练难度：简单</p>
+<p>综合评价：☆☆☆☆</p>
+<p>评价：非常好训练 好出效果的人物训练，配置要求低，图要求少。</p>
+<p>备注：LoRA 本身也应该归类到 Dreambooth，但是这里还是分开讲。</p>
+<h4>VAE 模型</h4>
+<p>常见格式为 <strong>pt</strong></p>
+<p>在 models/VAE/</p>
+<h4>Dreambooth / Native Train</h4>
+<p>可训练：画风 √ 人物 √ 概念 √ | 推荐训练：Dreambooth 推荐人物，Native Train 推荐画风</p>
+<p>配置要求：显存 12GB 以上。</p>
+<p>训练速度：慢 | 训练难度：可以简单可以很难</p>
+<p>综合评价：☆☆☆☆☆</p>
+<p>评价：微调大模型，非常强大的训练方式，但是使用上会不那么灵活，推荐训练画风用，人物使用 LoRA 训练。</p>
+<h2>训练</h2>
+<p>image _ repeat _ epoch / batch_size = total steps</p>
+<p>10 张图 _ 20 次 _ 10 个循环 / 2 并行 = 1000 总训练步数</p>
+<p>batch_size 和显存大小有关</p>
+<p>两者乘积固定的时候，repeat 比 epoch 会更加化时间</p>
+<p>20 * 5 = 100，花费 51min</p>
+<p>100 * 1 = 100，花费 90min</p>
+<p>多 epoch 方案的拟合性更好</p>
+<p>![repeat vs epoch](./assets/repeat vs epoch.png)</p>
+<p>![lr vs lr](./assets/lr vs lr.png)</p>
+<h3>学习率</h3>
+<figure><figcaption>lr</figcaption></figure>
+<h3>DIM</h3>
+<p>表示神经网络的维度，维度越大，模型的表达能力越强，模型的体积也会越大。</p>
+<p>network_dimension</p>
+<ul>
+<li>128，140MB+（现实世界实物，风景，人物 &gt;128）</li>
+<li>64，70MB+（人物 32-128）</li>
+<li>32，40MB+（二次元）</li>
+</ul>
+<h3>Optimizer</h3>
+<p>AdamW8bit</p>
+<p>Dadptation</p>
+<p>Lion</p>
+<h2>参数建议</h2>
+<figure><figcaption>recommend</figcaption></figure>
+<h3>案例</h3>
+<figure><figcaption>case1</figcaption></figure>
+<figure><figcaption>case2</figcaption></figure>
+<figure><figcaption>case3</figcaption></figure>
+<h3>tag</h3>
+<p>期望固化的模型特征，不要打 tag，这样使用中就生存固定特征了，而不会被改变</p>
+]]></content>
+    <category term="ai"/>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">文档资料</title>
+    <id>https://blog.ruizhou.cf/ai/stable-diffusion/doc.html</id>
+    <link href="https://blog.ruizhou.cf/ai/stable-diffusion/doc.html"/>
+    <updated>2024-01-28T08:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<p>https://lilianweng.github.io/posts/2021-07-11-diffusion-models/</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>https://lilianweng.github.io/posts/2021-07-11-diffusion-models/</p>
+]]></content>
+    <category term="ai"/>
+    <published>2024-01-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">应用基础知识</title>
     <id>https://blog.ruizhou.cf/code/android/base.html</id>
     <link href="https://blog.ruizhou.cf/code/android/base.html"/>
@@ -3299,6 +3416,100 @@
 ]]></content>
     <category term="Android"/>
     <published>2020-04-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Angular</title>
+    <id>https://blog.ruizhou.cf/code/angular/</id>
+    <link href="https://blog.ruizhou.cf/code/angular/"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
+<p>框架强制 Typescript，更倾向于大型项目。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
+<p>框架强制 Typescript，更倾向于大型项目。</p>
+<!-- more -->
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年 Angular 挺凉的了</p>
+</div>
+<div class="hint-container info">
+<p class="hint-container-title">Angular 的优点</p>
+<ol>
+<li>零配置 CLI，享受到 webpack 每次升级的好处，但是不用关心任何 webpack config</li>
+<li>官方提供所有的必须组件(http、router、animation、ssr、e2e 等等)，在 2000+ 内部应用测试之后才会发布，基本零 bug，并且保证在未来很多年内一直保证兼容升级</li>
+<li>提供官方的应用市场和 low code 生成工具，一行命令就可以生成 Dashboard 和各种页面</li>
+<li>框架 100% 由 TypeScript 开发，并且生态内的所有三方库都是(只能用) TypeScript 开发</li>
+<li>内置 RxJS，并且从 View 的操作到 Http 全部都是 Reactive 的，可以随意组合</li>
+<li>每次升级只要运行一行命令就会帮您修复所有的可能的不兼容问题</li>
+<li>通过 Template 隔绝底层的 Compiler 升级成本，Compiler 迭代了三代，性能不断提升，bundle size 不断减少，但是用户代码一行不用改</li>
+</ol>
+</div>
+<p>Angular 写起来其实是有诸多限制的，但是对企业的大型项目来说，这些限制与规范会带来多人协同开发和后期维护上的简便。</p>
+<p>如果您在前端框架上追求的更多是: 升级稳定、标准统一、长期维护成本低、协作方便，不需要频繁重构，Angular 的使用感受应该还是相当不错的，这也是为什么目前大量企业用户会选择 Angular 的原因。</p>
+<h2>相关链接</h2>
+<ul>
+<li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://angular.cn/docs" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content>
+    <category term="前端"/>
+    <published>2020-05-06T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">后端开发</title>
+    <id>https://blog.ruizhou.cf/code/back-end/</id>
+    <link href="https://blog.ruizhou.cf/code/back-end/"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<h2>后端入门</h2>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年后端还是 Java 比较多</p>
+</div>
+<h3>PHP</h3>
+<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
+<p>PHP 手册:</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<h2>后端入门</h2>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年后端还是 Java 比较多</p>
+</div>
+<h3>PHP</h3>
+<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
+<p>PHP 手册:</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>
+<p>如果服务器访问数量不大的情况下，PHP 作为一种门槛低，开发方便的脚本语言，还是挺受到欢迎的。</p>
+<h3>ASP</h3>
+<p>ASP 文件可包含文本、HTML 标签和脚本。ASP 文件中的脚本可在服务器上执行。由于 ASP 在服务器上运行，浏览器无需支持客户端脚本就可以显示 ASP 文件!</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/asp/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/asp/asp-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>更多详情有待日后补充</p>
+</div>
+]]></content>
+    <category term="后端"/>
+    <published>2019-09-10T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">GitHub</title>
@@ -3800,100 +4011,6 @@
     <published>2021-01-18T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">Angular</title>
-    <id>https://blog.ruizhou.cf/code/angular/</id>
-    <link href="https://blog.ruizhou.cf/code/angular/"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
-<p>框架强制 Typescript，更倾向于大型项目。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
-<p>框架强制 Typescript，更倾向于大型项目。</p>
-<!-- more -->
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年 Angular 挺凉的了</p>
-</div>
-<div class="hint-container info">
-<p class="hint-container-title">Angular 的优点</p>
-<ol>
-<li>零配置 CLI，享受到 webpack 每次升级的好处，但是不用关心任何 webpack config</li>
-<li>官方提供所有的必须组件(http、router、animation、ssr、e2e 等等)，在 2000+ 内部应用测试之后才会发布，基本零 bug，并且保证在未来很多年内一直保证兼容升级</li>
-<li>提供官方的应用市场和 low code 生成工具，一行命令就可以生成 Dashboard 和各种页面</li>
-<li>框架 100% 由 TypeScript 开发，并且生态内的所有三方库都是(只能用) TypeScript 开发</li>
-<li>内置 RxJS，并且从 View 的操作到 Http 全部都是 Reactive 的，可以随意组合</li>
-<li>每次升级只要运行一行命令就会帮您修复所有的可能的不兼容问题</li>
-<li>通过 Template 隔绝底层的 Compiler 升级成本，Compiler 迭代了三代，性能不断提升，bundle size 不断减少，但是用户代码一行不用改</li>
-</ol>
-</div>
-<p>Angular 写起来其实是有诸多限制的，但是对企业的大型项目来说，这些限制与规范会带来多人协同开发和后期维护上的简便。</p>
-<p>如果您在前端框架上追求的更多是: 升级稳定、标准统一、长期维护成本低、协作方便，不需要频繁重构，Angular 的使用感受应该还是相当不错的，这也是为什么目前大量企业用户会选择 Angular 的原因。</p>
-<h2>相关链接</h2>
-<ul>
-<li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://angular.cn/docs" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-06T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">后端开发</title>
-    <id>https://blog.ruizhou.cf/code/back-end/</id>
-    <link href="https://blog.ruizhou.cf/code/back-end/"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<h2>后端入门</h2>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年后端还是 Java 比较多</p>
-</div>
-<h3>PHP</h3>
-<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
-<p>PHP 手册:</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<h2>后端入门</h2>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年后端还是 Java 比较多</p>
-</div>
-<h3>PHP</h3>
-<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
-<p>PHP 手册:</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<p>如果服务器访问数量不大的情况下，PHP 作为一种门槛低，开发方便的脚本语言，还是挺受到欢迎的。</p>
-<h3>ASP</h3>
-<p>ASP 文件可包含文本、HTML 标签和脚本。ASP 文件中的脚本可在服务器上执行。由于 ASP 在服务器上运行，浏览器无需支持客户端脚本就可以显示 ASP 文件!</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/asp/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/asp/asp-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>更多详情有待日后补充</p>
-</div>
-]]></content>
-    <category term="后端"/>
-    <published>2019-09-10T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">代码学习教程</title>
     <id>https://blog.ruizhou.cf/code/language/</id>
     <link href="https://blog.ruizhou.cf/code/language/"/>
@@ -4108,577 +4225,291 @@
     <published>2020-05-04T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">基础介绍</title>
-    <id>https://blog.ruizhou.cf/code/basic/</id>
-    <link href="https://blog.ruizhou.cf/code/basic/"/>
-    <updated>2024-07-24T03:08:09.000Z</updated>
-    <summary type="html"><![CDATA[<p>这些是一些最为基础的内容，是后来补充进博客中的，供访客查阅。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>这些是一些最为基础的内容，是后来补充进博客中的，供访客查阅。</p>
-<!-- more -->
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-26T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">持续集成</title>
-    <id>https://blog.ruizhou.cf/code/basic/ci.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/ci.html"/>
+    <title type="text">小程序</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/"/>
     <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>持续集成 (Continuous Integration) 指的是，频繁地 (一天多次) 将代码集成到主干，每次集成都通过自动化的构建 (包括编译，发布，自动化测试) 来验证，从而尽早地发现集成错误。</p>
-<p>持续集成的目的让产品可以快速迭代，同时还能保持高质量。就是说每完成一个完整的部分，就向下个环节交付，发现问题可以马上调整，使得问题不会放大到其他部分和后面的环节。</p>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
 ]]></summary>
-    <content type="html"><![CDATA[<p>持续集成 (Continuous Integration) 指的是，频繁地 (一天多次) 将代码集成到主干，每次集成都通过自动化的构建 (包括编译，发布，自动化测试) 来验证，从而尽早地发现集成错误。</p>
-<p>持续集成的目的让产品可以快速迭代，同时还能保持高质量。就是说每完成一个完整的部分，就向下个环节交付，发现问题可以马上调整，使得问题不会放大到其他部分和后面的环节。</p>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
 <!-- more -->
-<h2>介绍</h2>
-<p>持续集成 (CI) 是一种需要频繁提交代码到共享仓库的软件实践。频繁提交代码能较早检测到错误，减少在查找错误来源时开发者需要调试的代码量。 频繁的代码更新也更便于从软件开发团队的不同成员合并更改。 这对开发者非常有益，他们可以将更多时间用于编写代码，而减少在调试错误或解决合并冲突上所花的时间。</p>
-<p>提交代码到仓库时，可以持续创建并测试代码，以确保提交未引入错误。 您的测试可以包括代码语法检查 (检查样式格式) 、安全性检查、代码覆盖率、功能测试及其他自定义检查。</p>
-<p>创建和测试代码需要服务器。 您可以在推送代码到仓库之前在本地创建并测试更新，也可以使用 CI 服务器检查仓库中的新代码提交。</p>
-<h3>要点</h3>
-<p>它的核心措施是，代码集成到主干之前，必须通过自动化测试。只要有一个测试用例失败，就不能集成。</p>
-<h3>优点</h3>
-<ol>
-<li>
-<p>提高开发效率</p>
-</li>
-<li>
-<p>快速发现并定位 Bugs</p>
-</li>
-<li>
-<p>更快速发布更新</p>
-</li>
-</ol>
-]]></content>
-    <category term="基础"/>
-    <published>2021-02-18T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">计算机</title>
-    <id>https://blog.ruizhou.cf/code/basic/computer.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/computer.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>计算机是一台机器，它按照用户的要求接收信息、存储数据、处理数据，然后再将处理结果输出(文字、图片、音频、视频等)。</p>
-<p>计算机的核心就是: 接受使用者输入指令与资料，经由中央处理器的数学与逻辑单元运算处理后，以产生或储存成有用的资讯。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>计算机是一台机器，它按照用户的要求接收信息、存储数据、处理数据，然后再将处理结果输出(文字、图片、音频、视频等)。</p>
-<p>计算机的核心就是: 接受使用者输入指令与资料，经由中央处理器的数学与逻辑单元运算处理后，以产生或储存成有用的资讯。</p>
-<!-- more -->
+<h2>小程序基础简介</h2>
+<p>在微信小程序中主要有四种文件结构: <code>wxml</code>、<code>wxss</code>、<code>js</code> 和 <code>json</code>。其中 <code>wxml</code> 对应带有 vue.js 特征的 html5，<code>wxss</code> 对应 css3，<code>js</code> 对应 ES6 标准的的 javaScript。</p>
+<p>对于 QQ 小程序，其文件结构为 <code>QML</code>、<code>qss</code>、<code>js</code> 和 <code>json</code>。</p>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>计算机的定义比大家生活中的理解更加广泛。</p>
-<p>一般商店用的简易型加减乘除计算机、手机、卫星定位系统(GPS)、提款机(ATM)、个人电脑、笔记本电脑(包括 notebook 与 netbook)，还有平板电脑与智能手机等，都叫计算机。</p>
+<p>QQ 小程序本质还是换汤不换药的，且 QQ 开发者工具兼容 <code>wxml</code> 与 <code>wss</code>)</p>
 </div>
-<h2>组成</h2>
-<p>计算机由硬件和软件组成。</p>
-<h3>硬件</h3>
-<p>硬件是计算机赖以工作的实体，包括显示器、键盘、鼠标、硬盘、CPU、主板等；</p>
-<p>严格意义上讲，硬件可以分为三个部分:</p>
+<p>小程序开发与网页开发极其相似。所以必须有适当的网页开发基础。零基础的人可能很难直接上手小程序开发。</p>
+<h2>教程目录</h2>
 <ul>
-<li>输入单元: 包括键盘、鼠标、读卡器、扫描器、手写板、触控屏等等一堆；</li>
-<li>主机部分: 这个就是系统单元，被主机机壳保护住了，里面含有主板、CPU 、内存、硬盘等；</li>
-<li>输出单元: 例如显示器、打印机等等</li>
+<li>
+<p><a href="/code/mini-app/guide/file-structure.html" target="_blank">文件结构</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/env.html" target="_blank">运行环境</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/" target="_blank">小程序配置</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/config/app-config.html" target="_blank">全局配置</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/page-config.html" target="_blank">页面配置</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/sitemap-config.html" target="_blank">sitemap 配置</a></p>
+</li>
 </ul>
-<p>计算机的重点在于中央处理器 (Central Processing Unit, CPU)，CPU 为一个具有特定功能的晶片，里头含有微指令集，如果您想要让主机进行什么特异的功能，就得要参考这颗 CPU 是否有相关内建的微指令集才可以。由于 CPU 的工作主要在于管理与运算，因此在 CPU 内又可分为两个主要的单元，分别是: 算数逻辑单元与控制单元。其中算数逻辑单元主要负责程式运算与逻辑判断，控制单元则主要在协调各周边元件与各单元间的工作。</p>
-<p>既然 CPU 的重点是在进行运算与判断，那么要被运算与判断的资料是从哪里来的? CPU 读取的资料都是从内存来的! 内存内的资料则是从输入单元所传输进来! 而 CPU 处理完毕的资料也必须要先写回内存中，最后资料才从内存传输到输出单元。</p>
-<h3>软件</h3>
-<p>软件会按照用户的要求协调整台计算机的工作，比如 Windows、Linux、Mac OS、Android 等操作系统，以及 Office、QQ、迅雷、微信等应用程序。</p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/" target="_blank">小程序框架</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/frame/intro.html" target="_blank">框架介绍</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/scene.html" target="_blank">场景值</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/env.html" target="_blank">运行环境</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/mechanism.html" target="_blank">运行机制</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/update.html" target="_blank">更新机制</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/" target="_blank">逻辑层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/service/lifetime.html" target="_blank">生命周期</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/route.html" target="_blank">路由</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/register.html" target="_blank">注册</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/app.html" target="_blank">App()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/page.html" target="_blank">Page()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/run.html" target="_blank">运行</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/module.html" target="_blank">模块化</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/api/" target="_blank">API</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/" target="_blank">视图层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/view/wxml.html" target="_blank">WXML</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxss.html" target="_blank">WXSS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/event.html" target="_blank">事件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/component.html" target="_blank">基础组件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/animation.html" target="_blank">动画</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs-event.html" target="_blank">WXS 事件</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/model.html" target="_blank">建议双向绑定</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">获取界面上的节点信息</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">相应显示区域变化</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/rendering-cache.html" target="_blank">初始渲染缓存</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/" target="_blank">小程序能力</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/ability/network.html" target="_blank">网络请求</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/storage.html" target="_blank">存储</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/file-system.html" target="_blank">文件系统</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/debug.html" target="_blank">调试</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>开发者工具</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/tools/interface.html" target="_blank">工具界面简介</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/debug.html" target="_blank">调试</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/npm.html" target="_blank">npm</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/audit.html" target="_blank">体验评分</a></p>
+</li>
+</ul>
+<h2>官方教程</h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a" target="_blank" rel="noopener noreferrer">点击前往</a></li>
+</ul>
+<h2>案例</h2>
+<ul>
+<li><a href="https://github.com/Hope-Studio/wxminiappdemo" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
+</ul>
+<h2>Mr.Hope 框架说明</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/framework/" target="_blank">小程序框架使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/tag-list.html" target="_blank">tag 值参数表</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/page.html" target="_blank">setPage 库使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/simple-debug.html" target="_blank">界面简单开发学习指南</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/qr-code.html" target="_blank">分享相关</a></p>
+</li>
+</ul>
+<h2>学习视频</h2>
+<ul>
+<li>
+<p><a href="https://www.bilibili.com/video/av22790583/" target="_blank" rel="noopener noreferrer">零基础开发小程序</a>(比较新的视频，强调总体思想)</p>
+</li>
+<li>
+<p><a href="https://www.bilibili.com/video/av11938917" target="_blank" rel="noopener noreferrer">小程序-从入门到入土</a>(比较老的视频，针对每个组件或者 API 进行了针对的讲解与示范，但部分内容已经与最新官方文档不符)</p>
+</li>
+</ul>
+<h2>示例代码</h2>
+<ul>
+<li>
+<p><a href="https://github.com/wechat-miniprogram/miniprogram-demo" target="_blank" rel="noopener noreferrer">小程序实例源码</a></p>
+<figure><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/demo.ef5c5bef.jpg" alt="小程序示例二维码" tabindex="0" loading="lazy"><figcaption>小程序示例二维码</figcaption></figure>
+</li>
+</ul>
+<h2>官方文档</h2>
+<ul>
+<li><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">QQ 小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">微信小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/community/develop/question" target="_blank" rel="noopener noreferrer">微信小程序社区</a>
+<ul>
+<li><a href="https://developers.weixin.qq.com/community/develop/list/2?id=" target="_blank" rel="noopener noreferrer">官方公告</a></li>
+</ul>
+</li>
+</ul>
+<h3>QQ 开发者工具</h3>
+<p>现在很多功能还处于缺失状态，bug 到没之前那么多了。</p>
+<ul>
+<li>
+<p><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">查看详情</a></p>
+</li>
+<li>
+<p><a href="https://q.qq.com/wiki/tools/devtool/" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+</ul>
+<h2>微信开发者工具</h2>
+<p>微信开发者工具用来开发与调试微信小程序和微信相关网页的官方工具。小程序使用该开发工具进行开发。</p>
+<ul>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/" target="_blank">开发者工具教程</a></p>
+</li>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" target="_blank" rel="noopener noreferrer">官方使用指南</a></p>
+</li>
+</ul>
 ]]></content>
-    <category term="基础"/>
-    <published>2019-12-26T00:00:00.000Z</published>
+    <category term="小程序"/>
+    <published>2019-11-25T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">开发简介</title>
-    <id>https://blog.ruizhou.cf/code/basic/debug.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/debug.html"/>
+    <title type="text">小程序分享</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/qr-code.html</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/qr-code.html"/>
     <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>开发是根据用户要求建造出合理程序的过程。过程一般是用某种程序设计语言来实现的。通常采用开发工具可以进行开发。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>开发是根据用户要求建造出合理程序的过程。过程一般是用某种程序设计语言来实现的。通常采用开发工具可以进行开发。</p>
-<!-- more -->
-<h2>小团队的具体分工</h2>
-<p>对于小团队而言，经典的划分主要还分为三个板块</p>
-<h3>UI 设计</h3>
-<p>UI 即 User Interface (用户界面) 的简称。泛指用户的操作界面。UI 设计主要指界面的样式，美观程度。而使用上，对软件的人机交互、操作逻辑、界面美观的整体设计则是同样重要的另一个门道。</p>
-<p>UI 可以让软件变得有个性有品味，还要让软件的操作变得舒适、简单、自由，充分体现软件的定位和特点。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发中，UI 设计主要指<strong>界面元素设计</strong>和<strong>交互设计</strong>两部分。</p>
-</div>
-<h3>前端开发</h3>
-<p>前端开发是创建 Web 页面或 App 等前端界面呈现给用户的过程。前端开发通过 HTML，CSS 及 JavaScript 以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发中，前端开发直接<strong>使用 UI 设计提供的素材</strong>并参照 UI 设计提供的<strong>界面图与交互逻辑</strong>对其设想进行<strong>实现</strong>。</p>
-</div>
-<h3>后端开发</h3>
-<p>根据正在处理的应用程序的大小和范围，后端开发人员要做的事情有很大的不同。在 Web 开发世界中，大多数后端开发人员从事于构建他们正在工作的应用程序背后的实际逻辑。其负责是网站后台逻辑的设计和实现还有用户及网站的数据的保存和读取。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发中，后端开发提供与其他服务器<strong>交互数据</strong>，为用户<strong>检索或转换数据</strong>并<strong>对用户数据加以收集与储存</strong>。</p>
-</div>
-<h2>公司开发</h2>
-<div class="hint-container note">
-<p class="hint-container-title">注</p>
-<p>如果从职位细分的话，可以分出产品、交互、设计、开发、测试、策划、运营、维护等。</p>
-</div>
-<h3>产品设计</h3>
-<p>产品设计对应产品经理，一般负责整体内容的构思，这一过程可能还包括用户和市场调研，确定要做的产品的功能、大致交互格式，也就是将成品的草稿设计出来，</p>
-<h3>设计师</h3>
-<p>设计师主要和产品设计合作，对一个 App 或者网站的大致页面布局、交互流程进行设计，并提供大致的页面切图，交互流程文档等。</p>
-<h3>交互</h3>
-<p>交互一般负责具体交互流程的细节，会逐步细化，考虑用户习惯，操作的步骤以及长度。综合考量整个交互设计对用户体验以及流失率、活跃程度的影响。</p>
-<h3>开发</h3>
-<p>在实际的大型公司发开产品的过程中，开发直接就可以拿到页面的设计图以及完善的交互流程文档，开发的工作就是去实现相应的页面与动画。</p>
-<p>在这一过程中，前端和后端约定接口和参数，前端负责 App 或网站，后端负责服务器上的数据存储与服务。</p>
-<h3>测试</h3>
-<p>通常情况下，测试和开发会完全分开，测试人员在未参与开发的情况下模拟用户，在不同情况下进行测试，以确保产品不会出现问题。</p>
-<p>这里常见的测试有风险测试、压力测试与异常行为测试等。测试软件是否有安全漏洞，是否可承担大量的访问以及是否在一些非常规交互下可以正常工作。</p>
-<h3>运营</h3>
-<p>一般一款产品需要宣发和后续的持续运营，一般就通过偏市场方向的策划和运营进行相关设计，并指导开发进行相关活动的编写与上线。</p>
-<h3>运维</h3>
-<p>一款产品的后端存储可能需要定期的备份与维护，同时软件后端部署的服务器可能要定期的修复漏洞与升级，就需要有专门的人员来进行这一工作，</p>
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">计算机编码介绍</title>
-    <id>https://blog.ruizhou.cf/code/basic/encoding.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/encoding.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>计算机，不能直接存储文字，存储的是编码。</p>
-<p>计算机只能处理二进制的数据，也就是说计算机只能处理数字。如果要处理文本，比如: <code>0-9</code>、<code>a-z</code>、<code>A-Z</code>，就必须先把文本转换为数字才能处理。对于这些字符，可以定义一套规则来显示，比如: <code>A</code> 用 <code>110</code> 表示，<code>B</code> 用 <code>111</code> 表示等。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>计算机，不能直接存储文字，存储的是编码。</p>
-<p>计算机只能处理二进制的数据，也就是说计算机只能处理数字。如果要处理文本，比如: <code>0-9</code>、<code>a-z</code>、<code>A-Z</code>，就必须先把文本转换为数字才能处理。对于这些字符，可以定义一套规则来显示，比如: <code>A</code> 用 <code>110</code> 表示，<code>B</code> 用 <code>111</code> 表示等。</p>
-<!-- more -->
-<h2>字符编码</h2>
-<p>最早的计算机在设计时采用 8 个比特(bit)作为一个字节(byte)，所以，一个字节能表示的最大的整数就是 255(二进制 11111111=十进制 255)，如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是 <code>65535</code>，4 个字节可以表示的最大整数是 <code>4294967295</code>。</p>
-<p>由于计算机是美国人发明的，因此，最早只有 127 个字符被编码到计算机里，也就是大小写英文字母、数字和一些符号，这个编码表被称为 ASCII 编码，比如大写字母 A 的编码是 65，小写字母 z 的编码是 122。</p>
-<p>但是要处理中文显然一个字节是不够的，至少需要两个字节，而且还不能和 ASCII 编码冲突，所以，中国制定了 GB2312 编码，用来把中文编进去。</p>
-<p>您可以想得到的是，全世界有上百种语言，日本把日文编到 Shift_JIS 里，韩国把韩文编到 Euc-kr 里，各国有各国的标准，就会不可避免地出现冲突，结果就是，在多语言混合的文本中，显示出来会有乱码。</p>
-<p>因此，Unicode 应运而生。Unicode 把所有语言都统一到一套编码里，这样就不会再有乱码问题了。</p>
-<p>Unicode 标准也在不断发展，但最常用的是用两个字节表示一个字符(如果要用到非常偏僻的字符，就需要 4 个字节)。现代操作系统和大多数编程语言都直接支持 Unicode。</p>
-<p>现在，捋一捋 ASCII 编码和 Unicode 编码的区别: ASCII 编码是 1 个字节，而 Unicode 编码通常是 2 个字节。</p>
-<p>字母 A 用 ASCII 编码是十进制的 65，二进制的 01000001；</p>
-<p>字符 0 用 ASCII 编码是十进制的 48，二进制的 00110000，注意字符 <code>'0'</code> 和整数 <code>0</code> 是不同的；</p>
-<p>汉字中已经超出了 ASCII 编码的范围，用 Unicode 编码是十进制的 20013，二进制的 01001110 00101101。</p>
-<p>您可以猜测，如果把 ASCII 编码的 A 用 Unicode 编码，只需要在前面补 0 就可以，因此，A 的 Unicode 编码是 00000000 01000001。</p>
-<p>新的问题又出现了: 如果统一成 Unicode 编码，乱码问题从此消失了。但是，如果您写的文本基本上全部是英文的话，用 Unicode 编码比 ASCII 编码需要多一倍的存储空间，在存储和传输上就十分不划算。</p>
-<p>所以，本着节约的精神，又出现了把 Unicode 编码转化为“可变长编码”的 UTF-8 编码。UTF-8 编码把一个 Unicode 字符根据不同的数字大小编码成 1-6 个字节，常用的英文字母被编码成 1 个字节，汉字通常是 3 个字节，只有很生僻的字符才会被编码成 4-6 个字节。如果您要传输的文本包含大量英文字符，用 UTF-8 编码就能节省空间:</p>
-<p>| 字符 | ASCII    | Unicode           | UTF-8                      |
-|</p>
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">文件名与文件扩展名</title>
-    <id>https://blog.ruizhou.cf/code/basic/file-extension.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/file-extension.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<h2>文件名</h2>
-<p>文件名就是文件的名称，是为了方便人们区分计算机中的不同文件，而给每个文件设定一个指定的名称。</p>
-<p>文件名不能包含控制字符: <code>&lt;</code> <code>&gt;</code> <code>/</code> <code>\</code> <code>|</code> <code>:</code> <code>"</code> <code>*</code> <code>?</code></p>
-<h2>文件扩展名</h2>
-<p>文件扩展名 (filename extension) 也称为文件的延伸文件名、后缀名，是操作系统用来标记文件类型的一种机制。通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。</p>]]></summary>
-    <content type="html"><![CDATA[<h2>文件名</h2>
-<p>文件名就是文件的名称，是为了方便人们区分计算机中的不同文件，而给每个文件设定一个指定的名称。</p>
-<p>文件名不能包含控制字符: <code>&lt;</code> <code>&gt;</code> <code>/</code> <code>\</code> <code>|</code> <code>:</code> <code>"</code> <code>*</code> <code>?</code></p>
-<h2>文件扩展名</h2>
-<p>文件扩展名 (filename extension) 也称为文件的延伸文件名、后缀名，是操作系统用来标记文件类型的一种机制。通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。</p>
-<p>文件扩展名是早期操作系统 (如 VMS / CP / M / DOS 等) 用来标志文件格式的一种机制，其更重要的作用是让系统决定当用户想打开这个文件的时候用哪种软件运行，如 Windows 系统中 exe 文件是可执行文件，doc 文件默认用 Microsoft Word 打开的 Word 文件。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">误区</p>
-<ol>
-<li>
-<p>文件扩展名是一个文件的必要构成部分。❌</p>
-<p>任何一个文件可以有或没有扩展名。对于打开文件操作，没有扩展名的文件需要选择程序去打开它，有扩展名的文件会自动用设置好的程序(如有)去尝试打开，文件扩展名是一个常规文件的构成部分，但一个文件并不一定需要一个扩展名。</p>
-</li>
-<li>
-<p>文件扩展名表明了该文件是何种类型。❌</p>
-<p>文件扩展名可以人为设定，扩展名为 TXT 的文件有可能是一张图片，同样，扩展名为 MP3 的文件，依然可能是一个视频。</p>
-</li>
-</ol>
-</div>
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-26T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Glob</title>
-    <id>https://blog.ruizhou.cf/code/basic/glob.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/glob.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>本文介绍 Glob 匹配。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>本文介绍 Glob 匹配。</p>
-<!-- more -->
-<h2>简介</h2>
-<p>Glob 是当您要进行路径匹配时键入的模式。</p>
-<p>在解析一条匹配模式前，Glob 首先将 <code>{}</code> 部分展开为一组匹配模式。<code>{}</code> 内的模式之间使用逗号分隔。</p>
-<p>如 <code>a{/b/c,bcd}</code> 将扩展为 <code>a/b/c</code> 和 <code>abcd</code></p>
-<p><code>{}</code> 可以嵌套，可与其他模式联用。</p>
-<p>Glob 的魔术字符如下:</p>
+    <summary type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>]]></summary>
+    <content type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>
+<p>请求方式为:</p>
+<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>更多详情可以见文档。<code>AppSecret</code> 由于权限很大不在此文档中直接放置。</p>
+<h3>无限制二维码生成</h3>
 <ul>
-<li>
-<p><code>*</code>: 匹配路径部分中的 0 个或多个字符</p>
-</li>
-<li>
-<p><code>?</code>: 匹配单个字符</p>
-</li>
-<li>
-<p><code>[...]</code>: 匹配字符范围。<code>[^...]</code>和 <code>[!...]</code> 表示匹配不在范围内的字符</p>
-<details class="hint-container details"><summary>例子</summary>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
+</ul>
+<p>在获取 <code>access_token</code> 之后就可以获取小程序二维码了。</p>
+<div class="language-md line-numbers-mode" data-highlighter="shiki" data-ext="md" data-title="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">POST https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>请注意，在 Postman 软件中，首先要注意使用 <code>post</code> 方法。Body 使用 <code>raw</code>，格式选择 <code>Text</code>，需要将 <code>pretty</code> 化的 JSON 输入即可正常获取二维码。获取完二维码之后，需要在 <code>response</code> 中点击返回图片右上角的 <code>save as</code>，保存为 <code>jpg</code> 格式的文件即可保存二维码。</p>
+<h2>小程序链接</h2>
 <ul>
-<li><code>[xyz].js</code> 只能匹配 <code>x.js</code>, <code>y.js</code>, <code>z.js</code>，但不会匹配 <code>xy.js</code>, <code>xyz.js</code> 等，因为整个中括号只代表一个字符。其等价于 <code>[x-z].js</code></li>
-<li><code>[!xyz].js</code> 能匹配 <code>a.js</code>, <code>b.js</code>, <code>u.js</code>，但不会匹配 <code>x.js</code>, <code>y.js</code> <code>z.js</code>，<code>ab.js</code> 等。其等价于 <code>[^xyz].js</code> 和 <code>[!x-z].js</code>。</li>
+<li><a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Center_messages.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
 </ul>
-</details>
-</li>
-<li>
-<p><code>!(pattern|pattern|pattern)</code>: 匹配与提供的任何模式都不匹配的任何内容。</p>
-</li>
-<li>
-<p><code>?(pattern|pattern|pattern)</code>: 匹配 0 或一个内部模式。</p>
-</li>
-<li>
-<p><code>+(pattern|pattern|pattern)</code> 匹配一个或多个内部模式。</p>
-</li>
-<li>
-<p><code>*(a|b|c)</code>: 匹配 0 或多个内部模式。</p>
-</li>
-<li>
-<p><code>@(pattern|pat*|pat?erN)</code>: 匹配恰好一个内部模式。</p>
-</li>
-<li>
-<p><code>**</code>: 如果其在路径部分中单独出现，则匹配路径中的 0 个或多个目录与子目录。请注意它不对 symlinked 目录 (符号链接目录) 进行爬取。</p>
-<details class="hint-container details"><summary>例子</summary>
-<ul>
-<li><code>**</code> 能匹配匹配所有的目录和文件。</li>
-<li><code>**/*.js</code> 能匹配所有的 js 文件。</li>
-<li><code>a/**/b.txt</code> 能匹配目录里任何一个 a 文件夹内的所有 b.txt 文件。</li>
-</ul>
-</details>
-</li>
-</ul>
-<h2><code>.</code> 开头的文件与文件夹</h2>
-<p>由于以 <code>.</code> 开头的文件或文件夹在 Unix 中视为隐藏文件或文件夹，故 Glob 不会匹配任何以 <code>.</code> 开头的路径部分，如 <code>.github/dependabot.yml</code> 或 <code>.eslintrc.js</code>。</p>
-<p>如果的确想要匹配 <code>.</code> 开头的文件或文件夹，可以显示标注出来，如 <code>.*.js</code> 可以匹配 <code>.eslintrc.js</code>。</p>
-]]></content>
-    <author>
-      <name>陈慧玲</name>
-    </author>
-    <category term="基础"/>
-    <contributor>
-      <name>陈慧玲</name>
-    </contributor>
-    <published>2021-02-18T00:00:00.000Z</published>
-    <rights>Copyright by 陈慧玲</rights>
-  </entry>
-  <entry>
-    <title type="text">开源协议</title>
-    <id>https://blog.ruizhou.cf/code/basic/license.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/license.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>开源软件在追求“自由”的同时，不能牺牲程序员的利益，否则将会影响程序员的创造激情，因此世界上现在有 60 多种被开源促进组织 (Open Source Initiative) 认可的开源许可协议来保证开源工作者的权益。</p>
-<p>开源协议规定了您在使用开源软件时的权利和责任，也就是规定了您可以做什么，不可以做什么。</p>
-<p>开源协议虽然不一定具备法律效力，但是当涉及软件版权纠纷时，开源协议也是非常重要的证据之一。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>开源软件在追求“自由”的同时，不能牺牲程序员的利益，否则将会影响程序员的创造激情，因此世界上现在有 60 多种被开源促进组织 (Open Source Initiative) 认可的开源许可协议来保证开源工作者的权益。</p>
-<p>开源协议规定了您在使用开源软件时的权利和责任，也就是规定了您可以做什么，不可以做什么。</p>
-<p>开源协议虽然不一定具备法律效力，但是当涉及软件版权纠纷时，开源协议也是非常重要的证据之一。</p>
-<!-- more -->
-<p>对于准备编写一款开源软件的开发人员，也非常建议先了解一下当前最热门的开源许可协议，选择一个合适的开源许可协议来最大限度保护自己的软件权益。</p>
-<h2>GNU GPL</h2>
-<blockquote>
-<p>GNU General Public License，GNU 通用公共许可证</p>
-</blockquote>
-<p>只要软件中包含了遵循 GPL 协议的产品或代码，该软件就必须也遵循 GPL 许可协议，也就是必须开源免费，不能闭源收费，因此这个协议并不适合商用软件。</p>
-<p>遵循 GPL 协议的开源软件数量极其庞大，包括 Linux 系统在内的大多数的开源软件都是基于这个协议的。</p>
-<p>GPL 开源协议的主要特点:</p>
-<ul>
-<li>
-<p>复制自由</p>
-<p>允许把软件复制到任何人的电脑中，并且不限制复制的数量。</p>
-</li>
-<li>
-<p>传播自由</p>
-</li>
-</ul>
-<p>允许软件以各种形式进行传播。</p>
-<ul>
-<li>
-<p>收费传播</p>
-<p>允许在各种媒介上出售该软件，但必须提前让买家知道这个软件是可以免费获得的；因此，一般来讲，开源软件都是通过为用户提供有偿服务的形式来盈利的。</p>
-</li>
-<li>
-<p>修改自由</p>
-<p>允许开发人员增加或删除软件的功能，但软件修改后必须依然基于 GPL 许可协议授权。</p>
-</li>
-</ul>
-<h2>BSD</h2>
-<blockquote>
-<p>Berkeley Software Distribution，伯克利软件发布版) 协议</p>
-</blockquote>
-<p>BSD 协议基本上允许用户“为所欲为”，用户可以使用、修改和重新发布遵循该许可的软件，并且可以将软件作为商业软件发布和销售，前提是需要满足下面三个条件:</p>
-<ul>
-<li>如果再发布的软件中包含源代码，则源代码必须继续遵循 BSD 许可协议。</li>
-<li>如果再发布的软件中只有二进制程序，则需要在相关文档或版权文件中声明原始代码遵循了 BSD 协议。</li>
-<li>不允许用原始软件的名字、作者名字或机构名称进行市场推广。</li>
-</ul>
-<p>BSD 对商业比较友好，很多公司在选用开源产品的时候都首选 BSD 协议，因为可以完全控制这些第三方的代码，甚至在必要的时候可以修改或者二次开发。</p>
-<h2>Apache 许可证版本</h2>
-<blockquote>
-<p>(Apache License Version) 协议</p>
-</blockquote>
-<p>Apache 开源协议</p>
-<p>Apache 和 BSD 类似，都适用于商业软件。Apache 协议在为开发人员提供版权及专利许可的同时，允许用户拥有修改代码及再发布的自由。</p>
-<p>现在热门的 Hadoop、Apache HTTP Server、MongoDB 等项目都是基于该许可协议研发的，程序开发人员在开发遵循该协议的软件时，要严格遵守下面的四个条件:</p>
-<ul>
-<li>该软件及其衍生品必须继续使用 Apache 许可协议。</li>
-<li>如果修改了程序源代码，需要在文档中进行声明。</li>
-<li>若软件是基于他人的源代码编写而成的，则需要保留原始代码的协议、商标、专利声明及其他原作者声明的内容信息。</li>
-<li>如果再发布的软件中有声明文件，则需在此文件中标注 Apache 许可协议及其他许可协议。</li>
-</ul>
-<h2>MIT</h2>
-<blockquote>
-<p>(Massachusetts Institute of Technology) 协议</p>
-</blockquote>
-<p>目前限制最少的开源许可协议之一(比 BSD 和 Apache 的限制都少)，只要程序的开发者在修改后的源代码中保留原作者的许可信息即可，因此普遍被商业软件所使用。</p>
-<p>使用 MIT 协议的软件有 PuTTY、X Window System、Ruby on Rails、Lua 5.0 onwards、Mono 等。</p>
-<h2>GUN LGPL</h2>
-<blockquote>
-<p>(GNU Lesser General Public License，GNU 宽通用公共许可证)</p>
-</blockquote>
-<p>LGPL 是 GPL 的一个衍生版本，也被称为 GPL V2，该协议主要是为类库设计的开源协议。</p>
-<p>LGPL 允许商业软件通过类库引用(link)的方式使用 LGPL 类库，而不需要开源商业软件的代码。这使得采用 LGPL 协议的开源代码可以被商业软件作为类库引用并发布和销售。</p>
-<p>但是如果修改 LGPL 协议的代码或者衍生品，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用 LGPL 协议。因此 LGPL 协议的开源代码很适合作为第三方类库被商业软件引用，但不适合希望以 LGPL 协议代码为基础，通过修改和衍生的方式做二次开发的商业软件采用。</p>
-<h2>如何选择开源协议</h2>
-<p>世界上的开源协议有上百种，很少有人能彻底搞清它们之间的区别，即使在最流行的六种开源协议——GPL、BSD、MIT、Mozilla、Apache 和 LGPL——之中做选择，也很复杂。</p>
-<p>乌克兰程序员 Paul Bagwell 画了一张分析图，说明应该怎么选择开源协议，大家看了一目了然，真是清爽。</p>
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">开源与免费</title>
-    <id>https://blog.ruizhou.cf/code/basic/open-source-and-free.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/open-source-and-free.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>开源软件和免费软件是两个概念:</p>
-<ul>
-<li>
-<p>开源软件是指公开源代码的软件。开源软件在发行的时候会附上软件的源代码，并授权允许用户更改、传播或者二次开发。</p>
-</li>
-<li>
-<p>免费软件就是免费提供给用户使用的软件，但是在免费的同时，通常也会有一些限制，比如源代码不公开，用户不能随意修改、不能二次发布等。</p>
-</li>
-</ul>
-]]></summary>
-    <content type="html"><![CDATA[<p>开源软件和免费软件是两个概念:</p>
-<ul>
-<li>
-<p>开源软件是指公开源代码的软件。开源软件在发行的时候会附上软件的源代码，并授权允许用户更改、传播或者二次开发。</p>
-</li>
-<li>
-<p>免费软件就是免费提供给用户使用的软件，但是在免费的同时，通常也会有一些限制，比如源代码不公开，用户不能随意修改、不能二次发布等。</p>
-</li>
-</ul>
-<!-- more -->
-<h2>免费软件</h2>
-<p>免费软件的例子比比皆是，QQ、微信、迅雷、酷狗、360 等都是免费软件，您可以随意使用，尽情蹂躏；但是，如果您嫌弃它们复杂，自己删除了一些无用的功能，然后在网上发布了一个精简版本供大家下载，那么您就离法院的传票不远了。</p>
-<h2>开源软件</h2>
-<p>开源软件是不抵触商业的，开源的目的也不是做慈善事业，而是通过更多人的参与，减少软件的缺陷，丰富软件的功能，同时也避免了少数人在软件里留一些不正当的后门。开源软件最终还会反哺商业，让商业公司为用户提供更好的产品。</p>
-<p>Android 就是大众最熟知的一款开源操作系统，它除了用在手机上，还用在汽车、平板电脑、电视、智能手表等其它硬件平台，小米、华为、OPPO、三星等都是 Android 的受益者，他们都赚得盆满钵满。</p>
-<p>很多著名的开源项目背后都有商业公司支撑，它们的开发者也都有正式的工作，享受和我们一样的社会福利；如果一个成功的开源项目背后没有商业公司，这反而是不健康的，社会需要开源和商业之间的互补来促进技术的革新。</p>
-<p>开源软件和商业公司的裙带关系:</p>
-<ul>
-<li>
-<p>Android 由全球最大的互联网公司 Google 支持；</p>
-</li>
-<li>
-<p>市场占有率最高的关系型数据库 mysql 已经被上市公司 Oracle 收购；</p>
-</li>
-<li>
-<p>Linux 不但被 Microsoft、IBM、Intel、SAMSUNG 等巨头免费赞助，还接收它们贡献的源代码；</p>
-</li>
-<li>
-<p>Python 目前属于 &lt;python.org&gt; 开源组织，它收到了 Facebook、Google、Amazon、Redhat、Microsoft 等商业公司的赞助。</p>
-</li>
-</ul>
-<h2>开源软件的盈利模式</h2>
-<p>伟大的开源软件的背后都有巨量的资金流入，没有资金支撑的开源软件是无法长久的。那么，开源软件究竟是如何盈利的呢?</p>
-<ol>
-<li>
-<p>双重许可</p>
-<p>有些开源软件不但有一个免费的基础版本，还有一个收费的商业版本。免费版本能够促进传播，让用户爱上该软件；收费版本功能更加丰富，还提供技术支持。这种情况在开源界非常普遍。</p>
-<p>例如 MySQL 就同时推出面向个人和企业的两种版本，即开源版本和专业版本，分别采用不同的授权方式: 开源版本完全免费以便更好的推广，而从专业版的许可销售和支持服务获得收入。</p>
-</li>
-<li>
-<p>技术支持</p>
-<p>很多软件在使用上不收取费用，但当用户在使用产品遇到困难，需要技术支持的时候，就需要付费了。技术支持收费的这项服务，也是一些开源公司的生计之路。</p>
-<p>例如，最大的开源软件公司 Redhat 被 IBM 收购，卖了 340 亿美元。Redhat 虽然提供免费的 Linux 发行版(当然也有收费的版本)，但是当使用者遇到技术障碍，或者想升级硬件的时候，Redhat 可以提供付费支持。</p>
-<p>举个例子，纽交所在用免费的红帽 Linux 系统交易股票。英特尔最近升级了处理器，纽交所想用新处理器提高效率，但这需要有人为新硬件部署新的系统和应用程序。同样的事每隔几年会发生一次。纽交所可以养一个团队自己完成所有系统维护、开发工作，也可以花钱请红帽的工程师来做。相当数量的企业用户都选择了后者。</p>
-</li>
-<li>
-<p>附加服务</p>
-<p>JBoss 就是这种模式的典型代表。JBoss 应用服务器完全免费，而通过提供技术文档、培训、二次开发支持等技术服务而获得收入。</p>
-<p>开源软件出版商 O’Reilly 公司也是这种模式，它不遗余力地联系开源软件的权威人士，组织各种开源软件的会议，虽然知识是免费的，但承载知识的书籍却是收费的。</p>
-</li>
-<li>
-<p>应用服务托管(ASP)</p>
-<p>例如 PHP Live ! 就是一种构架于 PHP、MySQL 之上的开源软件，它可为企业用户提供实时交谈服务。目前已经有数十家公开提供 PHP Live! 托管服务的应用服务提供商。</p>
-</li>
-<li>
-<p>软硬件一体化</p>
-<p>比如 IBM、HP 等服务器供应商巨头，通过捆绑免费的 Linux 操作系统销售硬件服务器。SUN 公司近期将其 Solaris 操作系统开放源码，以确保服务器硬件的销售收入，也是这种模式的体现。</p>
-<p>这些巨头每年在开源软件领域的投入巨大，但这一切并非是做善事，它们可以从配置了开源软件的硬件中获得巨额回报。</p>
-</li>
-<li>
-<p>部分组件收费</p>
-<p>开源免费的软件可以满足大部分用户的需求，但是也有很多用户需要一些特殊的定制服务，这个时候软件公司就会收取一定的费用。</p>
-</li>
-<li>
-<p>版权收费</p>
-<p>虽然代码是开源的，但很多作者会采用一些开源协议来限制自己版权问题，如果用户想要去版权，是需要另外付费的。</p>
-</li>
-<li>
-<p>捐款/赞助</p>
-<p>很多开源软件都有一些捐款渠道，喜爱该软件的用户，或者该软件的受益者都可以进行资金支持。</p>
-<p>例如，Python 就有一个软件基金协会，它收到了来自 Facebook、Amazon、Google、Redhat、Microsoft 等巨头的赞助。</p>
-<p>这些公司也不傻，他们为什么会赞助 Python 呢? 因为这些公司大量使用了 Python 语言，他们希望 Python 能够持续发展，如果 Python 倒了，他们也会跟着倒霉。</p>
-</li>
-</ol>
-]]></content>
-    <category term="基础"/>
-    <published>2020-06-05T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">操作系统</title>
-    <id>https://blog.ruizhou.cf/code/basic/os.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/os.html"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<p>操作系统 (Operating System，OS) 是软件的一部分，它是硬件基础上的第一层软件，是硬件和其它软件沟通的桥梁(或者说接口、中间人、中介等)。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>操作系统 (Operating System，OS) 是软件的一部分，它是硬件基础上的第一层软件，是硬件和其它软件沟通的桥梁(或者说接口、中间人、中介等)。</p>
-<!-- more -->
-<p>操作系统会控制其他程序运行，管理系统资源，提供最基本的计算功能，如管理及配置内存、决定系统资源供需的优先次序等，同时还提供一些基本的服务程序，例如:</p>
-<ol>
-<li>
-<p>文件系统</p>
-<p>提供计算机存储信息的结构，信息存储在文件中，文件主要存储在计算机的内部硬盘里，在目录的分层结构中组织文件。文件系统为操作系统提供了组织管理数据的方式。</p>
-</li>
-<li>
-<p>设备驱动程序</p>
-<p>提供连接计算机的每个硬件设备的接口，设备驱动器使程序能够写入设备，而不需要了解执行每个硬件的细节。简单来说，就是让您能吃到鸡蛋，但不用养一只鸡。</p>
-</li>
-<li>
-<p>用户接口</p>
-<p>操作系统需要为用户提供一种运行程序和访问文件系统的方法。如常用的 Windows 图形界面，可以理解为一种用户与操作系统交互的方式；智能手机的 Android 或 iOS 系统，也是一种操作系统的交互方式。</p>
-</li>
-<li>
-<p>系统服务程序</p>
-<p>当计算机启动时，会自启动许多系统服务程序，执行安装文件系统、启动网络服务、运行预定任务等操作。</p>
-</li>
-</ol>
-<p>打个比方，操作系统就好像是一个政府，其它软件都会被它管控；操作系统在给其他软件提供各种便利的同时，还会约束其他软件不能为所欲为。</p>
-<figure><figcaption>操作系统结构示意图</figcaption></figure>
-<p>目前流行的服务器和 PC 端操作系统有 Linux、Windows、UNIX 等，手机操作系统有 Android、iOS，嵌入式操作系统有 Windows CE、PalmOS、eCos、uClinux 等。</p>
-]]></content>
-    <category term="基础"/>
-    <published>2019-12-26T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">路径</title>
-    <id>https://blog.ruizhou.cf/code/basic/path.html</id>
-    <link href="https://blog.ruizhou.cf/code/basic/path.html"/>
-    <updated>2024-07-24T03:08:09.000Z</updated>
-    <summary type="html"><![CDATA[<p>无论是我们想直接访问一个文件，还是在一个文件中希望访问另一个文件，都涉及到一个获取文件的操作。而无论是在 Windows 中还是在 Linux 中，文件的具体位置都用文档的路径标注。</p>
-<p>路径常常涉及到物理路径，相对路径，绝对路径，根目录的概念，现加以说明。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>无论是我们想直接访问一个文件，还是在一个文件中希望访问另一个文件，都涉及到一个获取文件的操作。而无论是在 Windows 中还是在 Linux 中，文件的具体位置都用文档的路径标注。</p>
-<p>路径常常涉及到物理路径，相对路径，绝对路径，根目录的概念，现加以说明。</p>
-<!-- more -->
-<h2>物理路径</h2>
-<p>物理路径的英文全称是: Physical path，它就是指硬盘上文件的路径，比如下面的文件位置表示方法:</p>
-<div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" data-title="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>d:\wwwroot\html\a.html</span></span>
-<span class="line"><span>d:\wwwroot\html\photo\b.html</span></span>
-<span class="line"><span>d:\wwwroot\html\photo\c.html</span></span>
-<span class="line"><span>d:\wwwroot\html\photo\ours\d.html</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
-<p><code>D:</code> 与 <code>d:</code> 均可。盘符不分大小写。</p>
-</blockquote>
-<p>一般来说物理路径可用于访问本地文件，即不通过 WEB 服务器(如: 本地调试)等的情况下。</p>
-<h2>相对路径</h2>
-<p>相对路径的英文全称是 Relative Path，我们可以从以下三个方面来了解它的用法 (以“物理路径”中的位置情况为例):</p>
-<ul>
-<li>
-<p>如何表示同级目录的文件</p>
-<p>b.html 和 c.html 在同一个文件夹下，如果 b.html 需要链接到 c.html，可以在 b.html 中这样写:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"./c.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;同目录下文件间互相链接&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>代码中的 <code>./</code> 代表同级目录。</p>
-<p><code>./</code>是相对路径，也可以省略不写，省略不写，即直接以文件夹或文件名称开头的路径也是相对路径。</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"./c.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;同目录下文件间互相链接&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
-<li>
-<p>如何表示上级目录的文件</p>
-<p>a.html 是 b.html 和 c.html 的上级目录中的文件，如果 b.html 或 c.html 链接到 a.html，可以在 b.html 或 c.html 中这样写:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"../a.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到上级目录中的文件&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>代码中的 <code>../</code> 代表一级上级目录(间隔一个目录)。</p>
-<p>需要注意的是: “<code>../../</code>”代表二级上级目录(间隔两个目录)，比如 a.html 是 d.html 的前两级目录，同时 d.html 需要链接到 a.html，可以在 d.html 中这样写:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"../../a.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到上级目录的上级目录中的文件&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
-<li>
-<p>如何表示子目录的文件</p>
-<p>b.html 和 c.html 是 a.html 的子目录中的文件，如果需要在 a.html 中链接到 b.html， 可以在 a.html 中这样写:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"photo/b.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到子目录(photo)中的文件&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">如果需要在a.html中链接到d.html，可以在a.html中这样写</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"photo/ours/d.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到子目录(photo/ours/)中的文件&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ul>
-<h2>绝对路径</h2>
-<p>绝对路径的英文全称是 Absolute Path，它就是带有网址的路径。比如您有一个域名 <code>www.example.com</code>，其域名指向 <code>d:\wwwroot</code>，那么上面的四个文件就可以这么表示:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"http://www.example.com/html/a.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到a.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"http://www.example.com/html/photo/b.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到b.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"http://www.example.com/html/photo/c.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到c.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"http://www.example.com/html/photo/ours/d.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到d.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>根目录</h2>
-<p>根目录的英文全称是 Root directory，去掉绝对路径前面的域名就是根目录，所以它可以理解为是网站的最上层目录。它的表示方法如下:</p>
-<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/html/a.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到a.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/html/photo/b.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到b.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/html/photo/c.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到c.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/html/photo/ours/d.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;链接到d.html&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在服务器上，根目录即代表网站主页所在的目录。网站服务器一般只能访问网站主页所在文件夹内的文件与文件夹。</p>
-]]></content>
-    <category term="基础"/>
-    <published>2019-09-20T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">React</title>
-    <id>https://blog.ruizhou.cf/code/react/</id>
-    <link href="https://blog.ruizhou.cf/code/react/"/>
-    <updated>2024-01-26T16:16:19.000Z</updated>
-    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>创建 TS 模板:</p>
-<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>React 文档</h2>
-<ul>
-<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-08T00:00:00.000Z</published>
+<p>具体格式如下:</p>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"不支持小程序时打开的网页"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-appid</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序的appid"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序路径"</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &gt;文本内容&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="小程序"/>
+    <published>2020-10-09T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">Node.js</title>
@@ -5252,5 +5083,360 @@
 ]]></content>
     <category term="Node.js"/>
     <published>2020-12-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">基础介绍</title>
+    <id>https://blog.ruizhou.cf/code/basic/</id>
+    <link href="https://blog.ruizhou.cf/code/basic/"/>
+    <updated>2024-07-24T03:08:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>这些是一些最为基础的内容，是后来补充进博客中的，供访客查阅。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>这些是一些最为基础的内容，是后来补充进博客中的，供访客查阅。</p>
+<!-- more -->
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-26T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">持续集成</title>
+    <id>https://blog.ruizhou.cf/code/basic/ci.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/ci.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>持续集成 (Continuous Integration) 指的是，频繁地 (一天多次) 将代码集成到主干，每次集成都通过自动化的构建 (包括编译，发布，自动化测试) 来验证，从而尽早地发现集成错误。</p>
+<p>持续集成的目的让产品可以快速迭代，同时还能保持高质量。就是说每完成一个完整的部分，就向下个环节交付，发现问题可以马上调整，使得问题不会放大到其他部分和后面的环节。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>持续集成 (Continuous Integration) 指的是，频繁地 (一天多次) 将代码集成到主干，每次集成都通过自动化的构建 (包括编译，发布，自动化测试) 来验证，从而尽早地发现集成错误。</p>
+<p>持续集成的目的让产品可以快速迭代，同时还能保持高质量。就是说每完成一个完整的部分，就向下个环节交付，发现问题可以马上调整，使得问题不会放大到其他部分和后面的环节。</p>
+<!-- more -->
+<h2>介绍</h2>
+<p>持续集成 (CI) 是一种需要频繁提交代码到共享仓库的软件实践。频繁提交代码能较早检测到错误，减少在查找错误来源时开发者需要调试的代码量。 频繁的代码更新也更便于从软件开发团队的不同成员合并更改。 这对开发者非常有益，他们可以将更多时间用于编写代码，而减少在调试错误或解决合并冲突上所花的时间。</p>
+<p>提交代码到仓库时，可以持续创建并测试代码，以确保提交未引入错误。 您的测试可以包括代码语法检查 (检查样式格式) 、安全性检查、代码覆盖率、功能测试及其他自定义检查。</p>
+<p>创建和测试代码需要服务器。 您可以在推送代码到仓库之前在本地创建并测试更新，也可以使用 CI 服务器检查仓库中的新代码提交。</p>
+<h3>要点</h3>
+<p>它的核心措施是，代码集成到主干之前，必须通过自动化测试。只要有一个测试用例失败，就不能集成。</p>
+<h3>优点</h3>
+<ol>
+<li>
+<p>提高开发效率</p>
+</li>
+<li>
+<p>快速发现并定位 Bugs</p>
+</li>
+<li>
+<p>更快速发布更新</p>
+</li>
+</ol>
+]]></content>
+    <category term="基础"/>
+    <published>2021-02-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">计算机</title>
+    <id>https://blog.ruizhou.cf/code/basic/computer.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/computer.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>计算机是一台机器，它按照用户的要求接收信息、存储数据、处理数据，然后再将处理结果输出(文字、图片、音频、视频等)。</p>
+<p>计算机的核心就是: 接受使用者输入指令与资料，经由中央处理器的数学与逻辑单元运算处理后，以产生或储存成有用的资讯。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>计算机是一台机器，它按照用户的要求接收信息、存储数据、处理数据，然后再将处理结果输出(文字、图片、音频、视频等)。</p>
+<p>计算机的核心就是: 接受使用者输入指令与资料，经由中央处理器的数学与逻辑单元运算处理后，以产生或储存成有用的资讯。</p>
+<!-- more -->
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>计算机的定义比大家生活中的理解更加广泛。</p>
+<p>一般商店用的简易型加减乘除计算机、手机、卫星定位系统(GPS)、提款机(ATM)、个人电脑、笔记本电脑(包括 notebook 与 netbook)，还有平板电脑与智能手机等，都叫计算机。</p>
+</div>
+<h2>组成</h2>
+<p>计算机由硬件和软件组成。</p>
+<h3>硬件</h3>
+<p>硬件是计算机赖以工作的实体，包括显示器、键盘、鼠标、硬盘、CPU、主板等；</p>
+<p>严格意义上讲，硬件可以分为三个部分:</p>
+<ul>
+<li>输入单元: 包括键盘、鼠标、读卡器、扫描器、手写板、触控屏等等一堆；</li>
+<li>主机部分: 这个就是系统单元，被主机机壳保护住了，里面含有主板、CPU 、内存、硬盘等；</li>
+<li>输出单元: 例如显示器、打印机等等</li>
+</ul>
+<p>计算机的重点在于中央处理器 (Central Processing Unit, CPU)，CPU 为一个具有特定功能的晶片，里头含有微指令集，如果您想要让主机进行什么特异的功能，就得要参考这颗 CPU 是否有相关内建的微指令集才可以。由于 CPU 的工作主要在于管理与运算，因此在 CPU 内又可分为两个主要的单元，分别是: 算数逻辑单元与控制单元。其中算数逻辑单元主要负责程式运算与逻辑判断，控制单元则主要在协调各周边元件与各单元间的工作。</p>
+<p>既然 CPU 的重点是在进行运算与判断，那么要被运算与判断的资料是从哪里来的? CPU 读取的资料都是从内存来的! 内存内的资料则是从输入单元所传输进来! 而 CPU 处理完毕的资料也必须要先写回内存中，最后资料才从内存传输到输出单元。</p>
+<h3>软件</h3>
+<p>软件会按照用户的要求协调整台计算机的工作，比如 Windows、Linux、Mac OS、Android 等操作系统，以及 Office、QQ、迅雷、微信等应用程序。</p>
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-26T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">开发简介</title>
+    <id>https://blog.ruizhou.cf/code/basic/debug.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/debug.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>开发是根据用户要求建造出合理程序的过程。过程一般是用某种程序设计语言来实现的。通常采用开发工具可以进行开发。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>开发是根据用户要求建造出合理程序的过程。过程一般是用某种程序设计语言来实现的。通常采用开发工具可以进行开发。</p>
+<!-- more -->
+<h2>小团队的具体分工</h2>
+<p>对于小团队而言，经典的划分主要还分为三个板块</p>
+<h3>UI 设计</h3>
+<p>UI 即 User Interface (用户界面) 的简称。泛指用户的操作界面。UI 设计主要指界面的样式，美观程度。而使用上，对软件的人机交互、操作逻辑、界面美观的整体设计则是同样重要的另一个门道。</p>
+<p>UI 可以让软件变得有个性有品味，还要让软件的操作变得舒适、简单、自由，充分体现软件的定位和特点。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发中，UI 设计主要指<strong>界面元素设计</strong>和<strong>交互设计</strong>两部分。</p>
+</div>
+<h3>前端开发</h3>
+<p>前端开发是创建 Web 页面或 App 等前端界面呈现给用户的过程。前端开发通过 HTML，CSS 及 JavaScript 以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发中，前端开发直接<strong>使用 UI 设计提供的素材</strong>并参照 UI 设计提供的<strong>界面图与交互逻辑</strong>对其设想进行<strong>实现</strong>。</p>
+</div>
+<h3>后端开发</h3>
+<p>根据正在处理的应用程序的大小和范围，后端开发人员要做的事情有很大的不同。在 Web 开发世界中，大多数后端开发人员从事于构建他们正在工作的应用程序背后的实际逻辑。其负责是网站后台逻辑的设计和实现还有用户及网站的数据的保存和读取。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发中，后端开发提供与其他服务器<strong>交互数据</strong>，为用户<strong>检索或转换数据</strong>并<strong>对用户数据加以收集与储存</strong>。</p>
+</div>
+<h2>公司开发</h2>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>如果从职位细分的话，可以分出产品、交互、设计、开发、测试、策划、运营、维护等。</p>
+</div>
+<h3>产品设计</h3>
+<p>产品设计对应产品经理，一般负责整体内容的构思，这一过程可能还包括用户和市场调研，确定要做的产品的功能、大致交互格式，也就是将成品的草稿设计出来，</p>
+<h3>设计师</h3>
+<p>设计师主要和产品设计合作，对一个 App 或者网站的大致页面布局、交互流程进行设计，并提供大致的页面切图，交互流程文档等。</p>
+<h3>交互</h3>
+<p>交互一般负责具体交互流程的细节，会逐步细化，考虑用户习惯，操作的步骤以及长度。综合考量整个交互设计对用户体验以及流失率、活跃程度的影响。</p>
+<h3>开发</h3>
+<p>在实际的大型公司发开产品的过程中，开发直接就可以拿到页面的设计图以及完善的交互流程文档，开发的工作就是去实现相应的页面与动画。</p>
+<p>在这一过程中，前端和后端约定接口和参数，前端负责 App 或网站，后端负责服务器上的数据存储与服务。</p>
+<h3>测试</h3>
+<p>通常情况下，测试和开发会完全分开，测试人员在未参与开发的情况下模拟用户，在不同情况下进行测试，以确保产品不会出现问题。</p>
+<p>这里常见的测试有风险测试、压力测试与异常行为测试等。测试软件是否有安全漏洞，是否可承担大量的访问以及是否在一些非常规交互下可以正常工作。</p>
+<h3>运营</h3>
+<p>一般一款产品需要宣发和后续的持续运营，一般就通过偏市场方向的策划和运营进行相关设计，并指导开发进行相关活动的编写与上线。</p>
+<h3>运维</h3>
+<p>一款产品的后端存储可能需要定期的备份与维护，同时软件后端部署的服务器可能要定期的修复漏洞与升级，就需要有专门的人员来进行这一工作，</p>
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">计算机编码介绍</title>
+    <id>https://blog.ruizhou.cf/code/basic/encoding.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/encoding.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>计算机，不能直接存储文字，存储的是编码。</p>
+<p>计算机只能处理二进制的数据，也就是说计算机只能处理数字。如果要处理文本，比如: <code>0-9</code>、<code>a-z</code>、<code>A-Z</code>，就必须先把文本转换为数字才能处理。对于这些字符，可以定义一套规则来显示，比如: <code>A</code> 用 <code>110</code> 表示，<code>B</code> 用 <code>111</code> 表示等。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>计算机，不能直接存储文字，存储的是编码。</p>
+<p>计算机只能处理二进制的数据，也就是说计算机只能处理数字。如果要处理文本，比如: <code>0-9</code>、<code>a-z</code>、<code>A-Z</code>，就必须先把文本转换为数字才能处理。对于这些字符，可以定义一套规则来显示，比如: <code>A</code> 用 <code>110</code> 表示，<code>B</code> 用 <code>111</code> 表示等。</p>
+<!-- more -->
+<h2>字符编码</h2>
+<p>最早的计算机在设计时采用 8 个比特(bit)作为一个字节(byte)，所以，一个字节能表示的最大的整数就是 255(二进制 11111111=十进制 255)，如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是 <code>65535</code>，4 个字节可以表示的最大整数是 <code>4294967295</code>。</p>
+<p>由于计算机是美国人发明的，因此，最早只有 127 个字符被编码到计算机里，也就是大小写英文字母、数字和一些符号，这个编码表被称为 ASCII 编码，比如大写字母 A 的编码是 65，小写字母 z 的编码是 122。</p>
+<p>但是要处理中文显然一个字节是不够的，至少需要两个字节，而且还不能和 ASCII 编码冲突，所以，中国制定了 GB2312 编码，用来把中文编进去。</p>
+<p>您可以想得到的是，全世界有上百种语言，日本把日文编到 Shift_JIS 里，韩国把韩文编到 Euc-kr 里，各国有各国的标准，就会不可避免地出现冲突，结果就是，在多语言混合的文本中，显示出来会有乱码。</p>
+<p>因此，Unicode 应运而生。Unicode 把所有语言都统一到一套编码里，这样就不会再有乱码问题了。</p>
+<p>Unicode 标准也在不断发展，但最常用的是用两个字节表示一个字符(如果要用到非常偏僻的字符，就需要 4 个字节)。现代操作系统和大多数编程语言都直接支持 Unicode。</p>
+<p>现在，捋一捋 ASCII 编码和 Unicode 编码的区别: ASCII 编码是 1 个字节，而 Unicode 编码通常是 2 个字节。</p>
+<p>字母 A 用 ASCII 编码是十进制的 65，二进制的 01000001；</p>
+<p>字符 0 用 ASCII 编码是十进制的 48，二进制的 00110000，注意字符 <code>'0'</code> 和整数 <code>0</code> 是不同的；</p>
+<p>汉字中已经超出了 ASCII 编码的范围，用 Unicode 编码是十进制的 20013，二进制的 01001110 00101101。</p>
+<p>您可以猜测，如果把 ASCII 编码的 A 用 Unicode 编码，只需要在前面补 0 就可以，因此，A 的 Unicode 编码是 00000000 01000001。</p>
+<p>新的问题又出现了: 如果统一成 Unicode 编码，乱码问题从此消失了。但是，如果您写的文本基本上全部是英文的话，用 Unicode 编码比 ASCII 编码需要多一倍的存储空间，在存储和传输上就十分不划算。</p>
+<p>所以，本着节约的精神，又出现了把 Unicode 编码转化为“可变长编码”的 UTF-8 编码。UTF-8 编码把一个 Unicode 字符根据不同的数字大小编码成 1-6 个字节，常用的英文字母被编码成 1 个字节，汉字通常是 3 个字节，只有很生僻的字符才会被编码成 4-6 个字节。如果您要传输的文本包含大量英文字符，用 UTF-8 编码就能节省空间:</p>
+<p>| 字符 | ASCII    | Unicode           | UTF-8                      |
+|</p>
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">文件名与文件扩展名</title>
+    <id>https://blog.ruizhou.cf/code/basic/file-extension.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/file-extension.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<h2>文件名</h2>
+<p>文件名就是文件的名称，是为了方便人们区分计算机中的不同文件，而给每个文件设定一个指定的名称。</p>
+<p>文件名不能包含控制字符: <code>&lt;</code> <code>&gt;</code> <code>/</code> <code>\</code> <code>|</code> <code>:</code> <code>"</code> <code>*</code> <code>?</code></p>
+<h2>文件扩展名</h2>
+<p>文件扩展名 (filename extension) 也称为文件的延伸文件名、后缀名，是操作系统用来标记文件类型的一种机制。通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。</p>]]></summary>
+    <content type="html"><![CDATA[<h2>文件名</h2>
+<p>文件名就是文件的名称，是为了方便人们区分计算机中的不同文件，而给每个文件设定一个指定的名称。</p>
+<p>文件名不能包含控制字符: <code>&lt;</code> <code>&gt;</code> <code>/</code> <code>\</code> <code>|</code> <code>:</code> <code>"</code> <code>*</code> <code>?</code></p>
+<h2>文件扩展名</h2>
+<p>文件扩展名 (filename extension) 也称为文件的延伸文件名、后缀名，是操作系统用来标记文件类型的一种机制。通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。</p>
+<p>文件扩展名是早期操作系统 (如 VMS / CP / M / DOS 等) 用来标志文件格式的一种机制，其更重要的作用是让系统决定当用户想打开这个文件的时候用哪种软件运行，如 Windows 系统中 exe 文件是可执行文件，doc 文件默认用 Microsoft Word 打开的 Word 文件。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">误区</p>
+<ol>
+<li>
+<p>文件扩展名是一个文件的必要构成部分。❌</p>
+<p>任何一个文件可以有或没有扩展名。对于打开文件操作，没有扩展名的文件需要选择程序去打开它，有扩展名的文件会自动用设置好的程序(如有)去尝试打开，文件扩展名是一个常规文件的构成部分，但一个文件并不一定需要一个扩展名。</p>
+</li>
+<li>
+<p>文件扩展名表明了该文件是何种类型。❌</p>
+<p>文件扩展名可以人为设定，扩展名为 TXT 的文件有可能是一张图片，同样，扩展名为 MP3 的文件，依然可能是一个视频。</p>
+</li>
+</ol>
+</div>
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-26T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Glob</title>
+    <id>https://blog.ruizhou.cf/code/basic/glob.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/glob.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>本文介绍 Glob 匹配。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>本文介绍 Glob 匹配。</p>
+<!-- more -->
+<h2>简介</h2>
+<p>Glob 是当您要进行路径匹配时键入的模式。</p>
+<p>在解析一条匹配模式前，Glob 首先将 <code>{}</code> 部分展开为一组匹配模式。<code>{}</code> 内的模式之间使用逗号分隔。</p>
+<p>如 <code>a{/b/c,bcd}</code> 将扩展为 <code>a/b/c</code> 和 <code>abcd</code></p>
+<p><code>{}</code> 可以嵌套，可与其他模式联用。</p>
+<p>Glob 的魔术字符如下:</p>
+<ul>
+<li>
+<p><code>*</code>: 匹配路径部分中的 0 个或多个字符</p>
+</li>
+<li>
+<p><code>?</code>: 匹配单个字符</p>
+</li>
+<li>
+<p><code>[...]</code>: 匹配字符范围。<code>[^...]</code>和 <code>[!...]</code> 表示匹配不在范围内的字符</p>
+<details class="hint-container details"><summary>例子</summary>
+<ul>
+<li><code>[xyz].js</code> 只能匹配 <code>x.js</code>, <code>y.js</code>, <code>z.js</code>，但不会匹配 <code>xy.js</code>, <code>xyz.js</code> 等，因为整个中括号只代表一个字符。其等价于 <code>[x-z].js</code></li>
+<li><code>[!xyz].js</code> 能匹配 <code>a.js</code>, <code>b.js</code>, <code>u.js</code>，但不会匹配 <code>x.js</code>, <code>y.js</code> <code>z.js</code>，<code>ab.js</code> 等。其等价于 <code>[^xyz].js</code> 和 <code>[!x-z].js</code>。</li>
+</ul>
+</details>
+</li>
+<li>
+<p><code>!(pattern|pattern|pattern)</code>: 匹配与提供的任何模式都不匹配的任何内容。</p>
+</li>
+<li>
+<p><code>?(pattern|pattern|pattern)</code>: 匹配 0 或一个内部模式。</p>
+</li>
+<li>
+<p><code>+(pattern|pattern|pattern)</code> 匹配一个或多个内部模式。</p>
+</li>
+<li>
+<p><code>*(a|b|c)</code>: 匹配 0 或多个内部模式。</p>
+</li>
+<li>
+<p><code>@(pattern|pat*|pat?erN)</code>: 匹配恰好一个内部模式。</p>
+</li>
+<li>
+<p><code>**</code>: 如果其在路径部分中单独出现，则匹配路径中的 0 个或多个目录与子目录。请注意它不对 symlinked 目录 (符号链接目录) 进行爬取。</p>
+<details class="hint-container details"><summary>例子</summary>
+<ul>
+<li><code>**</code> 能匹配匹配所有的目录和文件。</li>
+<li><code>**/*.js</code> 能匹配所有的 js 文件。</li>
+<li><code>a/**/b.txt</code> 能匹配目录里任何一个 a 文件夹内的所有 b.txt 文件。</li>
+</ul>
+</details>
+</li>
+</ul>
+<h2><code>.</code> 开头的文件与文件夹</h2>
+<p>由于以 <code>.</code> 开头的文件或文件夹在 Unix 中视为隐藏文件或文件夹，故 Glob 不会匹配任何以 <code>.</code> 开头的路径部分，如 <code>.github/dependabot.yml</code> 或 <code>.eslintrc.js</code>。</p>
+<p>如果的确想要匹配 <code>.</code> 开头的文件或文件夹，可以显示标注出来，如 <code>.*.js</code> 可以匹配 <code>.eslintrc.js</code>。</p>
+]]></content>
+    <author>
+      <name>陈慧玲</name>
+    </author>
+    <category term="基础"/>
+    <contributor>
+      <name>陈慧玲</name>
+    </contributor>
+    <published>2021-02-18T00:00:00.000Z</published>
+    <rights>Copyright by 陈慧玲</rights>
+  </entry>
+  <entry>
+    <title type="text">开源协议</title>
+    <id>https://blog.ruizhou.cf/code/basic/license.html</id>
+    <link href="https://blog.ruizhou.cf/code/basic/license.html"/>
+    <updated>2024-01-26T16:16:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>开源软件在追求“自由”的同时，不能牺牲程序员的利益，否则将会影响程序员的创造激情，因此世界上现在有 60 多种被开源促进组织 (Open Source Initiative) 认可的开源许可协议来保证开源工作者的权益。</p>
+<p>开源协议规定了您在使用开源软件时的权利和责任，也就是规定了您可以做什么，不可以做什么。</p>
+<p>开源协议虽然不一定具备法律效力，但是当涉及软件版权纠纷时，开源协议也是非常重要的证据之一。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>开源软件在追求“自由”的同时，不能牺牲程序员的利益，否则将会影响程序员的创造激情，因此世界上现在有 60 多种被开源促进组织 (Open Source Initiative) 认可的开源许可协议来保证开源工作者的权益。</p>
+<p>开源协议规定了您在使用开源软件时的权利和责任，也就是规定了您可以做什么，不可以做什么。</p>
+<p>开源协议虽然不一定具备法律效力，但是当涉及软件版权纠纷时，开源协议也是非常重要的证据之一。</p>
+<!-- more -->
+<p>对于准备编写一款开源软件的开发人员，也非常建议先了解一下当前最热门的开源许可协议，选择一个合适的开源许可协议来最大限度保护自己的软件权益。</p>
+<h2>GNU GPL</h2>
+<blockquote>
+<p>GNU General Public License，GNU 通用公共许可证</p>
+</blockquote>
+<p>只要软件中包含了遵循 GPL 协议的产品或代码，该软件就必须也遵循 GPL 许可协议，也就是必须开源免费，不能闭源收费，因此这个协议并不适合商用软件。</p>
+<p>遵循 GPL 协议的开源软件数量极其庞大，包括 Linux 系统在内的大多数的开源软件都是基于这个协议的。</p>
+<p>GPL 开源协议的主要特点:</p>
+<ul>
+<li>
+<p>复制自由</p>
+<p>允许把软件复制到任何人的电脑中，并且不限制复制的数量。</p>
+</li>
+<li>
+<p>传播自由</p>
+</li>
+</ul>
+<p>允许软件以各种形式进行传播。</p>
+<ul>
+<li>
+<p>收费传播</p>
+<p>允许在各种媒介上出售该软件，但必须提前让买家知道这个软件是可以免费获得的；因此，一般来讲，开源软件都是通过为用户提供有偿服务的形式来盈利的。</p>
+</li>
+<li>
+<p>修改自由</p>
+<p>允许开发人员增加或删除软件的功能，但软件修改后必须依然基于 GPL 许可协议授权。</p>
+</li>
+</ul>
+<h2>BSD</h2>
+<blockquote>
+<p>Berkeley Software Distribution，伯克利软件发布版) 协议</p>
+</blockquote>
+<p>BSD 协议基本上允许用户“为所欲为”，用户可以使用、修改和重新发布遵循该许可的软件，并且可以将软件作为商业软件发布和销售，前提是需要满足下面三个条件:</p>
+<ul>
+<li>如果再发布的软件中包含源代码，则源代码必须继续遵循 BSD 许可协议。</li>
+<li>如果再发布的软件中只有二进制程序，则需要在相关文档或版权文件中声明原始代码遵循了 BSD 协议。</li>
+<li>不允许用原始软件的名字、作者名字或机构名称进行市场推广。</li>
+</ul>
+<p>BSD 对商业比较友好，很多公司在选用开源产品的时候都首选 BSD 协议，因为可以完全控制这些第三方的代码，甚至在必要的时候可以修改或者二次开发。</p>
+<h2>Apache 许可证版本</h2>
+<blockquote>
+<p>(Apache License Version) 协议</p>
+</blockquote>
+<p>Apache 开源协议</p>
+<p>Apache 和 BSD 类似，都适用于商业软件。Apache 协议在为开发人员提供版权及专利许可的同时，允许用户拥有修改代码及再发布的自由。</p>
+<p>现在热门的 Hadoop、Apache HTTP Server、MongoDB 等项目都是基于该许可协议研发的，程序开发人员在开发遵循该协议的软件时，要严格遵守下面的四个条件:</p>
+<ul>
+<li>该软件及其衍生品必须继续使用 Apache 许可协议。</li>
+<li>如果修改了程序源代码，需要在文档中进行声明。</li>
+<li>若软件是基于他人的源代码编写而成的，则需要保留原始代码的协议、商标、专利声明及其他原作者声明的内容信息。</li>
+<li>如果再发布的软件中有声明文件，则需在此文件中标注 Apache 许可协议及其他许可协议。</li>
+</ul>
+<h2>MIT</h2>
+<blockquote>
+<p>(Massachusetts Institute of Technology) 协议</p>
+</blockquote>
+<p>目前限制最少的开源许可协议之一(比 BSD 和 Apache 的限制都少)，只要程序的开发者在修改后的源代码中保留原作者的许可信息即可，因此普遍被商业软件所使用。</p>
+<p>使用 MIT 协议的软件有 PuTTY、X Window System、Ruby on Rails、Lua 5.0 onwards、Mono 等。</p>
+<h2>GUN LGPL</h2>
+<blockquote>
+<p>(GNU Lesser General Public License，GNU 宽通用公共许可证)</p>
+</blockquote>
+<p>LGPL 是 GPL 的一个衍生版本，也被称为 GPL V2，该协议主要是为类库设计的开源协议。</p>
+<p>LGPL 允许商业软件通过类库引用(link)的方式使用 LGPL 类库，而不需要开源商业软件的代码。这使得采用 LGPL 协议的开源代码可以被商业软件作为类库引用并发布和销售。</p>
+<p>但是如果修改 LGPL 协议的代码或者衍生品，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用 LGPL 协议。因此 LGPL 协议的开源代码很适合作为第三方类库被商业软件引用，但不适合希望以 LGPL 协议代码为基础，通过修改和衍生的方式做二次开发的商业软件采用。</p>
+<h2>如何选择开源协议</h2>
+<p>世界上的开源协议有上百种，很少有人能彻底搞清它们之间的区别，即使在最流行的六种开源协议——GPL、BSD、MIT、Mozilla、Apache 和 LGPL——之中做选择，也很复杂。</p>
+<p>乌克兰程序员 Paul Bagwell 画了一张分析图，说明应该怎么选择开源协议，大家看了一目了然，真是清爽。</p>
+]]></content>
+    <category term="基础"/>
+    <published>2019-12-27T00:00:00.000Z</published>
   </entry>
 </feed>

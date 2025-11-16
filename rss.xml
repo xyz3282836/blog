@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 22 Oct 2025 15:31:06 GMT</pubDate>
-    <lastBuildDate>Wed, 22 Oct 2025 15:31:06 GMT</lastBuildDate>
+    <pubDate>Sun, 16 Nov 2025 14:34:50 GMT</pubDate>
+    <lastBuildDate>Sun, 16 Nov 2025 14:34:50 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -4129,6 +4129,27 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>React</title>
+      <link>https://blog.ruizhou.cf/code/react/</link>
+      <guid>https://blog.ruizhou.cf/code/react/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">React</source>
+      <description>创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档</description>
+      <category>前端</category>
+      <pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div><p>创建 TS 模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
+</div><h2>React 文档</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Node.js</title>
       <link>https://blog.ruizhou.cf/code/node-js/</link>
       <guid>https://blog.ruizhou.cf/code/node-js/</guid>
@@ -4687,27 +4708,6 @@
 <p>直接输入 Node.js 进入交互模式，相当于启动了 Node.js 解释器，但是等待您一行一行地输入源代码，每输入一行就执行一行。</p>
 <p>直接运行 <code>node hello.js</code> 文件相当于启动了 Node.js 解释器，然后一次性把 <code>hello.js</code> 文件的源代码给执行了，您是没有机会以交互的方式输入源代码的。</p>
 <p>在编写 JavaScript 代码的时候，完全可以一边在文本编辑器里写代码，一边开一个 Node.js 交互式命令窗口，在写代码的过程中，把部分代码粘到命令行去验证，事半功倍! 前提是得有个 27 寸的超大显示器!</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>React</title>
-      <link>https://blog.ruizhou.cf/code/react/</link>
-      <guid>https://blog.ruizhou.cf/code/react/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">React</source>
-      <description>创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档</description>
-      <category>前端</category>
-      <pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div><p>创建 TS 模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
-</div><h2>React 文档</h2>
-<ul>
-<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
 ]]></content:encoded>
     </item>
   </channel>

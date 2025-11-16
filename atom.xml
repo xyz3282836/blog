@@ -5,7 +5,7 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2025-10-22T15:31:06.852Z</updated>
+  <updated>2025-11-16T14:34:50.348Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
@@ -4702,6 +4702,31 @@
     <published>2019-09-10T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">React</title>
+    <id>https://blog.ruizhou.cf/code/react/</id>
+    <link href="https://blog.ruizhou.cf/code/react/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div>]]></summary>
+    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div><p>创建 TS 模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
+</div><h2>React 文档</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content>
+    <category term="前端"/>
+    <published>2020-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">Node.js</title>
     <id>https://blog.ruizhou.cf/code/node-js/</id>
     <link href="https://blog.ruizhou.cf/code/node-js/"/>
@@ -5273,30 +5298,5 @@
 ]]></content>
     <category term="Node.js"/>
     <published>2020-12-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">React</title>
-    <id>https://blog.ruizhou.cf/code/react/</id>
-    <link href="https://blog.ruizhou.cf/code/react/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div>]]></summary>
-    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div><p>创建 TS 模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
-</div><h2>React 文档</h2>
-<ul>
-<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-08T00:00:00.000Z</published>
   </entry>
 </feed>

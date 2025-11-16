@@ -1219,6 +1219,19 @@
       ]
     },
     {
+      "title": "React",
+      "url": "https://blog.ruizhou.cf/code/react/",
+      "id": "https://blog.ruizhou.cf/code/react/",
+      "summary": "创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档",
+      "content_html": "<h2>创建 React 项目</h2>\n<p>使用 <code>create-react-app</code> 工具。</p>\n<p>创建普通模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span></span></code></pre>\n</div><p>创建 TS 模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> --template</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> typescript</span></span></code></pre>\n</div><h2>React 文档</h2>\n<ul>\n<li><a href=\"https://reactjs.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></li>\n<li><a href=\"https://react.docschina.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></li>\n</ul>\n",
+      "date_published": "2020-05-08T00:00:00.000Z",
+      "date_modified": "2024-01-19T19:40:22.000Z",
+      "authors": [],
+      "tags": [
+        "前端"
+      ]
+    },
+    {
       "title": "Node.js",
       "url": "https://blog.ruizhou.cf/code/node-js/",
       "id": "https://blog.ruizhou.cf/code/node-js/",
@@ -1294,19 +1307,6 @@
       "authors": [],
       "tags": [
         "Node.js"
-      ]
-    },
-    {
-      "title": "React",
-      "url": "https://blog.ruizhou.cf/code/react/",
-      "id": "https://blog.ruizhou.cf/code/react/",
-      "summary": "创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档",
-      "content_html": "<h2>创建 React 项目</h2>\n<p>使用 <code>create-react-app</code> 工具。</p>\n<p>创建普通模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span></span></code></pre>\n</div><p>创建 TS 模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> --template</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> typescript</span></span></code></pre>\n</div><h2>React 文档</h2>\n<ul>\n<li><a href=\"https://reactjs.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></li>\n<li><a href=\"https://react.docschina.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></li>\n</ul>\n",
-      "date_published": "2020-05-08T00:00:00.000Z",
-      "date_modified": "2024-01-19T19:40:22.000Z",
-      "authors": [],
-      "tags": [
-        "前端"
       ]
     }
   ]

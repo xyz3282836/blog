@@ -5,7 +5,7 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2025-11-16T14:34:50.348Z</updated>
+  <updated>2025-11-16T14:47:24.988Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
@@ -28,12 +28,12 @@
   <category term="英文"/>
   <category term="Linux"/>
   <category term="基础"/>
-  <category term="前端"/>
   <category term="Android"/>
+  <category term="后端"/>
+  <category term="前端"/>
+  <category term="小程序"/>
   <category term="GitHub"/>
   <category term="教程"/>
-  <category term="小程序"/>
-  <category term="后端"/>
   <category term="Node.js"/>
   <contributor>
     <name>陈慧玲</name>
@@ -2936,44 +2936,6 @@
     <published>2019-11-23T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">Angular</title>
-    <id>https://blog.ruizhou.cf/code/angular/</id>
-    <link href="https://blog.ruizhou.cf/code/angular/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
-<p>框架强制 Typescript，更倾向于大型项目。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
-<p>框架强制 Typescript，更倾向于大型项目。</p>
-<!-- more -->
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年 Angular 挺凉的了</p>
-</div>
-<div class="hint-container info">
-<p class="hint-container-title">Angular 的优点</p>
-<ol>
-<li>零配置 CLI，享受到 webpack 每次升级的好处，但是不用关心任何 webpack config</li>
-<li>官方提供所有的必须组件(http、router、animation、ssr、e2e 等等)，在 2000+ 内部应用测试之后才会发布，基本零 bug，并且保证在未来很多年内一直保证兼容升级</li>
-<li>提供官方的应用市场和 low code 生成工具，一行命令就可以生成 Dashboard 和各种页面</li>
-<li>框架 100% 由 TypeScript 开发，并且生态内的所有三方库都是(只能用) TypeScript 开发</li>
-<li>内置 RxJS，并且从 View 的操作到 Http 全部都是 Reactive 的，可以随意组合</li>
-<li>每次升级只要运行一行命令就会帮您修复所有的可能的不兼容问题</li>
-<li>通过 Template 隔绝底层的 Compiler 升级成本，Compiler 迭代了三代，性能不断提升，bundle size 不断减少，但是用户代码一行不用改</li>
-</ol>
-</div>
-<p>Angular 写起来其实是有诸多限制的，但是对企业的大型项目来说，这些限制与规范会带来多人协同开发和后期维护上的简便。</p>
-<p>如果您在前端框架上追求的更多是: 升级稳定、标准统一、长期维护成本低、协作方便，不需要频繁重构，Angular 的使用感受应该还是相当不错的，这也是为什么目前大量企业用户会选择 Angular 的原因。</p>
-<h2>相关链接</h2>
-<ul>
-<li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://angular.cn/docs" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-06T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">应用基础知识</title>
     <id>https://blog.ruizhou.cf/code/android/base.html</id>
     <link href="https://blog.ruizhou.cf/code/android/base.html"/>
@@ -3096,6 +3058,100 @@
 ]]></content>
     <category term="Android"/>
     <published>2020-04-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">后端开发</title>
+    <id>https://blog.ruizhou.cf/code/back-end/</id>
+    <link href="https://blog.ruizhou.cf/code/back-end/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>后端入门</h2>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年后端还是 Java 比较多</p>
+</div>
+<h3>PHP</h3>
+<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
+<p>PHP 手册:</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<h2>后端入门</h2>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年后端还是 Java 比较多</p>
+</div>
+<h3>PHP</h3>
+<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
+<p>PHP 手册:</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>
+<p>如果服务器访问数量不大的情况下，PHP 作为一种门槛低，开发方便的脚本语言，还是挺受到欢迎的。</p>
+<h3>ASP</h3>
+<p>ASP 文件可包含文本、HTML 标签和脚本。ASP 文件中的脚本可在服务器上执行。由于 ASP 在服务器上运行，浏览器无需支持客户端脚本就可以显示 ASP 文件!</p>
+<ul>
+<li>
+<p><a href="http://www.w3school.com.cn/asp/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
+</li>
+<li>
+<p><a href="https://www.runoob.com/asp/asp-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
+</li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>更多详情有待日后补充</p>
+</div>
+]]></content>
+    <category term="后端"/>
+    <published>2019-09-10T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Angular</title>
+    <id>https://blog.ruizhou.cf/code/angular/</id>
+    <link href="https://blog.ruizhou.cf/code/angular/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
+<p>框架强制 Typescript，更倾向于大型项目。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Angular 是 Google 官方在 2016 年 9 月出品的一款框架。</p>
+<p>框架强制 Typescript，更倾向于大型项目。</p>
+<!-- more -->
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>2023 年 Angular 挺凉的了</p>
+</div>
+<div class="hint-container info">
+<p class="hint-container-title">Angular 的优点</p>
+<ol>
+<li>零配置 CLI，享受到 webpack 每次升级的好处，但是不用关心任何 webpack config</li>
+<li>官方提供所有的必须组件(http、router、animation、ssr、e2e 等等)，在 2000+ 内部应用测试之后才会发布，基本零 bug，并且保证在未来很多年内一直保证兼容升级</li>
+<li>提供官方的应用市场和 low code 生成工具，一行命令就可以生成 Dashboard 和各种页面</li>
+<li>框架 100% 由 TypeScript 开发，并且生态内的所有三方库都是(只能用) TypeScript 开发</li>
+<li>内置 RxJS，并且从 View 的操作到 Http 全部都是 Reactive 的，可以随意组合</li>
+<li>每次升级只要运行一行命令就会帮您修复所有的可能的不兼容问题</li>
+<li>通过 Template 隔绝底层的 Compiler 升级成本，Compiler 迭代了三代，性能不断提升，bundle size 不断减少，但是用户代码一行不用改</li>
+</ol>
+</div>
+<p>Angular 写起来其实是有诸多限制的，但是对企业的大型项目来说，这些限制与规范会带来多人协同开发和后期维护上的简便。</p>
+<p>如果您在前端框架上追求的更多是: 升级稳定、标准统一、长期维护成本低、协作方便，不需要频繁重构，Angular 的使用感受应该还是相当不错的，这也是为什么目前大量企业用户会选择 Angular 的原因。</p>
+<h2>相关链接</h2>
+<ul>
+<li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://angular.cn/docs" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content>
+    <category term="前端"/>
+    <published>2020-05-06T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">基础介绍</title>
@@ -3644,6 +3700,293 @@
 ]]></content>
     <category term="基础"/>
     <published>2019-09-20T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">小程序</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/"/>
+    <updated>2025-10-16T09:34:20.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
+</div>
+<!-- more -->
+<h2>小程序基础简介</h2>
+<p>在微信小程序中主要有四种文件结构: <code>wxml</code>、<code>wxss</code>、<code>js</code> 和 <code>json</code>。其中 <code>wxml</code> 对应带有 vue.js 特征的 html5，<code>wxss</code> 对应 css3，<code>js</code> 对应 ES6 标准的的 javaScript。</p>
+<p>对于 QQ 小程序，其文件结构为 <code>QML</code>、<code>qss</code>、<code>js</code> 和 <code>json</code>。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>QQ 小程序本质还是换汤不换药的，且 QQ 开发者工具兼容 <code>wxml</code> 与 <code>wss</code>)</p>
+</div>
+<p>小程序开发与网页开发极其相似。所以必须有适当的网页开发基础。零基础的人可能很难直接上手小程序开发。</p>
+<h2>教程目录</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/file-structure.html" target="_blank">文件结构</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/env.html" target="_blank">运行环境</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/" target="_blank">小程序配置</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/config/app-config.html" target="_blank">全局配置</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/page-config.html" target="_blank">页面配置</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/config/sitemap-config.html" target="_blank">sitemap 配置</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/" target="_blank">小程序框架</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/frame/intro.html" target="_blank">框架介绍</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/scene.html" target="_blank">场景值</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/env.html" target="_blank">运行环境</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/mechanism.html" target="_blank">运行机制</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/frame/update.html" target="_blank">更新机制</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/" target="_blank">逻辑层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/service/lifetime.html" target="_blank">生命周期</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/route.html" target="_blank">路由</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/register.html" target="_blank">注册</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/app.html" target="_blank">App()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/page.html" target="_blank">Page()</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/run.html" target="_blank">运行</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/module.html" target="_blank">模块化</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/service/api/" target="_blank">API</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/" target="_blank">视图层</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/view/wxml.html" target="_blank">WXML</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxss.html" target="_blank">WXSS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/event.html" target="_blank">事件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/component.html" target="_blank">基础组件</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/animation.html" target="_blank">动画</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/wxs-event.html" target="_blank">WXS 事件</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/model.html" target="_blank">建议双向绑定</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">获取界面上的节点信息</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">相应显示区域变化</a> </p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/view/rendering-cache.html" target="_blank">初始渲染缓存</a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/" target="_blank">小程序能力</a></p>
+<ul>
+<li>
+<p><a href="/code/mini-app/guide/ability/network.html" target="_blank">网络请求</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/storage.html" target="_blank">存储</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/file-system.html" target="_blank">文件系统</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/guide/ability/debug.html" target="_blank">调试</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>开发者工具</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/tools/interface.html" target="_blank">工具界面简介</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/debug.html" target="_blank">调试</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/npm.html" target="_blank">npm</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/audit.html" target="_blank">体验评分</a></p>
+</li>
+</ul>
+<h2>官方教程</h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a" target="_blank" rel="noopener noreferrer">点击前往</a></li>
+</ul>
+<h2>案例</h2>
+<ul>
+<li><a href="https://github.com/Hope-Studio/wxminiappdemo" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
+</ul>
+<h2>Mr.Hope 框架说明</h2>
+<ul>
+<li>
+<p><a href="/code/mini-app/framework/" target="_blank">小程序框架使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/tag-list.html" target="_blank">tag 值参数表</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/page.html" target="_blank">setPage 库使用说明</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/framework/simple-debug.html" target="_blank">界面简单开发学习指南</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/qr-code.html" target="_blank">分享相关</a></p>
+</li>
+</ul>
+<h2>学习视频</h2>
+<ul>
+<li>
+<p><a href="https://www.bilibili.com/video/av22790583/" target="_blank" rel="noopener noreferrer">零基础开发小程序</a>(比较新的视频，强调总体思想)</p>
+</li>
+<li>
+<p><a href="https://www.bilibili.com/video/av11938917" target="_blank" rel="noopener noreferrer">小程序-从入门到入土</a>(比较老的视频，针对每个组件或者 API 进行了针对的讲解与示范，但部分内容已经与最新官方文档不符)</p>
+</li>
+</ul>
+<h2>示例代码</h2>
+<ul>
+<li>
+<p><a href="https://github.com/wechat-miniprogram/miniprogram-demo" target="_blank" rel="noopener noreferrer">小程序实例源码</a></p>
+<figure><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/demo.ef5c5bef.jpg" alt="小程序示例二维码" tabindex="0" loading="lazy"><figcaption>小程序示例二维码</figcaption></figure>
+</li>
+</ul>
+<h2>官方文档</h2>
+<ul>
+<li><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">QQ 小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">微信小程序</a></li>
+<li><a href="https://developers.weixin.qq.com/community/develop/question" target="_blank" rel="noopener noreferrer">微信小程序社区</a>
+<ul>
+<li><a href="https://developers.weixin.qq.com/community/develop/list/2?id=" target="_blank" rel="noopener noreferrer">官方公告</a></li>
+</ul>
+</li>
+</ul>
+<h3>QQ 开发者工具</h3>
+<p>现在很多功能还处于缺失状态，bug 到没之前那么多了。</p>
+<ul>
+<li>
+<p><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">查看详情</a></p>
+</li>
+<li>
+<p><a href="https://q.qq.com/wiki/tools/devtool/" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+</ul>
+<h2>微信开发者工具</h2>
+<p>微信开发者工具用来开发与调试微信小程序和微信相关网页的官方工具。小程序使用该开发工具进行开发。</p>
+<ul>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">下载地址</a></p>
+</li>
+<li>
+<p><a href="/code/mini-app/tools/" target="_blank">开发者工具教程</a></p>
+</li>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" target="_blank" rel="noopener noreferrer">官方使用指南</a></p>
+</li>
+</ul>
+]]></content>
+    <category term="小程序"/>
+    <published>2019-11-25T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">小程序分享</title>
+    <id>https://blog.ruizhou.cf/code/mini-app/qr-code.html</id>
+    <link href="https://blog.ruizhou.cf/code/mini-app/qr-code.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>]]></summary>
+    <content type="html"><![CDATA[<h2>二维码生成</h2>
+<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
+<p>我们使用 Postman 软件进行二维码的获取。</p>
+<h3>调用凭据获取</h3>
+<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>
+<p>请求方式为:</p>
+<div class="language-md" data-highlighter="shiki" data-ext="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-md"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</span></span></code></pre>
+</div><p>更多详情可以见文档。<code>AppSecret</code> 由于权限很大不在此文档中直接放置。</p>
+<h3>无限制二维码生成</h3>
+<ul>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
+</ul>
+<p>在获取 <code>access_token</code> 之后就可以获取小程序二维码了。</p>
+<div class="language-md" data-highlighter="shiki" data-ext="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-md"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">POST https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN</span></span></code></pre>
+</div><p>请注意，在 Postman 软件中，首先要注意使用 <code>post</code> 方法。Body 使用 <code>raw</code>，格式选择 <code>Text</code>，需要将 <code>pretty</code> 化的 JSON 输入即可正常获取二维码。获取完二维码之后，需要在 <code>response</code> 中点击返回图片右上角的 <code>save as</code>，保存为 <code>jpg</code> 格式的文件即可保存二维码。</p>
+<h2>小程序链接</h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Center_messages.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
+</ul>
+<p>具体格式如下:</p>
+<div class="language-html" data-highlighter="shiki" data-ext="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-html"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"不支持小程序时打开的网页"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-appid</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序的appid"</span></span>
+<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序路径"</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &gt;文本内容&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+</div>]]></content>
+    <category term="小程序"/>
+    <published>2020-10-09T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">GitHub</title>
@@ -4359,374 +4702,6 @@
     <published>2020-05-04T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">小程序</title>
-    <id>https://blog.ruizhou.cf/code/mini-app/</id>
-    <link href="https://blog.ruizhou.cf/code/mini-app/"/>
-    <updated>2025-10-16T09:34:20.000Z</updated>
-    <summary type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>在开发小程序之前。应当掌握 <a href="/code/website/html/" target="_blank">HTML</a>、<a href="/code/website/css/" target="_blank">CSS</a>、<a href="/code/language/js/guide/" target="_blank">JavaScript 基础</a> 以及 <a href="/code/language/js/es6/" target="_blank">ES6</a>。</p>
-</div>
-<!-- more -->
-<h2>小程序基础简介</h2>
-<p>在微信小程序中主要有四种文件结构: <code>wxml</code>、<code>wxss</code>、<code>js</code> 和 <code>json</code>。其中 <code>wxml</code> 对应带有 vue.js 特征的 html5，<code>wxss</code> 对应 css3，<code>js</code> 对应 ES6 标准的的 javaScript。</p>
-<p>对于 QQ 小程序，其文件结构为 <code>QML</code>、<code>qss</code>、<code>js</code> 和 <code>json</code>。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>QQ 小程序本质还是换汤不换药的，且 QQ 开发者工具兼容 <code>wxml</code> 与 <code>wss</code>)</p>
-</div>
-<p>小程序开发与网页开发极其相似。所以必须有适当的网页开发基础。零基础的人可能很难直接上手小程序开发。</p>
-<h2>教程目录</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/file-structure.html" target="_blank">文件结构</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/env.html" target="_blank">运行环境</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/" target="_blank">小程序配置</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/config/app-config.html" target="_blank">全局配置</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/page-config.html" target="_blank">页面配置</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/config/sitemap-config.html" target="_blank">sitemap 配置</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/" target="_blank">小程序框架</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/frame/intro.html" target="_blank">框架介绍</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/scene.html" target="_blank">场景值</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/env.html" target="_blank">运行环境</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/mechanism.html" target="_blank">运行机制</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/frame/update.html" target="_blank">更新机制</a> </p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/" target="_blank">逻辑层</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/service/lifetime.html" target="_blank">生命周期</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/route.html" target="_blank">路由</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/register.html" target="_blank">注册</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/app.html" target="_blank">App()</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/page.html" target="_blank">Page()</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/run.html" target="_blank">运行</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/module.html" target="_blank">模块化</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/service/api/" target="_blank">API</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/" target="_blank">视图层</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/view/wxml.html" target="_blank">WXML</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxss.html" target="_blank">WXSS</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/event.html" target="_blank">事件</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/component.html" target="_blank">基础组件</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/animation.html" target="_blank">动画</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs.html" target="_blank">WXS</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/wxs-event.html" target="_blank">WXS 事件</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/model.html" target="_blank">建议双向绑定</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">获取界面上的节点信息</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/selector.html" target="_blank">相应显示区域变化</a> </p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/view/rendering-cache.html" target="_blank">初始渲染缓存</a> </p>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/" target="_blank">小程序能力</a></p>
-<ul>
-<li>
-<p><a href="/code/mini-app/guide/ability/network.html" target="_blank">网络请求</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/storage.html" target="_blank">存储</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/file-system.html" target="_blank">文件系统</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/guide/ability/debug.html" target="_blank">调试</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<h2>开发者工具</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/tools/interface.html" target="_blank">工具界面简介</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/debug.html" target="_blank">调试</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/npm.html" target="_blank">npm</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/audit.html" target="_blank">体验评分</a></p>
-</li>
-</ul>
-<h2>官方教程</h2>
-<ul>
-<li><a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a" target="_blank" rel="noopener noreferrer">点击前往</a></li>
-</ul>
-<h2>案例</h2>
-<ul>
-<li><a href="https://github.com/Hope-Studio/wxminiappdemo" target="_blank" rel="noopener noreferrer">GitHub repository</a></li>
-</ul>
-<h2>Mr.Hope 框架说明</h2>
-<ul>
-<li>
-<p><a href="/code/mini-app/framework/" target="_blank">小程序框架使用说明</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/tag-list.html" target="_blank">tag 值参数表</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/page.html" target="_blank">setPage 库使用说明</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/framework/simple-debug.html" target="_blank">界面简单开发学习指南</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/qr-code.html" target="_blank">分享相关</a></p>
-</li>
-</ul>
-<h2>学习视频</h2>
-<ul>
-<li>
-<p><a href="https://www.bilibili.com/video/av22790583/" target="_blank" rel="noopener noreferrer">零基础开发小程序</a>(比较新的视频，强调总体思想)</p>
-</li>
-<li>
-<p><a href="https://www.bilibili.com/video/av11938917" target="_blank" rel="noopener noreferrer">小程序-从入门到入土</a>(比较老的视频，针对每个组件或者 API 进行了针对的讲解与示范，但部分内容已经与最新官方文档不符)</p>
-</li>
-</ul>
-<h2>示例代码</h2>
-<ul>
-<li>
-<p><a href="https://github.com/wechat-miniprogram/miniprogram-demo" target="_blank" rel="noopener noreferrer">小程序实例源码</a></p>
-<figure><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/demo.ef5c5bef.jpg" alt="小程序示例二维码" tabindex="0" loading="lazy"><figcaption>小程序示例二维码</figcaption></figure>
-</li>
-</ul>
-<h2>官方文档</h2>
-<ul>
-<li><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">QQ 小程序</a></li>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">微信小程序</a></li>
-<li><a href="https://developers.weixin.qq.com/community/develop/question" target="_blank" rel="noopener noreferrer">微信小程序社区</a>
-<ul>
-<li><a href="https://developers.weixin.qq.com/community/develop/list/2?id=" target="_blank" rel="noopener noreferrer">官方公告</a></li>
-</ul>
-</li>
-</ul>
-<h3>QQ 开发者工具</h3>
-<p>现在很多功能还处于缺失状态，bug 到没之前那么多了。</p>
-<ul>
-<li>
-<p><a href="https://q.qq.com/wiki/" target="_blank" rel="noopener noreferrer">查看详情</a></p>
-</li>
-<li>
-<p><a href="https://q.qq.com/wiki/tools/devtool/" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-</li>
-</ul>
-<h2>微信开发者工具</h2>
-<p>微信开发者工具用来开发与调试微信小程序和微信相关网页的官方工具。小程序使用该开发工具进行开发。</p>
-<ul>
-<li>
-<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-</li>
-<li>
-<p><a href="/code/mini-app/tools/" target="_blank">开发者工具教程</a></p>
-</li>
-<li>
-<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html" target="_blank" rel="noopener noreferrer">官方使用指南</a></p>
-</li>
-</ul>
-]]></content>
-    <category term="小程序"/>
-    <published>2019-11-25T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">小程序分享</title>
-    <id>https://blog.ruizhou.cf/code/mini-app/qr-code.html</id>
-    <link href="https://blog.ruizhou.cf/code/mini-app/qr-code.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>二维码生成</h2>
-<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
-<p>我们使用 Postman 软件进行二维码的获取。</p>
-<h3>调用凭据获取</h3>
-<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>]]></summary>
-    <content type="html"><![CDATA[<h2>二维码生成</h2>
-<p>目前小程序二维码生成选用的是<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">无限制生成二维码</a>。</p>
-<p>我们使用 Postman 软件进行二维码的获取。</p>
-<h3>调用凭据获取</h3>
-<p>获取任何二维码都需要先获取 <code>access_token</code>，这是小程序全局唯一后台接口调用凭据。<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html" target="_blank" rel="noopener noreferrer">文档地址</a></p>
-<p>请求方式为:</p>
-<div class="language-md" data-highlighter="shiki" data-ext="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-md"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=APPID&amp;secret=APPSECRET</span></span></code></pre>
-</div><p>更多详情可以见文档。<code>AppSecret</code> 由于权限很大不在此文档中直接放置。</p>
-<h3>无限制二维码生成</h3>
-<ul>
-<li><a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
-</ul>
-<p>在获取 <code>access_token</code> 之后就可以获取小程序二维码了。</p>
-<div class="language-md" data-highlighter="shiki" data-ext="md" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-md"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">POST https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=ACCESS_TOKEN</span></span></code></pre>
-</div><p>请注意，在 Postman 软件中，首先要注意使用 <code>post</code> 方法。Body 使用 <code>raw</code>，格式选择 <code>Text</code>，需要将 <code>pretty</code> 化的 JSON 输入即可正常获取二维码。获取完二维码之后，需要在 <code>response</code> 中点击返回图片右上角的 <code>save as</code>，保存为 <code>jpg</code> 格式的文件即可保存二维码。</p>
-<h2>小程序链接</h2>
-<ul>
-<li><a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Service_Center_messages.html" target="_blank" rel="noopener noreferrer">文档地址</a></li>
-</ul>
-<p>具体格式如下:</p>
-<div class="language-html" data-highlighter="shiki" data-ext="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-html"><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  href</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"不支持小程序时打开的网页"</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-appid</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序的appid"</span></span>
-<span class="line"><span style="--shiki-light:#986801;--shiki-dark:#D19A66">  data-miniprogram-path</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"小程序路径"</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &gt;文本内容&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
-</div>]]></content>
-    <category term="小程序"/>
-    <published>2020-10-09T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">后端开发</title>
-    <id>https://blog.ruizhou.cf/code/back-end/</id>
-    <link href="https://blog.ruizhou.cf/code/back-end/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>后端入门</h2>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年后端还是 Java 比较多</p>
-</div>
-<h3>PHP</h3>
-<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
-<p>PHP 手册:</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<h2>后端入门</h2>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年后端还是 Java 比较多</p>
-</div>
-<h3>PHP</h3>
-<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
-<p>PHP 手册:</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<p>如果服务器访问数量不大的情况下，PHP 作为一种门槛低，开发方便的脚本语言，还是挺受到欢迎的。</p>
-<h3>ASP</h3>
-<p>ASP 文件可包含文本、HTML 标签和脚本。ASP 文件中的脚本可在服务器上执行。由于 ASP 在服务器上运行，浏览器无需支持客户端脚本就可以显示 ASP 文件!</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/asp/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/asp/asp-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>更多详情有待日后补充</p>
-</div>
-]]></content>
-    <category term="后端"/>
-    <published>2019-09-10T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">React</title>
-    <id>https://blog.ruizhou.cf/code/react/</id>
-    <link href="https://blog.ruizhou.cf/code/react/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div>]]></summary>
-    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div><p>创建 TS 模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
-</div><h2>React 文档</h2>
-<ul>
-<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-08T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">Node.js</title>
     <id>https://blog.ruizhou.cf/code/node-js/</id>
     <link href="https://blog.ruizhou.cf/code/node-js/"/>
@@ -5298,5 +5273,30 @@
 ]]></content>
     <category term="Node.js"/>
     <published>2020-12-27T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">React</title>
+    <id>https://blog.ruizhou.cf/code/react/</id>
+    <link href="https://blog.ruizhou.cf/code/react/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div>]]></summary>
+    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div><p>创建 TS 模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
+</div><h2>React 文档</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
+]]></content>
+    <category term="前端"/>
+    <published>2020-05-08T00:00:00.000Z</published>
   </entry>
 </feed>

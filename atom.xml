@@ -5,10 +5,11 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2025-12-03T03:05:50.400Z</updated>
+  <updated>2025-12-22T02:23:35.241Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
+  <category term="logi"/>
   <category term="SSH"/>
   <category term="js"/>
   <category term="ts"/>
@@ -38,6 +39,30 @@
   <contributor>
     <name>陈慧玲</name>
   </contributor>
+  <entry>
+    <title type="text">logi options+ 安装问题</title>
+    <id>https://blog.ruizhou.cf/tech/logi/</id>
+    <link href="https://blog.ruizhou.cf/tech/logi/"/>
+    <updated>2025-12-22T02:19:51.000Z</updated>
+    <summary type="html"><![CDATA[<h2>软件问题</h2>
+<h3>A JavaScript error occurred in the main process</h3>
+<p>解决方法</p>
+<p>默认是 drwxr-xr-x，需要都添加rw权限</p>
+<div class="language-" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>sudo chmod 777 "/Users/zhou/Library/Application Support/LogiOptionsPlus"</span></span></code></pre>
+</div>]]></summary>
+    <content type="html"><![CDATA[<h2>软件问题</h2>
+<h3>A JavaScript error occurred in the main process</h3>
+<p>解决方法</p>
+<p>默认是 drwxr-xr-x，需要都添加rw权限</p>
+<div class="language-" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>sudo chmod 777 "/Users/zhou/Library/Application Support/LogiOptionsPlus"</span></span></code></pre>
+</div><h3>Backend connection problem - click here to launch backend</h3>
+<p>解决方案</p>
+<p>以下三个必须都要登入自启动，mac自带的登入启动配置只能选择一个</p>
+<figure><figcaption>Logi-Error</figcaption></figure>
+]]></content>
+    <category term="logi"/>
+    <published>2023-05-25T07:10:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">mac ssh key 记忆配置</title>
     <id>https://blog.ruizhou.cf/tech/mac/ssh_config.html</id>
@@ -5273,30 +5298,5 @@
 ]]></content>
     <category term="Node.js"/>
     <published>2020-12-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">React</title>
-    <id>https://blog.ruizhou.cf/code/react/</id>
-    <link href="https://blog.ruizhou.cf/code/react/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div>]]></summary>
-    <content type="html"><![CDATA[<h2>创建 React 项目</h2>
-<p>使用 <code>create-react-app</code> 工具。</p>
-<p>创建普通模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
-</div><p>创建 TS 模板:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
-</div><h2>React 文档</h2>
-<ul>
-<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2020-05-08T00:00:00.000Z</published>
   </entry>
 </feed>

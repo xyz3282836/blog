@@ -7,6 +7,19 @@
   "favicon": "https://blog.ruizhou.cf/favicon.ico",
   "items": [
     {
+      "title": "logi options+ 安装问题",
+      "url": "https://blog.ruizhou.cf/tech/logi/",
+      "id": "https://blog.ruizhou.cf/tech/logi/",
+      "summary": "软件问题 A JavaScript error occurred in the main process 解决方法 默认是 drwxr-xr-x，需要都添加rw权限 Backend connection problem - click here to launch backend 解决方案 以下三个必须都要登入自启动，mac自带的登入启动配置只能选择一...",
+      "content_html": "<h2>软件问题</h2>\n<h3>A JavaScript error occurred in the main process</h3>\n<p>解决方法</p>\n<p>默认是 drwxr-xr-x，需要都添加rw权限</p>\n<div class=\"language-\" data-highlighter=\"shiki\" data-ext=\"\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-\"><span class=\"line\"><span>sudo chmod 777 \"/Users/zhou/Library/Application Support/LogiOptionsPlus\"</span></span></code></pre>\n</div><h3>Backend connection problem - click here to launch backend</h3>\n<p>解决方案</p>\n<p>以下三个必须都要登入自启动，mac自带的登入启动配置只能选择一个</p>\n<figure><figcaption>Logi-Error</figcaption></figure>\n",
+      "date_published": "2023-05-25T07:10:00.000Z",
+      "date_modified": "2025-12-22T02:19:51.000Z",
+      "authors": [],
+      "tags": [
+        "logi"
+      ]
+    },
+    {
       "title": "mac ssh key 记忆配置",
       "url": "https://blog.ruizhou.cf/tech/mac/ssh_config.html",
       "id": "https://blog.ruizhou.cf/tech/mac/ssh_config.html",
@@ -1294,19 +1307,6 @@
       "authors": [],
       "tags": [
         "Node.js"
-      ]
-    },
-    {
-      "title": "React",
-      "url": "https://blog.ruizhou.cf/code/react/",
-      "id": "https://blog.ruizhou.cf/code/react/",
-      "summary": "创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档",
-      "content_html": "<h2>创建 React 项目</h2>\n<p>使用 <code>create-react-app</code> 工具。</p>\n<p>创建普通模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span></span></code></pre>\n</div><p>创建 TS 模板:</p>\n<div class=\"language-bash\" data-highlighter=\"shiki\" data-ext=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code class=\"language-bash\"><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">npx</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> create-react-app</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> xxx</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> --template</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> typescript</span></span></code></pre>\n</div><h2>React 文档</h2>\n<ul>\n<li><a href=\"https://reactjs.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></li>\n<li><a href=\"https://react.docschina.org/docs/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\">中文文档</a></li>\n</ul>\n",
-      "date_published": "2020-05-08T00:00:00.000Z",
-      "date_modified": "2024-01-19T19:40:22.000Z",
-      "authors": [],
-      "tags": [
-        "前端"
       ]
     }
   ]

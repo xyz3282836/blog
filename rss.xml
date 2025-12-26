@@ -6,8 +6,8 @@
     <link>https://blog.ruizhou.cf/</link>
     <description>blog for it tech</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 22 Dec 2025 02:23:35 GMT</pubDate>
-    <lastBuildDate>Mon, 22 Dec 2025 02:23:35 GMT</lastBuildDate>
+    <pubDate>Fri, 26 Dec 2025 07:37:04 GMT</pubDate>
+    <lastBuildDate>Fri, 26 Dec 2025 07:37:04 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT 协议</copyright>
@@ -33,7 +33,6 @@
     <category>基础</category>
     <category>Android</category>
     <category>前端</category>
-    <category>后端</category>
     <category>GitHub</category>
     <category>教程</category>
     <category>小程序</category>
@@ -2301,10 +2300,6 @@
 <ul>
 <li><a href="/code/android/" target="_blank">Android 开发</a></li>
 </ul>
-<h3>后端开发</h3>
-<ul>
-<li><a href="/code/back-end/" target="_blank">后端开发</a></li>
-</ul>
 <h3>代码学习网站</h3>
 <h3>优质网站</h3>
 <ul>
@@ -2666,47 +2661,6 @@
 <li><a href="https://angular.io/docs" target="_blank" rel="noopener noreferrer">官方文档</a></li>
 <li><a href="https://angular.cn/docs" target="_blank" rel="noopener noreferrer">中文文档</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>后端开发</title>
-      <link>https://blog.ruizhou.cf/code/back-end/</link>
-      <guid>https://blog.ruizhou.cf/code/back-end/</guid>
-      <source url="https://blog.ruizhou.cf/rss.xml">后端开发</source>
-      <description>后端入门 注意 2023 年后端还是 Java 比较多 PHP PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。 PHP 手册: W3School 教程 菜鸟教程 如果服务器访问数量不大的情况下，PHP 作为一种门...</description>
-      <category>后端</category>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>后端入门</h2>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>2023 年后端还是 Java 比较多</p>
-</div>
-<h3>PHP</h3>
-<p>PHP 是一种创建动态交互性站点的强有力的服务器端脚本语言，免费，并且使用非常广泛。PHP (全称 Hypertext Preprocessor，即超文本预处理器)是一种通用开源脚本语言。</p>
-<p>PHP 手册:</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/php/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/php/php-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<p>如果服务器访问数量不大的情况下，PHP 作为一种门槛低，开发方便的脚本语言，还是挺受到欢迎的。</p>
-<h3>ASP</h3>
-<p>ASP 文件可包含文本、HTML 标签和脚本。ASP 文件中的脚本可在服务器上执行。由于 ASP 在服务器上运行，浏览器无需支持客户端脚本就可以显示 ASP 文件!</p>
-<ul>
-<li>
-<p><a href="http://www.w3school.com.cn/asp/index.asp" target="_blank" rel="noopener noreferrer">W3School 教程</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/asp/asp-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>更多详情有待日后补充</p>
-</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -4190,49 +4144,22 @@
 <ul>
 <li><a href="https://nodejs.org/dist/latest-v14.x/docs/api/" target="_blank" rel="noopener noreferrer">地址</a></li>
 </ul>
-<h2>Yarn</h2>
-<p>快速、可靠、安全的依赖管理工具。</p>
-<ul>
-<li>
-<p>Yarn 缓存了每个下载过的包，所以再次使用时无需重复下载。同时利用并行下载以最大化资源利用率，因此安装速度更快。</p>
-</li>
-<li>
-<p>在执行代码之前，Yarn 会通过算法校验每个安装包的完整性。</p>
-</li>
-<li>
-<p>使用详细、简洁的锁文件格式和明确的安装算法，Yarn 能够保证在不同系统上无差异的工作。</p>
-</li>
-<li>
-<p><a href="https://www.yarnpkg.com/zh-Hans/docs/install#windows-stable" target="_blank" rel="noopener noreferrer">下载地址</a></p>
-</li>
-<li>
-<p><a href="https://www.yarnpkg.com/zh-Hans/docs" target="_blank" rel="noopener noreferrer">官方文档</a></p>
-</li>
-</ul>
-<h3>命令</h3>
-<ul>
-<li>
-<p><code>yarn install</code>: 执行安装</p>
-</li>
-<li>
-<p><code>yarn upgrade</code>: 执行升级</p>
-</li>
-<li>
-<p><code>yarn add &lt;package&gt;</code>: 添加一个包</p>
-</li>
-<li>
-<p><code>yarn config set cache-folder &lt;path&gt;</code>: 更改缓存文件夹</p>
-</li>
-<li>
-<p><code>yarn config set registry &lt;registry&gt;</code>: 更改源</p>
-<div class="hint-container tip">
+<h2>包管理器</h2>
+<p>自从 Node.js 18 以来，Node.js 自带了 Corepack 来处理项目使用何种包管理器，目前支持 <code>npm</code>, <code>yarn</code> 和 <code>pnpm</code>。它是默认禁用的，可以通过以下命令启用：</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> enable</span></span></code></pre>
+</div><p>如果希望在全局范围内使用某个包管理器，可以使用以下命令：</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 可以使用 npm, yarn, pnpm，并指定各种版本</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> prepare</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pnpm@latest</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --activate</span></span></code></pre>
+</div><p>如果想为某个项目指定包管理器，可以使用以下命令：</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 可以使用 npm, yarn, pnpm，并指定各种版本</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> use</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pnpm@latest</span></span></code></pre>
+</div><div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<p>在国内，建议换成淘宝源 <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener noreferrer">https://registry.npm.taobao.org</a></p>
-<p>即执行</p>
-<div class="language-sh" data-highlighter="shiki" data-ext="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-sh"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">yarn</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> registry</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://registry.npm.taobao.org</span></span></code></pre>
-</div></div>
-</li>
-</ul>
+<p>在国内，如果你不能为 npm 配置代理，建议换成 npmmirror。 <a href="https://registry.npmmirror.com" target="_blank" rel="noopener noreferrer">https://registry.npmmirror.com</a></p>
+<p>在项目的 <code>.npmrc</code> 文件中添加:</p>
+<div class="language-" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>registry=https://registry.npmmirror.com</span></span></code></pre>
+</div><p>同时，你也设置环境变量 <code>NPM_CONFIG_REGISTRY</code> 为 <code>https://registry.npmmirror.com</code>。</p>
+</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -4449,10 +4376,10 @@
       <link>https://blog.ruizhou.cf/code/node-js/environment.html</link>
       <guid>https://blog.ruizhou.cf/code/node-js/environment.html</guid>
       <source url="https://blog.ruizhou.cf/rss.xml">搭建 Node 开发环境</source>
-      <description>由于 Node.js 需要编码、运行、调试，我们需要一个 IDE 集成开发环境，这样就可以大大提升开发效率。综合考察后，Mr.Hope 隆重向大家推荐 Node.js 集成开发环境: Visual Studio Code。它启动速度快，执行简单，调试方便这三点上。当然，免费使用是一个加分项。</description>
+      <description>由于 Node.js 需要编码、运行、调试，我们需要一个 IDE 集成开发环境，这样就可以大大提升开发效率。我个人推荐 Visual Studio Code。它启动速度快，执行简单，调试方便这三点上。当然，免费使用是一个加分项。</description>
       <category>Node.js</category>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>由于 Node.js 需要编码、运行、调试，我们需要一个 IDE 集成开发环境，这样就可以大大提升开发效率。综合考察后，Mr.Hope 隆重向大家推荐 Node.js 集成开发环境: <strong>Visual Studio Code</strong>。它启动速度快，执行简单，调试方便这三点上。当然，免费使用是一个加分项。</p>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>由于 Node.js 需要编码、运行、调试，我们需要一个 IDE 集成开发环境，这样就可以大大提升开发效率。我个人推荐 <strong>Visual Studio Code</strong>。它启动速度快，执行简单，调试方便这三点上。当然，免费使用是一个加分项。</p>
 <!-- more -->
 <div class="hint-container info">
 <p class="hint-container-title">相关信息</p>
@@ -4494,10 +4421,6 @@
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  ]</span></span>
 <span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>有了配置文件，即可使用 VS Code 调试 JavaScript。</p>
-<h2>视频演示</h2>
-<ul>
-<li><a href="https://www.bilibili.com/video/av5827351/" target="_blank" rel="noopener noreferrer">视频演示</a></li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -4505,13 +4428,11 @@
       <link>https://blog.ruizhou.cf/code/node-js/install.html</link>
       <guid>https://blog.ruizhou.cf/code/node-js/install.html</guid>
       <source url="https://blog.ruizhou.cf/rss.xml">安装 Node.js</source>
-      <description>由于 Node.js 平台是在后端运行 JavaScript 代码，所以，必须首先在本机安装 Node.js 环境。</description>
+      <description>安装 Node.js 目前 Node.js 的 LTS 版本是 22.15.1。首先，从 Node.js 官网下载对应平台的安装程序。点击下载 Node.js (LTS) 按钮。 Node.js 官网 安装过程 在 Windows 上安装时务必选择全部组件，包括勾选 Add to Path。 在安装过程中，无需勾选 &amp;quot;Automatically ins...</description>
       <category>Node.js</category>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>由于 Node.js 平台是在后端运行 JavaScript 代码，所以，必须首先在本机安装 Node.js 环境。</p>
-<!-- more -->
-<h2>安装 Node.js</h2>
-<p>目前 Node.js 的 LTS 版本是 18.15.0。首先，从 Node.js 官网下载对应平台的安装程序。点击<strong>长期维护版</strong>的下载按钮。</p>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>安装 Node.js</h2>
+<p>目前 Node.js 的 LTS 版本是 22.15.1。首先，从 Node.js 官网下载对应平台的安装程序。点击<strong>下载 Node.js (LTS)</strong> 按钮。</p>
 <ul>
 <li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener noreferrer">Node.js 官网</a></li>
 </ul>
@@ -4521,15 +4442,15 @@
 <p>在 Windows 上安装时务必选择全部组件，包括勾选 <code>Add to Path</code>。</p>
 <p>在安装过程中，无需勾选 "Automatically install the necessary tools"。选中此项会在电脑中安装 VS 等日常开发使用不到的软件。</p>
 <p>安装完成后，在 Windows 环境下，请打开命令提示符，然后输入 <code>node -v</code> ，如果安装正常，您应该看到 <code>v18.15.0</code> 这样的输出:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">C:\Users\IEUser</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">v18.15.0</span></span></code></pre>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">C:\Users\Mister-Hope</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">node</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">v22.15.1</span></span></code></pre>
 </div><p>继续在命令提示符输入 node，此刻您将进入 Node.js 的交互环境。在交互环境下，您可以输入任意 JavaScript 语句，例如 <code>100 + 200</code>，回车后将得到输出结果。</p>
 <p>要退出 Node.js 环境，连按两次 <code>Ctrl + C</code> 。</p>
 </li>
 <li>
 <p>在 Mac 或 Linux 环境下，请打开终端，然后输入 <code>node -v</code>，您应该看到如下输出:</p>
 <div class="language-sh" data-highlighter="shiki" data-ext="sh" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-sh"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">$</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> node</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">v18.15.0</span></span></code></pre>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">v22.15.1</span></span></code></pre>
 </div></li>
 </ul>
 <h2>npm</h2>
@@ -4539,7 +4460,7 @@
 <p>讲了这么多，npm 究竟在哪?</p>
 <p>其实 npm 已经在 Node.js 安装的时候顺带装好了。我们在命令提示符或者终端输入 <code>npm -v</code>，应该看到类似的输出:</p>
 <div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">C:\</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">npm</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">9.6.0</span></span></code></pre>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">11.4.0</span></span></code></pre>
 </div><blockquote>
 <p>如果版本号太小，说明 npm 版本较低，请使用此命令升级到最新版本: <code>npm i -g npm</code>。</p>
 </blockquote>
@@ -4570,16 +4491,16 @@
 </div>
 <h2>启用 Corepack</h2>
 <p>Node.js 自带的包管理工具 npm 并不是那么的强大，其安装速度也很慢，所以社区开发了一些其他的包管理工具如 <code>yarn</code> 和 <code>pnpm</code>，它们有自己的优势。</p>
-<p>Mr.Hope 推荐使用 pnpm 进行包管理，因为它使用硬链接索引包文件，安装速度更快而且节省磁盘空间。</p>
+<p>我推荐使用 pnpm 进行包管理，因为它使用硬链接索引包文件，安装速度更快而且节省磁盘空间。</p>
 <p>从 v16 开始，Node.js 引入了 Corepack 工具，并在 package.json 支持了 <code>packageManager</code> 选项以支持第三方管理工具。</p>
 <p>你需要通过下方命令启用 Corepack:</p>
 <div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> enable</span></span></code></pre>
 </div><p>这样每个项目会自动应用根目录 package.json 中的 <code>packageManager</code> 选项。比如设置 <code>"packageManager": "pnpm@7.30.3"</code> 的时候，会自动下载并使用 <code>pnpm@7.30.3</code>。</p>
 <div class="hint-container info">
 <p class="hint-container-title">设置全局的 packageManager</p>
-<p>你可以使用 <code>corepack prepare packageManager@semver</code> 来全局准备一个 packageManager 版本，并使用 <code>--activate</code> 选新娘 全局激活。</p>
-<p>比如以下命令下载 <code>pnpm@7.30.3</code> 并将其作为默认的全局包管理器:</p>
-<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> prepare</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pnpm@7.30.3</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --activate</span></span></code></pre>
+<p>你可以使用 <code>corepack prepare packageManager@semver</code> 来全局准备一个 packageManager 版本，并使用 <code>--activate</code> 进行全局激活。</p>
+<p>比如以下命令会下载最新的 <code>pnpm</code> 并将其作为默认的全局包管理器:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">corepack</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> prepare</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pnpm@latest</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --activate</span></span></code></pre>
 </div></div>
 <h2>小结</h2>
 <p>请在本机安装 Node.js 环境，并确保 Node.js 和 npm 能正常运行。</p>
@@ -4590,44 +4511,19 @@
       <link>https://blog.ruizhou.cf/code/node-js/intro.html</link>
       <guid>https://blog.ruizhou.cf/code/node-js/intro.html</guid>
       <source url="https://blog.ruizhou.cf/rss.xml">Node.js</source>
-      <description>从本章开始，我们就正式开启 JavaScript 的后端开发之旅。 Node.js 是目前非常火热的技术，但是它的诞生经历却很奇特。</description>
+      <description>Node.js 相关链接 Node.js 官网 Node.js 介绍 Node.js 最新 API 文档</description>
       <category>Node.js</category>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>从本章开始，我们就正式开启 JavaScript 的后端开发之旅。</p>
-<p>Node.js 是目前非常火热的技术，但是它的诞生经历却很奇特。</p>
-<!-- more -->
-<p>众所周知，在 Netscape 设计出 JavaScript 后的短短几个月，JavaScript 事实上已经是前端开发的唯一标准。</p>
-<p>后来，微软通过 IE 击败了 Netscape 后一统桌面，结果几年时间，浏览器毫无进步。(2001 年推出的古老的 IE 6 到今天仍然有人在使用! )</p>
-<p>没有竞争就没有发展。微软认为 IE6 浏览器已经非常完善，几乎没有可改进之处，然后解散了 IE6 开发团队! 而 Google 却认为支持现代 Web 应用的新一代浏览器才刚刚起步，尤其是浏览器负责运行 JavaScript 的引擎性能还可提升 10 倍。</p>
-<p>先是 Mozilla 借助已壮烈牺牲的 Netscape 遗产在 2002 年推出了 Firefox 浏览器，紧接着 Apple 于 2003 年在开源的 KHTML 浏览器的基础上推出了 WebKit 内核的 Safari 浏览器，不过仅限于 Mac 平台。</p>
-<p>随后，Google 也开始创建自家的浏览器。他们也看中了 WebKit 内核，于是基于 WebKit 内核推出了 Chrome 浏览器。</p>
-<p>Chrome 浏览器是跨 Windows 和 Mac 平台的，并且，Google 认为要运行现代 Web 应用，浏览器必须有一个性能非常强劲的 JavaScript 引擎，于是 Google 自己开发了一个高性能 JavaScript 引擎，名字叫 V8，以 BSD 许可证开源。</p>
-<p>现代浏览器大战让微软的 IE 浏览器远远地落后了，因为他们解散了最有经验、战斗力最强的浏览器团队! 回过头再追赶却发现，支持 HTML5 的 WebKit 已经成为手机端的标准了，IE 浏览器从此与主流移动端设备绝缘。</p>
-<h2>浏览器大战和 Node.js 的关系</h2>
-<p>话说有个叫 Ryan Dahl 的歪果仁，他的工作是用 C/C++写高性能 Web 服务。对于高性能，异步 IO、事件驱动是基本原则，但是用 C/C++写就太痛苦了。于是这位仁兄开始设想用高级语言开发 Web 服务。他评估了很多种高级语言，发现很多语言虽然同时提供了同步 IO 和异步 IO，但是开发人员一旦用了同步 IO，他们就再也懒得写异步 IO 了，所以，最终，Ryan 瞄向了 JavaScript。</p>
-<p>因为 JavaScript 是单线程执行，根本不能进行同步 IO 操作，所以，JavaScript 的这一“缺陷”导致了它只能使用异步 IO。</p>
-<p>选定了开发语言，还要有运行时引擎。这位仁兄曾考虑过自己写一个，不过明智地放弃了，因为 V8 就是开源的 JavaScript 引擎。让 Google 投资去优化 V8，咱只负责改造一下拿来用，还不用付钱，这个买卖很划算。</p>
-<p>于是在 2009 年，Ryan 正式推出了基于 JavaScript 语言和 V8 引擎的开源 Web 服务器项目，命名为 Node.js。虽然名字很土，但是，Node.js 第一次把 JavaScript 带入到后端服务器开发，加上世界上已经有无数的 JavaScript 开发人员，所以 Node.js 一下子就火了起来。</p>
-<h2>在 Node.js 上运行的 JavaScript 相比其他后端开发语言的优势</h2>
-<p>最大的优势是借助 JavaScript 天生的事件驱动机制加 V8 高性能引擎，使编写高性能 Web 服务轻而易举。</p>
-<p>其次，JavaScript 语言本身是完善的函数式语言，在前端开发时，开发人员往往写得比较随意，让人感觉 JavaScript 就是个“玩具语言”。但是，在 Node.js 环境下，通过模块化的 JavaScript 代码，加上函数式编程，并且无需考虑浏览器兼容性问题，直接使用最新的 ECMAScript 6 标准，可以完全满足工程上的需求。</p>
-<blockquote>
-<p>我还听说过 io.js，这又是什么鬼?</p>
-</blockquote>
-<p>因为 Node.js 是开源项目，虽然由社区推动，但幕后一直由 Joyent 公司资助。由于一群开发者对 Joyent 公司的策略不满，于 2014 年从 Node.js 项目 fork 出了 io.js 项目，决定单独发展，但两者实际上是兼容的。</p>
-<p>然而中国有句古话，叫做“分久必合，合久必分”。分家后没多久，Joyent 公司表示要和解，于是，io.js 项目又决定回归 Node.js。</p>
-<p>具体做法是将来 io.js 将首先添加新的特性，如果大家测试用得爽，就把新特性加入 Node.js。Io.js 是“尝鲜版”，而 Node.js 是线上稳定版，相当于 Fedora Linux 和 RHEL 的关系。</p>
-<p>本章教程的所有代码都在 Node.js 上调试通过。如果您要尝试 io.js 也是可以的，不过两者如果遇到一些区别请自行查看 io.js 的文档。</p>
-<h2>Node.js 相关链接</h2>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>Node.js 相关链接</h2>
 <ul>
 <li>
 <p><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener noreferrer">Node.js 官网</a></p>
 </li>
 <li>
-<p><a href="https://nodejs.org/zh-cn/docs/" target="_blank" rel="noopener noreferrer">Node.js 最新文档</a></p>
+<p><a href="https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs" target="_blank" rel="noopener noreferrer">Node.js 介绍</a></p>
 </li>
 <li>
-<p><a href="https://nodejs.org/dist/latest-v16.x/docs/api/" target="_blank" rel="noopener noreferrer">Node.js 最新 API 文档</a></p>
+<p><a href="https://nodejs.org/dist/latest/docs/api/" target="_blank" rel="noopener noreferrer">Node.js 最新 API 文档</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -4639,7 +4535,7 @@
       <source url="https://blog.ruizhou.cf/rss.xml">第一个 Node 程序</source>
       <description>在前面的所有章节中，我们编写的 JavaScript 代码都是在浏览器中运行的，因此，我们可以直接在浏览器中敲代码，然后直接运行。 从本章开始，我们编写的 JavaScript 代码将不能在浏览器环境中执行了，而是在 Node.js 环境中执行，因此，JavaScript 代码将直接在您的计算机上以命令行的方式运行，所以，我们要先选择一个文本编辑器来编...</description>
       <category>Node.js</category>
-      <pubDate>Sun, 27 Dec 2020 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>在前面的所有章节中，我们编写的 JavaScript 代码都是在浏览器中运行的，因此，我们可以直接在浏览器中敲代码，然后直接运行。</p>
 <p>从本章开始，我们编写的 JavaScript 代码将不能在浏览器环境中执行了，而是在 Node.js 环境中执行，因此，JavaScript 代码将直接在您的计算机上以命令行的方式运行，所以，我们要先选择一个文本编辑器来编写 JavaScript 代码，并且把它保存到本地硬盘的某个目录，才能够执行。</p>
 <!-- more -->
@@ -4707,6 +4603,27 @@
 <p>直接输入 Node.js 进入交互模式，相当于启动了 Node.js 解释器，但是等待您一行一行地输入源代码，每输入一行就执行一行。</p>
 <p>直接运行 <code>node hello.js</code> 文件相当于启动了 Node.js 解释器，然后一次性把 <code>hello.js</code> 文件的源代码给执行了，您是没有机会以交互的方式输入源代码的。</p>
 <p>在编写 JavaScript 代码的时候，完全可以一边在文本编辑器里写代码，一边开一个 Node.js 交互式命令窗口，在写代码的过程中，把部分代码粘到命令行去验证，事半功倍! 前提是得有个 27 寸的超大显示器!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>React</title>
+      <link>https://blog.ruizhou.cf/code/react/</link>
+      <guid>https://blog.ruizhou.cf/code/react/</guid>
+      <source url="https://blog.ruizhou.cf/rss.xml">React</source>
+      <description>创建 React 项目 使用 create-react-app 工具。 创建普通模板: 创建 TS 模板: React 文档 官方文档 中文文档</description>
+      <category>前端</category>
+      <pubDate>Fri, 08 May 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>创建 React 项目</h2>
+<p>使用 <code>create-react-app</code> 工具。</p>
+<p>创建普通模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span></span></code></pre>
+</div><p>创建 TS 模板:</p>
+<div class="language-bash" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npx</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> create-react-app</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> xxx</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> --template</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> typescript</span></span></code></pre>
+</div><h2>React 文档</h2>
+<ul>
+<li><a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">官方文档</a></li>
+<li><a href="https://react.docschina.org/docs/getting-started.html" target="_blank" rel="noopener noreferrer">中文文档</a></li>
+</ul>
 ]]></content:encoded>
     </item>
   </channel>

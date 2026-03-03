@@ -5,16 +5,16 @@
   <subtitle>blog for it tech</subtitle>
   <icon>https://blog.ruizhou.cf/favicon.ico</icon>
   <rights>MIT 协议</rights>
-  <updated>2026-01-08T11:11:47.468Z</updated>
+  <updated>2026-03-03T02:01:14.634Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://blog.ruizhou.cf/atom.xml"/>
   <link rel="alternate" href="https://blog.ruizhou.cf/"/>
+  <category term="ai"/>
   <category term="logi"/>
   <category term="SSH"/>
   <category term="js"/>
   <category term="ts"/>
   <category term="技术"/>
-  <category term="ai"/>
   <category term="go"/>
   <category term="docker"/>
   <category term="发布会"/>
@@ -30,13 +30,35 @@
   <category term="Android"/>
   <category term="前端"/>
   <category term="GitHub"/>
-  <category term="小程序"/>
   <category term="教程"/>
+  <category term="小程序"/>
   <category term="Node.js"/>
   <category term="Vue"/>
   <contributor>
     <name>陈慧玲</name>
   </contributor>
+  <entry>
+    <title type="text">OpenClaw</title>
+    <id>https://blog.ruizhou.cf/ai/openclaw.html</id>
+    <link href="https://blog.ruizhou.cf/ai/openclaw.html"/>
+    <updated>2026-03-03T01:58:00.000Z</updated>
+    <summary type="html"><![CDATA[
+<blockquote>
+<p>你不需要会写代码，也能拥有一个 24 小时在线、随叫随到的 AI 助手。</p>
+</blockquote>
+<hr>
+<h2>一、OpenClaw 是什么？</h2>
+<p>想象一下：你在微信、飞书、Telegram 或 WhatsApp 里发一条消息，背后有一个聪明的 AI 助手立刻响应你——帮你查资料、整理文档、管理日程、控制智能家居，甚至帮你写代码。</p>
+<p><strong>这就是 OpenClaw。</strong></p>
+<p>简单来说，OpenClaw 是一个<strong>开源的 AI 助手网关</strong>。它像一座桥梁，把你日常使用的聊天工具（WhatsApp、Telegram、Discord、飞书、iMessage 等）和强大的 AI 大模型（如 Claude、GPT 等）连接在一起。</p>]]></summary>
+    <content type="html"><![CDATA[
+<blockquote>
+<p>你不需要会写代码，也能拥有一个 24 小时在线、随叫随到的 AI 助手。</p>
+</blockquote>
+]]></content>
+    <category term="ai"/>
+    <published>2026-03-03T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">logi options+ 安装问题</title>
     <id>https://blog.ruizhou.cf/tech/logi/</id>
@@ -4122,6 +4144,220 @@
     <published>2021-01-18T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="text">代码学习教程</title>
+    <id>https://blog.ruizhou.cf/code/language/</id>
+    <link href="https://blog.ruizhou.cf/code/language/"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[<ul>
+<li><a href="/code/language/learning.html" target="_blank">如何学习一门语言</a></li>
+</ul>
+<h2>教程目录</h2>
+<ul>
+<li>
+<p><a href="/code/language/js/" target="_blank">JavaScript 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/typescript/" target="_blank">TypeScript 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/python/" target="_blank">Python 教程</a> (编写中...)</p>
+</li>
+<li>
+<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">Java 教程</a>(廖雪峰的博客)</p>
+</li>
+<li>
+<p><a href="/code/language/markdown/" target="_blank">Markdown 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/yaml/" target="_blank">YAML 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/json/" target="_blank">JSON 教程</a></p>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<ul>
+<li><a href="/code/language/learning.html" target="_blank">如何学习一门语言</a></li>
+</ul>
+<h2>教程目录</h2>
+<ul>
+<li>
+<p><a href="/code/language/js/" target="_blank">JavaScript 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/typescript/" target="_blank">TypeScript 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/python/" target="_blank">Python 教程</a> (编写中...)</p>
+</li>
+<li>
+<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">Java 教程</a>(廖雪峰的博客)</p>
+</li>
+<li>
+<p><a href="/code/language/markdown/" target="_blank">Markdown 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/yaml/" target="_blank">YAML 教程</a></p>
+</li>
+<li>
+<p><a href="/code/language/json/" target="_blank">JSON 教程</a></p>
+</li>
+</ul>
+<h2>Linter</h2>
+<ul>
+<li><a href="/code/language/linter/" target="_blank">Linter 介绍</a></li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>C 、C++、Java、PHP 正在编写中...</p>
+</div>
+]]></content>
+    <category term="教程"/>
+    <published>2022-01-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">如何学习一门计算机语言</title>
+    <id>https://blog.ruizhou.cf/code/language/learning.html</id>
+    <link href="https://blog.ruizhou.cf/code/language/learning.html"/>
+    <updated>2024-01-19T19:40:22.000Z</updated>
+    <summary type="html"><![CDATA[
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>学习一门语言的基本顺序是:</p>
+<ul>
+<li>了解数据结构</li>
+<li>了解变量声明与赋值</li>
+<li>了解判断和循环体结构</li>
+<li>了解函数声明</li>
+<li>了解输入输出</li>
+</ul>
+<p>本部分将以 JS 作为示例，展示什么是一门计算机语言，应该如何学习它们。</p>
+</div>
+<h2>基础</h2>
+<p>首先，任何语言都是由一些基本结构组成的，下面介绍几乎所有语言共有的一些概念:</p>]]></summary>
+    <content type="html"><![CDATA[
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>学习一门语言的基本顺序是:</p>
+<ul>
+<li>了解数据结构</li>
+<li>了解变量声明与赋值</li>
+<li>了解判断和循环体结构</li>
+<li>了解函数声明</li>
+<li>了解输入输出</li>
+</ul>
+<p>本部分将以 JS 作为示例，展示什么是一门计算机语言，应该如何学习它们。</p>
+</div>
+<h2>基础</h2>
+<p>首先，任何语言都是由一些基本结构组成的，下面介绍几乎所有语言共有的一些概念:</p>
+<h3>语句</h3>
+<p>语句可以简单理解为一个操作，它可以是赋值，也可以是执行，还可以是介于或者是可以归类到两者上的判断、声明、标记等。</p>
+<p>请注意一条语句通常是一个计算机语言描述的最小操作。</p>
+<p>比如:</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> a</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 赋值</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Hello word"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 调用函数 执行操作</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &gt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 判断</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+</div><h3>代码块</h3>
+<p>通常情况下，在有了语句概念后，我们就要使用不同的语句顺序，完成不同的操作，但是某些操作总是固定的。</p>
+<p>比如回家，总是 “掏出钥匙”-“插入钥匙”-“转动钥匙”-“开启房门”-“拔出钥匙”-“进入”-“关闭房门” 。</p>
+<p>这些步骤每一步都可以理解为一个语句，但是由于其顺序基本是固定的，我们就可以设计一个代码块，来约束它们。</p>
+<div class="language-text" data-highlighter="shiki" data-ext="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-text"><span class="line"><span>{</span></span>
+<span class="line"><span>  “掏出钥匙”;</span></span>
+<span class="line"><span>  “插入钥匙”;</span></span>
+<span class="line"><span>  “转动钥匙”;</span></span>
+<span class="line"><span>  “开启房门”;</span></span>
+<span class="line"><span>  “拔出钥匙”;</span></span>
+<span class="line"><span>  “进入”;</span></span>
+<span class="line"><span>  “关闭房门”;</span></span>
+<span class="line"><span>}</span></span></code></pre>
+</div><p>大多数语言会使用 <code>{ }</code> 的形式，少数语言会使用统一的缩进进行表达。</p>
+<h2>数据结构</h2>
+<p>计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。</p>
+<p>任何语言都是操作、计算(处理)、生成数据的。数据结构是一门语言存放数据的方式。不同的数据，需要定义不同的数据类型。了解了数据结构就了解了一门语言可以存储或处理何种数据。</p>
+<p>大多数语言都包含了以下的一种或多种内容:</p>
+<ul>
+<li>
+<p>数字:</p>
+<p>不同语言对数字有不同的处理方式，少数语言可能只有数字这一种类型，一些语言可能会拆分成整数与浮点数。一些底层语言(涉及到内存)可能会魔鬼的将数字拆分为: 整型、浮点数、无符号整型、长整型、无符号长整形、长浮点数。(说的就是您，C 语言)</p>
+</li>
+<li>
+<p>字符串:</p>
+<p>一些语言只有字符串这个概念，一些语言分为字符和字符串这个概念。</p>
+</li>
+<li>
+<p>布尔值:</p>
+<p>几乎所有语言都有布尔值，布尔值只有真和假两种类型。大多数会表示为 <code>true</code> 和 <code>false</code>，少数会表示为 <code>True</code> 和 <code>False</code>。</p>
+</li>
+<li>
+<p>数组:</p>
+<p>大部分语言都有数组 (Array) 这个概念，它是一个有序的元素集合。很多底层语言就是靠数组实现的字符串 (因为字符串长度不固定)。在数组中，每个元素具有标号，从 0 开始依次递增。</p>
+<p>一些语言还有 Set 这个概念，Set 表示的是无序元素集合，所有元素没有先后与标号的概念，自然 Set 也无法存入相同的元素。</p>
+</li>
+<li>
+<p>对象:</p>
+<p>大部分语言的对象 (Object) 都是由键值对组成的，它是一个由键标记的元素集合，可以使用特定的键名写入或读取其对应的值。</p>
+<p>一些产生较晚的语言，将对象改为 Map，Map 表达一个映射，将对应的键映射到对应的值上。</p>
+</li>
+<li>
+<p>类:</p>
+<p>类 (Class) 是一个内容集合，它包含了自己的构造器、变量与方法。类在声明后，可以很轻松的使用构造器创建一个新的实例。每个实例可以用其内部的变量维护或表达一个状态，并可以使用它自身的方法来读取或是改变自己的状态。不同的类之间还可以进行继承。</p>
+</li>
+</ul>
+<h2>变量</h2>
+<p>一个<strong>变量</strong>是数据的“命名存储”。我们可以使用变量来保存商品、访客和其他信息。</p>
+<p>下面的语句创建(换句话说，<strong>声明</strong>或者<strong>定义</strong>)了一个名称为“message”的变量:</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> message</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span></code></pre>
+</div><p>在有了变量之后，我们就可以将刚了解的数据结构赋值给变量，以变量来代替这些数据。</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> user</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "John"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> age</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 25</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> message</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "Hello"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span></code></pre>
+</div><h2>条件</h2>
+<p>条件运算符用于判断，通过判断一个条件的真假，来执行不同的逻辑。这是每一门语言逻辑结构的基础。</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Too early..."</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &gt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Too late"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Exactly!"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+</div><h2>循环</h2>
+<p>循环运算符的作用，是在条件控制下，零次或多次执行特定代码块。它使得重复执行成为了可能。</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">while</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;=</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 100</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 计算1+2+3+...+100的结果</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">  i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">  result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+</div><div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">for</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">++</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 结果为 0、1、2</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+</div><h2>函数</h2>
+<p>函数是程序的主要“构建模块”，</p>
+<p>创建函数时，需要声明函数内容，函数内容由一系列语句(代码块) 构成。在声明函数后，使用函数即可多次调用一段代码。</p>
+<p>例如:</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">function</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">() {</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Hello everyone!"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 声明一个函数</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 调用它</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 可以在任意时刻调用它</span></span></code></pre>
+</div><p>同时函数可以通过接受参数的形式来根据情况返回不同的结果，比如这是一个简单的求和函数。</p>
+<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">function</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">sum1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">sum2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  return</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> sum1</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> sum2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// return 3</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">5</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">6</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// return 11</span></span></code></pre>
+</div>]]></content>
+    <category term="教程"/>
+    <published>2020-05-04T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">小程序</title>
     <id>https://blog.ruizhou.cf/code/mini-app/</id>
     <link href="https://blog.ruizhou.cf/code/mini-app/"/>
@@ -4407,220 +4643,6 @@
 </div>]]></content>
     <category term="小程序"/>
     <published>2020-10-09T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">代码学习教程</title>
-    <id>https://blog.ruizhou.cf/code/language/</id>
-    <link href="https://blog.ruizhou.cf/code/language/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<ul>
-<li><a href="/code/language/learning.html" target="_blank">如何学习一门语言</a></li>
-</ul>
-<h2>教程目录</h2>
-<ul>
-<li>
-<p><a href="/code/language/js/" target="_blank">JavaScript 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/typescript/" target="_blank">TypeScript 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/python/" target="_blank">Python 教程</a> (编写中...)</p>
-</li>
-<li>
-<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">Java 教程</a>(廖雪峰的博客)</p>
-</li>
-<li>
-<p><a href="/code/language/markdown/" target="_blank">Markdown 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/yaml/" target="_blank">YAML 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/json/" target="_blank">JSON 教程</a></p>
-</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<ul>
-<li><a href="/code/language/learning.html" target="_blank">如何学习一门语言</a></li>
-</ul>
-<h2>教程目录</h2>
-<ul>
-<li>
-<p><a href="/code/language/js/" target="_blank">JavaScript 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/typescript/" target="_blank">TypeScript 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/python/" target="_blank">Python 教程</a> (编写中...)</p>
-</li>
-<li>
-<p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744" target="_blank" rel="noopener noreferrer">Java 教程</a>(廖雪峰的博客)</p>
-</li>
-<li>
-<p><a href="/code/language/markdown/" target="_blank">Markdown 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/yaml/" target="_blank">YAML 教程</a></p>
-</li>
-<li>
-<p><a href="/code/language/json/" target="_blank">JSON 教程</a></p>
-</li>
-</ul>
-<h2>Linter</h2>
-<ul>
-<li><a href="/code/language/linter/" target="_blank">Linter 介绍</a></li>
-</ul>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>C 、C++、Java、PHP 正在编写中...</p>
-</div>
-]]></content>
-    <category term="教程"/>
-    <published>2022-01-07T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">如何学习一门计算机语言</title>
-    <id>https://blog.ruizhou.cf/code/language/learning.html</id>
-    <link href="https://blog.ruizhou.cf/code/language/learning.html"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>学习一门语言的基本顺序是:</p>
-<ul>
-<li>了解数据结构</li>
-<li>了解变量声明与赋值</li>
-<li>了解判断和循环体结构</li>
-<li>了解函数声明</li>
-<li>了解输入输出</li>
-</ul>
-<p>本部分将以 JS 作为示例，展示什么是一门计算机语言，应该如何学习它们。</p>
-</div>
-<h2>基础</h2>
-<p>首先，任何语言都是由一些基本结构组成的，下面介绍几乎所有语言共有的一些概念:</p>]]></summary>
-    <content type="html"><![CDATA[
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>学习一门语言的基本顺序是:</p>
-<ul>
-<li>了解数据结构</li>
-<li>了解变量声明与赋值</li>
-<li>了解判断和循环体结构</li>
-<li>了解函数声明</li>
-<li>了解输入输出</li>
-</ul>
-<p>本部分将以 JS 作为示例，展示什么是一门计算机语言，应该如何学习它们。</p>
-</div>
-<h2>基础</h2>
-<p>首先，任何语言都是由一些基本结构组成的，下面介绍几乎所有语言共有的一些概念:</p>
-<h3>语句</h3>
-<p>语句可以简单理解为一个操作，它可以是赋值，也可以是执行，还可以是介于或者是可以归类到两者上的判断、声明、标记等。</p>
-<p>请注意一条语句通常是一个计算机语言描述的最小操作。</p>
-<p>比如:</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> a</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 赋值</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Hello word"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 调用函数 执行操作</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &gt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 判断</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-</div><h3>代码块</h3>
-<p>通常情况下，在有了语句概念后，我们就要使用不同的语句顺序，完成不同的操作，但是某些操作总是固定的。</p>
-<p>比如回家，总是 “掏出钥匙”-“插入钥匙”-“转动钥匙”-“开启房门”-“拔出钥匙”-“进入”-“关闭房门” 。</p>
-<p>这些步骤每一步都可以理解为一个语句，但是由于其顺序基本是固定的，我们就可以设计一个代码块，来约束它们。</p>
-<div class="language-text" data-highlighter="shiki" data-ext="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-text"><span class="line"><span>{</span></span>
-<span class="line"><span>  “掏出钥匙”;</span></span>
-<span class="line"><span>  “插入钥匙”;</span></span>
-<span class="line"><span>  “转动钥匙”;</span></span>
-<span class="line"><span>  “开启房门”;</span></span>
-<span class="line"><span>  “拔出钥匙”;</span></span>
-<span class="line"><span>  “进入”;</span></span>
-<span class="line"><span>  “关闭房门”;</span></span>
-<span class="line"><span>}</span></span></code></pre>
-</div><p>大多数语言会使用 <code>{ }</code> 的形式，少数语言会使用统一的缩进进行表达。</p>
-<h2>数据结构</h2>
-<p>计算机顾名思义就是可以做数学计算的机器，因此，计算机程序理所当然地可以处理各种数值。</p>
-<p>任何语言都是操作、计算(处理)、生成数据的。数据结构是一门语言存放数据的方式。不同的数据，需要定义不同的数据类型。了解了数据结构就了解了一门语言可以存储或处理何种数据。</p>
-<p>大多数语言都包含了以下的一种或多种内容:</p>
-<ul>
-<li>
-<p>数字:</p>
-<p>不同语言对数字有不同的处理方式，少数语言可能只有数字这一种类型，一些语言可能会拆分成整数与浮点数。一些底层语言(涉及到内存)可能会魔鬼的将数字拆分为: 整型、浮点数、无符号整型、长整型、无符号长整形、长浮点数。(说的就是您，C 语言)</p>
-</li>
-<li>
-<p>字符串:</p>
-<p>一些语言只有字符串这个概念，一些语言分为字符和字符串这个概念。</p>
-</li>
-<li>
-<p>布尔值:</p>
-<p>几乎所有语言都有布尔值，布尔值只有真和假两种类型。大多数会表示为 <code>true</code> 和 <code>false</code>，少数会表示为 <code>True</code> 和 <code>False</code>。</p>
-</li>
-<li>
-<p>数组:</p>
-<p>大部分语言都有数组 (Array) 这个概念，它是一个有序的元素集合。很多底层语言就是靠数组实现的字符串 (因为字符串长度不固定)。在数组中，每个元素具有标号，从 0 开始依次递增。</p>
-<p>一些语言还有 Set 这个概念，Set 表示的是无序元素集合，所有元素没有先后与标号的概念，自然 Set 也无法存入相同的元素。</p>
-</li>
-<li>
-<p>对象:</p>
-<p>大部分语言的对象 (Object) 都是由键值对组成的，它是一个由键标记的元素集合，可以使用特定的键名写入或读取其对应的值。</p>
-<p>一些产生较晚的语言，将对象改为 Map，Map 表达一个映射，将对应的键映射到对应的值上。</p>
-</li>
-<li>
-<p>类:</p>
-<p>类 (Class) 是一个内容集合，它包含了自己的构造器、变量与方法。类在声明后，可以很轻松的使用构造器创建一个新的实例。每个实例可以用其内部的变量维护或表达一个状态，并可以使用它自身的方法来读取或是改变自己的状态。不同的类之间还可以进行继承。</p>
-</li>
-</ul>
-<h2>变量</h2>
-<p>一个<strong>变量</strong>是数据的“命名存储”。我们可以使用变量来保存商品、访客和其他信息。</p>
-<p>下面的语句创建(换句话说，<strong>声明</strong>或者<strong>定义</strong>)了一个名称为“message”的变量:</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> message</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span></code></pre>
-</div><p>在有了变量之后，我们就可以将刚了解的数据结构赋值给变量，以变量来代替这些数据。</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> user</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "John"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> age</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 25</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> message</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "Hello"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span></code></pre>
-</div><h2>条件</h2>
-<p>条件运算符用于判断，通过判断一个条件的真假，来执行不同的逻辑。这是每一门语言逻辑结构的基础。</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Too early..."</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">year</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &gt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 2015</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Too late"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Exactly!"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-</div><h2>循环</h2>
-<p>循环运算符的作用，是在条件控制下，零次或多次执行特定代码块。它使得重复执行成为了可能。</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">while</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;=</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 100</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 计算1+2+3+...+100的结果</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">  i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">  result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> result</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-</div><div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">for</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">++</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">  // 结果为 0、1、2</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">i</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-</div><h2>函数</h2>
-<p>函数是程序的主要“构建模块”，</p>
-<p>创建函数时，需要声明函数内容，函数内容由一系列语句(代码块) 构成。在声明函数后，使用函数即可多次调用一段代码。</p>
-<p>例如:</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">function</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">() {</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">  alert</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"Hello everyone!"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">} </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 声明一个函数</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 调用它</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">showMessage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// 可以在任意时刻调用它</span></span></code></pre>
-</div><p>同时函数可以通过接受参数的形式来根据情况返回不同的结果，比如这是一个简单的求和函数。</p>
-<div class="language-js" data-highlighter="shiki" data-ext="js" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-js"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">function</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">sum1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">sum2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  return</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> sum1</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> +</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> sum2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">}</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">2</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// return 3</span></span>
-<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sum</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">5</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">6</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">// return 11</span></span></code></pre>
-</div>]]></content>
-    <category term="教程"/>
-    <published>2020-05-04T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">Node.js</title>
@@ -5282,124 +5304,5 @@ Vue 在标签名属性用 v-bind:prop=&amp;quot;Javascript表达式&amp;quot; �
 ]]></content>
     <category term="Vue"/>
     <published>2020-05-04T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">网页入门</title>
-    <id>https://blog.ruizhou.cf/code/website/</id>
-    <link href="https://blog.ruizhou.cf/code/website/"/>
-    <updated>2024-01-19T19:40:22.000Z</updated>
-    <summary type="html"><![CDATA[<p>网页需要三件套: <strong>HTML</strong>、<strong>CSS</strong> 和 <strong>JavaScript</strong>。</p>
-<ol>
-<li>HTML 定义了网页的内容</li>
-<li>CSS 描述了网页的样式</li>
-<li>JavaScript 编写网页的行为</li>
-</ol>
-]]></summary>
-    <content type="html"><![CDATA[<p>网页需要三件套: <strong>HTML</strong>、<strong>CSS</strong> 和 <strong>JavaScript</strong>。</p>
-<ol>
-<li>HTML 定义了网页的内容</li>
-<li>CSS 描述了网页的样式</li>
-<li>JavaScript 编写网页的行为</li>
-</ol>
-<!-- more -->
-<h2>网站开发技术</h2>
-<p>一个大型的网站，很少是直接使用原生代码写的。</p>
-<ul>
-<li>现代网站大多通过开源前端框架 (如 <a href="#react"><strong>React</strong></a>、<a href="#vue"><strong>Vue</strong></a>) 开发，并引入 npm 上的 UI 库编写而成。</li>
-<li>较老的网站 (或者政企) 可能会在原生开发基础上使用其他框架作为辅助，比如 <a href="#bootstrap4"><strong>Bootstrap</strong></a>、<a href="#jquery"><strong>jQuery</strong></a> 等。</li>
-</ul>
-<h2>网页标准</h2>
-<p>互联网网页标准由 W3C 组织制定，它的全称是万维网联盟组织。</p>
-<h2>网页基础</h2>
-<h3>HTML</h3>
-<p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)，描述了网页的骨架(具体结构)。</p>
-<ul>
-<li><a href="/code/website/html/" target="_blank">HTML 教程</a></li>
-</ul>
-<h3>CSS</h3>
-<p>CSS 指层叠样式表 (Cascading Style Sheets)，声明了网页的样式(具体布局)。</p>
-<ul>
-<li><a href="/code/website/css/" target="_blank">CSS 教程</a></li>
-</ul>
-<h3>Emmet</h3>
-<p>Emmet 是一种快速输入 HTML 和 CSS 的语法。</p>
-<ul>
-<li><a href="/code/website/emmet/" target="_blank">Emmet 用法介绍</a></li>
-</ul>
-<h3>JavaScript</h3>
-<p>JavaScript 是一种编程语言，声明了网页的交互逻辑。</p>
-<p>JavaScript 是一种轻量级的编程语言，为可插入 HTML 页面的编程代码。所有现代的 HTML 页面都使用 JavaScript。</p>
-<ul>
-<li><a href="/code/website/js.html" target="_blank">JS 教程</a></li>
-</ul>
-<h2>现代前端框架</h2>
-<h3>Vue</h3>
-<p>Vue 是一套轻量化的前端渐进式框架框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。</p>
-<ul>
-<li>
-<p><a href="/code/vue/" target="_blank">Vue 学习教程</a></p>
-</li>
-<li>
-<p><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener noreferrer">Vue 官方文档</a></p>
-</li>
-</ul>
-<h3>React</h3>
-<ul>
-<li><a href="/code/react/" target="_blank">React 教程</a></li>
-</ul>
-<h3>Angular</h3>
-<ul>
-<li><a href="/code/angular/" target="_blank">Angular 教程</a></li>
-</ul>
-<h2>深入网页开发</h2>
-<h3>TypeScript</h3>
-<p>TypeScript 是 JavaScript 的一个超集，使得 JS 变成了一种强定义语言。TypeScript 由于其诸多优良特性，目前在前端的份额越来越大。</p>
-<ul>
-<li><a href="/code/language/typescript/" target="_blank">TypeScript 教程</a></li>
-</ul>
-<h3>Node.js</h3>
-<p>在深入了解并进行前端开发后，就避不开 Node。</p>
-<p>Node.js 是一款全球使用广泛的框架，可以用在前端与后端上，拥有大量的模块。Node.js 主要以其丰富并及其容易导入的 Node.js package，以及其方便管理 npm (Node.js Package Manager)闻名。</p>
-<ul>
-<li><a href="/code/node-js/" target="_blank">Node.js 教程</a></li>
-</ul>
-<h2>历史前端框架</h2>
-<h3>jQuery</h3>
-<p>jQuery 是一个 JavaScript 库，极大地简化了 JavaScript 编程，很容易学习。</p>
-<p>jQuery 的优势在于它能够在互联网发展早期兼容各式各样的浏览器，并轻松的选定与操作 DOM。</p>
-<p>由于 MVVM 的兴起，目前 jQuery 已逐步被前端三大框架所取代。</p>
-<ul>
-<li>
-<p><a href="/code/website/jQuery/" target="_blank">jQuery 教程</a></p>
-</li>
-<li>
-<p><a href="http://www.w3school.com.cn/jquery/index.asp" target="_blank" rel="noopener noreferrer">W3School</a></p>
-</li>
-<li>
-<p><a href="https://www.runoob.com/jquery/jquery-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程</a></p>
-</li>
-</ul>
-<h3>Bootstrap4</h3>
-<p>Bootstrap 是全球最受欢迎的前端组件库，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
-<p>Bootstrap 是一套用于 HTML、CSS 和 JS 开发的开源工具集。利用提供的 Sass 变量和大量 mixin、响应式栅格系统、可扩展的预制组件、基于 jQuery 的强大的插件系统，能够快速为您的想法开发出原型或者构建整个 app 。</p>
-<ul>
-<li>
-<p><a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank" rel="noopener noreferrer">bootstrap 官方文档</a></p>
-</li>
-<li>
-<p><a href="https://v4.bootcss.com/docs/4.0/getting-started/introduction/" target="_blank" rel="noopener noreferrer">bootstrap 4.0 中文文档</a></p>
-</li>
-</ul>
-<h2>定义列表</h2>
-<ul>
-<li><a href="/code/website/definition/uri.html" target="_blank">URI 统一资源标识符</a></li>
-<li><a href="/code/website/definition/url.html" target="_blank">URL 统一资源定位符</a></li>
-<li><a href="/code/website/definition/seo.html" target="_blank">SEO 搜索引擎优化</a></li>
-<li><a href="/code/website/definition/mime.html" target="_blank">MIME Type 媒体类型</a></li>
-<li><a href="/code/website/definition/https.html" target="_blank">HTTPS 介绍</a></li>
-</ul>
-]]></content>
-    <category term="前端"/>
-    <published>2019-09-01T00:00:00.000Z</published>
   </entry>
 </feed>
